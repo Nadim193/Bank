@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12D50F6B-A62F-4203-9B76-2A9E43F52EE7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bank</RootNamespace>
+    <AssemblyName>Bank</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942" />
+    <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604" />
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d" />
+    <Reference Include="MySql.Data, Version=8.0.24.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountVerifyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountVerifyForm.Designer.cs">
+      <DependentUpon>AccountVerifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account_Rewiew_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account_Rewiew_Form.Designer.cs">
+      <DependentUpon>Account_Rewiew_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bank_systemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bank_systemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection\ServerConnection.cs" />
+    <Compile Include="DepositForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepositForm.Designer.cs">
+      <DependentUpon>DepositForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deposit_Money.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deposit_Money.Designer.cs">
+      <DependentUpon>Deposit_Money.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.Designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loding.Designer.cs">
+      <DependentUpon>Loding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDataBaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataBaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransationForm.Designer.cs">
+      <DependentUpon>TransationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerifyFrom.Designer.cs">
+      <DependentUpon>VerifyFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WithdrawFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WithdrawFrom.Designer.cs">
+      <DependentUpon>WithdrawFrom.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountVerifyForm.resx">
+      <DependentUpon>AccountVerifyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account_Rewiew_Form.resx">
+      <DependentUpon>Account_Rewiew_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePasswordForm.resx">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepositForm.resx">
+      <DependentUpon>DepositForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deposit_Money.resx">
+      <DependentUpon>Deposit_Money.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loding.resx">
+      <DependentUpon>Loding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransationForm.resx">
+      <DependentUpon>TransationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerifyFrom.resx">
+      <DependentUpon>VerifyFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WithdrawFrom.resx">
+      <DependentUpon>WithdrawFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bank_systemDataSet.xsc">
+      <DependentUpon>bank_systemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bank_systemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bank_systemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bank_systemDataSet.xss">
+      <DependentUpon>bank_systemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataBaseDataSet.xsc">
+      <DependentUpon>LoginDataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginDataBaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginDataBaseDataSet.xss">
+      <DependentUpon>LoginDataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_rsz_1pngtree-concept-banking-logo-png-image_712961-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1rsz_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_430-4307046_forgot-password-icon-png-icon-for-username-and.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemberLoginIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_memberloginicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1727561.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_full-icon-name-icon-round-icon-png-favpng-apcdd9afcsz9j53rzd6lhgcwg_t.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_full-icon-name-icon-round-icon-png-favpng-apcdd9afcsz9j53rzd6lhgcwg_t-removebg-preview_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1804429.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1804429-removebg-preview %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1804429-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_screenshot_2021-05-20_115509.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_screenshot_2021-05-20_115509 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_os-x-exit-minimize-full-wallpaper1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\os-x-exit-minimize-full-wallpaper1-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_os-x-exit-minimize-full-wallpaper1-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_os-x-exit-minimize-full-wallpaper-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_screenshot_2021-05-20_115509 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1menu-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_share-icon-lunch-user-interface-hamburger-button-restaurant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_screenshot_2021-05-25_140759-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1rsz_images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1rsz_images-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1images-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_screenshot_2021-05-25_215202.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2021-05-25 215202.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2021-05-25 215202-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_icon_icon-icons.com_71858.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_icon_icon-icons.com_71858-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1640161-200-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2021-05-25 223802-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\source-change-password-icon-115632113989lfjrixlx8-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2021-05-20 115509.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2021-05-20 115509-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\69524.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\339-3396821_png-file-svg-download-icon-logout-transparent-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-icon-png-19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share-icon-lunch-user-interface-hamburger-button-restaurant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\General_-_Office_30-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-editing-icon-design-download-5b485cac78f7b6.0092987015314689724955-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balance-check-1-974285.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users-Find-User-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\239678.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rrefresh-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank-account-banking-building-1-31235.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
