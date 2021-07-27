@@ -17,7 +17,8 @@ namespace Bank
     public partial class VerifyFrom : Form
     {
         string randomCode;
-        public static string to; 
+        public static string to;
+        public static string verifyname;
         public VerifyFrom()
         {
             InitializeComponent();
@@ -54,23 +55,32 @@ namespace Bank
                         string mySQL1 = string.Empty;
 
                         mySQL += "SELECT * FROM Parsonal ";
-                        mySQL += "WHERE User_name = '" + VerityUserNametextBox.Text + "' ";
+                        mySQL += "WHERE User_name = '" + VerityUserNametextBox.Text + "' " +
+                            "AND Email_address = '" + emailtextBox.Text + "'";
 
-                        mySQL1 += "SELECT * FROM Parsonal ";
-                        mySQL1 += "WHERE Email_address = '" + emailtextBox.Text + "' ";
+                        /*mySQL1 += "SELECT * FROM Parsonal ";
+                        mySQL1 += "WHERE Email_address = '" + emailtextBox.Text + "' ";*/
 
-                        DataTable userData1 = ServerConnection.executeSQL(mySQL1);
+                        //DataTable userData1 = ServerConnection.executeSQL(mySQL1);
                         DataTable userData = ServerConnection.executeSQL(mySQL);
 
-                        if (userData.Rows.Count > 0 && userData1.Rows.Count > 0)
+                        if (userData.Rows.Count > 0)
                         {
                             smtp.Send(message);
                             MessageBox.Show("Please Check Your Email And Enter The Code.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            CodetextBox.Select();
+                            VerifyUserNameLable.Enabled = false;
+                            VerityUserNametextBox.Enabled = false;
+                            VerifyEmailLable.Enabled = false;
+                            emailtextBox.Enabled = false;
+                            SentOTPButton.Enabled = false;
+
+                            OTPLable.Enabled = true;
+                            CodetextBox.Enabled = true;
+                            Verifybutton.Enabled = true;
                         }
                         else
                         {
-                            MessageBox.Show("Your Information Don't Match. PLease Created An Account ",
+                            MessageBox.Show("Your Information Don't Match. Try Again Or Created An Account ",
                             "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             VerityUserNametextBox.Clear();
                             emailtextBox.Clear();
@@ -87,6 +97,8 @@ namespace Bank
                 VerityUserNametextBox.Clear();
                 emailtextBox.Clear();
                 VerityUserNametextBox.Select();
+                MessageBox.Show(ex.Message);
+
             }
         }
 
@@ -94,7 +106,7 @@ namespace Bank
         {
             if (randomCode == (CodetextBox.Text).ToString())
             {
-                to = emailtextBox.Text;
+                verifyname = VerityUserNametextBox.Text;
                 ForgetPassword fp = new ForgetPassword();
                 this.Hide();
                 fp.ShowDialog();
@@ -122,6 +134,31 @@ namespace Bank
             this.Hide();
             lf.ShowDialog();
             this.Close();
+        }
+
+        private void cerraricon_Click(object sender, EventArgs e)
+        {
+            CloseForm close = new CloseForm();
+            close.ShowDialog();
+        }
+
+        private void RestoreDownIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            RestoreDownIcon.Visible = false;
+            maxIcon.Visible = true;
+        }
+
+        private void maxIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            RestoreDownIcon.Visible = true;
+            maxIcon.Visible = false;
+        }
+
+        private void minIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

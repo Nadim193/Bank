@@ -63,9 +63,9 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1640161_200_removebg_preview {
+        internal static System.Drawing.Bitmap _1024px_OOjs_UI_icon_logOut_ltr_svg {
             get {
-                object obj = ResourceManager.GetObject("1640161-200-removebg-preview", resourceCulture);
+                object obj = ResourceManager.GetObject("1024px-OOjs_UI_icon_logOut-ltr.svg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,60 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1804429_removebg_preview__1_ {
+        internal static System.Drawing.Bitmap _1024px_OOjs_UI_icon_logOut_ltr1 {
             get {
-                object obj = ResourceManager.GetObject("1804429-removebg-preview (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("1024px-OOjs_UI_icon_logOut-ltr1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _104_1043692_search_icon_transparent_white_search_icon_apple_png_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("104-1043692_search-icon-transparent-white-search-icon-apple-png-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1640161_200 {
+            get {
+                object obj = ResourceManager.GetObject("1640161-200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _176_1766289_atm_withdrawal_svg_png_icon_free_download_atm_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("176-1766289_atm-withdrawal-svg-png-icon-free-download-atm-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _217_2178237_open_eye_vector_show_hide_password_icon_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("217-2178237_open-eye-vector-show-hide-password-icon-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _225_2250632_svg_png_icon_android_notification_icon_png_transparent_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("225-2250632_svg-png-icon-android-notification-icon-png-transparent-removebg-previ" +
+                        "ew", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,6 +144,26 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _25694_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("25694-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _32763 {
+            get {
+                object obj = ResourceManager.GetObject("32763", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _339_3396821_png_file_svg_download_icon_logout_transparent_png {
             get {
                 object obj = ResourceManager.GetObject("339-3396821_png-file-svg-download-icon-logout-transparent-png", resourceCulture);
@@ -103,9 +174,110 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("377-3773045_hide-and-show-password-icon-hd-png-download-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("481-4810872_hide-password-hide-show-password-icon-png-transparent-removebg-previe" +
+                        "w", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _599350 {
+            get {
+                object obj = ResourceManager.GetObject("599350", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _599354 {
+            get {
+                object obj = ResourceManager.GetObject("599354", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _60994 {
+            get {
+                object obj = ResourceManager.GetObject("60994", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _609941 {
+            get {
+                object obj = ResourceManager.GetObject("609941", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _62107 {
+            get {
+                object obj = ResourceManager.GetObject("62107", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _640743 {
+            get {
+                object obj = ResourceManager.GetObject("640743", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _69524 {
             get {
                 object obj = ResourceManager.GetObject("69524", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _786263 {
+            get {
+                object obj = ResourceManager.GetObject("786263", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap active_1 {
+            get {
+                object obj = ResourceManager.GetObject("active-1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +305,49 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap customer_customer_icon_146530250_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("customer-customer-icon-146530250-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap deposit_icon_7_1_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("deposit-icon-7-1-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download__1__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("download__1_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("download-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e004b52d489e36f38723b7aaa3d97a54 {
+            get {
+                object obj = ResourceManager.GetObject("e004b52d489e36f38723b7aaa3d97a54", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +365,49 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_a_day_balance_transfer_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("icon-a-day-balance-transfer-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_a_day_balance_transfer_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("icon-a-day-balance-transfer-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_menu_512 {
+            get {
+                object obj = ResourceManager.GetObject("icon-menu-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images__1__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("images__1_-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -224,6 +476,36 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap minimize_window {
+            get {
+                object obj = ResourceManager.GetObject("minimize-window", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap original {
+            get {
+                object obj = ResourceManager.GetObject("original", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap original1 {
+            get {
+                object obj = ResourceManager.GetObject("original1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap os_x_exit_minimize_full_wallpaper1_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("os-x-exit-minimize-full-wallpaper1-removebg-preview", resourceCulture);
@@ -234,9 +516,141 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap personal_profile_icon_15 {
+            get {
+                object obj = ResourceManager.GetObject("personal-profile-icon-15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap personal_profile_icon_151 {
+            get {
+                object obj = ResourceManager.GetObject("personal-profile-icon-151", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_computer_icons_android_web_search_engine_google_search_search_box_google_search_bar_blue_trademark_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-computer-icons-android-web-search-engine-google-search-search-box-goo" +
+                        "gle-search-bar-blue-trademark-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profile_icon_png_20 {
+            get {
+                object obj = ResourceManager.GetObject("profile-icon-png-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap purchase_history_icon_transaction_history_icon_11553476408pgondxxib0_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("purchase-history-icon-transaction-history-icon-11553476408pgondxxib0-removebg-pre" +
+                        "view", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap restore_down {
+            get {
+                object obj = ResourceManager.GetObject("restore-down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rrefresh_512 {
             get {
                 object obj = ResourceManager.GetObject("rrefresh-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_1024px_oojs_ui_icon_logout_ltrsvg {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1024px-oojs_ui_icon_logout-ltrsvg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_107194_200 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_107194-200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_11640161_200 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_11640161-200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_150256_200 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_150256-200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_150256_200__1_ {
+            get {
+                object obj = ResourceManager.GetObject("rsz_150256-200 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_1640161_200 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1640161-200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_1640161_200__1_ {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1640161-200 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -314,6 +728,16 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rsz_1rsz_rsz_rrefresh_512 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1rsz_rsz_rrefresh-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rsz_1rsz_user {
             get {
                 object obj = ResourceManager.GetObject("rsz_1rsz_user", resourceCulture);
@@ -324,9 +748,49 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rsz_1unnamed {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1unnamed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_239678 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_239678", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_2715526 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_2715526", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rsz_430_4307046_forgot_password_icon_png_icon_for_username_and {
             get {
                 object obj = ResourceManager.GetObject("rsz_430-4307046_forgot-password-icon-png-icon-for-username-and", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_balance_check_1_974285 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_balance-check-1-974285", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -365,9 +829,9 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rsz_os_x_exit_minimize_full_wallpaper_removebg_preview {
+        internal static System.Drawing.Bitmap rsz_refund_2 {
             get {
-                object obj = ResourceManager.GetObject("rsz_os-x-exit-minimize-full-wallpaper-removebg-preview", resourceCulture);
+                object obj = ResourceManager.GetObject("rsz_refund-2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -375,9 +839,9 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rsz_os_x_exit_minimize_full_wallpaper1 {
+        internal static System.Drawing.Bitmap rsz_rrefresh_512 {
             get {
-                object obj = ResourceManager.GetObject("rsz_os-x-exit-minimize-full-wallpaper1", resourceCulture);
+                object obj = ResourceManager.GetObject("rsz_rrefresh-512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -385,19 +849,9 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rsz_os_x_exit_minimize_full_wallpaper1_removebg_preview {
+        internal static System.Drawing.Bitmap rsz_rsz_rrefresh_512 {
             get {
-                object obj = ResourceManager.GetObject("rsz_os-x-exit-minimize-full-wallpaper1-removebg-preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap rsz_rsz_1pngtree_concept_banking_logo_png_image_712961_removebg_preview {
-            get {
-                object obj = ResourceManager.GetObject("rsz_rsz_1pngtree-concept-banking-logo-png-image_712961-removebg-preview", resourceCulture);
+                object obj = ResourceManager.GetObject("rsz_rsz_rrefresh-512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -465,6 +919,16 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rsz_unnamed {
+            get {
+                object obj = ResourceManager.GetObject("rsz_unnamed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rsz_user {
             get {
                 object obj = ResourceManager.GetObject("rsz_user", resourceCulture);
@@ -475,9 +939,9 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Screenshot_2021_05_20_115509 {
+        internal static System.Drawing.Bitmap rsz_users_find_user_icon {
             get {
-                object obj = ResourceManager.GetObject("Screenshot 2021-05-20 115509", resourceCulture);
+                object obj = ResourceManager.GetObject("rsz_users-find-user-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -485,9 +949,9 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Screenshot_2021_05_20_115509_removebg_preview {
+        internal static System.Drawing.Bitmap Screenshot_2021_05_20_115509 {
             get {
-                object obj = ResourceManager.GetObject("Screenshot 2021-05-20 115509-removebg-preview", resourceCulture);
+                object obj = ResourceManager.GetObject("Screenshot 2021-05-20 115509", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -525,6 +989,36 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2021_07_15_231152_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2021-07-15_231152-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2021_07_15_235621_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2021-07-15_235621-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2021_07_15_235621_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2021-07-15_235621-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap share_icon_lunch_user_interface_hamburger_button_restaurant {
             get {
                 object obj = ResourceManager.GetObject("share-icon-lunch-user-interface-hamburger-button-restaurant", resourceCulture);
@@ -545,6 +1039,36 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap source_change_password_icon_115632113989lfjrixlx8_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("source-change-password-icon-115632113989lfjrixlx8-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transaction_A_512 {
+            get {
+                object obj = ResourceManager.GetObject("transaction_A-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transaction_history_2697523_2237715 {
+            get {
+                object obj = ResourceManager.GetObject("transaction-history-2697523-2237715", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap userIcon {
             get {
                 object obj = ResourceManager.GetObject("userIcon", resourceCulture);
@@ -555,9 +1079,9 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Users_Find_User_icon {
+        internal static System.Drawing.Bitmap Users_Find_User_icon1 {
             get {
-                object obj = ResourceManager.GetObject("Users-Find-User-icon", resourceCulture);
+                object obj = ResourceManager.GetObject("Users-Find-User-icon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

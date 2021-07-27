@@ -29,5 +29,34 @@ namespace Bank
                 this.Close();
             }
         }
+
+        private void cerraricon_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void maxIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            RestoreDownIcon.Visible = true;
+            maxIcon.Visible = false;
+        }
+
+        private void minIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void RestoreDownIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            RestoreDownIcon.Visible = false;
+            maxIcon.Visible = true;
+        }
+
+        private void Loding_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

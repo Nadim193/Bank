@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BankSystemDataBaseDataSet1" targetNamespace="http://tempuri.org/BankSystemDataBaseDataSet1.xsd" xmlns:mstns="http://tempuri.org/BankSystemDataBaseDataSet1.xsd" xmlns="http://tempuri.org/BankSystemDataBaseDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BankSystemDataBaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BankSystemDataBaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Bank.Properties.Settings.GlobalReference.Default.BankSystemDataBaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Deposit_History_viewTableAdapter" GeneratorDataComponentClassName="Deposit_History_viewTableAdapter" Name="Deposit_History_view" UserDataComponentName="Deposit_History_viewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BankSystemDataBaseConnectionString (Settings)" DbObjectName="BankSystemDataBase.dbo.Deposit_History_view" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Field, Amount, Date FROM dbo.Deposit_History_view</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Field" DataSetColumn="Field" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BankSystemDataBaseDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="BankSystemDataBaseDataSet1" msprop:Generator_DataSetName="BankSystemDataBaseDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Deposit_History_view" msprop:Generator_RowEvHandlerName="Deposit_History_viewRowChangeEventHandler" msprop:Generator_RowDeletedName="Deposit_History_viewRowDeleted" msprop:Generator_RowDeletingName="Deposit_History_viewRowDeleting" msprop:Generator_RowEvArgName="Deposit_History_viewRowChangeEvent" msprop:Generator_TablePropName="Deposit_History_view" msprop:Generator_RowChangedName="Deposit_History_viewRowChanged" msprop:Generator_RowChangingName="Deposit_History_viewRowChanging" msprop:Generator_TableClassName="Deposit_History_viewDataTable" msprop:Generator_RowClassName="Deposit_History_viewRow" msprop:Generator_TableVarName="tableDeposit_History_view" msprop:Generator_UserTableName="Deposit_History_view">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Field" msprop:Generator_ColumnPropNameInRow="Field" msprop:Generator_ColumnPropNameInTable="FieldColumn" msprop:Generator_ColumnVarNameInTable="columnField" msprop:Generator_UserColumnName="Field" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

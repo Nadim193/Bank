@@ -1,23 +1,23 @@
 ﻿using Bank.Connection;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Bank
 {
     public partial class RegisterForm : Form
     {
+        public static String RegPassword;
+        public static String regUserName;
+        public static String regEmail;
+        public static string Active;
         string randomCode;
         public static string to;
+        string imgLocation = "";
         public RegisterForm()
         {
             InitializeComponent();
@@ -40,18 +40,17 @@ namespace Bank
             }
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void Submitbutton_Click(object sender, EventArgs e)
         {
             try
             {
-                if (UsernameTextbox.Text.Equals("") || FirstNametextBox.Text.Equals("") || LastNametextBox.Text.Equals("") || YearcomboBox.SelectedItem.Equals("") || MonthcomboBox.SelectedItem.Equals("") || DatecomboBox.SelectedItem.Equals("") || EmailAdressTxtbox.Text.Equals("")
-                    || AddresstextBox.Text.Equals("") || CitytextBox.Text.Equals("") || CountrytextBox.Text.Equals("") || PasswordtextBox.Text.Equals("") || ConfirmPasswordtextBox.Text.Equals("") || ReligioncomboBox.SelectedItem.Equals("") || CategorycomboBox.SelectedItem.Equals("")
-                    || IncomecomboBox.SelectedItem.Equals("") || QualificationcomboBox.SelectedItem.Equals("") || OccupationcomboBox.SelectedItem.Equals(""))
+                Active = "Active";
+                regUserName = UsernameTextbox.Text;
+                RegPassword = ConfirmPasswordtextBox.Text;
+                regEmail = EmailAdressTxtbox.Text;
+
+                if (regUserName.Equals("") || FirstNametextBox.Text.Equals("") || LastNametextBox.Text.Equals("") || YearcomboBox.SelectedItem.Equals("") || MonthcomboBox.SelectedItem.Equals("") || DatecomboBox.SelectedItem.Equals("") || regEmail.Equals("")
+                    || AddresstextBox.Text.Equals("") || CitytextBox.Text.Equals("") || CountrytextBox.Text.Equals("") || PasswordtextBox.Text.Equals("") || RegPassword.Equals("") || ReligioncomboBox.SelectedItem.Equals("") || IncomecomboBox.SelectedItem.Equals("") || QualificationcomboBox.SelectedItem.Equals("") || OccupationcomboBox.SelectedItem.Equals(""))
                 {
                     MessageBox.Show("Fill All The Requried Field.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     UsernameTextbox.Select();
@@ -60,8 +59,11 @@ namespace Bank
                 {
                     SqlConnection conn = new SqlConnection("Data Source = LAPTOP-V4386OSC;" +
                     "Initial Catalog = BankSystemDataBase; Integrated Security = True");
+                    
 
                     string mySQL = string.Empty;
+                    string mySQL5 = string.Empty;
+                    string mySQL6 = string.Empty;
 
                     String Gender = "";
                     if (MaleradioButton.Checked)
@@ -98,18 +100,15 @@ namespace Bank
                     {
                         Account = "Current Account";
                     }
-                    else if (FixedDepositradioButton.Checked)
-                    {
-                        Account = "Fixed Deposit Account";
-                    }
-                    else if (RecurringDepositradioButton.Checked)
-                    {
-                        Account = "Recurring Deposit Account";
-                    }
                     else
                     {
                         Account = "None";
                     }
+
+                    byte[] image = null;
+                    FileStream stream = new FileStream(imgLocation, FileMode.Open, FileAccess.Read);
+                    BinaryReader binary = new BinaryReader(stream);
+                    image = binary.ReadBytes((int)stream.Length);
 
                     mySQL += @"INSERT INTO [dbo].[Parsonal]
                                ([User_name]
@@ -124,17 +123,56 @@ namespace Bank
                                ,[City]
                                ,[Country]
                                ,[Religion]
-                               ,[Category]
                                ,[Income]
                                ,[Educational_Qualification]
                                ,[Occupation]
-                               ,[Account_Type])
+                               ,[Account_Type]
+                               ,[Profile_picture]
+                                ,[Status])
                          VALUES
-                                ('" + UsernameTextbox.Text +"', '" + PasswordtextBox.Text +"', '" + FirstNametextBox.Text + "', '" + LastNametextBox.Text + "', '" + EmailAdressTxtbox.Text + "', '" + Gender + "', '" + YearcomboBox.SelectedItem + "-" + MonthcomboBox.SelectedItem + "-" + DatecomboBox.SelectedItem + "'" +
-                            ", '" + Marital + "', '" + AddresstextBox.Text + "', '" + CitytextBox.Text + "', '" + CountrytextBox.Text + "', '" + ReligioncomboBox.SelectedItem + "', '" + CategorycomboBox.SelectedItem + "', '" + IncomecomboBox.SelectedItem + "'" +
-                            ", '" + QualificationcomboBox.SelectedItem + "', '" + OccupationcomboBox.SelectedItem + "', '" + Account +"')";
+                                ('" + UsernameTextbox.Text +"', '" + PasswordtextBox.Text +"', '" + FirstNametextBox.Text + "', '" + LastNametextBox.Text + "', '" + regEmail + "', '" + Gender + "', '" + YearcomboBox.SelectedItem + "-" + MonthcomboBox.SelectedItem + "-" + DatecomboBox.SelectedItem + "'" +
+                            ", '" + Marital + "', '" + AddresstextBox.Text + "', '" + CitytextBox.Text + "', '" + CountrytextBox.Text + "', '" + ReligioncomboBox.SelectedItem + "', '" + IncomecomboBox.SelectedItem + "'" +
+                            ", '" + QualificationcomboBox.SelectedItem + "', '" + OccupationcomboBox.SelectedItem + "', '" + Account + "', @image, '" + Active + "')";
+                    
+                    if(conn.State != ConnectionState.Open)
+                        conn.Open();
+                    SqlCommand command = new SqlCommand(mySQL, conn);
+                    command.Parameters.AddWithValue("@image", image);
 
-                    if (PasswordtextBox.Text == ConfirmPasswordtextBox.Text)
+                    double Totalmoney = 0.00;
+                    double Withdraw = 0.00;
+                    double deposit = 0.00;
+                    double transationmoney = 0.00;
+                    string transatioTo = null;
+
+                    DateTime dateTimeVariable = DateTime.Now;
+
+                    mySQL5 += @"INSERT INTO [dbo].[Customer_Details]
+                               ([FUser_Name]
+                               ,[Total_Money]
+                               ,[Withdraw_Money]
+                               ,[Deposit_Money]
+                               ,[Transation_Money]
+                               ,[Transation_To]
+                               ,[WDate_Time]
+                               ,[DDate_Time]
+                               ,[TDate_Time])
+                         VALUES
+                               ('" + UsernameTextbox.Text + "', '"+Totalmoney +"', '" + Withdraw + "', '" + deposit +"', '" + transationmoney +"', '" + transatioTo +"', '" + dateTimeVariable +"', '" + dateTimeVariable + "', '" + dateTimeVariable  + "')";
+
+                    double Cdepositbalance = 0.00;
+                    double Cwithdrawbalance = 0.00;
+                    double Ctransferbalance = 0.00;
+
+                    mySQL6 += @"INSERT INTO [dbo].[Current_Transation_Details]
+                               ([CUser_Name]
+                               ,[Current_Deposit_balance]
+                               ,[Current_Withdraw_balance]
+                               ,[Current_Transfer_balance])
+                         VALUES
+                               ('" + UsernameTextbox.Text + "', '" + Cdepositbalance + "', '" + Cwithdrawbalance + "', '" + Ctransferbalance + "')";
+
+                    if (PasswordtextBox.Text == RegPassword)
                     {
                         string mySQL1 = string.Empty;
                         string mySQL3 = string.Empty;
@@ -143,7 +181,7 @@ namespace Bank
                         mySQL1 += "WHERE User_name = '" + UsernameTextbox.Text + "' ";
 
                         mySQL3 += "SELECT * FROM Parsonal ";
-                        mySQL3 += "WHERE Email_address = '" + EmailAdressTxtbox.Text + "' ";
+                        mySQL3 += "WHERE Email_address = '" + regEmail + "' ";
 
                         DataTable userData2 = ServerConnection.executeSQL(mySQL1);
 
@@ -164,7 +202,10 @@ namespace Bank
                         }
                         else
                         {
-                            DataTable userData1 = ServerConnection.executeSQL(mySQL);
+                            PictureBox.Image = null;
+                            command.ExecuteNonQuery();
+                            DataTable userData5 = ServerConnection.executeSQL(mySQL5);
+                            DataTable userData6 = ServerConnection.executeSQL(mySQL6);
 
                             try
                             {
@@ -216,6 +257,7 @@ namespace Bank
                             {
                                 MessageBox.Show("Please Enter Email Address.",
                                         "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                MessageBox.Show(ex.Message);
                             }
                         }
                     }
@@ -230,11 +272,47 @@ namespace Bank
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
 
-        private void RegistrationBackbutton_Click_1(object sender, EventArgs e)
+        private void cerraricon_Click(object sender, EventArgs e)
+        {
+            CloseForm close = new CloseForm();
+            close.ShowDialog();
+        }
+
+        private void maxIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            RestoreDownIcon.Visible = true;
+            maxIcon.Visible = false;
+        }
+
+        private void minIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void RestoreDownIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            RestoreDownIcon.Visible = false;
+            maxIcon.Visible = true;
+        }
+
+        private void FileChooseButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "All file(*.*)|*.*|png file(*.png)|*.png|jpg file(*.jpg)|*.jpg";
+            if(dialog.ShowDialog() == DialogResult.OK)
+            {
+                imgLocation = dialog.FileName.ToString();
+                PictureBox.ImageLocation = imgLocation;
+            }
+        }
+
+        private void BackToLoginlinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             LoginForm login = new LoginForm();
             this.Hide();

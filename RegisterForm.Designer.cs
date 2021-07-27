@@ -29,15 +29,24 @@ namespace Bank
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Yearlabel = new System.Windows.Forms.Label();
             this.MonthcomboBox = new System.Windows.Forms.ComboBox();
             this.Monthlabel = new System.Windows.Forms.Label();
-            this.YearcomboBox = new System.Windows.Forms.ComboBox();
             this.Datelabel = new System.Windows.Forms.Label();
             this.OtherradioButton = new System.Windows.Forms.RadioButton();
+            this.YearcomboBox = new System.Windows.Forms.ComboBox();
             this.FemaleradioButton = new System.Windows.Forms.RadioButton();
             this.DatecomboBox = new System.Windows.Forms.ComboBox();
             this.MaleradioButton = new System.Windows.Forms.RadioButton();
@@ -54,14 +63,12 @@ namespace Bank
             this.OccupationcomboBox = new System.Windows.Forms.ComboBox();
             this.QualificationcomboBox = new System.Windows.Forms.ComboBox();
             this.IncomecomboBox = new System.Windows.Forms.ComboBox();
-            this.CategorycomboBox = new System.Windows.Forms.ComboBox();
             this.ReligioncomboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Qualificationlabe = new System.Windows.Forms.Label();
             this.Occupationlabel = new System.Windows.Forms.Label();
             this.Educationallabel = new System.Windows.Forms.Label();
             this.Incomelabel = new System.Windows.Forms.Label();
-            this.Categorylabel = new System.Windows.Forms.Label();
             this.Religionlabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.UnmarriedradioButton = new System.Windows.Forms.RadioButton();
@@ -81,35 +88,93 @@ namespace Bank
             this.MaritalStatuslabel = new System.Windows.Forms.Label();
             this.EmailAddresslabel = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.RecurringDepositradioButton = new System.Windows.Forms.RadioButton();
-            this.FixedDepositradioButton = new System.Windows.Forms.RadioButton();
+            this.BackToLoginlinkLabel = new System.Windows.Forms.LinkLabel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.PictureBox = new System.Windows.Forms.PictureBox();
+            this.FileChooseButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.CurrentradioButton = new System.Windows.Forms.RadioButton();
             this.SavingradioButton = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.RegistrationBackbutton = new System.Windows.Forms.Button();
             this.Submitbutton = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.RestoreDownIcon = new System.Windows.Forms.PictureBox();
+            this.maxIcon = new System.Windows.Forms.PictureBox();
+            this.minIcon = new System.Windows.Forms.PictureBox();
+            this.cerraricon = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.Controls.Add(this.panel11);
+            this.panel1.Controls.Add(this.panel10);
+            this.panel1.Controls.Add(this.panel9);
+            this.panel1.Controls.Add(this.panel8);
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel1.Location = new System.Drawing.Point(12, 26);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1516, 116);
+            this.panel1.Size = new System.Drawing.Size(1516, 104);
             this.panel1.TabIndex = 0;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel11.Location = new System.Drawing.Point(1511, 7);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(2, 94);
+            this.panel11.TabIndex = 47;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel10.Location = new System.Drawing.Point(3, 7);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(2, 94);
+            this.panel10.TabIndex = 46;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel9.Location = new System.Drawing.Point(6, 99);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1510, 2);
+            this.panel9.TabIndex = 45;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel8.Location = new System.Drawing.Point(3, 4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1510, 2);
+            this.panel8.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel6.Location = new System.Drawing.Point(3, 127);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(752, 2);
+            this.panel6.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Elephant", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(550, 34);
+            this.label1.Location = new System.Drawing.Point(550, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(444, 55);
             this.label1.TabIndex = 0;
@@ -121,9 +186,9 @@ namespace Bank
             this.panel2.Controls.Add(this.Yearlabel);
             this.panel2.Controls.Add(this.MonthcomboBox);
             this.panel2.Controls.Add(this.Monthlabel);
-            this.panel2.Controls.Add(this.YearcomboBox);
             this.panel2.Controls.Add(this.Datelabel);
             this.panel2.Controls.Add(this.OtherradioButton);
+            this.panel2.Controls.Add(this.YearcomboBox);
             this.panel2.Controls.Add(this.FemaleradioButton);
             this.panel2.Controls.Add(this.DatecomboBox);
             this.panel2.Controls.Add(this.MaleradioButton);
@@ -136,9 +201,9 @@ namespace Bank
             this.panel2.Controls.Add(this.lastnamelabel);
             this.panel2.Controls.Add(this.firstnamelabel);
             this.panel2.Controls.Add(this.Usernamelabel);
-            this.panel2.Location = new System.Drawing.Point(12, 134);
+            this.panel2.Location = new System.Drawing.Point(12, 136);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(756, 325);
+            this.panel2.Size = new System.Drawing.Size(762, 330);
             this.panel2.TabIndex = 1;
             // 
             // Yearlabel
@@ -146,7 +211,7 @@ namespace Bank
             this.Yearlabel.AutoSize = true;
             this.Yearlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Yearlabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.Yearlabel.Location = new System.Drawing.Point(254, 247);
+            this.Yearlabel.Location = new System.Drawing.Point(570, 252);
             this.Yearlabel.Name = "Yearlabel";
             this.Yearlabel.Size = new System.Drawing.Size(47, 20);
             this.Yearlabel.TabIndex = 40;
@@ -155,6 +220,7 @@ namespace Bank
             // MonthcomboBox
             // 
             this.MonthcomboBox.BackColor = System.Drawing.Color.Wheat;
+            this.MonthcomboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MonthcomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MonthcomboBox.ForeColor = System.Drawing.Color.Black;
             this.MonthcomboBox.FormattingEnabled = true;
@@ -182,7 +248,7 @@ namespace Bank
             "11",
             "",
             "12"});
-            this.MonthcomboBox.Location = new System.Drawing.Point(466, 246);
+            this.MonthcomboBox.Location = new System.Drawing.Point(475, 246);
             this.MonthcomboBox.Name = "MonthcomboBox";
             this.MonthcomboBox.Size = new System.Drawing.Size(79, 26);
             this.MonthcomboBox.TabIndex = 38;
@@ -192,15 +258,41 @@ namespace Bank
             this.Monthlabel.AutoSize = true;
             this.Monthlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Monthlabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.Monthlabel.Location = new System.Drawing.Point(400, 247);
+            this.Monthlabel.Location = new System.Drawing.Point(405, 249);
             this.Monthlabel.Name = "Monthlabel";
             this.Monthlabel.Size = new System.Drawing.Size(60, 20);
             this.Monthlabel.TabIndex = 37;
             this.Monthlabel.Text = "Month";
             // 
+            // Datelabel
+            // 
+            this.Datelabel.AutoSize = true;
+            this.Datelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Datelabel.ForeColor = System.Drawing.Color.DarkOrange;
+            this.Datelabel.Location = new System.Drawing.Point(256, 248);
+            this.Datelabel.Name = "Datelabel";
+            this.Datelabel.Size = new System.Drawing.Size(49, 20);
+            this.Datelabel.TabIndex = 36;
+            this.Datelabel.Text = "Date";
+            // 
+            // OtherradioButton
+            // 
+            this.OtherradioButton.AutoSize = true;
+            this.OtherradioButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.OtherradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OtherradioButton.ForeColor = System.Drawing.Color.DarkOrange;
+            this.OtherradioButton.Location = new System.Drawing.Point(622, 293);
+            this.OtherradioButton.Name = "OtherradioButton";
+            this.OtherradioButton.Size = new System.Drawing.Size(77, 24);
+            this.OtherradioButton.TabIndex = 32;
+            this.OtherradioButton.TabStop = true;
+            this.OtherradioButton.Text = "Other";
+            this.OtherradioButton.UseVisualStyleBackColor = true;
+            // 
             // YearcomboBox
             // 
             this.YearcomboBox.BackColor = System.Drawing.Color.Wheat;
+            this.YearcomboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.YearcomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.YearcomboBox.ForeColor = System.Drawing.Color.Black;
             this.YearcomboBox.FormattingEnabled = true;
@@ -438,38 +530,15 @@ namespace Bank
             "2020",
             "",
             "2021"});
-            this.YearcomboBox.Location = new System.Drawing.Point(307, 244);
+            this.YearcomboBox.Location = new System.Drawing.Point(626, 249);
             this.YearcomboBox.Name = "YearcomboBox";
             this.YearcomboBox.Size = new System.Drawing.Size(81, 26);
             this.YearcomboBox.TabIndex = 39;
             // 
-            // Datelabel
-            // 
-            this.Datelabel.AutoSize = true;
-            this.Datelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Datelabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.Datelabel.Location = new System.Drawing.Point(569, 249);
-            this.Datelabel.Name = "Datelabel";
-            this.Datelabel.Size = new System.Drawing.Size(49, 20);
-            this.Datelabel.TabIndex = 36;
-            this.Datelabel.Text = "Date";
-            // 
-            // OtherradioButton
-            // 
-            this.OtherradioButton.AutoSize = true;
-            this.OtherradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OtherradioButton.ForeColor = System.Drawing.Color.DarkOrange;
-            this.OtherradioButton.Location = new System.Drawing.Point(622, 293);
-            this.OtherradioButton.Name = "OtherradioButton";
-            this.OtherradioButton.Size = new System.Drawing.Size(77, 24);
-            this.OtherradioButton.TabIndex = 32;
-            this.OtherradioButton.TabStop = true;
-            this.OtherradioButton.Text = "Other";
-            this.OtherradioButton.UseVisualStyleBackColor = true;
-            // 
             // FemaleradioButton
             // 
             this.FemaleradioButton.AutoSize = true;
+            this.FemaleradioButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FemaleradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FemaleradioButton.ForeColor = System.Drawing.Color.DarkOrange;
             this.FemaleradioButton.Location = new System.Drawing.Point(435, 293);
@@ -483,6 +552,7 @@ namespace Bank
             // DatecomboBox
             // 
             this.DatecomboBox.BackColor = System.Drawing.Color.Wheat;
+            this.DatecomboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DatecomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DatecomboBox.ForeColor = System.Drawing.Color.Black;
             this.DatecomboBox.FormattingEnabled = true;
@@ -546,7 +616,7 @@ namespace Bank
             "29",
             "",
             "30"});
-            this.DatecomboBox.Location = new System.Drawing.Point(624, 249);
+            this.DatecomboBox.Location = new System.Drawing.Point(315, 245);
             this.DatecomboBox.Name = "DatecomboBox";
             this.DatecomboBox.Size = new System.Drawing.Size(80, 26);
             this.DatecomboBox.TabIndex = 35;
@@ -554,6 +624,7 @@ namespace Bank
             // MaleradioButton
             // 
             this.MaleradioButton.AutoSize = true;
+            this.MaleradioButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MaleradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaleradioButton.ForeColor = System.Drawing.Color.DarkOrange;
             this.MaleradioButton.Location = new System.Drawing.Point(256, 291);
@@ -611,7 +682,7 @@ namespace Bank
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Elephant", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label2.Location = new System.Drawing.Point(250, 19);
+            this.label2.Location = new System.Drawing.Point(279, 3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(266, 37);
             this.label2.TabIndex = 10;
@@ -678,24 +749,22 @@ namespace Bank
             this.panel3.Controls.Add(this.OccupationcomboBox);
             this.panel3.Controls.Add(this.QualificationcomboBox);
             this.panel3.Controls.Add(this.IncomecomboBox);
-            this.panel3.Controls.Add(this.CategorycomboBox);
             this.panel3.Controls.Add(this.ReligioncomboBox);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.Qualificationlabe);
             this.panel3.Controls.Add(this.Occupationlabel);
             this.panel3.Controls.Add(this.Educationallabel);
             this.panel3.Controls.Add(this.Incomelabel);
-            this.panel3.Controls.Add(this.Categorylabel);
             this.panel3.Controls.Add(this.Religionlabel);
-            this.panel3.Location = new System.Drawing.Point(774, 134);
+            this.panel3.Location = new System.Drawing.Point(781, 136);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(754, 402);
+            this.panel3.Size = new System.Drawing.Size(747, 330);
             this.panel3.TabIndex = 18;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // OccupationcomboBox
             // 
             this.OccupationcomboBox.BackColor = System.Drawing.Color.Wheat;
+            this.OccupationcomboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OccupationcomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OccupationcomboBox.ForeColor = System.Drawing.Color.Black;
             this.OccupationcomboBox.FormattingEnabled = true;
@@ -711,7 +780,7 @@ namespace Bank
             "Retired",
             "",
             "Other"});
-            this.OccupationcomboBox.Location = new System.Drawing.Point(217, 343);
+            this.OccupationcomboBox.Location = new System.Drawing.Point(217, 283);
             this.OccupationcomboBox.Name = "OccupationcomboBox";
             this.OccupationcomboBox.Size = new System.Drawing.Size(416, 28);
             this.OccupationcomboBox.TabIndex = 44;
@@ -719,6 +788,7 @@ namespace Bank
             // QualificationcomboBox
             // 
             this.QualificationcomboBox.BackColor = System.Drawing.Color.Wheat;
+            this.QualificationcomboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.QualificationcomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QualificationcomboBox.ForeColor = System.Drawing.Color.Black;
             this.QualificationcomboBox.FormattingEnabled = true;
@@ -730,7 +800,7 @@ namespace Bank
             "Post-Graduation",
             "",
             "Doctrate"});
-            this.QualificationcomboBox.Location = new System.Drawing.Point(217, 275);
+            this.QualificationcomboBox.Location = new System.Drawing.Point(217, 209);
             this.QualificationcomboBox.Name = "QualificationcomboBox";
             this.QualificationcomboBox.Size = new System.Drawing.Size(416, 28);
             this.QualificationcomboBox.TabIndex = 43;
@@ -738,6 +808,7 @@ namespace Bank
             // IncomecomboBox
             // 
             this.IncomecomboBox.BackColor = System.Drawing.Color.Wheat;
+            this.IncomecomboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IncomecomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IncomecomboBox.ForeColor = System.Drawing.Color.Black;
             this.IncomecomboBox.FormattingEnabled = true;
@@ -750,43 +821,23 @@ namespace Bank
             "",
             "<5,00,000",
             "",
-            "Uptp 10,00,000",
+            "Upto 10,00,000",
             "",
             "Above 10,00,000"});
-            this.IncomecomboBox.Location = new System.Drawing.Point(217, 211);
+            this.IncomecomboBox.Location = new System.Drawing.Point(217, 132);
             this.IncomecomboBox.Name = "IncomecomboBox";
             this.IncomecomboBox.Size = new System.Drawing.Size(416, 28);
             this.IncomecomboBox.TabIndex = 42;
             // 
-            // CategorycomboBox
-            // 
-            this.CategorycomboBox.BackColor = System.Drawing.Color.Wheat;
-            this.CategorycomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CategorycomboBox.ForeColor = System.Drawing.Color.Black;
-            this.CategorycomboBox.FormattingEnabled = true;
-            this.CategorycomboBox.Items.AddRange(new object[] {
-            "General",
-            "",
-            "OBC",
-            "",
-            "SC",
-            "",
-            "ST",
-            "",
-            "Other"});
-            this.CategorycomboBox.Location = new System.Drawing.Point(217, 149);
-            this.CategorycomboBox.Name = "CategorycomboBox";
-            this.CategorycomboBox.Size = new System.Drawing.Size(416, 28);
-            this.CategorycomboBox.TabIndex = 41;
-            // 
             // ReligioncomboBox
             // 
             this.ReligioncomboBox.BackColor = System.Drawing.Color.Wheat;
+            this.ReligioncomboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ReligioncomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReligioncomboBox.ForeColor = System.Drawing.Color.Black;
             this.ReligioncomboBox.FormattingEnabled = true;
             this.ReligioncomboBox.Items.AddRange(new object[] {
-            "Muslim",
+            "Islam",
             "",
             "Hindu",
             "",
@@ -795,9 +846,9 @@ namespace Bank
             "Christian",
             "",
             "Other"});
-            this.ReligioncomboBox.Location = new System.Drawing.Point(217, 81);
+            this.ReligioncomboBox.Location = new System.Drawing.Point(216, 58);
             this.ReligioncomboBox.Name = "ReligioncomboBox";
-            this.ReligioncomboBox.Size = new System.Drawing.Size(416, 28);
+            this.ReligioncomboBox.Size = new System.Drawing.Size(417, 28);
             this.ReligioncomboBox.TabIndex = 40;
             // 
             // label3
@@ -805,7 +856,7 @@ namespace Bank
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Elephant", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label3.Location = new System.Drawing.Point(250, 19);
+            this.label3.Location = new System.Drawing.Point(252, 3);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(277, 37);
             this.label3.TabIndex = 10;
@@ -816,7 +867,7 @@ namespace Bank
             this.Qualificationlabe.AutoSize = true;
             this.Qualificationlabe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Qualificationlabe.ForeColor = System.Drawing.Color.DarkOrange;
-            this.Qualificationlabe.Location = new System.Drawing.Point(44, 274);
+            this.Qualificationlabe.Location = new System.Drawing.Point(44, 208);
             this.Qualificationlabe.Name = "Qualificationlabe";
             this.Qualificationlabe.Size = new System.Drawing.Size(157, 25);
             this.Qualificationlabe.TabIndex = 8;
@@ -827,7 +878,7 @@ namespace Bank
             this.Occupationlabel.AutoSize = true;
             this.Occupationlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Occupationlabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.Occupationlabel.Location = new System.Drawing.Point(60, 342);
+            this.Occupationlabel.Location = new System.Drawing.Point(60, 282);
             this.Occupationlabel.Name = "Occupationlabel";
             this.Occupationlabel.Size = new System.Drawing.Size(141, 25);
             this.Occupationlabel.TabIndex = 4;
@@ -838,7 +889,7 @@ namespace Bank
             this.Educationallabel.AutoSize = true;
             this.Educationallabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Educationallabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.Educationallabel.Location = new System.Drawing.Point(44, 249);
+            this.Educationallabel.Location = new System.Drawing.Point(44, 183);
             this.Educationallabel.Name = "Educationallabel";
             this.Educationallabel.Size = new System.Drawing.Size(125, 25);
             this.Educationallabel.TabIndex = 3;
@@ -849,29 +900,18 @@ namespace Bank
             this.Incomelabel.AutoSize = true;
             this.Incomelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Incomelabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.Incomelabel.Location = new System.Drawing.Point(100, 205);
+            this.Incomelabel.Location = new System.Drawing.Point(100, 126);
             this.Incomelabel.Name = "Incomelabel";
             this.Incomelabel.Size = new System.Drawing.Size(101, 25);
             this.Incomelabel.TabIndex = 2;
             this.Incomelabel.Text = "Income : ";
-            // 
-            // Categorylabel
-            // 
-            this.Categorylabel.AutoSize = true;
-            this.Categorylabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Categorylabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.Categorylabel.Location = new System.Drawing.Point(82, 148);
-            this.Categorylabel.Name = "Categorylabel";
-            this.Categorylabel.Size = new System.Drawing.Size(119, 25);
-            this.Categorylabel.TabIndex = 1;
-            this.Categorylabel.Text = "Category : ";
             // 
             // Religionlabel
             // 
             this.Religionlabel.AutoSize = true;
             this.Religionlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Religionlabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.Religionlabel.Location = new System.Drawing.Point(93, 81);
+            this.Religionlabel.Location = new System.Drawing.Point(92, 58);
             this.Religionlabel.Name = "Religionlabel";
             this.Religionlabel.Size = new System.Drawing.Size(108, 25);
             this.Religionlabel.TabIndex = 0;
@@ -897,18 +937,19 @@ namespace Bank
             this.panel4.Controls.Add(this.MaritalStatuslabel);
             this.panel4.Controls.Add(this.EmailAddresslabel);
             this.panel4.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.panel4.Location = new System.Drawing.Point(12, 465);
+            this.panel4.Location = new System.Drawing.Point(12, 472);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(756, 373);
+            this.panel4.Size = new System.Drawing.Size(763, 366);
             this.panel4.TabIndex = 19;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // UnmarriedradioButton
             // 
             this.UnmarriedradioButton.AutoSize = true;
+            this.UnmarriedradioButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UnmarriedradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnmarriedradioButton.ForeColor = System.Drawing.Color.DarkOrange;
-            this.UnmarriedradioButton.Location = new System.Drawing.Point(436, 62);
+            this.UnmarriedradioButton.Location = new System.Drawing.Point(436, 57);
             this.UnmarriedradioButton.Name = "UnmarriedradioButton";
             this.UnmarriedradioButton.Size = new System.Drawing.Size(117, 24);
             this.UnmarriedradioButton.TabIndex = 58;
@@ -919,9 +960,10 @@ namespace Bank
             // MarriedradioButton
             // 
             this.MarriedradioButton.AutoSize = true;
+            this.MarriedradioButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MarriedradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MarriedradioButton.ForeColor = System.Drawing.Color.DarkOrange;
-            this.MarriedradioButton.Location = new System.Drawing.Point(276, 62);
+            this.MarriedradioButton.Location = new System.Drawing.Point(276, 57);
             this.MarriedradioButton.Name = "MarriedradioButton";
             this.MarriedradioButton.Size = new System.Drawing.Size(94, 24);
             this.MarriedradioButton.TabIndex = 57;
@@ -933,9 +975,10 @@ namespace Bank
             // 
             this.ShowRememberPasswordcheckBox.AutoSize = true;
             this.ShowRememberPasswordcheckBox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ShowRememberPasswordcheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ShowRememberPasswordcheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowRememberPasswordcheckBox.ForeColor = System.Drawing.Color.DarkOrange;
-            this.ShowRememberPasswordcheckBox.Location = new System.Drawing.Point(258, 346);
+            this.ShowRememberPasswordcheckBox.Location = new System.Drawing.Point(258, 336);
             this.ShowRememberPasswordcheckBox.Name = "ShowRememberPasswordcheckBox";
             this.ShowRememberPasswordcheckBox.Size = new System.Drawing.Size(152, 22);
             this.ShowRememberPasswordcheckBox.TabIndex = 56;
@@ -965,7 +1008,7 @@ namespace Bank
             this.PasswordtextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PasswordtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordtextBox.ForeColor = System.Drawing.Color.Black;
-            this.PasswordtextBox.Location = new System.Drawing.Point(257, 257);
+            this.PasswordtextBox.Location = new System.Drawing.Point(257, 250);
             this.PasswordtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PasswordtextBox.Name = "PasswordtextBox";
             this.PasswordtextBox.Size = new System.Drawing.Size(447, 34);
@@ -979,7 +1022,7 @@ namespace Bank
             this.CountrytextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CountrytextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CountrytextBox.ForeColor = System.Drawing.Color.Black;
-            this.CountrytextBox.Location = new System.Drawing.Point(257, 208);
+            this.CountrytextBox.Location = new System.Drawing.Point(257, 201);
             this.CountrytextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CountrytextBox.Name = "CountrytextBox";
             this.CountrytextBox.Size = new System.Drawing.Size(447, 34);
@@ -993,7 +1036,7 @@ namespace Bank
             this.CitytextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CitytextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CitytextBox.ForeColor = System.Drawing.Color.Black;
-            this.CitytextBox.Location = new System.Drawing.Point(257, 156);
+            this.CitytextBox.Location = new System.Drawing.Point(257, 149);
             this.CitytextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CitytextBox.Name = "CitytextBox";
             this.CitytextBox.Size = new System.Drawing.Size(447, 34);
@@ -1007,7 +1050,7 @@ namespace Bank
             this.AddresstextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AddresstextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddresstextBox.ForeColor = System.Drawing.Color.Black;
-            this.AddresstextBox.Location = new System.Drawing.Point(257, 105);
+            this.AddresstextBox.Location = new System.Drawing.Point(257, 98);
             this.AddresstextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddresstextBox.Name = "AddresstextBox";
             this.AddresstextBox.Size = new System.Drawing.Size(447, 34);
@@ -1021,7 +1064,7 @@ namespace Bank
             this.ConfirmPasswordtextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ConfirmPasswordtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmPasswordtextBox.ForeColor = System.Drawing.Color.Black;
-            this.ConfirmPasswordtextBox.Location = new System.Drawing.Point(257, 307);
+            this.ConfirmPasswordtextBox.Location = new System.Drawing.Point(257, 300);
             this.ConfirmPasswordtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ConfirmPasswordtextBox.Name = "ConfirmPasswordtextBox";
             this.ConfirmPasswordtextBox.Size = new System.Drawing.Size(447, 34);
@@ -1108,50 +1151,125 @@ namespace Bank
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.Desktop;
-            this.panel5.Controls.Add(this.RecurringDepositradioButton);
-            this.panel5.Controls.Add(this.FixedDepositradioButton);
+            this.panel5.Controls.Add(this.BackToLoginlinkLabel);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.PictureBox);
+            this.panel5.Controls.Add(this.FileChooseButton);
             this.panel5.Controls.Add(this.CurrentradioButton);
             this.panel5.Controls.Add(this.SavingradioButton);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.RegistrationBackbutton);
             this.panel5.Controls.Add(this.Submitbutton);
-            this.panel5.Location = new System.Drawing.Point(774, 542);
+            this.panel5.Location = new System.Drawing.Point(781, 472);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(754, 296);
+            this.panel5.Size = new System.Drawing.Size(747, 366);
             this.panel5.TabIndex = 20;
             // 
-            // RecurringDepositradioButton
+            // BackToLoginlinkLabel
             // 
-            this.RecurringDepositradioButton.AutoSize = true;
-            this.RecurringDepositradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RecurringDepositradioButton.ForeColor = System.Drawing.Color.DarkOrange;
-            this.RecurringDepositradioButton.Location = new System.Drawing.Point(267, 169);
-            this.RecurringDepositradioButton.Name = "RecurringDepositradioButton";
-            this.RecurringDepositradioButton.Size = new System.Drawing.Size(257, 24);
-            this.RecurringDepositradioButton.TabIndex = 58;
-            this.RecurringDepositradioButton.TabStop = true;
-            this.RecurringDepositradioButton.Text = "Recurring Deposit Account";
-            this.RecurringDepositradioButton.UseVisualStyleBackColor = true;
+            this.BackToLoginlinkLabel.ActiveLinkColor = System.Drawing.Color.DarkOrange;
+            this.BackToLoginlinkLabel.AutoSize = true;
+            this.BackToLoginlinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackToLoginlinkLabel.LinkColor = System.Drawing.Color.DeepSkyBlue;
+            this.BackToLoginlinkLabel.Location = new System.Drawing.Point(603, 323);
+            this.BackToLoginlinkLabel.Name = "BackToLoginlinkLabel";
+            this.BackToLoginlinkLabel.Size = new System.Drawing.Size(57, 24);
+            this.BackToLoginlinkLabel.TabIndex = 63;
+            this.BackToLoginlinkLabel.TabStop = true;
+            this.BackToLoginlinkLabel.Text = "Login";
+            this.BackToLoginlinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BackToLoginlinkLabel_LinkClicked);
             // 
-            // FixedDepositradioButton
+            // label5
             // 
-            this.FixedDepositradioButton.AutoSize = true;
-            this.FixedDepositradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FixedDepositradioButton.ForeColor = System.Drawing.Color.DarkOrange;
-            this.FixedDepositradioButton.Location = new System.Drawing.Point(275, 91);
-            this.FixedDepositradioButton.Name = "FixedDepositradioButton";
-            this.FixedDepositradioButton.Size = new System.Drawing.Size(220, 24);
-            this.FixedDepositradioButton.TabIndex = 57;
-            this.FixedDepositradioButton.TabStop = true;
-            this.FixedDepositradioButton.Text = "Fixed Deposit Account";
-            this.FixedDepositradioButton.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label5.Location = new System.Drawing.Point(371, 323);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(228, 24);
+            this.label5.TabIndex = 62;
+            this.label5.Text = "Already have an account?";
+            // 
+            // PictureBox
+            // 
+            this.PictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PictureBox.Location = new System.Drawing.Point(487, 9);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Size = new System.Drawing.Size(235, 218);
+            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox.TabIndex = 61;
+            this.PictureBox.TabStop = false;
+            // 
+            // FileChooseButton
+            // 
+            this.FileChooseButton.AllowToggling = false;
+            this.FileChooseButton.AnimationSpeed = 200;
+            this.FileChooseButton.AutoGenerateColors = false;
+            this.FileChooseButton.BackColor = System.Drawing.Color.Transparent;
+            this.FileChooseButton.BackColor1 = System.Drawing.Color.DarkOrange;
+            this.FileChooseButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FileChooseButton.BackgroundImage")));
+            this.FileChooseButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dot;
+            this.FileChooseButton.ButtonText = "Choose File";
+            this.FileChooseButton.ButtonTextMarginLeft = 0;
+            this.FileChooseButton.ColorContrastOnClick = 45;
+            this.FileChooseButton.ColorContrastOnHover = 45;
+            this.FileChooseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.FileChooseButton.CustomizableEdges = borderEdges1;
+            this.FileChooseButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.FileChooseButton.DisabledBorderColor = System.Drawing.Color.Empty;
+            this.FileChooseButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.FileChooseButton.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.FileChooseButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.FileChooseButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FileChooseButton.ForeColor = System.Drawing.Color.Black;
+            this.FileChooseButton.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.FileChooseButton.IconMarginLeft = 11;
+            this.FileChooseButton.IconPadding = 10;
+            this.FileChooseButton.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.FileChooseButton.IdleBorderColor = System.Drawing.Color.White;
+            this.FileChooseButton.IdleBorderRadius = 3;
+            this.FileChooseButton.IdleBorderThickness = 1;
+            this.FileChooseButton.IdleFillColor = System.Drawing.Color.DarkOrange;
+            this.FileChooseButton.IdleIconLeftImage = null;
+            this.FileChooseButton.IdleIconRightImage = null;
+            this.FileChooseButton.IndicateFocus = false;
+            this.FileChooseButton.Location = new System.Drawing.Point(288, 179);
+            this.FileChooseButton.Name = "FileChooseButton";
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties1.BorderRadius = 3;
+            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties1.ForeColor = System.Drawing.Color.White;
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.FileChooseButton.onHoverState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.BorderRadius = 3;
+            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.ForeColor = System.Drawing.Color.White;
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.FileChooseButton.OnPressedState = stateProperties2;
+            this.FileChooseButton.Size = new System.Drawing.Size(178, 48);
+            this.FileChooseButton.TabIndex = 60;
+            this.FileChooseButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.FileChooseButton.TextMarginLeft = 0;
+            this.FileChooseButton.UseDefaultRadiusAndThickness = true;
+            this.FileChooseButton.Click += new System.EventHandler(this.FileChooseButton_Click);
             // 
             // CurrentradioButton
             // 
             this.CurrentradioButton.AutoSize = true;
+            this.CurrentradioButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CurrentradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CurrentradioButton.ForeColor = System.Drawing.Color.DarkOrange;
-            this.CurrentradioButton.Location = new System.Drawing.Point(38, 169);
+            this.CurrentradioButton.Location = new System.Drawing.Point(22, 152);
             this.CurrentradioButton.Name = "CurrentradioButton";
             this.CurrentradioButton.Size = new System.Drawing.Size(167, 24);
             this.CurrentradioButton.TabIndex = 56;
@@ -1162,9 +1280,10 @@ namespace Bank
             // SavingradioButton
             // 
             this.SavingradioButton.AutoSize = true;
+            this.SavingradioButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SavingradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SavingradioButton.ForeColor = System.Drawing.Color.DarkOrange;
-            this.SavingradioButton.Location = new System.Drawing.Point(38, 84);
+            this.SavingradioButton.Location = new System.Drawing.Point(22, 97);
             this.SavingradioButton.Name = "SavingradioButton";
             this.SavingradioButton.Size = new System.Drawing.Size(160, 24);
             this.SavingradioButton.TabIndex = 55;
@@ -1177,35 +1296,92 @@ namespace Bank
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label4.Location = new System.Drawing.Point(33, 18);
+            this.label4.Location = new System.Drawing.Point(10, 32);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(165, 25);
             this.label4.TabIndex = 54;
             this.label4.Text = "Account Type : ";
             // 
-            // RegistrationBackbutton
-            // 
-            this.RegistrationBackbutton.BackColor = System.Drawing.Color.DarkOrange;
-            this.RegistrationBackbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegistrationBackbutton.Location = new System.Drawing.Point(619, 234);
-            this.RegistrationBackbutton.Name = "RegistrationBackbutton";
-            this.RegistrationBackbutton.Size = new System.Drawing.Size(103, 45);
-            this.RegistrationBackbutton.TabIndex = 53;
-            this.RegistrationBackbutton.Text = "Back";
-            this.RegistrationBackbutton.UseVisualStyleBackColor = false;
-            this.RegistrationBackbutton.Click += new System.EventHandler(this.RegistrationBackbutton_Click_1);
-            // 
             // Submitbutton
             // 
             this.Submitbutton.BackColor = System.Drawing.Color.DarkOrange;
+            this.Submitbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Submitbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Submitbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Submitbutton.Location = new System.Drawing.Point(460, 234);
+            this.Submitbutton.ForeColor = System.Drawing.Color.Black;
+            this.Submitbutton.Location = new System.Drawing.Point(375, 257);
             this.Submitbutton.Name = "Submitbutton";
-            this.Submitbutton.Size = new System.Drawing.Size(103, 45);
+            this.Submitbutton.Size = new System.Drawing.Size(347, 45);
             this.Submitbutton.TabIndex = 52;
-            this.Submitbutton.Text = "Submit";
+            this.Submitbutton.Text = "Create Account";
             this.Submitbutton.UseVisualStyleBackColor = false;
             this.Submitbutton.Click += new System.EventHandler(this.Submitbutton_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel7.Controls.Add(this.RestoreDownIcon);
+            this.panel7.Controls.Add(this.maxIcon);
+            this.panel7.Controls.Add(this.minIcon);
+            this.panel7.Controls.Add(this.cerraricon);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1540, 20);
+            this.panel7.TabIndex = 21;
+            // 
+            // RestoreDownIcon
+            // 
+            this.RestoreDownIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.RestoreDownIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RestoreDownIcon.Image = global::Bank.Properties.Resources.restore_down;
+            this.RestoreDownIcon.Location = new System.Drawing.Point(1475, 0);
+            this.RestoreDownIcon.Name = "RestoreDownIcon";
+            this.RestoreDownIcon.Size = new System.Drawing.Size(20, 20);
+            this.RestoreDownIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.RestoreDownIcon.TabIndex = 43;
+            this.RestoreDownIcon.TabStop = false;
+            this.RestoreDownIcon.Visible = false;
+            this.RestoreDownIcon.Click += new System.EventHandler(this.RestoreDownIcon_Click);
+            // 
+            // maxIcon
+            // 
+            this.maxIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.maxIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.maxIcon.Image = global::Bank.Properties.Resources._32763;
+            this.maxIcon.Location = new System.Drawing.Point(1475, 0);
+            this.maxIcon.Name = "maxIcon";
+            this.maxIcon.Size = new System.Drawing.Size(20, 20);
+            this.maxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.maxIcon.TabIndex = 44;
+            this.maxIcon.TabStop = false;
+            this.maxIcon.Click += new System.EventHandler(this.maxIcon_Click);
+            // 
+            // minIcon
+            // 
+            this.minIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.minIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minIcon.Image = global::Bank.Properties.Resources.minimize_window;
+            this.minIcon.Location = new System.Drawing.Point(1442, 0);
+            this.minIcon.Name = "minIcon";
+            this.minIcon.Size = new System.Drawing.Size(20, 20);
+            this.minIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.minIcon.TabIndex = 42;
+            this.minIcon.TabStop = false;
+            this.minIcon.Click += new System.EventHandler(this.minIcon_Click);
+            // 
+            // cerraricon
+            // 
+            this.cerraricon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cerraricon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cerraricon.Image = global::Bank.Properties.Resources._60994;
+            this.cerraricon.Location = new System.Drawing.Point(1508, 0);
+            this.cerraricon.Name = "cerraricon";
+            this.cerraricon.Size = new System.Drawing.Size(20, 20);
+            this.cerraricon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cerraricon.TabIndex = 41;
+            this.cerraricon.TabStop = false;
+            this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
             // 
             // RegisterForm
             // 
@@ -1213,12 +1389,13 @@ namespace Bank
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1540, 850);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterForm";
@@ -1233,6 +1410,12 @@ namespace Bank
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1254,7 +1437,6 @@ namespace Bank
         private System.Windows.Forms.Label Occupationlabel;
         private System.Windows.Forms.Label Educationallabel;
         private System.Windows.Forms.Label Incomelabel;
-        private System.Windows.Forms.Label Categorylabel;
         private System.Windows.Forms.Label Religionlabel;
         private System.Windows.Forms.TextBox LastNametextBox;
         private System.Windows.Forms.TextBox FirstNametextBox;
@@ -1271,7 +1453,6 @@ namespace Bank
         private System.Windows.Forms.ComboBox OccupationcomboBox;
         private System.Windows.Forms.ComboBox QualificationcomboBox;
         private System.Windows.Forms.ComboBox IncomecomboBox;
-        private System.Windows.Forms.ComboBox CategorycomboBox;
         private System.Windows.Forms.ComboBox ReligioncomboBox;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.RadioButton UnmarriedradioButton;
@@ -1291,12 +1472,23 @@ namespace Bank
         private System.Windows.Forms.Label MaritalStatuslabel;
         private System.Windows.Forms.Label EmailAddresslabel;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.RadioButton RecurringDepositradioButton;
-        private System.Windows.Forms.RadioButton FixedDepositradioButton;
         private System.Windows.Forms.RadioButton CurrentradioButton;
         private System.Windows.Forms.RadioButton SavingradioButton;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button RegistrationBackbutton;
         private System.Windows.Forms.Button Submitbutton;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.PictureBox RestoreDownIcon;
+        private System.Windows.Forms.PictureBox maxIcon;
+        private System.Windows.Forms.PictureBox minIcon;
+        private System.Windows.Forms.PictureBox cerraricon;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton FileChooseButton;
+        private System.Windows.Forms.PictureBox PictureBox;
+        private System.Windows.Forms.LinkLabel BackToLoginlinkLabel;
+        private System.Windows.Forms.Label label5;
     }
 }

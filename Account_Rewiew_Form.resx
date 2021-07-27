@@ -117,4 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="AccountDisabledButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHkAAAAtCAYAAACK5cSoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFHSURBVHhe7ZyxjcJQFARfKZRCBdfoxaSUQgNE1wDcY7WR
+        tQ2smS+NvN+ebHIP50vOe+bymvnd5xvOwfa87fPixDP74n6UoJ/t+nDivR0+wnlwYq0oQD9OrBUF6MeJ
+        taIA/TixVhSgHyfWigL048RaUYB+nFgrCtCPE2tFAfpxYq0oQD9OrBUF6MeJtaIA/TixVhSgHyfWigL0
+        48RaUYB+nFgrCtCPE2tFAfpxYq0oQD9OrBUF6MeJtaIA/TixVhSgHyfWigL048RaUYB+nFgrCtCPE2tF
+        AfpxYq0oQD9OrBUF6MeJtaIA/TixVhSgHyfWigL048RaUYB+nFgrCtCPE2tFAfpxYq0oQD9OrBUF6MeJ
+        taIA/TixVhSgHyfWigL048RaUYB+nFj/8XocP0I/2/XPifc2c90Xz6MEvXwCLz9OzDn3mfkHuD3PyJJy
+        +/4AAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

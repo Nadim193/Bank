@@ -14,6 +14,7 @@ namespace Bank
 {
     public partial class AccountVerifyForm : Form
     {
+        String RegEmail = RegisterForm.regEmail;
         public AccountVerifyForm()
         {
             InitializeComponent();
@@ -55,6 +56,36 @@ namespace Bank
         private void AccountVerifyForm_Load(object sender, EventArgs e)
         {
             RegistrationVerifytextBox.Select();
+        }
+
+        private void cerraricon_Click(object sender, EventArgs e)
+        {
+            CloseForm close = new CloseForm();
+            close.ShowDialog();
+        }
+
+        private void maxIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            RestoreDownIcon.Visible = true;
+            maxIcon.Visible = false;
+        }
+
+        private void RestoreDownIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            RestoreDownIcon.Visible = false;
+            maxIcon.Visible = true;
+        }
+
+        private void minIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            EmalAddresslabel.Text = RegEmail;
         }
     }
 }

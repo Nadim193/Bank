@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bank.Connection;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,17 +13,17 @@ namespace Bank
 {
     public partial class Deposit_Money : Form
     {
+        public static double depositmoney;
+
+        String LoginUser = LoginForm.user;
+        String LoginPassword = LoginForm.Password;
+
+        String RegUser = RegisterForm.regUserName;
+        String RegPassword = RegisterForm.RegPassword;
+
         public Deposit_Money()
         {
             InitializeComponent();
-        }
-
-        private void DepositBackbutton_Click(object sender, EventArgs e)
-        {
-            LoginForm form = new LoginForm();
-            this.Hide();
-            form.ShowDialog();
-            this.Close();
         }
 
         private void Deposit_Money_Load(object sender, EventArgs e)
@@ -32,20 +33,83 @@ namespace Bank
 
         private void DepositMoneybutton_Click(object sender, EventArgs e)
         {
-            if (DepositMoneyTextbox.Text == "")
+            try
             {
-                MessageBox.Show("Please Deposit Minimum Amount.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                DepositMoneyTextbox.Select();
-            }
-            else
-            {
+                depositmoney = Convert.ToDouble(DepositMoneyTextbox.Text);
 
-                LoginForm loginForm = new LoginForm();
-                MessageBox.Show("Successfully Deposit.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.None);
-                this.Hide();
-                loginForm.ShowDialog();
-                this.Close();
+                if (depositmoney == 0.0)
+                {
+                    MessageBox.Show("Please Deposit Minimum Amount.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    DepositMoneyTextbox.Select();
+                }
+                else
+                {
+                    string mySQL = string.Empty;
+                    DateTime dateTimeVariable = DateTime.Now;
+                    mySQL += "SELECT * FROM Customer_Details ";
+                    mySQL += "UPDATE [dbo].[Customer_Details]";
+                    mySQL += "SET [Total_Money] = '" + depositmoney + "', [Deposit_Money] = '" + depositmoney + "' , [DDate_Time] = '" + dateTimeVariable + "'";
+                    mySQL += "WHERE FUser_Name = '" + RegUser + "'";
+
+                    DataTable userData = ServerConnection.executeSQL(mySQL);
+
+                    if(userData.Rows.Count > 0)
+                    {
+                        string field = "Deposit";
+
+                        LoginForm login = new LoginForm();
+
+                        string mySQL1 = string.Empty;
+
+                        mySQL1 += @"INSERT INTO [dbo].[Transation_History]
+                                   ([TUser_name]
+                                   ,[Amount]
+                                   ,[Field]
+                                   ,[Date])
+                             VALUES
+                                   ('" + RegUser + "', '" + depositmoney + "', '" + field + "', '" + dateTimeVariable + "')";
+                        DataTable userData1 = ServerConnection.executeSQL(mySQL1);
+
+                        MessageBox.Show("Successfully Deposit.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.None);
+                        this.Hide();
+                        login.ShowDialog();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Depoist Fail.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
+            catch
+            {
+                MessageBox.Show("Enter Valide Amount.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.None);
+            }
+        }
+
+        private void cerraricon_Click(object sender, EventArgs e)
+        {
+            CloseForm close = new CloseForm();
+            close.ShowDialog();
+        }
+
+        private void maxIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            RestoreDownIcon.Visible = true;
+            maxIcon.Visible = false;
+        }
+
+        private void RestoreDownIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            RestoreDownIcon.Visible = false;
+            maxIcon.Visible = true;
+        }
+
+        private void minIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,15 +35,49 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942" />
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
+      <HintPath>C:\Users\Nadim\OneDrive\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>C:\Users\Nadim\OneDrive\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>C:\Users\Nadim\OneDrive\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>C:\Users\Nadim\OneDrive\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>C:\Users\Nadim\OneDrive\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>C:\Users\Nadim\OneDrive\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>C:\Users\Nadim\OneDrive\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>C:\Users\Nadim\OneDrive\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\Nadim\OneDrive\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604" />
+    <Reference Include="Guna.UI">
+      <HintPath>C:\Users\Nadim\OneDrive\Desktop\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
     <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d" />
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data, Version=8.0.24.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Messaging" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -69,11 +104,164 @@
     <Compile Include="Account_Rewiew_Form.Designer.cs">
       <DependentUpon>Account_Rewiew_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminAccountDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAccountDetailsForm.Designer.cs">
+      <DependentUpon>AdminAccountDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCheckBalanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCheckBalanceForm.Designer.cs">
+      <DependentUpon>AdminCheckBalanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCreatedNewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCreatedNewForm.Designer.cs">
+      <DependentUpon>AdminCreatedNewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCustomersListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCustomersListForm.Designer.cs">
+      <DependentUpon>AdminCustomersListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDepositForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDepositForm.Designer.cs">
+      <DependentUpon>AdminDepositForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHomeForm.Designer.cs">
+      <DependentUpon>AdminHomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSearchAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSearchAccountForm.Designer.cs">
+      <DependentUpon>AdminSearchAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminTransationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminTransationForm.Designer.cs">
+      <DependentUpon>AdminTransationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminTransferForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminTransferForm.Designer.cs">
+      <DependentUpon>AdminTransferForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUpdateAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUpdateAccountForm.Designer.cs">
+      <DependentUpon>AdminUpdateAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminWithdrawForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminWithdrawForm.Designer.cs">
+      <DependentUpon>AdminWithdrawForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlertForm.Designer.cs">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllTransationHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllTransationHistoryForm.Designer.cs">
+      <DependentUpon>AllTransationHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet9.xsd</DependentUpon>
     </Compile>
     <Compile Include="bank_systemDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -86,6 +274,12 @@
     <Compile Include="ChangePasswordForm.Designer.cs">
       <DependentUpon>ChangePasswordForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CloseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseForm.Designer.cs">
+      <DependentUpon>CloseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connection\ServerConnection.cs" />
     <Compile Include="DepositForm.cs">
       <SubType>Form</SubType>
@@ -93,17 +287,53 @@
     <Compile Include="DepositForm.Designer.cs">
       <DependentUpon>DepositForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DepositHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepositHistoryForm.Designer.cs">
+      <DependentUpon>DepositHistoryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Deposit_Money.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Deposit_Money.Designer.cs">
       <DependentUpon>Deposit_Money.cs</DependentUpon>
     </Compile>
+    <Compile Include="DisableSureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisableSureForm.Designer.cs">
+      <DependentUpon>DisableSureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisableVerifyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisableVerifyForm.Designer.cs">
+      <DependentUpon>DisableVerifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProfileForm.Designer.cs">
+      <DependentUpon>EditProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmailVerifyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmailVerifyForm.Designer.cs">
+      <DependentUpon>EmailVerifyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ForgetPassword.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ForgetPassword.Designer.cs">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Loding.cs">
       <SubType>Form</SubType>
@@ -130,6 +360,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +376,12 @@
     </Compile>
     <Compile Include="TransationForm.Designer.cs">
       <DependentUpon>TransationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransferHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferHistoryForm.Designer.cs">
+      <DependentUpon>TransferHistoryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="VerifyFrom.cs">
       <SubType>Form</SubType>
@@ -154,26 +395,92 @@
     <Compile Include="WithdrawFrom.Designer.cs">
       <DependentUpon>WithdrawFrom.cs</DependentUpon>
     </Compile>
+    <Compile Include="WithdrawHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WithdrawHistoryForm.Designer.cs">
+      <DependentUpon>WithdrawHistoryForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AccountVerifyForm.resx">
       <DependentUpon>AccountVerifyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Account_Rewiew_Form.resx">
       <DependentUpon>Account_Rewiew_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminAccountDetailsForm.resx">
+      <DependentUpon>AdminAccountDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCheckBalanceForm.resx">
+      <DependentUpon>AdminCheckBalanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCreatedNewForm.resx">
+      <DependentUpon>AdminCreatedNewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCustomersListForm.resx">
+      <DependentUpon>AdminCustomersListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDepositForm.resx">
+      <DependentUpon>AdminDepositForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHomeForm.resx">
+      <DependentUpon>AdminHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSearchAccountForm.resx">
+      <DependentUpon>AdminSearchAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminTransationForm.resx">
+      <DependentUpon>AdminTransationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminTransferForm.resx">
+      <DependentUpon>AdminTransferForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUpdateAccountForm.resx">
+      <DependentUpon>AdminUpdateAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminWithdrawForm.resx">
+      <DependentUpon>AdminWithdrawForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlertForm.resx">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllTransationHistoryForm.resx">
+      <DependentUpon>AllTransationHistoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangePasswordForm.resx">
       <DependentUpon>ChangePasswordForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CloseForm.resx">
+      <DependentUpon>CloseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DepositForm.resx">
       <DependentUpon>DepositForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepositHistoryForm.resx">
+      <DependentUpon>DepositHistoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Deposit_Money.resx">
       <DependentUpon>Deposit_Money.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DisableSureForm.resx">
+      <DependentUpon>DisableSureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisableVerifyForm.resx">
+      <DependentUpon>DisableVerifyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProfileForm.resx">
+      <DependentUpon>EditProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailVerifyForm.resx">
+      <DependentUpon>EmailVerifyForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForgetPassword.resx">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Loding.resx">
       <DependentUpon>Loding.cs</DependentUpon>
@@ -186,19 +493,17 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransationForm.resx">
       <DependentUpon>TransationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferHistoryForm.resx">
+      <DependentUpon>TransferHistoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VerifyFrom.resx">
       <DependentUpon>VerifyFrom.cs</DependentUpon>
@@ -206,6 +511,174 @@
     <EmbeddedResource Include="WithdrawFrom.resx">
       <DependentUpon>WithdrawFrom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WithdrawHistoryForm.resx">
+      <DependentUpon>WithdrawHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BankSystemDataBaseDataSet.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet.xss">
+      <DependentUpon>BankSystemDataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet1.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet1.xss">
+      <DependentUpon>BankSystemDataBaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet10.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet10.xss">
+      <DependentUpon>BankSystemDataBaseDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet11.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet11.xss">
+      <DependentUpon>BankSystemDataBaseDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet12.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet12.xss">
+      <DependentUpon>BankSystemDataBaseDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet13.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet13.xss">
+      <DependentUpon>BankSystemDataBaseDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet14.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet14.xss">
+      <DependentUpon>BankSystemDataBaseDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet2.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet2.xss">
+      <DependentUpon>BankSystemDataBaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet3.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet3.xss">
+      <DependentUpon>BankSystemDataBaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet4.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet4.xss">
+      <DependentUpon>BankSystemDataBaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet5.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet5.xss">
+      <DependentUpon>BankSystemDataBaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet6.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet6.xss">
+      <DependentUpon>BankSystemDataBaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet7.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet7.xss">
+      <DependentUpon>BankSystemDataBaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet8.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet8.xss">
+      <DependentUpon>BankSystemDataBaseDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet9.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet9.xss">
+      <DependentUpon>BankSystemDataBaseDataSet9.xsd</DependentUpon>
+    </None>
     <None Include="bank_systemDataSet.xsc">
       <DependentUpon>bank_systemDataSet.xsd</DependentUpon>
     </None>
@@ -228,6 +701,7 @@
     <None Include="LoginDataBaseDataSet.xss">
       <DependentUpon>LoginDataBaseDataSet.xsd</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -240,9 +714,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rsz_rsz_1pngtree-concept-banking-logo-png-image_712961-removebg-preview.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rsz_user.png" />
@@ -275,9 +746,6 @@
     <None Include="Resources\rsz_1804429.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1804429-removebg-preview %281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\rsz_1804429-removebg-preview.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -287,16 +755,7 @@
     <None Include="Resources\rsz_screenshot_2021-05-20_115509 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\rsz_os-x-exit-minimize-full-wallpaper1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\os-x-exit-minimize-full-wallpaper1-removebg-preview.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rsz_os-x-exit-minimize-full-wallpaper1-removebg-preview.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rsz_os-x-exit-minimize-full-wallpaper-removebg-preview.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rsz_screenshot_2021-05-20_115509 %282%29.png" />
@@ -338,9 +797,6 @@
     <None Include="Resources\Menu_icon_icon-icons.com_71858-removebg-preview.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1640161-200-removebg-preview.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\download-removebg-preview.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -351,9 +807,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot 2021-05-20 115509.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Screenshot 2021-05-20 115509-removebg-preview.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\69524.png" />
@@ -380,9 +833,6 @@
     <None Include="Resources\balance-check-1-974285.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Users-Find-User-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\239678.png" />
   </ItemGroup>
   <ItemGroup>
@@ -390,6 +840,186 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bank-account-banking-building-1-31235.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\640743.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32763.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restore-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\786263.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60994.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-menu-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_rrefresh-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_rsz_rrefresh-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1rsz_rsz_rrefresh-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_150256-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1640161-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_11640161-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_balance-check-1-974285.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_users-find-user-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_239678.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1024px-oojs_ui_icon_logout-ltrsvg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_107194-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_150256-200 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1640161-200 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_refund-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_2715526.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile-icon-png-20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2021-07-15_231152-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2021-07-15_235621-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2021-07-15_235621-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\481-4810872_hide-password-hide-show-password-icon-png-transparent-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\217-2178237_open-eye-vector-show-hide-password-icon-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\377-3773045_hide-and-show-password-icon-hd-png-download-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\active-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1640161-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25694-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deposit-icon-7-1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download__1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images__1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction_A-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personal-profile-icon-15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personal-profile-icon-151.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\source-change-password-icon-115632113989lfjrixlx8-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\225-2250632_svg-png-icon-android-notification-icon-png-transparent-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024px-OOjs_UI_icon_logOut-ltr.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\176-1766289_atm-withdrawal-svg-png-icon-free-download-atm-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction-history-2697523-2237715.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e004b52d489e36f38723b7aaa3d97a54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase-history-icon-transaction-history-icon-11553476408pgondxxib0-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\599354.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-customer-icon-146530250-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users-Find-User-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\original.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\original1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-a-day-balance-transfer-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-a-day-balance-transfer-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\609941.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024px-OOjs_UI_icon_logOut-ltr.svg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\599350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62107.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-android-web-search-engine-google-search-search-box-google-search-bar-blue-trademark-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\104-1043692_search-icon-transparent-white-search-icon-apple-png-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

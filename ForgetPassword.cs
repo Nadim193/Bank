@@ -14,7 +14,7 @@ namespace Bank
 {
     public partial class ForgetPassword : Form
     {
-        string User_name = VerifyFrom.to;
+        string User_name = VerifyFrom.verifyname;
         public ForgetPassword()
         {
             InitializeComponent();
@@ -41,36 +41,37 @@ namespace Bank
                 {
                     SqlConnection con = new SqlConnection("Data Source = LAPTOP-V4386OSC;" +
                 "Initial Catalog = BankSystemDataBase; Integrated Security = True");
-                    if (newpasswordTextBox.Text == confirmpasswordtextBox.Text)
-                    {
 
-                        string mySQL = string.Empty;
-                        mySQL += "SELECT Password FROM Parsonal ";
-                        mySQL += "UPDATE [dbo].[Parsonal] ";
-                        mySQL += "SET [Password] = '" + confirmpasswordtextBox.Text + "' ";
-
-                        DataTable userData = ServerConnection.executeSQL(mySQL);
-
-                        if (userData.Rows.Count > 0)
+                        if (newpasswordTextBox.Text == confirmpasswordtextBox.Text)
                         {
-                            MessageBox.Show("Save Successfully.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.None);
-                            LoginForm login = new LoginForm();
-                            this.Hide();
-                            login.ShowDialog();
-                            this.Close();
+                            string mySQL = string.Empty;
+                            mySQL += "SELECT Password FROM Parsonal ";
+                            mySQL += "UPDATE [dbo].[Parsonal] ";
+                            mySQL += "SET [Password] = '" + confirmpasswordtextBox.Text + "'" +
+                            " WHERE User_Name = '" + User_name + "'";
+
+                            DataTable userData = ServerConnection.executeSQL(mySQL);
+
+                            if (userData.Rows.Count > 0)
+                            {
+                                MessageBox.Show("Save Successfully.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.None);
+                                LoginForm login = new LoginForm();
+                                this.Hide();
+                                login.ShowDialog();
+                                this.Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Fill All The Requird Field.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
                         }
                         else
                         {
-                            MessageBox.Show("Fill All The Requird Field.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("The Password Do Not Match. Enter Same Password.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
-
-                    }
-                    else
-                    {
-                        MessageBox.Show("The Password Do Not Match. Enter Same Password.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    }
-                    con.Close();
+                        con.Close();
                 }
+                    
             }
             catch(Exception ex)
             {
@@ -84,6 +85,31 @@ namespace Bank
             this.Hide();
             verify.ShowDialog();
             this.Close();
+        }
+
+        private void cerraricon_Click(object sender, EventArgs e)
+        {
+            CloseForm close = new CloseForm();
+            close.ShowDialog();
+        }
+
+        private void RestoreDownIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            RestoreDownIcon.Visible = false;
+            maxIcon.Visible = true;
+        }
+
+        private void maxIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            RestoreDownIcon.Visible = true;
+            maxIcon.Visible = false;
+        }
+
+        private void minIcon_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

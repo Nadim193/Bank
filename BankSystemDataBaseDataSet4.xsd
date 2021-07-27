@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BankSystemDataBaseDataSet4" targetNamespace="http://tempuri.org/BankSystemDataBaseDataSet4.xsd" xmlns:mstns="http://tempuri.org/BankSystemDataBaseDataSet4.xsd" xmlns="http://tempuri.org/BankSystemDataBaseDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BankSystemDataBaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BankSystemDataBaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Bank.Properties.Settings.GlobalReference.Default.BankSystemDataBaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Transfer_History_ViewTableAdapter" GeneratorDataComponentClassName="Transfer_History_ViewTableAdapter" Name="Transfer_History_View" UserDataComponentName="Transfer_History_ViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BankSystemDataBaseConnectionString (Settings)" DbObjectName="BankSystemDataBase.dbo.Transfer_History_View" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Field, Amount, Date, TUser_name, Transfer_To FROM dbo.Transfer_History_View</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Field" DataSetColumn="Field" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="TUser_name" DataSetColumn="TUser_name" />
+              <Mapping SourceColumn="Transfer_To" DataSetColumn="Transfer_To" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BankSystemDataBaseDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="BankSystemDataBaseDataSet4" msprop:Generator_DataSetName="BankSystemDataBaseDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Transfer_History_View" msprop:Generator_RowEvHandlerName="Transfer_History_ViewRowChangeEventHandler" msprop:Generator_RowDeletedName="Transfer_History_ViewRowDeleted" msprop:Generator_RowDeletingName="Transfer_History_ViewRowDeleting" msprop:Generator_RowEvArgName="Transfer_History_ViewRowChangeEvent" msprop:Generator_TablePropName="Transfer_History_View" msprop:Generator_RowChangedName="Transfer_History_ViewRowChanged" msprop:Generator_RowChangingName="Transfer_History_ViewRowChanging" msprop:Generator_TableClassName="Transfer_History_ViewDataTable" msprop:Generator_RowClassName="Transfer_History_ViewRow" msprop:Generator_TableVarName="tableTransfer_History_View" msprop:Generator_UserTableName="Transfer_History_View">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Field" msprop:Generator_ColumnPropNameInRow="Field" msprop:Generator_ColumnPropNameInTable="FieldColumn" msprop:Generator_ColumnVarNameInTable="columnField" msprop:Generator_UserColumnName="Field" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TUser_name" msprop:Generator_ColumnPropNameInRow="TUser_name" msprop:Generator_ColumnPropNameInTable="TUser_nameColumn" msprop:Generator_ColumnVarNameInTable="columnTUser_name" msprop:Generator_UserColumnName="TUser_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Transfer_To" msprop:Generator_ColumnPropNameInRow="Transfer_To" msprop:Generator_ColumnPropNameInTable="Transfer_ToColumn" msprop:Generator_ColumnVarNameInTable="columnTransfer_To" msprop:Generator_UserColumnName="Transfer_To" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
