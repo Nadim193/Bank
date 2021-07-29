@@ -30,9 +30,9 @@ namespace Bank
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditProfileForm));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ProfileUpdateButton = new Guna.UI.WinForms.GunaButton();
             this.IncomeTextBox = new System.Windows.Forms.TextBox();
@@ -71,7 +71,6 @@ namespace Bank
             this.FirstNameTextBox = new System.Windows.Forms.TextBox();
             this.DOBpanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.DOBTextBox = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Genderpanel = new System.Windows.Forms.Panel();
             this.panel49 = new System.Windows.Forms.Panel();
@@ -101,6 +100,7 @@ namespace Bank
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.DOBDateTimePicker = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel1.SuspendLayout();
             this.Picturepanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).BeginInit();
@@ -201,11 +201,11 @@ namespace Bank
             this.ProfilePictureUpdateButton.ColorContrastOnClick = 45;
             this.ProfilePictureUpdateButton.ColorContrastOnHover = 45;
             this.ProfilePictureUpdateButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.ProfilePictureUpdateButton.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.ProfilePictureUpdateButton.CustomizableEdges = borderEdges2;
             this.ProfilePictureUpdateButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.ProfilePictureUpdateButton.DisabledBorderColor = System.Drawing.Color.Empty;
             this.ProfilePictureUpdateButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -226,24 +226,24 @@ namespace Bank
             this.ProfilePictureUpdateButton.IndicateFocus = true;
             this.ProfilePictureUpdateButton.Location = new System.Drawing.Point(809, 237);
             this.ProfilePictureUpdateButton.Name = "ProfilePictureUpdateButton";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties1.BorderRadius = 3;
-            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.Chocolate;
-            stateProperties1.ForeColor = System.Drawing.Color.White;
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.ProfilePictureUpdateButton.onHoverState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.Chocolate;
-            stateProperties2.BorderRadius = 3;
-            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties2.BorderThickness = 1;
-            stateProperties2.FillColor = System.Drawing.Color.Chocolate;
-            stateProperties2.ForeColor = System.Drawing.Color.White;
-            stateProperties2.IconLeftImage = null;
-            stateProperties2.IconRightImage = null;
-            this.ProfilePictureUpdateButton.OnPressedState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.BorderRadius = 3;
+            stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties3.BorderThickness = 1;
+            stateProperties3.FillColor = System.Drawing.Color.Chocolate;
+            stateProperties3.ForeColor = System.Drawing.Color.White;
+            stateProperties3.IconLeftImage = null;
+            stateProperties3.IconRightImage = null;
+            this.ProfilePictureUpdateButton.onHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Chocolate;
+            stateProperties4.BorderRadius = 3;
+            stateProperties4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties4.BorderThickness = 1;
+            stateProperties4.FillColor = System.Drawing.Color.Chocolate;
+            stateProperties4.ForeColor = System.Drawing.Color.White;
+            stateProperties4.IconLeftImage = null;
+            stateProperties4.IconRightImage = null;
+            this.ProfilePictureUpdateButton.OnPressedState = stateProperties4;
             this.ProfilePictureUpdateButton.Size = new System.Drawing.Size(137, 45);
             this.ProfilePictureUpdateButton.TabIndex = 125;
             this.ProfilePictureUpdateButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -593,8 +593,8 @@ namespace Bank
             // 
             this.DOBpanel.BackColor = System.Drawing.Color.Wheat;
             this.DOBpanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DOBpanel.Controls.Add(this.DOBDateTimePicker);
             this.DOBpanel.Controls.Add(this.panel2);
-            this.DOBpanel.Controls.Add(this.DOBTextBox);
             this.DOBpanel.Controls.Add(this.bunifuCustomLabel2);
             this.DOBpanel.Location = new System.Drawing.Point(14, 162);
             this.DOBpanel.Name = "DOBpanel";
@@ -610,16 +610,6 @@ namespace Bank
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(2, 55);
             this.panel2.TabIndex = 106;
-            // 
-            // DOBTextBox
-            // 
-            this.DOBTextBox.BackColor = System.Drawing.Color.Wheat;
-            this.DOBTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DOBTextBox.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DOBTextBox.Location = new System.Drawing.Point(191, 14);
-            this.DOBTextBox.Name = "DOBTextBox";
-            this.DOBTextBox.Size = new System.Drawing.Size(379, 27);
-            this.DOBTextBox.TabIndex = 126;
             // 
             // bunifuCustomLabel2
             // 
@@ -931,6 +921,28 @@ namespace Bank
             this.panel3.Size = new System.Drawing.Size(1207, 6);
             this.panel3.TabIndex = 1;
             // 
+            // DOBDateTimePicker
+            // 
+            this.DOBDateTimePicker.BaseColor = System.Drawing.Color.Wheat;
+            this.DOBDateTimePicker.BorderColor = System.Drawing.Color.Silver;
+            this.DOBDateTimePicker.CustomFormat = null;
+            this.DOBDateTimePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DOBDateTimePicker.FocusedColor = System.Drawing.Color.Wheat;
+            this.DOBDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DOBDateTimePicker.ForeColor = System.Drawing.Color.Black;
+            this.DOBDateTimePicker.Location = new System.Drawing.Point(191, 3);
+            this.DOBDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DOBDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DOBDateTimePicker.Name = "DOBDateTimePicker";
+            this.DOBDateTimePicker.OnHoverBaseColor = System.Drawing.Color.White;
+            this.DOBDateTimePicker.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
+            this.DOBDateTimePicker.OnHoverForeColor = System.Drawing.Color.Chocolate;
+            this.DOBDateTimePicker.OnPressedColor = System.Drawing.Color.Black;
+            this.DOBDateTimePicker.Size = new System.Drawing.Size(375, 47);
+            this.DOBDateTimePicker.TabIndex = 107;
+            this.DOBDateTimePicker.Text = "Wednesday, July 28, 2021";
+            this.DOBDateTimePicker.Value = new System.DateTime(2021, 7, 28, 15, 22, 5, 426);
+            // 
             // EditProfileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1035,7 +1047,6 @@ namespace Bank
         private System.Windows.Forms.Panel Picturepanel;
         private System.Windows.Forms.PictureBox ProfilePictureBox;
         private System.Windows.Forms.Label AccountTypelabel;
-        private System.Windows.Forms.TextBox DOBTextBox;
         private System.Windows.Forms.TextBox EmailTextBox;
         private System.Windows.Forms.TextBox GendeTextBox;
         private System.Windows.Forms.TextBox LastNameTextBox;
@@ -1051,5 +1062,6 @@ namespace Bank
         private System.Windows.Forms.TextBox OccupationTextBox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI.WinForms.GunaButton ProfileUpdateButton;
+        private Guna.UI.WinForms.GunaDateTimePicker DOBDateTimePicker;
     }
 }

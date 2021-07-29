@@ -83,5 +83,20 @@ namespace Bank
                 MessageBox.Show("This user name is not existed", "Message Box", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void WithdrawFirstNamepanel_Paint(object sender, PaintEventArgs e)
+        {
+            FirstNamelabel.Text = "";
+        }
+
+        private void WithdrawLastNamepanel_Paint(object sender, PaintEventArgs e)
+        {
+            LastNamelabel.Text = "";
+        }
+
+        private void WithdrawCurrentAmmountpanel_Paint(object sender, PaintEventArgs e)
+        {
+            CurrentBalancelabel.Text = "";
+        }
     }
 }

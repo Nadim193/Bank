@@ -121,5 +121,35 @@ namespace Bank
         {
             
         }
+
+        private void DepositdataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DepositdataGridView.DataSource = null;
+        }
+
+        private void WithdrawdataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            WithdrawdataGridView.DataSource = null;
+        }
+
+        private void TransferdataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            TransferdataGridView.DataSource = null;
+        }
+
+        private void DepositNumberpanel_Paint(object sender, PaintEventArgs e)
+        {
+            DepositNumberlabel.Text = "";
+        }
+
+        private void WithdrawNumberpanel_Paint(object sender, PaintEventArgs e)
+        {
+            WithdrawNumberlabel.Text = "";
+        }
+
+        private void Transfernumberpanel_Paint(object sender, PaintEventArgs e)
+        {
+            TransferNumberlabel.Text = "";
+        }
     }
 }

@@ -91,12 +91,21 @@ namespace Bank
 
             if (userData.Rows.Count > 0)
             {
-                TOParsonalFirstNamelabel.Text = GetFirstTOName();
-                TOParsonalLastNamelabel.Text = GetLastTOName();
-                TOParsonalAddresslabel.Text = GetAddressTOName();
-                Transationpanel.Enabled = true;
-                TransationAmountTextbox.Select();
-                ToTransationUserNamepanel.Enabled = false;
+                if(FromTransationUserNameTextbox.Text != ToTransationUserNameTextbox.Text)
+                {
+                    TOParsonalFirstNamelabel.Text = GetFirstTOName();
+                    TOParsonalLastNamelabel.Text = GetLastTOName();
+                    TOParsonalAddresslabel.Text = GetAddressTOName();
+                    Transationpanel.Enabled = true;
+                    TransationAmountTextbox.Select();
+                    ToTransationUserNamepanel.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("You can't transfer money To Your Account.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ToTransationUserNameTextbox.Clear();
+                    ToTransationUserNameTextbox.Select();
+                }
             }
             else
             {

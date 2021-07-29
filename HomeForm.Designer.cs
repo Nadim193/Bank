@@ -196,7 +196,7 @@ namespace Bank
             this.label8.ForeColor = System.Drawing.Color.ForestGreen;
             this.label8.Location = new System.Drawing.Point(1055, 100);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 22);
+            this.label8.Size = new System.Drawing.Size(67, 24);
             this.label8.TabIndex = 69;
             this.label8.Text = "Active";
             // 
@@ -213,7 +213,7 @@ namespace Bank
             this.panel8.Controls.Add(this.panel12);
             this.panel8.Location = new System.Drawing.Point(614, 482);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(587, 268);
+            this.panel8.Size = new System.Drawing.Size(581, 268);
             this.panel8.TabIndex = 68;
             // 
             // SeeAllHistorylinkLabel
@@ -222,7 +222,7 @@ namespace Bank
             this.SeeAllHistorylinkLabel.AutoSize = true;
             this.SeeAllHistorylinkLabel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SeeAllHistorylinkLabel.LinkColor = System.Drawing.Color.DarkOrange;
-            this.SeeAllHistorylinkLabel.Location = new System.Drawing.Point(503, 240);
+            this.SeeAllHistorylinkLabel.Location = new System.Drawing.Point(496, 240);
             this.SeeAllHistorylinkLabel.Name = "SeeAllHistorylinkLabel";
             this.SeeAllHistorylinkLabel.Size = new System.Drawing.Size(78, 17);
             this.SeeAllHistorylinkLabel.TabIndex = 71;
@@ -247,7 +247,7 @@ namespace Bank
             this.AllHTransationMoneylabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.AllHTransationMoneylabel.Location = new System.Drawing.Point(215, 5);
             this.AllHTransationMoneylabel.Name = "AllHTransationMoneylabel";
-            this.AllHTransationMoneylabel.Size = new System.Drawing.Size(68, 22);
+            this.AllHTransationMoneylabel.Size = new System.Drawing.Size(73, 24);
             this.AllHTransationMoneylabel.TabIndex = 68;
             this.AllHTransationMoneylabel.Text = "Money";
             // 
@@ -258,7 +258,7 @@ namespace Bank
             this.label23.ForeColor = System.Drawing.Color.DarkOrange;
             this.label23.Location = new System.Drawing.Point(3, 5);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(188, 22);
+            this.label23.Size = new System.Drawing.Size(195, 24);
             this.label23.TabIndex = 67;
             this.label23.Text = "> Transation Money";
             // 
@@ -279,7 +279,7 @@ namespace Bank
             this.label24.ForeColor = System.Drawing.Color.DarkOrange;
             this.label24.Location = new System.Drawing.Point(4, 5);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(175, 22);
+            this.label24.Size = new System.Drawing.Size(183, 24);
             this.label24.TabIndex = 63;
             this.label24.Text = "> Withdraw Money";
             // 
@@ -290,7 +290,7 @@ namespace Bank
             this.AllHWithdrawMoneylabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.AllHWithdrawMoneylabel.Location = new System.Drawing.Point(214, 5);
             this.AllHWithdrawMoneylabel.Name = "AllHWithdrawMoneylabel";
-            this.AllHWithdrawMoneylabel.Size = new System.Drawing.Size(68, 22);
+            this.AllHWithdrawMoneylabel.Size = new System.Drawing.Size(73, 24);
             this.AllHWithdrawMoneylabel.TabIndex = 64;
             this.AllHWithdrawMoneylabel.Text = "Money";
             // 
@@ -311,7 +311,7 @@ namespace Bank
             this.AllHDepositMoneylabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.AllHDepositMoneylabel.Location = new System.Drawing.Point(215, 4);
             this.AllHDepositMoneylabel.Name = "AllHDepositMoneylabel";
-            this.AllHDepositMoneylabel.Size = new System.Drawing.Size(68, 22);
+            this.AllHDepositMoneylabel.Size = new System.Drawing.Size(73, 24);
             this.AllHDepositMoneylabel.TabIndex = 65;
             this.AllHDepositMoneylabel.Text = "Money";
             // 
@@ -322,7 +322,7 @@ namespace Bank
             this.label26.ForeColor = System.Drawing.Color.DarkOrange;
             this.label26.Location = new System.Drawing.Point(4, 5);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(160, 22);
+            this.label26.Size = new System.Drawing.Size(167, 24);
             this.label26.TabIndex = 61;
             this.label26.Text = "> Deposit Money";
             // 
@@ -361,7 +361,7 @@ namespace Bank
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(585, 5);
+            this.panel12.Size = new System.Drawing.Size(579, 5);
             this.panel12.TabIndex = 2;
             // 
             // panel7
@@ -411,7 +411,7 @@ namespace Bank
             this.HDepositTimelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.HDepositTimelabel.Location = new System.Drawing.Point(213, 5);
             this.HDepositTimelabel.Name = "HDepositTimelabel";
-            this.HDepositTimelabel.Size = new System.Drawing.Size(54, 22);
+            this.HDepositTimelabel.Size = new System.Drawing.Size(57, 24);
             this.HDepositTimelabel.TabIndex = 68;
             this.HDepositTimelabel.Text = "Time";
             // 
@@ -422,7 +422,7 @@ namespace Bank
             this.label12.ForeColor = System.Drawing.Color.DarkOrange;
             this.label12.Location = new System.Drawing.Point(3, 5);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(146, 22);
+            this.label12.Size = new System.Drawing.Size(151, 24);
             this.label12.TabIndex = 67;
             this.label12.Text = "> Deposit Time";
             // 
@@ -454,7 +454,7 @@ namespace Bank
             this.label13.ForeColor = System.Drawing.Color.DarkOrange;
             this.label13.Location = new System.Drawing.Point(4, 5);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(160, 22);
+            this.label13.Size = new System.Drawing.Size(167, 24);
             this.label13.TabIndex = 63;
             this.label13.Text = "> Deposit Money";
             // 
@@ -465,7 +465,7 @@ namespace Bank
             this.HDepositMoneylabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.HDepositMoneylabel.Location = new System.Drawing.Point(212, 6);
             this.HDepositMoneylabel.Name = "HDepositMoneylabel";
-            this.HDepositMoneylabel.Size = new System.Drawing.Size(68, 22);
+            this.HDepositMoneylabel.Size = new System.Drawing.Size(73, 24);
             this.HDepositMoneylabel.TabIndex = 64;
             this.HDepositMoneylabel.Text = "Money";
             // 
@@ -494,7 +494,7 @@ namespace Bank
             this.label15.ForeColor = System.Drawing.Color.DarkOrange;
             this.label15.Location = new System.Drawing.Point(4, 5);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(100, 22);
+            this.label15.Size = new System.Drawing.Size(103, 24);
             this.label15.TabIndex = 61;
             this.label15.Text = "> Balance";
             // 
@@ -505,7 +505,7 @@ namespace Bank
             this.HDepositBalancelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.HDepositBalancelabel.Location = new System.Drawing.Point(213, 5);
             this.HDepositBalancelabel.Name = "HDepositBalancelabel";
-            this.HDepositBalancelabel.Size = new System.Drawing.Size(82, 22);
+            this.HDepositBalancelabel.Size = new System.Drawing.Size(85, 24);
             this.HDepositBalancelabel.TabIndex = 62;
             this.HDepositBalancelabel.Text = "Balance";
             // 
@@ -542,7 +542,7 @@ namespace Bank
             this.TransationHistorypanel.Controls.Add(this.panel11);
             this.TransationHistorypanel.Location = new System.Drawing.Point(614, 148);
             this.TransationHistorypanel.Name = "TransationHistorypanel";
-            this.TransationHistorypanel.Size = new System.Drawing.Size(587, 268);
+            this.TransationHistorypanel.Size = new System.Drawing.Size(582, 268);
             this.TransationHistorypanel.TabIndex = 66;
             // 
             // SeeAllTransationHlinkLabel
@@ -551,7 +551,7 @@ namespace Bank
             this.SeeAllTransationHlinkLabel.AutoSize = true;
             this.SeeAllTransationHlinkLabel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SeeAllTransationHlinkLabel.LinkColor = System.Drawing.Color.DarkOrange;
-            this.SeeAllTransationHlinkLabel.Location = new System.Drawing.Point(503, 244);
+            this.SeeAllTransationHlinkLabel.Location = new System.Drawing.Point(497, 244);
             this.SeeAllTransationHlinkLabel.Name = "SeeAllTransationHlinkLabel";
             this.SeeAllTransationHlinkLabel.Size = new System.Drawing.Size(78, 17);
             this.SeeAllTransationHlinkLabel.TabIndex = 71;
@@ -576,7 +576,7 @@ namespace Bank
             this.HTransationTolabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.HTransationTolabel.Location = new System.Drawing.Point(214, 5);
             this.HTransationTolabel.Name = "HTransationTolabel";
-            this.HTransationTolabel.Size = new System.Drawing.Size(109, 22);
+            this.HTransationTolabel.Size = new System.Drawing.Size(114, 24);
             this.HTransationTolabel.TabIndex = 68;
             this.HTransationTolabel.Text = "User Name";
             // 
@@ -587,7 +587,7 @@ namespace Bank
             this.label10.ForeColor = System.Drawing.Color.DarkOrange;
             this.label10.Location = new System.Drawing.Point(3, 5);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(154, 22);
+            this.label10.Size = new System.Drawing.Size(157, 24);
             this.label10.TabIndex = 67;
             this.label10.Text = "> Transation To";
             // 
@@ -608,7 +608,7 @@ namespace Bank
             this.HTransationTimelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.HTransationTimelabel.Location = new System.Drawing.Point(214, 5);
             this.HTransationTimelabel.Name = "HTransationTimelabel";
-            this.HTransationTimelabel.Size = new System.Drawing.Size(54, 22);
+            this.HTransationTimelabel.Size = new System.Drawing.Size(57, 24);
             this.HTransationTimelabel.TabIndex = 68;
             this.HTransationTimelabel.Text = "Time";
             // 
@@ -619,7 +619,7 @@ namespace Bank
             this.label17.ForeColor = System.Drawing.Color.DarkOrange;
             this.label17.Location = new System.Drawing.Point(3, 5);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(174, 22);
+            this.label17.Size = new System.Drawing.Size(179, 24);
             this.label17.TabIndex = 67;
             this.label17.Text = "> Transation Time";
             // 
@@ -640,7 +640,7 @@ namespace Bank
             this.label18.ForeColor = System.Drawing.Color.DarkOrange;
             this.label18.Location = new System.Drawing.Point(4, 5);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(188, 22);
+            this.label18.Size = new System.Drawing.Size(195, 24);
             this.label18.TabIndex = 63;
             this.label18.Text = "> Transation Money";
             // 
@@ -651,7 +651,7 @@ namespace Bank
             this.HTransationMoneylabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.HTransationMoneylabel.Location = new System.Drawing.Point(214, 5);
             this.HTransationMoneylabel.Name = "HTransationMoneylabel";
-            this.HTransationMoneylabel.Size = new System.Drawing.Size(68, 22);
+            this.HTransationMoneylabel.Size = new System.Drawing.Size(73, 24);
             this.HTransationMoneylabel.TabIndex = 64;
             this.HTransationMoneylabel.Text = "Money";
             // 
@@ -672,7 +672,7 @@ namespace Bank
             this.label20.ForeColor = System.Drawing.Color.DarkOrange;
             this.label20.Location = new System.Drawing.Point(4, 5);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(100, 22);
+            this.label20.Size = new System.Drawing.Size(103, 24);
             this.label20.TabIndex = 61;
             this.label20.Text = "> Balance";
             // 
@@ -683,7 +683,7 @@ namespace Bank
             this.HTransationBalancelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.HTransationBalancelabel.Location = new System.Drawing.Point(215, 5);
             this.HTransationBalancelabel.Name = "HTransationBalancelabel";
-            this.HTransationBalancelabel.Size = new System.Drawing.Size(82, 22);
+            this.HTransationBalancelabel.Size = new System.Drawing.Size(85, 24);
             this.HTransationBalancelabel.TabIndex = 62;
             this.HTransationBalancelabel.Text = "Balance";
             // 
@@ -722,7 +722,7 @@ namespace Bank
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(585, 5);
+            this.panel11.Size = new System.Drawing.Size(580, 5);
             this.panel11.TabIndex = 1;
             // 
             // panel4
@@ -772,7 +772,7 @@ namespace Bank
             this.HWithdrawTimelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.HWithdrawTimelabel.Location = new System.Drawing.Point(213, 6);
             this.HWithdrawTimelabel.Name = "HWithdrawTimelabel";
-            this.HWithdrawTimelabel.Size = new System.Drawing.Size(54, 22);
+            this.HWithdrawTimelabel.Size = new System.Drawing.Size(57, 24);
             this.HWithdrawTimelabel.TabIndex = 68;
             this.HWithdrawTimelabel.Text = "Time";
             // 
@@ -783,7 +783,7 @@ namespace Bank
             this.label11.ForeColor = System.Drawing.Color.DarkOrange;
             this.label11.Location = new System.Drawing.Point(3, 5);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(161, 22);
+            this.label11.Size = new System.Drawing.Size(167, 24);
             this.label11.TabIndex = 67;
             this.label11.Text = "> Withdraw Time";
             // 
@@ -804,7 +804,7 @@ namespace Bank
             this.label9.ForeColor = System.Drawing.Color.DarkOrange;
             this.label9.Location = new System.Drawing.Point(4, 5);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(175, 22);
+            this.label9.Size = new System.Drawing.Size(183, 24);
             this.label9.TabIndex = 63;
             this.label9.Text = "> Withdraw Money";
             // 
@@ -815,7 +815,7 @@ namespace Bank
             this.HWithdrawMoneylabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.HWithdrawMoneylabel.Location = new System.Drawing.Point(212, 5);
             this.HWithdrawMoneylabel.Name = "HWithdrawMoneylabel";
-            this.HWithdrawMoneylabel.Size = new System.Drawing.Size(68, 22);
+            this.HWithdrawMoneylabel.Size = new System.Drawing.Size(73, 24);
             this.HWithdrawMoneylabel.TabIndex = 64;
             this.HWithdrawMoneylabel.Text = "Money";
             // 
@@ -836,7 +836,7 @@ namespace Bank
             this.label7.ForeColor = System.Drawing.Color.DarkOrange;
             this.label7.Location = new System.Drawing.Point(4, 5);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 22);
+            this.label7.Size = new System.Drawing.Size(103, 24);
             this.label7.TabIndex = 61;
             this.label7.Text = "> Balance";
             // 
@@ -847,7 +847,7 @@ namespace Bank
             this.HWithdrawBanlacelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.HWithdrawBanlacelabel.Location = new System.Drawing.Point(213, 4);
             this.HWithdrawBanlacelabel.Name = "HWithdrawBanlacelabel";
-            this.HWithdrawBanlacelabel.Size = new System.Drawing.Size(82, 22);
+            this.HWithdrawBanlacelabel.Size = new System.Drawing.Size(85, 24);
             this.HWithdrawBanlacelabel.TabIndex = 62;
             this.HWithdrawBanlacelabel.Text = "Balance";
             // 

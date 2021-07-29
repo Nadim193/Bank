@@ -32,95 +32,99 @@ namespace Bank
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.AccountTypeComboBox = new Guna.UI.WinForms.GunaComboBox();
             this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.Submitbutton = new Guna.UI.WinForms.GunaButton();
             this.FileChooseButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.HidePasswordBox1 = new System.Windows.Forms.PictureBox();
+            this.ShowPasswordBox1 = new System.Windows.Forms.PictureBox();
+            this.ConfirmPasswordtextBox = new Guna.UI.WinForms.GunaTextBox();
             this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.HidePasswordBox = new System.Windows.Forms.PictureBox();
+            this.ShowPasswordBox = new System.Windows.Forms.PictureBox();
+            this.PasswordtextBox = new Guna.UI.WinForms.GunaTextBox();
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel33 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.UsernameTextbox = new Guna.UI.WinForms.GunaTextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.LastNamepanel = new System.Windows.Forms.Panel();
+            this.LastNametextBox = new Guna.UI.WinForms.GunaTextBox();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.Countrypanel = new System.Windows.Forms.Panel();
+            this.CountrytextBox = new Guna.UI.WinForms.GunaTextBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Incomepanel = new System.Windows.Forms.Panel();
+            this.IncomecomboBox = new Guna.UI.WinForms.GunaComboBox();
             this.bunifuCustomLabel13 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel63 = new System.Windows.Forms.Panel();
             this.FirstNamepanel = new System.Windows.Forms.Panel();
+            this.FirstNametextBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.panel50 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.FirstNameTextBox = new System.Windows.Forms.TextBox();
             this.Occupationpanel = new System.Windows.Forms.Panel();
+            this.OccupationcomboBox = new Guna.UI.WinForms.GunaComboBox();
             this.panel27 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.DOBpanel = new System.Windows.Forms.Panel();
+            this.DateTimePicker = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel4 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Genderpanel = new System.Windows.Forms.Panel();
+            this.OtherradioButton = new Guna.UI.WinForms.GunaRadioButton();
+            this.FemaleradioButton = new Guna.UI.WinForms.GunaRadioButton();
+            this.MaleradioButton = new Guna.UI.WinForms.GunaRadioButton();
             this.panel49 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.EQpanel = new System.Windows.Forms.Panel();
+            this.QualificationcomboBox = new Guna.UI.WinForms.GunaComboBox();
             this.panel28 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.Emailpanel = new System.Windows.Forms.Panel();
+            this.EmailAdressTxtbox = new Guna.UI.WinForms.GunaTextBox();
             this.panel32 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Religionpanel = new System.Windows.Forms.Panel();
+            this.ReligionTextBox = new Guna.UI.WinForms.GunaTextBox();
             this.panel29 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Maritalpanel = new System.Windows.Forms.Panel();
+            this.MarriedradioButton = new Guna.UI.WinForms.GunaRadioButton();
+            this.UnmarriedradioButton = new Guna.UI.WinForms.GunaRadioButton();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel47 = new System.Windows.Forms.Panel();
             this.Addresspanel = new System.Windows.Forms.Panel();
+            this.AddresstextBox = new Guna.UI.WinForms.GunaTextBox();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel46 = new System.Windows.Forms.Panel();
             this.CityPanel = new System.Windows.Forms.Panel();
+            this.CitytextBox = new Guna.UI.WinForms.GunaTextBox();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.PictureBox = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.UsernameTextbox = new Guna.UI.WinForms.GunaTextBox();
-            this.FirstNametextBox1 = new Guna.UI.WinForms.GunaTextBox();
-            this.LastNametextBox = new Guna.UI.WinForms.GunaTextBox();
-            this.EmailAdressTxtbox = new Guna.UI.WinForms.GunaTextBox();
-            this.AddresstextBox = new Guna.UI.WinForms.GunaTextBox();
-            this.PasswordtextBox = new Guna.UI.WinForms.GunaTextBox();
-            this.ConfirmPasswordtextBox = new Guna.UI.WinForms.GunaTextBox();
-            this.CitytextBox = new Guna.UI.WinForms.GunaTextBox();
-            this.CountrytextBox = new Guna.UI.WinForms.GunaTextBox();
-            this.ReligionTextBox = new Guna.UI.WinForms.GunaTextBox();
-            this.ShowPasswordBox = new System.Windows.Forms.PictureBox();
-            this.HidePasswordBox = new System.Windows.Forms.PictureBox();
-            this.ShowPasswordBox1 = new System.Windows.Forms.PictureBox();
-            this.HidePasswordBox1 = new System.Windows.Forms.PictureBox();
-            this.DateTimePicker = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.MaleradioButton = new Guna.UI.WinForms.GunaRadioButton();
-            this.FemaleradioButton = new Guna.UI.WinForms.GunaRadioButton();
-            this.OtherradioButton = new Guna.UI.WinForms.GunaRadioButton();
-            this.UnmarriedradioButton = new Guna.UI.WinForms.GunaRadioButton();
-            this.MarriedradioButton = new Guna.UI.WinForms.GunaRadioButton();
-            this.AccountTypeComboBox = new Guna.UI.WinForms.GunaComboBox();
-            this.IncomecomboBox = new Guna.UI.WinForms.GunaComboBox();
-            this.QualificationcomboBox = new Guna.UI.WinForms.GunaComboBox();
-            this.OccupationcomboBox = new Guna.UI.WinForms.GunaComboBox();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox1)).BeginInit();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox)).BeginInit();
             this.panel7.SuspendLayout();
             this.LastNamepanel.SuspendLayout();
             this.Countrypanel.SuspendLayout();
@@ -138,10 +142,6 @@ namespace Bank
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -198,6 +198,27 @@ namespace Bank
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(571, 55);
             this.panel14.TabIndex = 134;
+            // 
+            // AccountTypeComboBox
+            // 
+            this.AccountTypeComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.AccountTypeComboBox.BaseColor = System.Drawing.Color.Wheat;
+            this.AccountTypeComboBox.BorderColor = System.Drawing.Color.Wheat;
+            this.AccountTypeComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.AccountTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AccountTypeComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.AccountTypeComboBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AccountTypeComboBox.ForeColor = System.Drawing.Color.Black;
+            this.AccountTypeComboBox.FormattingEnabled = true;
+            this.AccountTypeComboBox.Items.AddRange(new object[] {
+            "Current Account",
+            "Saving Account"});
+            this.AccountTypeComboBox.Location = new System.Drawing.Point(191, 10);
+            this.AccountTypeComboBox.Name = "AccountTypeComboBox";
+            this.AccountTypeComboBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.AccountTypeComboBox.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.AccountTypeComboBox.Size = new System.Drawing.Size(375, 31);
+            this.AccountTypeComboBox.TabIndex = 112;
             // 
             // bunifuCustomLabel15
             // 
@@ -290,6 +311,49 @@ namespace Bank
             this.panel11.Size = new System.Drawing.Size(571, 55);
             this.panel11.TabIndex = 131;
             // 
+            // HidePasswordBox1
+            // 
+            this.HidePasswordBox1.BackColor = System.Drawing.Color.Wheat;
+            this.HidePasswordBox1.Image = global::Bank.Properties.Resources._377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview;
+            this.HidePasswordBox1.Location = new System.Drawing.Point(534, 12);
+            this.HidePasswordBox1.Name = "HidePasswordBox1";
+            this.HidePasswordBox1.Size = new System.Drawing.Size(27, 30);
+            this.HidePasswordBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.HidePasswordBox1.TabIndex = 137;
+            this.HidePasswordBox1.TabStop = false;
+            this.HidePasswordBox1.Visible = false;
+            this.HidePasswordBox1.Click += new System.EventHandler(this.HidePasswordBox1_Click);
+            // 
+            // ShowPasswordBox1
+            // 
+            this.ShowPasswordBox1.BackColor = System.Drawing.Color.Wheat;
+            this.ShowPasswordBox1.Image = global::Bank.Properties.Resources._481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview;
+            this.ShowPasswordBox1.Location = new System.Drawing.Point(534, 12);
+            this.ShowPasswordBox1.Name = "ShowPasswordBox1";
+            this.ShowPasswordBox1.Size = new System.Drawing.Size(27, 30);
+            this.ShowPasswordBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ShowPasswordBox1.TabIndex = 136;
+            this.ShowPasswordBox1.TabStop = false;
+            this.ShowPasswordBox1.Click += new System.EventHandler(this.ShowPasswordBox1_Click);
+            // 
+            // ConfirmPasswordtextBox
+            // 
+            this.ConfirmPasswordtextBox.BaseColor = System.Drawing.Color.Wheat;
+            this.ConfirmPasswordtextBox.BorderColor = System.Drawing.Color.Wheat;
+            this.ConfirmPasswordtextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ConfirmPasswordtextBox.FocusedBaseColor = System.Drawing.Color.White;
+            this.ConfirmPasswordtextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.ConfirmPasswordtextBox.FocusedForeColor = System.Drawing.Color.Black;
+            this.ConfirmPasswordtextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConfirmPasswordtextBox.ForeColor = System.Drawing.Color.Black;
+            this.ConfirmPasswordtextBox.Location = new System.Drawing.Point(191, 2);
+            this.ConfirmPasswordtextBox.Name = "ConfirmPasswordtextBox";
+            this.ConfirmPasswordtextBox.PasswordChar = '●';
+            this.ConfirmPasswordtextBox.SelectedText = "";
+            this.ConfirmPasswordtextBox.Size = new System.Drawing.Size(375, 47);
+            this.ConfirmPasswordtextBox.TabIndex = 135;
+            this.ConfirmPasswordtextBox.UseSystemPasswordChar = true;
+            // 
             // bunifuCustomLabel12
             // 
             this.bunifuCustomLabel12.AutoSize = true;
@@ -323,6 +387,50 @@ namespace Bank
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(571, 55);
             this.panel9.TabIndex = 130;
+            // 
+            // HidePasswordBox
+            // 
+            this.HidePasswordBox.BackColor = System.Drawing.Color.Wheat;
+            this.HidePasswordBox.Image = global::Bank.Properties.Resources._377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview;
+            this.HidePasswordBox.Location = new System.Drawing.Point(534, 13);
+            this.HidePasswordBox.Name = "HidePasswordBox";
+            this.HidePasswordBox.Size = new System.Drawing.Size(27, 30);
+            this.HidePasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.HidePasswordBox.TabIndex = 136;
+            this.HidePasswordBox.TabStop = false;
+            this.HidePasswordBox.Visible = false;
+            this.HidePasswordBox.Click += new System.EventHandler(this.HidePasswordBox_Click);
+            // 
+            // ShowPasswordBox
+            // 
+            this.ShowPasswordBox.BackColor = System.Drawing.Color.Wheat;
+            this.ShowPasswordBox.Image = global::Bank.Properties.Resources._481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview;
+            this.ShowPasswordBox.Location = new System.Drawing.Point(534, 13);
+            this.ShowPasswordBox.Name = "ShowPasswordBox";
+            this.ShowPasswordBox.Size = new System.Drawing.Size(27, 30);
+            this.ShowPasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ShowPasswordBox.TabIndex = 135;
+            this.ShowPasswordBox.TabStop = false;
+            this.ShowPasswordBox.Click += new System.EventHandler(this.ShowPasswordBox_Click);
+            // 
+            // PasswordtextBox
+            // 
+            this.PasswordtextBox.BaseColor = System.Drawing.Color.Wheat;
+            this.PasswordtextBox.BorderColor = System.Drawing.Color.Wheat;
+            this.PasswordtextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PasswordtextBox.FocusedBaseColor = System.Drawing.Color.White;
+            this.PasswordtextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.PasswordtextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.PasswordtextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordtextBox.ForeColor = System.Drawing.Color.Black;
+            this.PasswordtextBox.Location = new System.Drawing.Point(191, 4);
+            this.PasswordtextBox.Name = "PasswordtextBox";
+            this.PasswordtextBox.PasswordChar = '●';
+            this.PasswordtextBox.SelectedText = "";
+            this.PasswordtextBox.Size = new System.Drawing.Size(375, 47);
+            this.PasswordtextBox.TabIndex = 135;
+            this.PasswordtextBox.UseSystemPasswordChar = true;
+            this.PasswordtextBox.TextChanged += new System.EventHandler(this.PasswordTextBox_TextChanged);
             // 
             // bunifuCustomLabel11
             // 
@@ -366,6 +474,23 @@ namespace Bank
             this.panel7.Size = new System.Drawing.Size(571, 55);
             this.panel7.TabIndex = 129;
             // 
+            // UsernameTextbox
+            // 
+            this.UsernameTextbox.BaseColor = System.Drawing.Color.Wheat;
+            this.UsernameTextbox.BorderColor = System.Drawing.Color.Wheat;
+            this.UsernameTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.UsernameTextbox.FocusedBaseColor = System.Drawing.Color.White;
+            this.UsernameTextbox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.UsernameTextbox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.UsernameTextbox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameTextbox.ForeColor = System.Drawing.Color.Black;
+            this.UsernameTextbox.Location = new System.Drawing.Point(191, 3);
+            this.UsernameTextbox.Name = "UsernameTextbox";
+            this.UsernameTextbox.PasswordChar = '\0';
+            this.UsernameTextbox.SelectedText = "";
+            this.UsernameTextbox.Size = new System.Drawing.Size(375, 47);
+            this.UsernameTextbox.TabIndex = 128;
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Wheat;
@@ -408,6 +533,23 @@ namespace Bank
             this.LastNamepanel.Size = new System.Drawing.Size(571, 55);
             this.LastNamepanel.TabIndex = 128;
             // 
+            // LastNametextBox
+            // 
+            this.LastNametextBox.BaseColor = System.Drawing.Color.Wheat;
+            this.LastNametextBox.BorderColor = System.Drawing.Color.Wheat;
+            this.LastNametextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LastNametextBox.FocusedBaseColor = System.Drawing.Color.White;
+            this.LastNametextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.LastNametextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.LastNametextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastNametextBox.ForeColor = System.Drawing.Color.Black;
+            this.LastNametextBox.Location = new System.Drawing.Point(191, 3);
+            this.LastNametextBox.Name = "LastNametextBox";
+            this.LastNametextBox.PasswordChar = '\0';
+            this.LastNametextBox.SelectedText = "";
+            this.LastNametextBox.Size = new System.Drawing.Size(375, 47);
+            this.LastNametextBox.TabIndex = 135;
+            // 
             // bunifuCustomLabel9
             // 
             this.bunifuCustomLabel9.AutoSize = true;
@@ -440,6 +582,23 @@ namespace Bank
             this.Countrypanel.Size = new System.Drawing.Size(523, 55);
             this.Countrypanel.TabIndex = 122;
             // 
+            // CountrytextBox
+            // 
+            this.CountrytextBox.BaseColor = System.Drawing.Color.Wheat;
+            this.CountrytextBox.BorderColor = System.Drawing.Color.Wheat;
+            this.CountrytextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CountrytextBox.FocusedBaseColor = System.Drawing.Color.White;
+            this.CountrytextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.CountrytextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.CountrytextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CountrytextBox.ForeColor = System.Drawing.Color.Black;
+            this.CountrytextBox.Location = new System.Drawing.Point(281, 3);
+            this.CountrytextBox.Name = "CountrytextBox";
+            this.CountrytextBox.PasswordChar = '\0';
+            this.CountrytextBox.SelectedText = "";
+            this.CountrytextBox.Size = new System.Drawing.Size(235, 47);
+            this.CountrytextBox.TabIndex = 136;
+            // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Wheat;
@@ -471,6 +630,31 @@ namespace Bank
             this.Incomepanel.Name = "Incomepanel";
             this.Incomepanel.Size = new System.Drawing.Size(523, 55);
             this.Incomepanel.TabIndex = 124;
+            // 
+            // IncomecomboBox
+            // 
+            this.IncomecomboBox.BackColor = System.Drawing.Color.Transparent;
+            this.IncomecomboBox.BaseColor = System.Drawing.Color.Wheat;
+            this.IncomecomboBox.BorderColor = System.Drawing.Color.Wheat;
+            this.IncomecomboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.IncomecomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.IncomecomboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.IncomecomboBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncomecomboBox.ForeColor = System.Drawing.Color.Black;
+            this.IncomecomboBox.FormattingEnabled = true;
+            this.IncomecomboBox.Items.AddRange(new object[] {
+            "Null",
+            "<1,50,000",
+            "<2,50,000",
+            "<5,00,000",
+            "Upto 10,00,000",
+            "Above 10,00,000"});
+            this.IncomecomboBox.Location = new System.Drawing.Point(283, 11);
+            this.IncomecomboBox.Name = "IncomecomboBox";
+            this.IncomecomboBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.IncomecomboBox.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.IncomecomboBox.Size = new System.Drawing.Size(235, 31);
+            this.IncomecomboBox.TabIndex = 113;
             // 
             // bunifuCustomLabel13
             // 
@@ -505,6 +689,23 @@ namespace Bank
             this.FirstNamepanel.Size = new System.Drawing.Size(571, 55);
             this.FirstNamepanel.TabIndex = 115;
             this.FirstNamepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.FirstNamepanel_Paint);
+            // 
+            // FirstNametextBox1
+            // 
+            this.FirstNametextBox1.BaseColor = System.Drawing.Color.Wheat;
+            this.FirstNametextBox1.BorderColor = System.Drawing.Color.Wheat;
+            this.FirstNametextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.FirstNametextBox1.FocusedBaseColor = System.Drawing.Color.White;
+            this.FirstNametextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.FirstNametextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.FirstNametextBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNametextBox1.ForeColor = System.Drawing.Color.Black;
+            this.FirstNametextBox1.Location = new System.Drawing.Point(191, 3);
+            this.FirstNametextBox1.Name = "FirstNametextBox1";
+            this.FirstNametextBox1.PasswordChar = '\0';
+            this.FirstNametextBox1.SelectedText = "";
+            this.FirstNametextBox1.Size = new System.Drawing.Size(375, 47);
+            this.FirstNametextBox1.TabIndex = 129;
             // 
             // panel50
             // 
@@ -548,6 +749,31 @@ namespace Bank
             this.Occupationpanel.Size = new System.Drawing.Size(521, 55);
             this.Occupationpanel.TabIndex = 126;
             // 
+            // OccupationcomboBox
+            // 
+            this.OccupationcomboBox.BackColor = System.Drawing.Color.Transparent;
+            this.OccupationcomboBox.BaseColor = System.Drawing.Color.Wheat;
+            this.OccupationcomboBox.BorderColor = System.Drawing.Color.Wheat;
+            this.OccupationcomboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.OccupationcomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.OccupationcomboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.OccupationcomboBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OccupationcomboBox.ForeColor = System.Drawing.Color.Black;
+            this.OccupationcomboBox.FormattingEnabled = true;
+            this.OccupationcomboBox.Items.AddRange(new object[] {
+            "Salaried",
+            "Self-Employed",
+            "Business",
+            "Student",
+            "Retired",
+            "Other"});
+            this.OccupationcomboBox.Location = new System.Drawing.Point(281, 14);
+            this.OccupationcomboBox.Name = "OccupationcomboBox";
+            this.OccupationcomboBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.OccupationcomboBox.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.OccupationcomboBox.Size = new System.Drawing.Size(235, 31);
+            this.OccupationcomboBox.TabIndex = 115;
+            // 
             // panel27
             // 
             this.panel27.BackColor = System.Drawing.Color.Wheat;
@@ -579,6 +805,29 @@ namespace Bank
             this.DOBpanel.Name = "DOBpanel";
             this.DOBpanel.Size = new System.Drawing.Size(571, 55);
             this.DOBpanel.TabIndex = 116;
+            // 
+            // DateTimePicker
+            // 
+            this.DateTimePicker.BackColor = System.Drawing.Color.Transparent;
+            this.DateTimePicker.BaseColor = System.Drawing.Color.Wheat;
+            this.DateTimePicker.BorderColor = System.Drawing.Color.Wheat;
+            this.DateTimePicker.CustomFormat = null;
+            this.DateTimePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DateTimePicker.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTimePicker.ForeColor = System.Drawing.Color.Black;
+            this.DateTimePicker.Location = new System.Drawing.Point(191, 3);
+            this.DateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTimePicker.Name = "DateTimePicker";
+            this.DateTimePicker.OnHoverBaseColor = System.Drawing.Color.White;
+            this.DateTimePicker.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DateTimePicker.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DateTimePicker.OnPressedColor = System.Drawing.Color.Black;
+            this.DateTimePicker.Size = new System.Drawing.Size(375, 47);
+            this.DateTimePicker.TabIndex = 107;
+            this.DateTimePicker.Text = "Thursday, July 29, 2021";
+            this.DateTimePicker.Value = new System.DateTime(2021, 7, 29, 0, 0, 0, 0);
             // 
             // panel4
             // 
@@ -614,6 +863,48 @@ namespace Bank
             this.Genderpanel.Size = new System.Drawing.Size(571, 55);
             this.Genderpanel.TabIndex = 117;
             // 
+            // OtherradioButton
+            // 
+            this.OtherradioButton.BaseColor = System.Drawing.SystemColors.Control;
+            this.OtherradioButton.CheckedOffColor = System.Drawing.Color.Gray;
+            this.OtherradioButton.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.OtherradioButton.FillColor = System.Drawing.Color.White;
+            this.OtherradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OtherradioButton.ForeColor = System.Drawing.Color.Black;
+            this.OtherradioButton.Location = new System.Drawing.Point(476, 16);
+            this.OtherradioButton.Name = "OtherradioButton";
+            this.OtherradioButton.Size = new System.Drawing.Size(77, 23);
+            this.OtherradioButton.TabIndex = 109;
+            this.OtherradioButton.Text = "Other";
+            // 
+            // FemaleradioButton
+            // 
+            this.FemaleradioButton.BaseColor = System.Drawing.SystemColors.Control;
+            this.FemaleradioButton.CheckedOffColor = System.Drawing.Color.Gray;
+            this.FemaleradioButton.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.FemaleradioButton.FillColor = System.Drawing.Color.White;
+            this.FemaleradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FemaleradioButton.ForeColor = System.Drawing.Color.Black;
+            this.FemaleradioButton.Location = new System.Drawing.Point(326, 16);
+            this.FemaleradioButton.Name = "FemaleradioButton";
+            this.FemaleradioButton.Size = new System.Drawing.Size(92, 23);
+            this.FemaleradioButton.TabIndex = 108;
+            this.FemaleradioButton.Text = "Female";
+            // 
+            // MaleradioButton
+            // 
+            this.MaleradioButton.BaseColor = System.Drawing.SystemColors.Control;
+            this.MaleradioButton.CheckedOffColor = System.Drawing.Color.Gray;
+            this.MaleradioButton.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.MaleradioButton.FillColor = System.Drawing.Color.White;
+            this.MaleradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaleradioButton.ForeColor = System.Drawing.Color.Black;
+            this.MaleradioButton.Location = new System.Drawing.Point(204, 16);
+            this.MaleradioButton.Name = "MaleradioButton";
+            this.MaleradioButton.Size = new System.Drawing.Size(71, 23);
+            this.MaleradioButton.TabIndex = 107;
+            this.MaleradioButton.Text = "Male";
+            // 
             // panel49
             // 
             this.panel49.BackColor = System.Drawing.Color.Wheat;
@@ -646,6 +937,29 @@ namespace Bank
             this.EQpanel.Name = "EQpanel";
             this.EQpanel.Size = new System.Drawing.Size(521, 55);
             this.EQpanel.TabIndex = 125;
+            // 
+            // QualificationcomboBox
+            // 
+            this.QualificationcomboBox.BackColor = System.Drawing.Color.Transparent;
+            this.QualificationcomboBox.BaseColor = System.Drawing.Color.Wheat;
+            this.QualificationcomboBox.BorderColor = System.Drawing.Color.Wheat;
+            this.QualificationcomboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.QualificationcomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.QualificationcomboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.QualificationcomboBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QualificationcomboBox.ForeColor = System.Drawing.Color.Black;
+            this.QualificationcomboBox.FormattingEnabled = true;
+            this.QualificationcomboBox.Items.AddRange(new object[] {
+            "No-Graduation",
+            "Graduation",
+            "Post-Graduation",
+            "Doctrate"});
+            this.QualificationcomboBox.Location = new System.Drawing.Point(281, 12);
+            this.QualificationcomboBox.Name = "QualificationcomboBox";
+            this.QualificationcomboBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.QualificationcomboBox.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.QualificationcomboBox.Size = new System.Drawing.Size(235, 31);
+            this.QualificationcomboBox.TabIndex = 114;
             // 
             // panel28
             // 
@@ -690,6 +1004,23 @@ namespace Bank
             this.Emailpanel.Size = new System.Drawing.Size(571, 55);
             this.Emailpanel.TabIndex = 118;
             // 
+            // EmailAdressTxtbox
+            // 
+            this.EmailAdressTxtbox.BaseColor = System.Drawing.Color.Wheat;
+            this.EmailAdressTxtbox.BorderColor = System.Drawing.Color.Wheat;
+            this.EmailAdressTxtbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EmailAdressTxtbox.FocusedBaseColor = System.Drawing.Color.White;
+            this.EmailAdressTxtbox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.EmailAdressTxtbox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.EmailAdressTxtbox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailAdressTxtbox.ForeColor = System.Drawing.Color.Black;
+            this.EmailAdressTxtbox.Location = new System.Drawing.Point(191, 3);
+            this.EmailAdressTxtbox.Name = "EmailAdressTxtbox";
+            this.EmailAdressTxtbox.PasswordChar = '\0';
+            this.EmailAdressTxtbox.SelectedText = "";
+            this.EmailAdressTxtbox.Size = new System.Drawing.Size(375, 47);
+            this.EmailAdressTxtbox.TabIndex = 135;
+            // 
             // panel32
             // 
             this.panel32.BackColor = System.Drawing.Color.Wheat;
@@ -721,6 +1052,23 @@ namespace Bank
             this.Religionpanel.Name = "Religionpanel";
             this.Religionpanel.Size = new System.Drawing.Size(523, 55);
             this.Religionpanel.TabIndex = 123;
+            // 
+            // ReligionTextBox
+            // 
+            this.ReligionTextBox.BaseColor = System.Drawing.Color.Wheat;
+            this.ReligionTextBox.BorderColor = System.Drawing.Color.Wheat;
+            this.ReligionTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ReligionTextBox.FocusedBaseColor = System.Drawing.Color.White;
+            this.ReligionTextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.ReligionTextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.ReligionTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReligionTextBox.ForeColor = System.Drawing.Color.Black;
+            this.ReligionTextBox.Location = new System.Drawing.Point(281, 3);
+            this.ReligionTextBox.Name = "ReligionTextBox";
+            this.ReligionTextBox.PasswordChar = '\0';
+            this.ReligionTextBox.SelectedText = "";
+            this.ReligionTextBox.Size = new System.Drawing.Size(235, 47);
+            this.ReligionTextBox.TabIndex = 136;
             // 
             // panel29
             // 
@@ -755,6 +1103,34 @@ namespace Bank
             this.Maritalpanel.Size = new System.Drawing.Size(571, 55);
             this.Maritalpanel.TabIndex = 119;
             // 
+            // MarriedradioButton
+            // 
+            this.MarriedradioButton.BaseColor = System.Drawing.SystemColors.Control;
+            this.MarriedradioButton.CheckedOffColor = System.Drawing.Color.Gray;
+            this.MarriedradioButton.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.MarriedradioButton.FillColor = System.Drawing.Color.White;
+            this.MarriedradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MarriedradioButton.ForeColor = System.Drawing.Color.Black;
+            this.MarriedradioButton.Location = new System.Drawing.Point(423, 16);
+            this.MarriedradioButton.Name = "MarriedradioButton";
+            this.MarriedradioButton.Size = new System.Drawing.Size(94, 23);
+            this.MarriedradioButton.TabIndex = 114;
+            this.MarriedradioButton.Text = "Married";
+            // 
+            // UnmarriedradioButton
+            // 
+            this.UnmarriedradioButton.BaseColor = System.Drawing.SystemColors.Control;
+            this.UnmarriedradioButton.CheckedOffColor = System.Drawing.Color.Gray;
+            this.UnmarriedradioButton.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.UnmarriedradioButton.FillColor = System.Drawing.Color.White;
+            this.UnmarriedradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UnmarriedradioButton.ForeColor = System.Drawing.Color.Black;
+            this.UnmarriedradioButton.Location = new System.Drawing.Point(204, 16);
+            this.UnmarriedradioButton.Name = "UnmarriedradioButton";
+            this.UnmarriedradioButton.Size = new System.Drawing.Size(117, 23);
+            this.UnmarriedradioButton.TabIndex = 113;
+            this.UnmarriedradioButton.Text = "Unmarried";
+            // 
             // bunifuCustomLabel5
             // 
             this.bunifuCustomLabel5.AutoSize = true;
@@ -787,6 +1163,23 @@ namespace Bank
             this.Addresspanel.Size = new System.Drawing.Size(571, 55);
             this.Addresspanel.TabIndex = 120;
             // 
+            // AddresstextBox
+            // 
+            this.AddresstextBox.BaseColor = System.Drawing.Color.Wheat;
+            this.AddresstextBox.BorderColor = System.Drawing.Color.Wheat;
+            this.AddresstextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AddresstextBox.FocusedBaseColor = System.Drawing.Color.White;
+            this.AddresstextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.AddresstextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.AddresstextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddresstextBox.ForeColor = System.Drawing.Color.Black;
+            this.AddresstextBox.Location = new System.Drawing.Point(191, 2);
+            this.AddresstextBox.Name = "AddresstextBox";
+            this.AddresstextBox.PasswordChar = '\0';
+            this.AddresstextBox.SelectedText = "";
+            this.AddresstextBox.Size = new System.Drawing.Size(375, 47);
+            this.AddresstextBox.TabIndex = 135;
+            // 
             // bunifuCustomLabel6
             // 
             this.bunifuCustomLabel6.AutoSize = true;
@@ -817,6 +1210,23 @@ namespace Bank
             this.CityPanel.Name = "CityPanel";
             this.CityPanel.Size = new System.Drawing.Size(523, 55);
             this.CityPanel.TabIndex = 121;
+            // 
+            // CitytextBox
+            // 
+            this.CitytextBox.BaseColor = System.Drawing.Color.Wheat;
+            this.CitytextBox.BorderColor = System.Drawing.Color.Wheat;
+            this.CitytextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CitytextBox.FocusedBaseColor = System.Drawing.Color.White;
+            this.CitytextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.CitytextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.CitytextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CitytextBox.ForeColor = System.Drawing.Color.Black;
+            this.CitytextBox.Location = new System.Drawing.Point(283, 2);
+            this.CitytextBox.Name = "CitytextBox";
+            this.CitytextBox.PasswordChar = '\0';
+            this.CitytextBox.SelectedText = "";
+            this.CitytextBox.Size = new System.Drawing.Size(235, 47);
+            this.CitytextBox.TabIndex = 135;
             // 
             // bunifuCustomLabel7
             // 
@@ -880,415 +1290,6 @@ namespace Bank
             this.label1.TabIndex = 0;
             this.label1.Text = "CREATED NEW";
             // 
-            // UsernameTextbox
-            // 
-            this.UsernameTextbox.BaseColor = System.Drawing.Color.Wheat;
-            this.UsernameTextbox.BorderColor = System.Drawing.Color.Wheat;
-            this.UsernameTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.UsernameTextbox.FocusedBaseColor = System.Drawing.Color.White;
-            this.UsernameTextbox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.UsernameTextbox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.UsernameTextbox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameTextbox.ForeColor = System.Drawing.Color.Black;
-            this.UsernameTextbox.Location = new System.Drawing.Point(191, 3);
-            this.UsernameTextbox.Name = "UsernameTextbox";
-            this.UsernameTextbox.PasswordChar = '\0';
-            this.UsernameTextbox.SelectedText = "";
-            this.UsernameTextbox.Size = new System.Drawing.Size(375, 47);
-            this.UsernameTextbox.TabIndex = 128;
-            // 
-            // FirstNametextBox1
-            // 
-            this.FirstNametextBox1.BaseColor = System.Drawing.Color.Wheat;
-            this.FirstNametextBox1.BorderColor = System.Drawing.Color.Wheat;
-            this.FirstNametextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.FirstNametextBox1.FocusedBaseColor = System.Drawing.Color.White;
-            this.FirstNametextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.FirstNametextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.FirstNametextBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstNametextBox1.ForeColor = System.Drawing.Color.Black;
-            this.FirstNametextBox1.Location = new System.Drawing.Point(191, 3);
-            this.FirstNametextBox1.Name = "FirstNametextBox1";
-            this.FirstNametextBox1.PasswordChar = '\0';
-            this.FirstNametextBox1.SelectedText = "";
-            this.FirstNametextBox1.Size = new System.Drawing.Size(375, 47);
-            this.FirstNametextBox1.TabIndex = 129;
-            // 
-            // LastNametextBox
-            // 
-            this.LastNametextBox.BaseColor = System.Drawing.Color.Wheat;
-            this.LastNametextBox.BorderColor = System.Drawing.Color.Wheat;
-            this.LastNametextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.LastNametextBox.FocusedBaseColor = System.Drawing.Color.White;
-            this.LastNametextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.LastNametextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.LastNametextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastNametextBox.ForeColor = System.Drawing.Color.Black;
-            this.LastNametextBox.Location = new System.Drawing.Point(191, 3);
-            this.LastNametextBox.Name = "LastNametextBox";
-            this.LastNametextBox.PasswordChar = '\0';
-            this.LastNametextBox.SelectedText = "";
-            this.LastNametextBox.Size = new System.Drawing.Size(375, 47);
-            this.LastNametextBox.TabIndex = 135;
-            // 
-            // EmailAdressTxtbox
-            // 
-            this.EmailAdressTxtbox.BaseColor = System.Drawing.Color.Wheat;
-            this.EmailAdressTxtbox.BorderColor = System.Drawing.Color.Wheat;
-            this.EmailAdressTxtbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.EmailAdressTxtbox.FocusedBaseColor = System.Drawing.Color.White;
-            this.EmailAdressTxtbox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.EmailAdressTxtbox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.EmailAdressTxtbox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailAdressTxtbox.ForeColor = System.Drawing.Color.Black;
-            this.EmailAdressTxtbox.Location = new System.Drawing.Point(191, 3);
-            this.EmailAdressTxtbox.Name = "EmailAdressTxtbox";
-            this.EmailAdressTxtbox.PasswordChar = '\0';
-            this.EmailAdressTxtbox.SelectedText = "";
-            this.EmailAdressTxtbox.Size = new System.Drawing.Size(375, 47);
-            this.EmailAdressTxtbox.TabIndex = 135;
-            // 
-            // AddresstextBox
-            // 
-            this.AddresstextBox.BaseColor = System.Drawing.Color.Wheat;
-            this.AddresstextBox.BorderColor = System.Drawing.Color.Wheat;
-            this.AddresstextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AddresstextBox.FocusedBaseColor = System.Drawing.Color.White;
-            this.AddresstextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.AddresstextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.AddresstextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddresstextBox.ForeColor = System.Drawing.Color.Black;
-            this.AddresstextBox.Location = new System.Drawing.Point(191, 2);
-            this.AddresstextBox.Name = "AddresstextBox";
-            this.AddresstextBox.PasswordChar = '\0';
-            this.AddresstextBox.SelectedText = "";
-            this.AddresstextBox.Size = new System.Drawing.Size(375, 47);
-            this.AddresstextBox.TabIndex = 135;
-            // 
-            // PasswordtextBox
-            // 
-            this.PasswordtextBox.BaseColor = System.Drawing.Color.Wheat;
-            this.PasswordtextBox.BorderColor = System.Drawing.Color.Wheat;
-            this.PasswordtextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PasswordtextBox.FocusedBaseColor = System.Drawing.Color.White;
-            this.PasswordtextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.PasswordtextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.PasswordtextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordtextBox.ForeColor = System.Drawing.Color.Black;
-            this.PasswordtextBox.Location = new System.Drawing.Point(191, 4);
-            this.PasswordtextBox.Name = "PasswordtextBox";
-            this.PasswordtextBox.PasswordChar = '●';
-            this.PasswordtextBox.SelectedText = "";
-            this.PasswordtextBox.Size = new System.Drawing.Size(375, 47);
-            this.PasswordtextBox.TabIndex = 135;
-            this.PasswordtextBox.UseSystemPasswordChar = true;
-            this.PasswordtextBox.TextChanged += new System.EventHandler(this.PasswordTextBox_TextChanged);
-            // 
-            // ConfirmPasswordtextBox
-            // 
-            this.ConfirmPasswordtextBox.BaseColor = System.Drawing.Color.Wheat;
-            this.ConfirmPasswordtextBox.BorderColor = System.Drawing.Color.Wheat;
-            this.ConfirmPasswordtextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ConfirmPasswordtextBox.FocusedBaseColor = System.Drawing.Color.White;
-            this.ConfirmPasswordtextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.ConfirmPasswordtextBox.FocusedForeColor = System.Drawing.Color.Black;
-            this.ConfirmPasswordtextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConfirmPasswordtextBox.ForeColor = System.Drawing.Color.Black;
-            this.ConfirmPasswordtextBox.Location = new System.Drawing.Point(191, 2);
-            this.ConfirmPasswordtextBox.Name = "ConfirmPasswordtextBox";
-            this.ConfirmPasswordtextBox.PasswordChar = '●';
-            this.ConfirmPasswordtextBox.SelectedText = "";
-            this.ConfirmPasswordtextBox.Size = new System.Drawing.Size(375, 47);
-            this.ConfirmPasswordtextBox.TabIndex = 135;
-            this.ConfirmPasswordtextBox.UseSystemPasswordChar = true;
-            // 
-            // CitytextBox
-            // 
-            this.CitytextBox.BaseColor = System.Drawing.Color.Wheat;
-            this.CitytextBox.BorderColor = System.Drawing.Color.Wheat;
-            this.CitytextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CitytextBox.FocusedBaseColor = System.Drawing.Color.White;
-            this.CitytextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.CitytextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.CitytextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CitytextBox.ForeColor = System.Drawing.Color.Black;
-            this.CitytextBox.Location = new System.Drawing.Point(283, 2);
-            this.CitytextBox.Name = "CitytextBox";
-            this.CitytextBox.PasswordChar = '\0';
-            this.CitytextBox.SelectedText = "";
-            this.CitytextBox.Size = new System.Drawing.Size(235, 47);
-            this.CitytextBox.TabIndex = 135;
-            // 
-            // CountrytextBox
-            // 
-            this.CountrytextBox.BaseColor = System.Drawing.Color.Wheat;
-            this.CountrytextBox.BorderColor = System.Drawing.Color.Wheat;
-            this.CountrytextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CountrytextBox.FocusedBaseColor = System.Drawing.Color.White;
-            this.CountrytextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.CountrytextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.CountrytextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CountrytextBox.ForeColor = System.Drawing.Color.Black;
-            this.CountrytextBox.Location = new System.Drawing.Point(281, 3);
-            this.CountrytextBox.Name = "CountrytextBox";
-            this.CountrytextBox.PasswordChar = '\0';
-            this.CountrytextBox.SelectedText = "";
-            this.CountrytextBox.Size = new System.Drawing.Size(235, 47);
-            this.CountrytextBox.TabIndex = 136;
-            // 
-            // ReligionTextBox
-            // 
-            this.ReligionTextBox.BaseColor = System.Drawing.Color.Wheat;
-            this.ReligionTextBox.BorderColor = System.Drawing.Color.Wheat;
-            this.ReligionTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ReligionTextBox.FocusedBaseColor = System.Drawing.Color.White;
-            this.ReligionTextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.ReligionTextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.ReligionTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReligionTextBox.ForeColor = System.Drawing.Color.Black;
-            this.ReligionTextBox.Location = new System.Drawing.Point(281, 3);
-            this.ReligionTextBox.Name = "ReligionTextBox";
-            this.ReligionTextBox.PasswordChar = '\0';
-            this.ReligionTextBox.SelectedText = "";
-            this.ReligionTextBox.Size = new System.Drawing.Size(235, 47);
-            this.ReligionTextBox.TabIndex = 136;
-            // 
-            // ShowPasswordBox
-            // 
-            this.ShowPasswordBox.BackColor = System.Drawing.Color.Wheat;
-            this.ShowPasswordBox.Image = global::Bank.Properties.Resources._481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview;
-            this.ShowPasswordBox.Location = new System.Drawing.Point(534, 13);
-            this.ShowPasswordBox.Name = "ShowPasswordBox";
-            this.ShowPasswordBox.Size = new System.Drawing.Size(27, 30);
-            this.ShowPasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ShowPasswordBox.TabIndex = 135;
-            this.ShowPasswordBox.TabStop = false;
-            this.ShowPasswordBox.Click += new System.EventHandler(this.ShowPasswordBox_Click);
-            // 
-            // HidePasswordBox
-            // 
-            this.HidePasswordBox.BackColor = System.Drawing.Color.Wheat;
-            this.HidePasswordBox.Image = global::Bank.Properties.Resources._377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview;
-            this.HidePasswordBox.Location = new System.Drawing.Point(534, 13);
-            this.HidePasswordBox.Name = "HidePasswordBox";
-            this.HidePasswordBox.Size = new System.Drawing.Size(27, 30);
-            this.HidePasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.HidePasswordBox.TabIndex = 136;
-            this.HidePasswordBox.TabStop = false;
-            this.HidePasswordBox.Visible = false;
-            this.HidePasswordBox.Click += new System.EventHandler(this.HidePasswordBox_Click);
-            // 
-            // ShowPasswordBox1
-            // 
-            this.ShowPasswordBox1.BackColor = System.Drawing.Color.Wheat;
-            this.ShowPasswordBox1.Image = global::Bank.Properties.Resources._481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview;
-            this.ShowPasswordBox1.Location = new System.Drawing.Point(534, 12);
-            this.ShowPasswordBox1.Name = "ShowPasswordBox1";
-            this.ShowPasswordBox1.Size = new System.Drawing.Size(27, 30);
-            this.ShowPasswordBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ShowPasswordBox1.TabIndex = 136;
-            this.ShowPasswordBox1.TabStop = false;
-            this.ShowPasswordBox1.Click += new System.EventHandler(this.ShowPasswordBox1_Click);
-            // 
-            // HidePasswordBox1
-            // 
-            this.HidePasswordBox1.BackColor = System.Drawing.Color.Wheat;
-            this.HidePasswordBox1.Image = global::Bank.Properties.Resources._377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview;
-            this.HidePasswordBox1.Location = new System.Drawing.Point(534, 12);
-            this.HidePasswordBox1.Name = "HidePasswordBox1";
-            this.HidePasswordBox1.Size = new System.Drawing.Size(27, 30);
-            this.HidePasswordBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.HidePasswordBox1.TabIndex = 137;
-            this.HidePasswordBox1.TabStop = false;
-            this.HidePasswordBox1.Visible = false;
-            this.HidePasswordBox1.Click += new System.EventHandler(this.HidePasswordBox1_Click);
-            // 
-            // DateTimePicker
-            // 
-            this.DateTimePicker.BaseColor = System.Drawing.Color.Wheat;
-            this.DateTimePicker.BorderColor = System.Drawing.Color.Wheat;
-            this.DateTimePicker.CustomFormat = null;
-            this.DateTimePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.DateTimePicker.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.DateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DateTimePicker.ForeColor = System.Drawing.Color.Black;
-            this.DateTimePicker.Location = new System.Drawing.Point(191, 3);
-            this.DateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.DateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.DateTimePicker.Name = "DateTimePicker";
-            this.DateTimePicker.OnHoverBaseColor = System.Drawing.Color.White;
-            this.DateTimePicker.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.DateTimePicker.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.DateTimePicker.OnPressedColor = System.Drawing.Color.Black;
-            this.DateTimePicker.Size = new System.Drawing.Size(375, 47);
-            this.DateTimePicker.TabIndex = 107;
-            this.DateTimePicker.Text = "Tuesday, July 27, 2021";
-            this.DateTimePicker.Value = new System.DateTime(2021, 7, 27, 9, 26, 40, 17);
-            // 
-            // MaleradioButton
-            // 
-            this.MaleradioButton.BaseColor = System.Drawing.SystemColors.Control;
-            this.MaleradioButton.CheckedOffColor = System.Drawing.Color.Gray;
-            this.MaleradioButton.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.MaleradioButton.FillColor = System.Drawing.Color.White;
-            this.MaleradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaleradioButton.ForeColor = System.Drawing.Color.Black;
-            this.MaleradioButton.Location = new System.Drawing.Point(204, 16);
-            this.MaleradioButton.Name = "MaleradioButton";
-            this.MaleradioButton.Size = new System.Drawing.Size(71, 23);
-            this.MaleradioButton.TabIndex = 107;
-            this.MaleradioButton.Text = "Male";
-            // 
-            // FemaleradioButton
-            // 
-            this.FemaleradioButton.BaseColor = System.Drawing.SystemColors.Control;
-            this.FemaleradioButton.CheckedOffColor = System.Drawing.Color.Gray;
-            this.FemaleradioButton.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.FemaleradioButton.FillColor = System.Drawing.Color.White;
-            this.FemaleradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FemaleradioButton.ForeColor = System.Drawing.Color.Black;
-            this.FemaleradioButton.Location = new System.Drawing.Point(326, 16);
-            this.FemaleradioButton.Name = "FemaleradioButton";
-            this.FemaleradioButton.Size = new System.Drawing.Size(92, 23);
-            this.FemaleradioButton.TabIndex = 108;
-            this.FemaleradioButton.Text = "Female";
-            // 
-            // OtherradioButton
-            // 
-            this.OtherradioButton.BaseColor = System.Drawing.SystemColors.Control;
-            this.OtherradioButton.CheckedOffColor = System.Drawing.Color.Gray;
-            this.OtherradioButton.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.OtherradioButton.FillColor = System.Drawing.Color.White;
-            this.OtherradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OtherradioButton.ForeColor = System.Drawing.Color.Black;
-            this.OtherradioButton.Location = new System.Drawing.Point(476, 16);
-            this.OtherradioButton.Name = "OtherradioButton";
-            this.OtherradioButton.Size = new System.Drawing.Size(77, 23);
-            this.OtherradioButton.TabIndex = 109;
-            this.OtherradioButton.Text = "Other";
-            // 
-            // UnmarriedradioButton
-            // 
-            this.UnmarriedradioButton.BaseColor = System.Drawing.SystemColors.Control;
-            this.UnmarriedradioButton.CheckedOffColor = System.Drawing.Color.Gray;
-            this.UnmarriedradioButton.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.UnmarriedradioButton.FillColor = System.Drawing.Color.White;
-            this.UnmarriedradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UnmarriedradioButton.ForeColor = System.Drawing.Color.Black;
-            this.UnmarriedradioButton.Location = new System.Drawing.Point(204, 16);
-            this.UnmarriedradioButton.Name = "UnmarriedradioButton";
-            this.UnmarriedradioButton.Size = new System.Drawing.Size(117, 23);
-            this.UnmarriedradioButton.TabIndex = 113;
-            this.UnmarriedradioButton.Text = "Unmarried";
-            // 
-            // MarriedradioButton
-            // 
-            this.MarriedradioButton.BaseColor = System.Drawing.SystemColors.Control;
-            this.MarriedradioButton.CheckedOffColor = System.Drawing.Color.Gray;
-            this.MarriedradioButton.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.MarriedradioButton.FillColor = System.Drawing.Color.White;
-            this.MarriedradioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MarriedradioButton.ForeColor = System.Drawing.Color.Black;
-            this.MarriedradioButton.Location = new System.Drawing.Point(423, 16);
-            this.MarriedradioButton.Name = "MarriedradioButton";
-            this.MarriedradioButton.Size = new System.Drawing.Size(94, 23);
-            this.MarriedradioButton.TabIndex = 114;
-            this.MarriedradioButton.Text = "Married";
-            // 
-            // AccountTypeComboBox
-            // 
-            this.AccountTypeComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.AccountTypeComboBox.BaseColor = System.Drawing.Color.Wheat;
-            this.AccountTypeComboBox.BorderColor = System.Drawing.Color.Wheat;
-            this.AccountTypeComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.AccountTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.AccountTypeComboBox.FocusedColor = System.Drawing.Color.Empty;
-            this.AccountTypeComboBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AccountTypeComboBox.ForeColor = System.Drawing.Color.Black;
-            this.AccountTypeComboBox.FormattingEnabled = true;
-            this.AccountTypeComboBox.Items.AddRange(new object[] {
-            "Current Account",
-            "Saving Account"});
-            this.AccountTypeComboBox.Location = new System.Drawing.Point(191, 10);
-            this.AccountTypeComboBox.Name = "AccountTypeComboBox";
-            this.AccountTypeComboBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.AccountTypeComboBox.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.AccountTypeComboBox.Size = new System.Drawing.Size(375, 31);
-            this.AccountTypeComboBox.TabIndex = 112;
-            // 
-            // IncomecomboBox
-            // 
-            this.IncomecomboBox.BackColor = System.Drawing.Color.Transparent;
-            this.IncomecomboBox.BaseColor = System.Drawing.Color.Wheat;
-            this.IncomecomboBox.BorderColor = System.Drawing.Color.Wheat;
-            this.IncomecomboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.IncomecomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.IncomecomboBox.FocusedColor = System.Drawing.Color.Empty;
-            this.IncomecomboBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IncomecomboBox.ForeColor = System.Drawing.Color.Black;
-            this.IncomecomboBox.FormattingEnabled = true;
-            this.IncomecomboBox.Items.AddRange(new object[] {
-            "Null",
-            "<1,50,000",
-            "<2,50,000",
-            "<5,00,000",
-            "Upto 10,00,000",
-            "Above 10,00,000"});
-            this.IncomecomboBox.Location = new System.Drawing.Point(283, 11);
-            this.IncomecomboBox.Name = "IncomecomboBox";
-            this.IncomecomboBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.IncomecomboBox.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.IncomecomboBox.Size = new System.Drawing.Size(235, 31);
-            this.IncomecomboBox.TabIndex = 113;
-            // 
-            // QualificationcomboBox
-            // 
-            this.QualificationcomboBox.BackColor = System.Drawing.Color.Transparent;
-            this.QualificationcomboBox.BaseColor = System.Drawing.Color.Wheat;
-            this.QualificationcomboBox.BorderColor = System.Drawing.Color.Wheat;
-            this.QualificationcomboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.QualificationcomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.QualificationcomboBox.FocusedColor = System.Drawing.Color.Empty;
-            this.QualificationcomboBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QualificationcomboBox.ForeColor = System.Drawing.Color.Black;
-            this.QualificationcomboBox.FormattingEnabled = true;
-            this.QualificationcomboBox.Items.AddRange(new object[] {
-            "No-Graduation",
-            "Graduation",
-            "Post-Graduation",
-            "Doctrate"});
-            this.QualificationcomboBox.Location = new System.Drawing.Point(281, 12);
-            this.QualificationcomboBox.Name = "QualificationcomboBox";
-            this.QualificationcomboBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.QualificationcomboBox.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.QualificationcomboBox.Size = new System.Drawing.Size(235, 31);
-            this.QualificationcomboBox.TabIndex = 114;
-            // 
-            // OccupationcomboBox
-            // 
-            this.OccupationcomboBox.BackColor = System.Drawing.Color.Transparent;
-            this.OccupationcomboBox.BaseColor = System.Drawing.Color.Wheat;
-            this.OccupationcomboBox.BorderColor = System.Drawing.Color.Wheat;
-            this.OccupationcomboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.OccupationcomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.OccupationcomboBox.FocusedColor = System.Drawing.Color.Empty;
-            this.OccupationcomboBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OccupationcomboBox.ForeColor = System.Drawing.Color.Black;
-            this.OccupationcomboBox.FormattingEnabled = true;
-            this.OccupationcomboBox.Items.AddRange(new object[] {
-            "Salaried",
-            "Self-Employed",
-            "Business",
-            "Student",
-            "Retired",
-            "Other"});
-            this.OccupationcomboBox.Location = new System.Drawing.Point(281, 14);
-            this.OccupationcomboBox.Name = "OccupationcomboBox";
-            this.OccupationcomboBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.OccupationcomboBox.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.OccupationcomboBox.Size = new System.Drawing.Size(235, 31);
-            this.OccupationcomboBox.TabIndex = 115;
-            // 
             // AdminCreatedNewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1304,8 +1305,12 @@ namespace Bank
             this.panel14.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox1)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.LastNamepanel.ResumeLayout(false);
@@ -1338,10 +1343,6 @@ namespace Bank
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

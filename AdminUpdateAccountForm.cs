@@ -78,7 +78,7 @@ namespace Bank
             SqlDataAdapter sqlData = new SqlDataAdapter("SELECT Date_Of_Birth FROM Parsonal WHERE User_Name = '" + UserNameTextbox.Text + "'", SqlConnection);
             DataTable data = new DataTable();
             sqlData.Fill(data);
-            DOBTextBox.Text = data.Rows[0][0].ToString();
+            DOBDateTimePicker.Value = Convert.ToDateTime (data.Rows[0][0]);
             SqlConnection.Close();
         }
 
@@ -284,7 +284,7 @@ namespace Bank
             try
             {
                 if (FirstNametextBox.Text.Equals("") || LastNametextBox.Text.Equals("")
-                || DOBTextBox.Text.Equals("") || GenderTextBox.Text.Equals("") || MaritalTextBox.Text.Equals("")
+                || DOBDateTimePicker.Equals("") || GenderTextBox.Text.Equals("") || MaritalTextBox.Text.Equals("")
                 || AddresstextBox.Text.Equals("") || CitytextBox.Text.Equals("") || CountrytextBox.Text.Equals("")
                 || ReligionTextBox.Text.Equals("") || IncomeTextBox.Text.Equals("") || EQTextBox.Text.Equals("")
                 || occupationTextBox.Text.Equals("") || ProfilePictureBox.Image.Equals(""))
@@ -302,7 +302,7 @@ namespace Bank
                                       ",[Last_Name] = '" + LastNametextBox.Text + "'" +
                                       ",[Email_address] = '" + EmailAdressTxtbox.Text + "'" +
                                       ",[Gender] = '" + GenderTextBox.Text + "'" +
-                                      ",[Date_Of_Birth] = '" + DOBTextBox.Text + "'" +
+                                      ",[Date_Of_Birth] = '" + DOBDateTimePicker.Value + "'" +
                                       ",[Marital_Status] = '" + MaritalTextBox.Text + "'" +
                                       ",[Address] = '" + AddresstextBox.Text + "'" +
                                       ",[City] = '" + CitytextBox.Text + "'" +
@@ -334,7 +334,7 @@ namespace Bank
                                       ",[Last_Name] = '" + LastNametextBox.Text + "'" +
                                       ",[Email_address] = '" + EmailAdressTxtbox.Text + "'" +
                                       ",[Gender] = '" + GenderTextBox.Text + "'" +
-                                      ",[Date_Of_Birth] = '" + DOBTextBox.Text + "'" +
+                                      ",[Date_Of_Birth] = '" + DOBDateTimePicker.Value + "'" +
                                       ",[Marital_Status] = '" + MaritalTextBox.Text + "'" +
                                       ",[Address] = '" + AddresstextBox.Text + "'" +
                                       ",[City] = '" + CitytextBox.Text + "'" +
@@ -368,7 +368,7 @@ namespace Bank
                                       ",[Last_Name] = '" + LastNametextBox.Text + "'" +
                                       ",[Email_address] = '" + EmailAdressTxtbox.Text + "'" +
                                       ",[Gender] = '" + GenderTextBox.Text + "'" +
-                                      ",[Date_Of_Birth] = '" + DOBTextBox.Text + "'" +
+                                      ",[Date_Of_Birth] = '" + DOBDateTimePicker.Value + "'" +
                                       ",[Marital_Status] = '" + MaritalTextBox.Text + "'" +
                                       ",[Address] = '" + AddresstextBox.Text + "'" +
                                       ",[City] = '" + CitytextBox.Text + "'" +
@@ -394,6 +394,11 @@ namespace Bank
             {
                 MessageBox.Show("Error" +ex );
             }
+        }
+
+        private void AccountTypepanel_Paint(object sender, PaintEventArgs e)
+        {
+            AccountTypeLabel.Text = "";
         }
     }
 }

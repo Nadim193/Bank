@@ -30,19 +30,22 @@ namespace Bank
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TransferTimelabel = new System.Windows.Forms.TextBox();
+            this.WithdrawTimelabel = new System.Windows.Forms.TextBox();
+            this.DepositTimelabel = new System.Windows.Forms.TextBox();
             this.TransferNumberlabel = new System.Windows.Forms.Label();
             this.WithdrawNumberlabel = new System.Windows.Forms.Label();
             this.DepositNumberlabel = new System.Windows.Forms.Label();
@@ -97,10 +100,12 @@ namespace Bank
             this.deposit_History_viewTableAdapter = new Bank.BankSystemDataBaseDataSet10TableAdapters.Deposit_History_viewTableAdapter();
             this.withdraw_History_ViewTableAdapter = new Bank.BankSystemDataBaseDataSet11TableAdapters.Withdraw_History_ViewTableAdapter();
             this.transfer_History_ViewTableAdapter = new Bank.BankSystemDataBaseDataSet12TableAdapters.Transfer_History_ViewTableAdapter();
-            this.DepositTimelabel = new System.Windows.Forms.TextBox();
-            this.WithdrawTimelabel = new System.Windows.Forms.TextBox();
-            this.TransferTimelabel = new System.Windows.Forms.TextBox();
+            this.DepositNumberpanel = new System.Windows.Forms.Panel();
+            this.WithdrawNumberpanel = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.Transfernumberpanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TransferdataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transferHistoryViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bankSystemDataBaseDataSet12)).BeginInit();
@@ -115,17 +120,20 @@ namespace Bank
             this.panel15.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.DepositNumberpanel.SuspendLayout();
+            this.WithdrawNumberpanel.SuspendLayout();
+            this.Transfernumberpanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.Controls.Add(this.Transfernumberpanel);
+            this.panel1.Controls.Add(this.WithdrawNumberpanel);
+            this.panel1.Controls.Add(this.DepositNumberpanel);
             this.panel1.Controls.Add(this.TransferTimelabel);
             this.panel1.Controls.Add(this.WithdrawTimelabel);
             this.panel1.Controls.Add(this.DepositTimelabel);
-            this.panel1.Controls.Add(this.TransferNumberlabel);
-            this.panel1.Controls.Add(this.WithdrawNumberlabel);
-            this.panel1.Controls.Add(this.DepositNumberlabel);
             this.panel1.Controls.Add(this.panel13);
             this.panel1.Controls.Add(this.panel12);
             this.panel1.Controls.Add(this.panel10);
@@ -156,12 +164,42 @@ namespace Bank
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // TransferTimelabel
+            // 
+            this.TransferTimelabel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.TransferTimelabel.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TransferTimelabel.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.TransferTimelabel.Location = new System.Drawing.Point(419, 569);
+            this.TransferTimelabel.Name = "TransferTimelabel";
+            this.TransferTimelabel.Size = new System.Drawing.Size(117, 28);
+            this.TransferTimelabel.TabIndex = 162;
+            // 
+            // WithdrawTimelabel
+            // 
+            this.WithdrawTimelabel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.WithdrawTimelabel.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WithdrawTimelabel.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.WithdrawTimelabel.Location = new System.Drawing.Point(278, 569);
+            this.WithdrawTimelabel.Name = "WithdrawTimelabel";
+            this.WithdrawTimelabel.Size = new System.Drawing.Size(127, 28);
+            this.WithdrawTimelabel.TabIndex = 161;
+            // 
+            // DepositTimelabel
+            // 
+            this.DepositTimelabel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.DepositTimelabel.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DepositTimelabel.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.DepositTimelabel.Location = new System.Drawing.Point(153, 569);
+            this.DepositTimelabel.Name = "DepositTimelabel";
+            this.DepositTimelabel.Size = new System.Drawing.Size(117, 28);
+            this.DepositTimelabel.TabIndex = 160;
+            // 
             // TransferNumberlabel
             // 
             this.TransferNumberlabel.AutoSize = true;
             this.TransferNumberlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TransferNumberlabel.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.TransferNumberlabel.Location = new System.Drawing.Point(456, 506);
+            this.TransferNumberlabel.Location = new System.Drawing.Point(46, 10);
             this.TransferNumberlabel.Name = "TransferNumberlabel";
             this.TransferNumberlabel.Size = new System.Drawing.Size(25, 24);
             this.TransferNumberlabel.TabIndex = 156;
@@ -172,7 +210,7 @@ namespace Bank
             this.WithdrawNumberlabel.AutoSize = true;
             this.WithdrawNumberlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WithdrawNumberlabel.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.WithdrawNumberlabel.Location = new System.Drawing.Point(325, 506);
+            this.WithdrawNumberlabel.Location = new System.Drawing.Point(46, 10);
             this.WithdrawNumberlabel.Name = "WithdrawNumberlabel";
             this.WithdrawNumberlabel.Size = new System.Drawing.Size(25, 24);
             this.WithdrawNumberlabel.TabIndex = 155;
@@ -183,7 +221,7 @@ namespace Bank
             this.DepositNumberlabel.AutoSize = true;
             this.DepositNumberlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DepositNumberlabel.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.DepositNumberlabel.Location = new System.Drawing.Point(192, 506);
+            this.DepositNumberlabel.Location = new System.Drawing.Point(38, 10);
             this.DepositNumberlabel.Name = "DepositNumberlabel";
             this.DepositNumberlabel.Size = new System.Drawing.Size(25, 24);
             this.DepositNumberlabel.TabIndex = 154;
@@ -240,6 +278,7 @@ namespace Bank
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel5.Controls.Add(this.panel16);
             this.panel5.Location = new System.Drawing.Point(28, 486);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(516, 5);
@@ -318,21 +357,21 @@ namespace Bank
             // 
             // TransferdataGridView
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            this.TransferdataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle37.BackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            this.TransferdataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
             this.TransferdataGridView.AutoGenerateColumns = false;
             this.TransferdataGridView.BackgroundColor = System.Drawing.SystemColors.Desktop;
             this.TransferdataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.TransferdataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle38.BackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TransferdataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
             this.TransferdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TransferdataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn5,
@@ -340,27 +379,28 @@ namespace Bank
             this.Transfer_To,
             this.dataGridViewTextBoxColumn7});
             this.TransferdataGridView.DataSource = this.transferHistoryViewBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.TransferdataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle39.BackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.TransferdataGridView.DefaultCellStyle = dataGridViewCellStyle39;
             this.TransferdataGridView.EnableHeadersVisualStyles = false;
             this.TransferdataGridView.Location = new System.Drawing.Point(685, 557);
             this.TransferdataGridView.Name = "TransferdataGridView";
             this.TransferdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.TransferdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle40.BackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.Black;
+            this.TransferdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle40;
             this.TransferdataGridView.RowTemplate.Height = 24;
             this.TransferdataGridView.Size = new System.Drawing.Size(504, 226);
             this.TransferdataGridView.TabIndex = 139;
+            this.TransferdataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TransferdataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -406,48 +446,49 @@ namespace Bank
             // 
             // WithdrawdataGridView
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            this.WithdrawdataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle41.BackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            this.WithdrawdataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle41;
             this.WithdrawdataGridView.AutoGenerateColumns = false;
             this.WithdrawdataGridView.BackgroundColor = System.Drawing.SystemColors.Desktop;
             this.WithdrawdataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.WithdrawdataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle42.BackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.WithdrawdataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle42;
             this.WithdrawdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.WithdrawdataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.WithdrawdataGridView.DataSource = this.withdrawHistoryViewBindingSource;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.WithdrawdataGridView.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle43.BackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.WithdrawdataGridView.DefaultCellStyle = dataGridViewCellStyle43;
             this.WithdrawdataGridView.EnableHeadersVisualStyles = false;
             this.WithdrawdataGridView.Location = new System.Drawing.Point(685, 316);
             this.WithdrawdataGridView.Name = "WithdrawdataGridView";
             this.WithdrawdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            this.WithdrawdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle44.BackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.Color.Black;
+            this.WithdrawdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle44;
             this.WithdrawdataGridView.RowTemplate.Height = 24;
             this.WithdrawdataGridView.Size = new System.Drawing.Size(504, 226);
             this.WithdrawdataGridView.TabIndex = 138;
+            this.WithdrawdataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.WithdrawdataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -485,48 +526,49 @@ namespace Bank
             // 
             // DepositdataGridView
             // 
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            this.DepositdataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle45.BackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle45.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            this.DepositdataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle45;
             this.DepositdataGridView.AutoGenerateColumns = false;
             this.DepositdataGridView.BackgroundColor = System.Drawing.SystemColors.Desktop;
             this.DepositdataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DepositdataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle46.BackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DepositdataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
             this.DepositdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DepositdataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.fieldDataGridViewTextBoxColumn,
             this.amountDataGridViewTextBoxColumn,
             this.dateDataGridViewTextBoxColumn});
             this.DepositdataGridView.DataSource = this.depositHistoryviewBindingSource;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DepositdataGridView.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle47.BackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DepositdataGridView.DefaultCellStyle = dataGridViewCellStyle47;
             this.DepositdataGridView.EnableHeadersVisualStyles = false;
             this.DepositdataGridView.Location = new System.Drawing.Point(685, 76);
             this.DepositdataGridView.Name = "DepositdataGridView";
             this.DepositdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            this.DepositdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle48.BackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.Color.Black;
+            this.DepositdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle48;
             this.DepositdataGridView.RowTemplate.Height = 24;
             this.DepositdataGridView.Size = new System.Drawing.Size(504, 226);
             this.DepositdataGridView.TabIndex = 135;
+            this.DepositdataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DepositdataGridView_CellContentClick);
             // 
             // fieldDataGridViewTextBoxColumn
             // 
@@ -731,35 +773,39 @@ namespace Bank
             // 
             this.transfer_History_ViewTableAdapter.ClearBeforeFill = true;
             // 
-            // DepositTimelabel
+            // DepositNumberpanel
             // 
-            this.DepositTimelabel.BackColor = System.Drawing.SystemColors.Desktop;
-            this.DepositTimelabel.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DepositTimelabel.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.DepositTimelabel.Location = new System.Drawing.Point(153, 569);
-            this.DepositTimelabel.Name = "DepositTimelabel";
-            this.DepositTimelabel.Size = new System.Drawing.Size(117, 28);
-            this.DepositTimelabel.TabIndex = 160;
+            this.DepositNumberpanel.Controls.Add(this.DepositNumberlabel);
+            this.DepositNumberpanel.Location = new System.Drawing.Point(161, 497);
+            this.DepositNumberpanel.Name = "DepositNumberpanel";
+            this.DepositNumberpanel.Size = new System.Drawing.Size(101, 45);
+            this.DepositNumberpanel.TabIndex = 163;
+            this.DepositNumberpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.DepositNumberpanel_Paint);
             // 
-            // WithdrawTimelabel
+            // WithdrawNumberpanel
             // 
-            this.WithdrawTimelabel.BackColor = System.Drawing.SystemColors.Desktop;
-            this.WithdrawTimelabel.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WithdrawTimelabel.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.WithdrawTimelabel.Location = new System.Drawing.Point(278, 569);
-            this.WithdrawTimelabel.Name = "WithdrawTimelabel";
-            this.WithdrawTimelabel.Size = new System.Drawing.Size(127, 28);
-            this.WithdrawTimelabel.TabIndex = 161;
+            this.WithdrawNumberpanel.Controls.Add(this.WithdrawNumberlabel);
+            this.WithdrawNumberpanel.Location = new System.Drawing.Point(276, 497);
+            this.WithdrawNumberpanel.Name = "WithdrawNumberpanel";
+            this.WithdrawNumberpanel.Size = new System.Drawing.Size(129, 45);
+            this.WithdrawNumberpanel.TabIndex = 164;
+            this.WithdrawNumberpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.WithdrawNumberpanel_Paint);
             // 
-            // TransferTimelabel
+            // panel16
             // 
-            this.TransferTimelabel.BackColor = System.Drawing.SystemColors.Desktop;
-            this.TransferTimelabel.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TransferTimelabel.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.TransferTimelabel.Location = new System.Drawing.Point(419, 569);
-            this.TransferTimelabel.Name = "TransferTimelabel";
-            this.TransferTimelabel.Size = new System.Drawing.Size(117, 28);
-            this.TransferTimelabel.TabIndex = 162;
+            this.panel16.Location = new System.Drawing.Point(389, 3);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(117, 59);
+            this.panel16.TabIndex = 165;
+            // 
+            // Transfernumberpanel
+            // 
+            this.Transfernumberpanel.Controls.Add(this.TransferNumberlabel);
+            this.Transfernumberpanel.Location = new System.Drawing.Point(417, 497);
+            this.Transfernumberpanel.Name = "Transfernumberpanel";
+            this.Transfernumberpanel.Size = new System.Drawing.Size(120, 44);
+            this.Transfernumberpanel.TabIndex = 165;
+            this.Transfernumberpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Transfernumberpanel_Paint);
             // 
             // AdminTransationForm
             // 
@@ -773,6 +819,7 @@ namespace Bank
             this.Load += new System.EventHandler(this.AdminTransationForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TransferdataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transferHistoryViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bankSystemDataBaseDataSet12)).EndInit();
@@ -790,6 +837,12 @@ namespace Bank
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.DepositNumberpanel.ResumeLayout(false);
+            this.DepositNumberpanel.PerformLayout();
+            this.WithdrawNumberpanel.ResumeLayout(false);
+            this.WithdrawNumberpanel.PerformLayout();
+            this.Transfernumberpanel.ResumeLayout(false);
+            this.Transfernumberpanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -854,5 +907,9 @@ namespace Bank
         private System.Windows.Forms.TextBox TransferTimelabel;
         private System.Windows.Forms.TextBox WithdrawTimelabel;
         private System.Windows.Forms.TextBox DepositTimelabel;
+        private System.Windows.Forms.Panel Transfernumberpanel;
+        private System.Windows.Forms.Panel WithdrawNumberpanel;
+        private System.Windows.Forms.Panel DepositNumberpanel;
+        private System.Windows.Forms.Panel panel16;
     }
 }

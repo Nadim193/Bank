@@ -69,7 +69,7 @@ namespace Bank
             SqlDataAdapter sqlData = new SqlDataAdapter("SELECT Date_Of_Birth FROM Parsonal WHERE User_Name = '" + LoginUserName + "'", SqlConnection);
             DataTable data = new DataTable();
             sqlData.Fill(data);
-            DOBTextBox.Text = data.Rows[0][0].ToString();
+            DOBDateTimePicker.Value = Convert.ToDateTime(data.Rows[0][0]);
             SqlConnection.Close();
         }
 
@@ -332,7 +332,7 @@ namespace Bank
             emailaddress = EmailTextBox.Text;
 
             if (emailaddress.Equals("") || FirstNameTextBox.Text.Equals("") || LastNameTextBox.Text.Equals("")
-                || DOBTextBox.Text.Equals("") || GendeTextBox.Text.Equals("") || MaritalTextBox.Text.Equals("")
+                || DOBDateTimePicker.Equals("") || GendeTextBox.Text.Equals("") || MaritalTextBox.Text.Equals("")
                 || AddressTextBox.Text.Equals("") || CityTextBox.Text.Equals("") || CountryTextBox.Text.Equals("")
                 || ReligionTextBox.Text.Equals("") || IncomeTextBox.Text.Equals("") || EQTextBox.Text.Equals("")
                 || OccupationTextBox.Text.Equals("") || ProfilePictureBox.Image.Equals(""))
@@ -352,7 +352,7 @@ namespace Bank
                                       ",[Last_Name] = '" + LastNameTextBox.Text + "'" +
                                       ",[Email_address] = '" + emailaddress + "'" +
                                       ",[Gender] = '" + GendeTextBox.Text + "'" +
-                                      ",[Date_Of_Birth] = '" + DOBTextBox.Text + "'" +
+                                      ",[Date_Of_Birth] = '" + DOBDateTimePicker.Value + "'" +
                                       ",[Marital_Status] = '" + MaritalTextBox.Text + "'" +
                                       ",[Address] = '" + AddressTextBox.Text + "'" +
                                       ",[City] = '" + CityTextBox.Text + "'" +
@@ -384,7 +384,7 @@ namespace Bank
                                       ",[Last_Name] = '" + LastNameTextBox.Text + "'" +
                                       ",[Email_address] = '" + emailaddress + "'" +
                                       ",[Gender] = '" + GendeTextBox.Text + "'" +
-                                      ",[Date_Of_Birth] = '" + DOBTextBox.Text + "'" +
+                                      ",[Date_Of_Birth] = '" + DOBDateTimePicker.Value + "'" +
                                       ",[Marital_Status] = '" + MaritalTextBox.Text + "'" +
                                       ",[Address] = '" + AddressTextBox.Text + "'" +
                                       ",[City] = '" + CityTextBox.Text + "'" +
@@ -418,7 +418,7 @@ namespace Bank
                                       ",[Last_Name] = '" + LastNameTextBox.Text + "'" +
                                       ",[Email_address] = '" + emailaddress + "'" +
                                       ",[Gender] = '" + GendeTextBox.Text + "'" +
-                                      ",[Date_Of_Birth] = '" + DOBTextBox.Text + "'" +
+                                      ",[Date_Of_Birth] = '" + DOBDateTimePicker.Value + "'" +
                                       ",[Marital_Status] = '" + MaritalTextBox.Text + "'" +
                                       ",[Address] = '" + AddressTextBox.Text + "'" +
                                       ",[City] = '" + CityTextBox.Text + "'" +
@@ -461,7 +461,7 @@ namespace Bank
                             smtp.EnableSsl = true;
 
                             if (emailaddress.Equals("") || FirstNameTextBox.Text.Equals("") || LastNameTextBox.Text.Equals("")
-                            || DOBTextBox.Text.Equals("") || GendeTextBox.Text.Equals("") || MaritalTextBox.Text.Equals("")
+                            || DOBDateTimePicker.Value.Equals("") || GendeTextBox.Text.Equals("") || MaritalTextBox.Text.Equals("")
                             || AddressTextBox.Text.Equals("") || CityTextBox.Text.Equals("") || CountryTextBox.Text.Equals("")
                             || ReligionTextBox.Text.Equals("") || IncomeTextBox.Text.Equals("") || EQTextBox.Text.Equals("")
                             || OccupationTextBox.Text.Equals("") || ProfilePictureBox.Image.Equals(""))
@@ -480,7 +480,7 @@ namespace Bank
                                               ",[Last_Name] = '" + LastNameTextBox.Text + "'" +
                                               ",[Email_address] = '" + emailaddress + "'" +
                                               ",[Gender] = '" + GendeTextBox.Text + "'" +
-                                              ",[Date_Of_Birth] = '" + DOBTextBox.Text + "'" +
+                                              ",[Date_Of_Birth] = '" + DOBDateTimePicker.Value + "'" +
                                               ",[Marital_Status] = '" + MaritalTextBox.Text + "'" +
                                               ",[Address] = '" + AddressTextBox.Text + "'" +
                                               ",[City] = '" + CityTextBox.Text + "'" +
@@ -521,7 +521,7 @@ namespace Bank
                             smtp.EnableSsl = true;
 
                             if (emailaddress.Equals("") || FirstNameTextBox.Text.Equals("") || LastNameTextBox.Text.Equals("")
-                            || DOBTextBox.Text.Equals("") || GendeTextBox.Text.Equals("") || MaritalTextBox.Text.Equals("")
+                            || DOBDateTimePicker.Value.Equals("") || GendeTextBox.Text.Equals("") || MaritalTextBox.Text.Equals("")
                             || AddressTextBox.Text.Equals("") || CityTextBox.Text.Equals("") || CountryTextBox.Text.Equals("")
                             || ReligionTextBox.Text.Equals("") || IncomeTextBox.Text.Equals("") || EQTextBox.Text.Equals("")
                             || OccupationTextBox.Text.Equals("") || ProfilePictureBox.Image.Equals(""))
@@ -545,7 +545,7 @@ namespace Bank
                                               ",[Last_Name] = '" + LastNameTextBox.Text + "'" +
                                               ",[Email_address] = '" + emailaddress + "'" +
                                               ",[Gender] = '" + GendeTextBox.Text + "'" +
-                                              ",[Date_Of_Birth] = '" + DOBTextBox.Text + "'" +
+                                              ",[Date_Of_Birth] = '" + DOBDateTimePicker.Value + "'" +
                                               ",[Marital_Status] = '" + MaritalTextBox.Text + "'" +
                                               ",[Address] = '" + AddressTextBox.Text + "'" +
                                               ",[City] = '" + CityTextBox.Text + "'" +
@@ -588,7 +588,7 @@ namespace Bank
                             smtp.EnableSsl = true;
 
                             if (emailaddress.Equals("") || FirstNameTextBox.Text.Equals("") || LastNameTextBox.Text.Equals("")
-                            || DOBTextBox.Text.Equals("") || GendeTextBox.Text.Equals("") || MaritalTextBox.Text.Equals("")
+                            || DOBDateTimePicker.Value.Equals("") || GendeTextBox.Text.Equals("") || MaritalTextBox.Text.Equals("")
                             || AddressTextBox.Text.Equals("") || CityTextBox.Text.Equals("") || CountryTextBox.Text.Equals("")
                             || ReligionTextBox.Text.Equals("") || IncomeTextBox.Text.Equals("") || EQTextBox.Text.Equals("")
                             || OccupationTextBox.Text.Equals("") || ProfilePictureBox.Image.Equals(""))
@@ -612,7 +612,7 @@ namespace Bank
                                               ",[Last_Name] = '" + LastNameTextBox.Text + "'" +
                                               ",[Email_address] = '" + emailaddress + "'" +
                                               ",[Gender] = '" + GendeTextBox.Text + "'" +
-                                              ",[Date_Of_Birth] = '" + DOBTextBox.Text + "'" +
+                                              ",[Date_Of_Birth] = '" + DOBDateTimePicker.Value + "'" +
                                               ",[Marital_Status] = '" + MaritalTextBox.Text + "'" +
                                               ",[Address] = '" + AddressTextBox.Text + "'" +
                                               ",[City] = '" + CityTextBox.Text + "'" +

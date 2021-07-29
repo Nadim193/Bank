@@ -51,11 +51,11 @@ namespace Bank
             this.Hide();
             vf.ShowDialog();
             this.Close();
-
         }
 
         private void LoginButton_Click_1(object sender, EventArgs e)
         {
+            
             string mySQL1 = string.Empty;
             active = "Active";
             mySQL1 += "SELECT Status FROM Parsonal ";
@@ -85,7 +85,6 @@ namespace Bank
                 try
                 {
                     string ComboValue = SelectRoleComboBox.SelectedItem.ToString();
-
                     if (ComboValue == "-By User")
                     {
                         if (userData1.Rows.Count > 0)
@@ -195,7 +194,7 @@ namespace Bank
                         MessageBox.Show("Please Enter Your Role.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                 }
-                catch (Exception ex)
+                catch (Exception )
                 {
                     MessageBox.Show("Please Enter Your Role.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
@@ -239,14 +238,14 @@ namespace Bank
 
         private void HidePasswordBox_Click(object sender, EventArgs e)
         {
-            PasswordTxtbox.UseSystemPasswordChar = true;
+            PasswordTxtbox.UseSystemPasswordChar = false;
             ShowPasswordBox.Visible = true;
             HidePasswordBox.Visible = false;
         }
 
         private void ShowPasswordBox_Click(object sender, EventArgs e)
         {
-            PasswordTxtbox.UseSystemPasswordChar = false;
+            PasswordTxtbox.UseSystemPasswordChar = true;
             HidePasswordBox.Visible = true;
             ShowPasswordBox.Visible = false;
         }

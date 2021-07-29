@@ -28,18 +28,6 @@ namespace Bank
             UsernameTextbox.Select();
         }
 
-        private void ShowRememberPasswordcheckBox_CheckedChanged_1(object sender, EventArgs e)
-        {
-            if (ShowRememberPasswordcheckBox.Checked == true)
-            {
-                ConfirmPasswordtextBox.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                ConfirmPasswordtextBox.UseSystemPasswordChar = true;
-            }
-        }
-
         private void Submitbutton_Click(object sender, EventArgs e)
         {
             try
@@ -49,7 +37,7 @@ namespace Bank
                 RegPassword = ConfirmPasswordtextBox.Text;
                 regEmail = EmailAdressTxtbox.Text;
 
-                if (regUserName.Equals("") || FirstNametextBox.Text.Equals("") || LastNametextBox.Text.Equals("") || YearcomboBox.SelectedItem.Equals("") || MonthcomboBox.SelectedItem.Equals("") || DatecomboBox.SelectedItem.Equals("") || regEmail.Equals("")
+                if (regUserName.Equals("") || FirstNametextBox.Text.Equals("") || LastNametextBox.Text.Equals("")|| DOBDateTimePicker.Equals("") || regEmail.Equals("")
                     || AddresstextBox.Text.Equals("") || CitytextBox.Text.Equals("") || CountrytextBox.Text.Equals("") || PasswordtextBox.Text.Equals("") || RegPassword.Equals("") || ReligioncomboBox.SelectedItem.Equals("") || IncomecomboBox.SelectedItem.Equals("") || QualificationcomboBox.SelectedItem.Equals("") || OccupationcomboBox.SelectedItem.Equals(""))
                 {
                     MessageBox.Show("Fill All The Requried Field.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -130,7 +118,7 @@ namespace Bank
                                ,[Profile_picture]
                                 ,[Status])
                          VALUES
-                                ('" + UsernameTextbox.Text +"', '" + PasswordtextBox.Text +"', '" + FirstNametextBox.Text + "', '" + LastNametextBox.Text + "', '" + regEmail + "', '" + Gender + "', '" + YearcomboBox.SelectedItem + "-" + MonthcomboBox.SelectedItem + "-" + DatecomboBox.SelectedItem + "'" +
+                                ('" + UsernameTextbox.Text +"', '" + PasswordtextBox.Text +"', '" + FirstNametextBox.Text + "', '" + LastNametextBox.Text + "', '" + regEmail + "', '" + Gender + "', '" + DOBDateTimePicker.Value + "'" +
                             ", '" + Marital + "', '" + AddresstextBox.Text + "', '" + CitytextBox.Text + "', '" + CountrytextBox.Text + "', '" + ReligioncomboBox.SelectedItem + "', '" + IncomecomboBox.SelectedItem + "'" +
                             ", '" + QualificationcomboBox.SelectedItem + "', '" + OccupationcomboBox.SelectedItem + "', '" + Account + "', @image, '" + Active + "')";
                     
@@ -323,6 +311,18 @@ namespace Bank
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void ShowRememberPasswordcheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ShowRememberPasswordcheckBox.Checked == true)
+            {
+                ConfirmPasswordtextBox.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                ConfirmPasswordtextBox.UseSystemPasswordChar = true;
+            }
         }
     }
 }

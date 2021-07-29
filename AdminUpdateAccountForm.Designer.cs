@@ -44,6 +44,7 @@ namespace Bank
             this.panel29 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.EQpanel = new System.Windows.Forms.Panel();
+            this.EQTextBox = new Guna.UI.WinForms.GunaTextBox();
             this.panel28 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -103,8 +104,7 @@ namespace Bank
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.EQTextBox = new Guna.UI.WinForms.GunaTextBox();
-            this.DOBTextBox = new Guna.UI.WinForms.GunaTextBox();
+            this.DOBDateTimePicker = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel1.SuspendLayout();
             this.DepositUserNamepanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SearchAccountButton)).BeginInit();
@@ -309,6 +309,23 @@ namespace Bank
             this.EQpanel.TabIndex = 96;
             this.EQpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.EQpanel_Paint);
             // 
+            // EQTextBox
+            // 
+            this.EQTextBox.BaseColor = System.Drawing.Color.Wheat;
+            this.EQTextBox.BorderColor = System.Drawing.Color.Wheat;
+            this.EQTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EQTextBox.FocusedBaseColor = System.Drawing.Color.White;
+            this.EQTextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.EQTextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.EQTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EQTextBox.ForeColor = System.Drawing.Color.Black;
+            this.EQTextBox.Location = new System.Drawing.Point(283, 3);
+            this.EQTextBox.Name = "EQTextBox";
+            this.EQTextBox.PasswordChar = '\0';
+            this.EQTextBox.SelectedText = "";
+            this.EQTextBox.Size = new System.Drawing.Size(235, 47);
+            this.EQTextBox.TabIndex = 139;
+            // 
             // panel28
             // 
             this.panel28.BackColor = System.Drawing.Color.Wheat;
@@ -351,6 +368,7 @@ namespace Bank
             this.AccountTypepanel.Name = "AccountTypepanel";
             this.AccountTypepanel.Size = new System.Drawing.Size(523, 55);
             this.AccountTypepanel.TabIndex = 98;
+            this.AccountTypepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.AccountTypepanel_Paint);
             // 
             // AccountTypeLabel
             // 
@@ -695,7 +713,7 @@ namespace Bank
             // 
             this.DOBpanel.BackColor = System.Drawing.Color.Wheat;
             this.DOBpanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DOBpanel.Controls.Add(this.DOBTextBox);
+            this.DOBpanel.Controls.Add(this.DOBDateTimePicker);
             this.DOBpanel.Controls.Add(this.panel2);
             this.DOBpanel.Controls.Add(this.bunifuCustomLabel2);
             this.DOBpanel.Location = new System.Drawing.Point(14, 142);
@@ -1036,39 +1054,27 @@ namespace Bank
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1207, 5);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // EQTextBox
+            // DOBDateTimePicker
             // 
-            this.EQTextBox.BaseColor = System.Drawing.Color.Wheat;
-            this.EQTextBox.BorderColor = System.Drawing.Color.Wheat;
-            this.EQTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.EQTextBox.FocusedBaseColor = System.Drawing.Color.White;
-            this.EQTextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.EQTextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.EQTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EQTextBox.ForeColor = System.Drawing.Color.Black;
-            this.EQTextBox.Location = new System.Drawing.Point(283, 3);
-            this.EQTextBox.Name = "EQTextBox";
-            this.EQTextBox.PasswordChar = '\0';
-            this.EQTextBox.SelectedText = "";
-            this.EQTextBox.Size = new System.Drawing.Size(235, 47);
-            this.EQTextBox.TabIndex = 139;
-            // 
-            // DOBTextBox
-            // 
-            this.DOBTextBox.BaseColor = System.Drawing.Color.Wheat;
-            this.DOBTextBox.BorderColor = System.Drawing.Color.Wheat;
-            this.DOBTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.DOBTextBox.FocusedBaseColor = System.Drawing.Color.White;
-            this.DOBTextBox.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.DOBTextBox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.DOBTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DOBTextBox.ForeColor = System.Drawing.Color.Black;
-            this.DOBTextBox.Location = new System.Drawing.Point(191, 3);
-            this.DOBTextBox.Name = "DOBTextBox";
-            this.DOBTextBox.PasswordChar = '\0';
-            this.DOBTextBox.SelectedText = "";
-            this.DOBTextBox.Size = new System.Drawing.Size(375, 47);
-            this.DOBTextBox.TabIndex = 138;
+            this.DOBDateTimePicker.BaseColor = System.Drawing.Color.Wheat;
+            this.DOBDateTimePicker.BorderColor = System.Drawing.Color.Wheat;
+            this.DOBDateTimePicker.CustomFormat = null;
+            this.DOBDateTimePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DOBDateTimePicker.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DOBDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DOBDateTimePicker.ForeColor = System.Drawing.Color.Black;
+            this.DOBDateTimePicker.Location = new System.Drawing.Point(191, 3);
+            this.DOBDateTimePicker.MaxDate = new System.DateTime(2021, 7, 28, 0, 0, 0, 0);
+            this.DOBDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DOBDateTimePicker.Name = "DOBDateTimePicker";
+            this.DOBDateTimePicker.OnHoverBaseColor = System.Drawing.Color.White;
+            this.DOBDateTimePicker.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DOBDateTimePicker.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DOBDateTimePicker.OnPressedColor = System.Drawing.Color.Black;
+            this.DOBDateTimePicker.Size = new System.Drawing.Size(375, 47);
+            this.DOBDateTimePicker.TabIndex = 139;
+            this.DOBDateTimePicker.Text = "Wednesday, July 28, 2021";
+            this.DOBDateTimePicker.Value = new System.DateTime(2021, 7, 28, 0, 0, 0, 0);
             // 
             // AdminUpdateAccountForm
             // 
@@ -1201,6 +1207,6 @@ namespace Bank
         private Guna.UI.WinForms.GunaTextBox occupationTextBox;
         private Guna.UI.WinForms.GunaTextBox IncomeTextBox;
         private Guna.UI.WinForms.GunaTextBox EQTextBox;
-        private Guna.UI.WinForms.GunaTextBox DOBTextBox;
+        private Guna.UI.WinForms.GunaDateTimePicker DOBDateTimePicker;
     }
 }
