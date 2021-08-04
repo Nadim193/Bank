@@ -29,6 +29,7 @@ namespace Bank
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -47,6 +48,9 @@ namespace Bank
             this.maxIcon = new System.Windows.Forms.PictureBox();
             this.minIcon = new System.Windows.Forms.PictureBox();
             this.cerraricon = new System.Windows.Forms.PictureBox();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Verify.SuspendLayout();
@@ -108,9 +112,10 @@ namespace Bank
             // 
             this.forgetBackbutton.BackColor = System.Drawing.Color.DarkOrange;
             this.forgetBackbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.forgetBackbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.forgetBackbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forgetBackbutton.ForeColor = System.Drawing.Color.Black;
-            this.forgetBackbutton.Location = new System.Drawing.Point(350, 375);
+            this.forgetBackbutton.Location = new System.Drawing.Point(304, 375);
             this.forgetBackbutton.Name = "forgetBackbutton";
             this.forgetBackbutton.Size = new System.Drawing.Size(100, 47);
             this.forgetBackbutton.TabIndex = 11;
@@ -124,7 +129,7 @@ namespace Bank
             this.showconfirmpassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.showconfirmpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showconfirmpassword.ForeColor = System.Drawing.Color.DarkOrange;
-            this.showconfirmpassword.Location = new System.Drawing.Point(190, 330);
+            this.showconfirmpassword.Location = new System.Drawing.Point(61, 312);
             this.showconfirmpassword.Name = "showconfirmpassword";
             this.showconfirmpassword.Size = new System.Drawing.Size(142, 21);
             this.showconfirmpassword.TabIndex = 10;
@@ -148,19 +153,20 @@ namespace Bank
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label2.Location = new System.Drawing.Point(10, 276);
+            this.label2.Location = new System.Drawing.Point(58, 232);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 18);
+            this.label2.Size = new System.Drawing.Size(148, 18);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Confirm Password :";
+            this.label2.Text = "Confirm Password";
             // 
             // SavePassword
             // 
             this.SavePassword.BackColor = System.Drawing.Color.DarkOrange;
             this.SavePassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SavePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SavePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SavePassword.ForeColor = System.Drawing.Color.Black;
-            this.SavePassword.Location = new System.Drawing.Point(190, 375);
+            this.SavePassword.Location = new System.Drawing.Point(144, 375);
             this.SavePassword.Name = "SavePassword";
             this.SavePassword.Size = new System.Drawing.Size(100, 47);
             this.SavePassword.TabIndex = 7;
@@ -184,20 +190,20 @@ namespace Bank
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(15, 189);
+            this.label1.Location = new System.Drawing.Point(57, 137);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 20);
+            this.label1.Size = new System.Drawing.Size(133, 20);
             this.label1.TabIndex = 4;
-            this.label1.Text = "New Password :";
+            this.label1.Text = "New Password";
             // 
             // confirmpasswordtextBox
             // 
             this.confirmpasswordtextBox.BackColor = System.Drawing.Color.Wheat;
             this.confirmpasswordtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmpasswordtextBox.ForeColor = System.Drawing.Color.Black;
-            this.confirmpasswordtextBox.Location = new System.Drawing.Point(190, 274);
+            this.confirmpasswordtextBox.Location = new System.Drawing.Point(61, 268);
             this.confirmpasswordtextBox.Name = "confirmpasswordtextBox";
-            this.confirmpasswordtextBox.Size = new System.Drawing.Size(260, 34);
+            this.confirmpasswordtextBox.Size = new System.Drawing.Size(499, 34);
             this.confirmpasswordtextBox.TabIndex = 1;
             this.confirmpasswordtextBox.UseSystemPasswordChar = true;
             // 
@@ -206,9 +212,9 @@ namespace Bank
             this.newpasswordTextBox.BackColor = System.Drawing.Color.Wheat;
             this.newpasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newpasswordTextBox.ForeColor = System.Drawing.Color.Black;
-            this.newpasswordTextBox.Location = new System.Drawing.Point(190, 179);
+            this.newpasswordTextBox.Location = new System.Drawing.Point(61, 179);
             this.newpasswordTextBox.Name = "newpasswordTextBox";
-            this.newpasswordTextBox.Size = new System.Drawing.Size(260, 34);
+            this.newpasswordTextBox.Size = new System.Drawing.Size(499, 34);
             this.newpasswordTextBox.TabIndex = 0;
             // 
             // panel3
@@ -277,6 +283,21 @@ namespace Bank
             this.cerraricon.TabStop = false;
             this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
             // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 15;
+            this.gunaElipse1.TargetControl = this;
+            // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.Radius = 7;
+            this.gunaElipse2.TargetControl = this.SavePassword;
+            // 
+            // gunaElipse3
+            // 
+            this.gunaElipse3.Radius = 7;
+            this.gunaElipse3.TargetControl = this.forgetBackbutton;
+            // 
             // ForgetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -322,5 +343,8 @@ namespace Bank
         private System.Windows.Forms.PictureBox minIcon;
         private System.Windows.Forms.PictureBox cerraricon;
         private System.Windows.Forms.Panel panel6;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse2;
+        private Guna.UI.WinForms.GunaElipse gunaElipse3;
     }
 }

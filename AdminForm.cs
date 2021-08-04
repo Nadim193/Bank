@@ -53,7 +53,8 @@ namespace Bank
 
         private void cerraricon_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+            CloseForm close = new CloseForm();
+            close.ShowDialog();
         }
 
         private void RestoreDownIcon_Click(object sender, EventArgs e)
@@ -77,6 +78,10 @@ namespace Bank
 
         private void CreatedAccountbutton_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = CreatedAccountbutton.Height;
+            Sidepanel.Top = CreatedAccountbutton.Top;
+
             Menupanel.Controls.Clear();
             AdminCreatedNewForm adminCreated = new AdminCreatedNewForm();
             adminCreated.TopLevel = false;
@@ -86,6 +91,10 @@ namespace Bank
 
         private void CheckBalancebutton_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = CheckBalancebutton.Height;
+            Sidepanel.Top = CheckBalancebutton.Top;
+
             Menupanel.Controls.Clear();
             AdminCheckBalanceForm checkBalance = new AdminCheckBalanceForm();
             checkBalance.TopLevel = false;
@@ -95,6 +104,10 @@ namespace Bank
 
         private void CustomersListbutton_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = CustomersListbutton.Height;
+            Sidepanel.Top = CustomersListbutton.Top;
+
             Menupanel.Controls.Clear();
             AdminCustomersListForm customersListForm = new AdminCustomersListForm();
             customersListForm.TopLevel = false;
@@ -104,6 +117,10 @@ namespace Bank
 
         private void SearchAccountbutton_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = SearchAccountbutton.Height;
+            Sidepanel.Top = SearchAccountbutton.Top;
+
             Menupanel.Controls.Clear();
             AdminSearchAccountForm searchAccountForm = new AdminSearchAccountForm();
             searchAccountForm.TopLevel = false;
@@ -113,6 +130,10 @@ namespace Bank
 
         private void Transationbutton_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = Transationbutton.Height;
+            Sidepanel.Top = Transationbutton.Top;
+
             Menupanel.Controls.Clear();
             AdminTransationForm transationForm = new AdminTransationForm();
             transationForm.TopLevel = false;
@@ -122,6 +143,10 @@ namespace Bank
 
         private void Withdrawbutton_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = Withdrawbutton.Height;
+            Sidepanel.Top = Withdrawbutton.Top;
+
             Menupanel.Controls.Clear();
             AdminWithdrawForm withdrawForm = new AdminWithdrawForm();
             withdrawForm.TopLevel = false;
@@ -131,6 +156,10 @@ namespace Bank
 
         private void Depositbutton_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = Depositbutton.Height;
+            Sidepanel.Top = Depositbutton.Top;
+
             Menupanel.Controls.Clear();
             AdminDepositForm depositForm = new AdminDepositForm();
             depositForm.TopLevel = false;
@@ -140,6 +169,10 @@ namespace Bank
 
         private void Transferbutton_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = Transferbutton.Height;
+            Sidepanel.Top = Transferbutton.Top;
+
             Menupanel.Controls.Clear();
             AdminTransferForm transferForm = new AdminTransferForm();
             transferForm.TopLevel = false;
@@ -149,6 +182,10 @@ namespace Bank
 
         private void AccountDetailsbutton_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = AccountDetailsbutton.Height;
+            Sidepanel.Top = AccountDetailsbutton.Top;
+
             Menupanel.Controls.Clear();
             AdminAccountDetailsForm accountDetailForm = new AdminAccountDetailsForm();
             accountDetailForm.TopLevel = false;
@@ -158,6 +195,10 @@ namespace Bank
 
         private void UpdateAccountbutton_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = UpdateAccountbutton.Height;
+            Sidepanel.Top = UpdateAccountbutton.Top;
+
             Menupanel.Controls.Clear();
             AdminUpdateAccountForm updateAccountForm = new AdminUpdateAccountForm();
             updateAccountForm.TopLevel = false;
@@ -167,6 +208,10 @@ namespace Bank
 
         private void Logoutbutton_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = Logoutbutton.Height;
+            Sidepanel.Top = Logoutbutton.Top;
+
             LoginForm login = new LoginForm();
             this.Hide();
             login.ShowDialog();
@@ -175,6 +220,8 @@ namespace Bank
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = false;
+
             Menupanel.Controls.Clear();
             AdminHomeForm adminHom = new AdminHomeForm();
             adminHom.TopLevel = false;

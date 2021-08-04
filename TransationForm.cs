@@ -199,6 +199,19 @@ namespace Bank
             return mail;
         }
 
+        private string GetSavingTime()
+        {
+            SqlConnection.Open();
+            string saving;
+            SqlDataAdapter sqlData = new SqlDataAdapter("SELECT Saving_Time FROM Customer_Details WHERE FUser_Name = '" + UserName + "'", SqlConnection);
+            DataTable data = new DataTable();
+            sqlData.Fill(data);
+            saving = (data.Rows[0][0]).ToString();
+            SqlConnection.Close();
+
+            return saving;
+        }
+
         private void Transationbutton_Click(object sender, EventArgs e)
         {
             if(FromTransationUserNameTextbox.Text == UserName && PasswordTextbox.Text == Password)
@@ -207,13 +220,15 @@ namespace Bank
                 string AccountStatus = "Active";
                 string AccountType = "Current Account";
 
-                string checknull = "Null";
+                string checknull = "";
                 string mySQL9 = string.Empty;
                 mySQL9 += "SELECT Email_address FROM Parsonal ";
                 mySQL9 += "WHERE User_name = '" + UserName + "'";
                 mySQL9 += "AND Email_address = '" + checknull + "'";
 
                 DataTable userData9 = ServerConnection.executeSQL(mySQL9);
+
+                DateTime time = DateTime.Now;
 
                 if (AccountStatus == GetAccountStstus())
                 {
@@ -309,9 +324,99 @@ namespace Bank
                                 MessageBox.Show("TRANSFER SUCCESSFULL", "Message Box", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                         }
+                        else if(AccountType != GetAccountType() && time >= Convert.ToDateTime(GetSavingTime()))
+                        {
+                            if (userData9.Rows.Count > 0)
+                            {
+                                AlertForm alert = new AlertForm();
+                                alert.ShowDialog();
+                            }
+                            else
+                            {
+                                string field = "Transfer";
+
+                                string mySQL1 = string.Empty;
+                                mySQL1 += "SELECT * FROM Customer_Details ";
+                                mySQL1 += "UPDATE [dbo].[Customer_Details]";
+                                mySQL1 += "SET [Total_Money] = '" + (FromTotalBalance() - transferamount) + "'";
+                                mySQL1 += "WHERE FUser_Name = '" + UserName + "'";
+
+                                string mySQL2 = string.Empty;
+                                mySQL2 += "SELECT * FROM Customer_Details ";
+                                mySQL2 += "UPDATE [dbo].[Customer_Details]";
+                                mySQL2 += "SET [Total_Money] = '" + (ToTotalBalance() + transferamount) + "'";
+                                mySQL2 += "WHERE FUser_Name = '" + ToTransationUserNameTextbox.Text + "'";
+
+                                string mySQL3 = string.Empty;
+                                DateTime dateTimeVariable = DateTime.Now;
+                                mySQL3 += "SELECT * FROM Customer_Details ";
+                                mySQL3 += "UPDATE [dbo].[Customer_Details]";
+                                mySQL3 += "SET [TDate_Time] = '" + dateTimeVariable + "'";
+                                mySQL3 += "WHERE FUser_Name = '" + UserName + "'";
+
+                                string mySQL4 = string.Empty;
+                                mySQL4 += "SELECT * FROM Customer_Details ";
+                                mySQL4 += "UPDATE [dbo].[Customer_Details]";
+                                mySQL4 += "SET [Transation_Money] = '" + transferamount + "'";
+                                mySQL4 += "WHERE FUser_Name = '" + UserName + "'";
+
+                                string mySQL5 = string.Empty;
+                                mySQL5 += "SELECT * FROM Customer_Details ";
+                                mySQL5 += "UPDATE [dbo].[Customer_Details]";
+                                mySQL5 += "SET [Transation_To] = '" + ToTransationUserNameTextbox.Text + "'";
+                                mySQL5 += "WHERE FUser_Name = '" + UserName + "'";
+
+                                string mySQL6 = string.Empty;
+                                mySQL6 += "SELECT * FROM Current_Transation_Details ";
+                                mySQL6 += "UPDATE [dbo].[Current_Transation_Details]";
+                                mySQL6 += "SET [Current_Transfer_balance] = '" + FromParsonalBalancelabel.Text + "'";
+                                mySQL6 += "WHERE CUser_Name = '" + UserName + "'";
+
+                                string mySQL7 = string.Empty;
+
+                                mySQL7 += @"INSERT INTO [dbo].[Transation_History]
+                                       ([TUser_name]
+                                       ,[Amount]
+                                       ,[Field]
+                                       ,[Date]
+                                       ,[Transfer_To])
+                                 VALUES
+                                       ('" + UserName + "', '" + transferamount + "', '" + field + "', '" + dateTimeVariable + "', '" + ToTransationUserNameTextbox.Text + "')";
+
+                                DataTable userData1 = ServerConnection.executeSQL(mySQL1);
+                                DataTable userData2 = ServerConnection.executeSQL(mySQL2);
+                                DataTable userData3 = ServerConnection.executeSQL(mySQL3);
+                                DataTable userData4 = ServerConnection.executeSQL(mySQL4);
+                                DataTable userData5 = ServerConnection.executeSQL(mySQL5);
+                                DataTable userData6 = ServerConnection.executeSQL(mySQL6);
+                                DataTable userData7 = ServerConnection.executeSQL(mySQL7);
+
+                                string from, pass, messageBody;
+                                Random rand = new Random();
+                                MailMessage message = new MailMessage();
+                                to = GetEmail();
+                                from = "nadim.hossain193@gmail.com";
+                                pass = "nadim1155";
+                                messageBody = "Transfer Amount : " + transferamount +
+                                    "   Your Balance is : " + FromTotalBalance() +
+                                    "   Money Transfer To " + ToTransationUserNameTextbox.Text;
+                                message.To.Add(to);
+                                message.From = new MailAddress(from);
+                                message.Body = messageBody;
+                                message.Subject = "Account Transation Information.";
+                                using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
+                                {
+                                    smtp.Credentials = new NetworkCredential(from, pass);
+                                    smtp.EnableSsl = true;
+                                    smtp.Send(message);
+                                }
+
+                                MessageBox.Show("TRANSFER SUCCESSFULL", "Message Box", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                        }
                         else
                         {
-                            MessageBox.Show("You can't Transfer Money. Because This Account is a Saving Account ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("You can't Withdraw Money With in " + GetSavingTime() + " Date", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                     else

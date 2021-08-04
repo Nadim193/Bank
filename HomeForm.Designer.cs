@@ -329,7 +329,7 @@ namespace Bank
             // pictureBox13
             // 
             this.pictureBox13.Image = global::Bank.Properties.Resources.Screenshot_2021_07_15_235621_removebg_preview1;
-            this.pictureBox13.Location = new System.Drawing.Point(-1, 83);
+            this.pictureBox13.Location = new System.Drawing.Point(3, 109);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(106, 92);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -343,9 +343,9 @@ namespace Bank
             this.label6.ForeColor = System.Drawing.Color.DarkOrange;
             this.label6.Location = new System.Drawing.Point(24, 19);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(178, 29);
+            this.label6.Size = new System.Drawing.Size(300, 29);
             this.label6.TabIndex = 63;
-            this.label6.Text = "ALL HISTORY";
+            this.label6.Text = "TRANSATION HISTORY";
             // 
             // panel16
             // 
@@ -521,7 +521,7 @@ namespace Bank
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Bank.Properties.Resources.Screenshot_2021_07_15_231152_removebg_preview;
-            this.pictureBox11.Location = new System.Drawing.Point(7, 83);
+            this.pictureBox11.Location = new System.Drawing.Point(7, 109);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(106, 92);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -690,7 +690,7 @@ namespace Bank
             // pictureBox12
             // 
             this.pictureBox12.Image = global::Bank.Properties.Resources.Screenshot_2021_07_15_235621_removebg_preview;
-            this.pictureBox12.Location = new System.Drawing.Point(6, 80);
+            this.pictureBox12.Location = new System.Drawing.Point(3, 104);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(106, 92);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -704,9 +704,9 @@ namespace Bank
             this.label5.ForeColor = System.Drawing.Color.DarkOrange;
             this.label5.Location = new System.Drawing.Point(24, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(300, 29);
+            this.label5.Size = new System.Drawing.Size(272, 29);
             this.label5.TabIndex = 61;
-            this.label5.Text = "TRANSATION HISTORY";
+            this.label5.Text = "TRANSFER HISTORY";
             // 
             // panel15
             // 
@@ -854,7 +854,7 @@ namespace Bank
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Bank.Properties.Resources.Screenshot_2021_07_15_231152_removebg_preview;
-            this.pictureBox9.Location = new System.Drawing.Point(7, 82);
+            this.pictureBox9.Location = new System.Drawing.Point(7, 105);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(106, 92);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

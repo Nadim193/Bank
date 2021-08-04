@@ -1,13 +1,7 @@
 ﻿using Bank.Connection;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Bank
@@ -121,6 +115,7 @@ namespace Bank
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = false;
             Menupanel.Controls.Clear();
             HomeForm home = new HomeForm();
             home.TopLevel = false;
@@ -154,6 +149,10 @@ namespace Bank
 
         private void button6_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = AccountReviewbutton.Height;
+            Sidepanel.Top = AccountReviewbutton.Top;
+
             Menupanel.Controls.Clear();
             Account_Rewiew_Form AR = new Account_Rewiew_Form();
             AR.TopLevel = false;
@@ -163,6 +162,10 @@ namespace Bank
 
         private void button7_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = Withdrawbutton.Height;
+            Sidepanel.Top = Withdrawbutton.Top;
+
             Menupanel.Controls.Clear();
             WithdrawFrom withdraw = new WithdrawFrom();
             withdraw.TopLevel = false;
@@ -172,6 +175,10 @@ namespace Bank
 
         private void button5_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = Depositbutton.Height;
+            Sidepanel.Top = Depositbutton.Top;
+
             Menupanel.Controls.Clear();
             DepositForm deposit = new DepositForm();
             deposit.TopLevel = false;
@@ -181,6 +188,10 @@ namespace Bank
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = Transferbutton.Height;
+            Sidepanel.Top = Transferbutton.Top;
+
             Menupanel.Controls.Clear();
             TransationForm transation = new TransationForm();
             transation.TopLevel = false;
@@ -190,6 +201,10 @@ namespace Bank
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = Changebutton.Height;
+            Sidepanel.Top = Changebutton.Top;
+
             Menupanel.Controls.Clear();
             ChangePasswordForm changePassword = new ChangePasswordForm();
             changePassword.TopLevel = false;
@@ -199,6 +214,10 @@ namespace Bank
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = LogOutbutton.Height;
+            Sidepanel.Top = LogOutbutton.Top;
+
             LoginForm login = new LoginForm();
             this.Hide();
             login.ShowDialog();
@@ -218,6 +237,10 @@ namespace Bank
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Sidepanel.Visible = true;
+            Sidepanel.Height = Editprofilebutton.Height;
+            Sidepanel.Top = Editprofilebutton.Top;
+
             Menupanel.Controls.Clear();
             EditProfileForm editProfile = new EditProfileForm();
             editProfile.TopLevel = false;

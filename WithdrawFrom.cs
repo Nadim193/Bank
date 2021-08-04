@@ -92,11 +92,24 @@ namespace Bank
             return mail;
         }
 
+        private string GetSavingTime()
+        {
+            SqlConnection.Open();
+            string saving;
+            SqlDataAdapter sqlData = new SqlDataAdapter("SELECT Saving_Time FROM Customer_Details WHERE FUser_Name = '" + UserName + "'", SqlConnection);
+            DataTable data = new DataTable();
+            sqlData.Fill(data);
+            saving = (data.Rows[0][0]).ToString();
+            SqlConnection.Close();
+
+            return saving;
+        }
+
         private void Withdrawtbutton_Click_1(object sender, EventArgs e)
         {
             string AccountType = "Saving Account";
 
-            string checknull = "Null";
+            string checknull = "";
             string mySQL8 = string.Empty;
             mySQL8 += "SELECT Email_address FROM Parsonal ";
             mySQL8 += "WHERE User_name = '" + UserName + "'";
@@ -106,9 +119,96 @@ namespace Bank
 
             if (WithdrawUseNameTextbox.Text == UserName && PasswordTextbox.Text == Password)
             {
-                if(AccountType == GetAccountType())
+                DateTime time = DateTime.Now;
+
+                if (AccountType == GetAccountType() && time <= Convert.ToDateTime(GetSavingTime()))
                 {
-                    MessageBox.Show("You can't Withdraw Money. This Accont is a Saving Account ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("You can't Withdraw Money With in " + GetSavingTime() + " Date", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if(AccountType == GetAccountType() && time >= Convert.ToDateTime(GetSavingTime()))
+                {
+                    double withdrawamount = Convert.ToDouble(WithdrawAmountTextbox.Text);
+
+                    if (withdrawamount <= TotalBalance())
+                    {
+                        if (userData8.Rows.Count > 0)
+                        {
+                            AlertForm alert = new AlertForm();
+                            alert.ShowDialog();
+                        }
+                        else
+                        {
+                            string field = "Withdraw";
+
+                            string mySQL = string.Empty;
+                            mySQL += "SELECT * FROM Customer_Details ";
+                            mySQL += "UPDATE [dbo].[Customer_Details]";
+                            mySQL += "SET [Total_Money] = '" + (TotalBalance() - withdrawamount) + "'";
+                            mySQL += "WHERE FUser_Name = '" + UserName + "'";
+
+                            string mySQL2 = string.Empty;
+                            DateTime dateTimeVariable = DateTime.Now;
+                            mySQL2 += "SELECT * FROM Customer_Details ";
+                            mySQL2 += "UPDATE [dbo].[Customer_Details]";
+                            mySQL2 += "SET [WDate_Time] = '" + dateTimeVariable + "'";
+                            mySQL2 += "WHERE FUser_Name = '" + UserName + "'";
+
+                            string mySQL5 = string.Empty;
+
+                            mySQL5 += @"INSERT INTO [dbo].[Transation_History]
+                                   ([TUser_name]
+                                   ,[Amount]
+                                   ,[Field]
+                                   ,[Date])
+                            VALUES
+                                   ('" + UserName + "', '" + withdrawamount + "', '" + field + "', '" + dateTimeVariable + "')";
+
+                            DataTable userData = ServerConnection.executeSQL(mySQL);
+                            DataTable userData2 = ServerConnection.executeSQL(mySQL2);
+                            DataTable userData5 = ServerConnection.executeSQL(mySQL5);
+
+                            string from, pass, messageBody;
+                            Random rand = new Random();
+                            MailMessage message = new MailMessage();
+                            to = GetEmail();
+                            from = "nadim.hossain193@gmail.com";
+                            pass = "nadim1155";
+                            messageBody = "Withdraw Amount : " + withdrawamount + "    Your Balance Is : " + TotalBalance();
+                            message.To.Add(to);
+                            message.From = new MailAddress(from);
+                            message.Body = messageBody;
+                            message.Subject = "Account Transation Information.";
+                            using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
+                            {
+                                smtp.Credentials = new NetworkCredential(from, pass);
+                                smtp.EnableSsl = true;
+                                smtp.Send(message);
+                            }
+
+                            MessageBox.Show("WITHDRAW SUCCESSFULL", "Message Box", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            string mySQL1 = string.Empty;
+                            mySQL1 += "SELECT * FROM Customer_Details ";
+                            mySQL1 += "UPDATE [dbo].[Customer_Details]";
+                            mySQL1 += "SET [Withdraw_Money] = '" + withdrawamount + "'";
+                            mySQL1 += "WHERE FUser_Name = '" + UserName + "'";
+
+                            DataTable userData1 = ServerConnection.executeSQL(mySQL1);
+
+                            string mySQL3 = string.Empty;
+                            mySQL3 += "SELECT * FROM Current_Transation_Details ";
+                            mySQL3 += "UPDATE [dbo].[Current_Transation_Details]";
+                            mySQL3 += "SET [Current_Withdraw_balance] = '" + WithdrawCurrentlabel.Text + "'";
+                            mySQL3 += "WHERE CUser_Name = '" + UserName + "'";
+
+                            DataTable userData3 = ServerConnection.executeSQL(mySQL3);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Insufficient Balance", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Withdrawpanel.Visible = true;
+                    }
                 }
                 else
                 {

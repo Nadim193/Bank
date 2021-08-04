@@ -42,7 +42,7 @@ namespace Bank
 
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -62,7 +62,7 @@ namespace Bank
             mySQL1 += "WHERE User_name = '" + UsernameTextbox.Text + "'";
             mySQL1 += "AND Status = '" + active + "'";
 
-            string checknull = "Null";
+            string checknull = "";
             string mySQL2 = string.Empty;
             active = "Active";
             mySQL2 += "SELECT Email_address FROM Parsonal ";
@@ -194,7 +194,7 @@ namespace Bank
                         MessageBox.Show("Please Enter Your Role.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                 }
-                catch (Exception )
+                catch (Exception ex)
                 {
                     MessageBox.Show("Please Enter Your Role.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
@@ -236,18 +236,19 @@ namespace Bank
 
         }
 
-        private void HidePasswordBox_Click(object sender, EventArgs e)
+        private void gunaMouseStateHelper1_Click(object sender, EventArgs e)
         {
-            PasswordTxtbox.UseSystemPasswordChar = false;
-            ShowPasswordBox.Visible = true;
-            HidePasswordBox.Visible = false;
+
         }
 
-        private void ShowPasswordBox_Click(object sender, EventArgs e)
+        private void UsernameTextbox_MouseHover(object sender, EventArgs e)
         {
-            PasswordTxtbox.UseSystemPasswordChar = true;
-            HidePasswordBox.Visible = true;
-            ShowPasswordBox.Visible = false;
+            //UserMouseStateHelper.Text = "Enter Your User Name.";
+        }
+
+        private void UsernameTextbox_MouseLeave(object sender, EventArgs e)
+        {
+           // UserMouseStateHelper.Text = "";
         }
     }
 }

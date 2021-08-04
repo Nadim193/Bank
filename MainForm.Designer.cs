@@ -31,6 +31,8 @@ namespace Bank
         {
             this.components = new System.ComponentModel.Container();
             this.Welcomepanel = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
             this.RestoreDownIcon = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.maxIcon = new System.Windows.Forms.PictureBox();
@@ -48,13 +50,14 @@ namespace Bank
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.Sidepanel = new System.Windows.Forms.Panel();
+            this.Editprofilebutton = new System.Windows.Forms.Button();
+            this.LogOutbutton = new System.Windows.Forms.Button();
+            this.Changebutton = new System.Windows.Forms.Button();
+            this.Transferbutton = new System.Windows.Forms.Button();
+            this.Depositbutton = new System.Windows.Forms.Button();
+            this.AccountReviewbutton = new System.Windows.Forms.Button();
+            this.Withdrawbutton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menupanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -129,8 +132,15 @@ namespace Bank
             this.label2 = new System.Windows.Forms.Label();
             this.TotalBalancelabel = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse4 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse5 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse6 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse7 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse8 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse9 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.Welcomepanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -193,12 +203,31 @@ namespace Bank
             this.Welcomepanel.TabIndex = 1;
             this.Welcomepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Welcomepanel_Paint);
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.SaddleBrown;
+            this.panel5.Location = new System.Drawing.Point(78, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(5, 50);
+            this.panel5.TabIndex = 38;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(89, 15);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(346, 19);
+            this.label16.TabIndex = 37;
+            this.label16.Text = "WELCOME TO BANK MANAGEMENT SYSTEM";
+            // 
             // RestoreDownIcon
             // 
             this.RestoreDownIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RestoreDownIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RestoreDownIcon.Image = global::Bank.Properties.Resources.restore_down;
-            this.RestoreDownIcon.Location = new System.Drawing.Point(1478, 14);
+            this.RestoreDownIcon.Location = new System.Drawing.Point(1474, 11);
             this.RestoreDownIcon.Name = "RestoreDownIcon";
             this.RestoreDownIcon.Size = new System.Drawing.Size(20, 20);
             this.RestoreDownIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -225,7 +254,7 @@ namespace Bank
             this.maxIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.maxIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.maxIcon.Image = global::Bank.Properties.Resources._32763;
-            this.maxIcon.Location = new System.Drawing.Point(1478, 14);
+            this.maxIcon.Location = new System.Drawing.Point(1474, 11);
             this.maxIcon.Name = "maxIcon";
             this.maxIcon.Size = new System.Drawing.Size(20, 20);
             this.maxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -238,7 +267,7 @@ namespace Bank
             this.minIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.minIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minIcon.Image = global::Bank.Properties.Resources.minimize_window;
-            this.minIcon.Location = new System.Drawing.Point(1445, 14);
+            this.minIcon.Location = new System.Drawing.Point(1441, 11);
             this.minIcon.Name = "minIcon";
             this.minIcon.Size = new System.Drawing.Size(20, 20);
             this.minIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -251,7 +280,7 @@ namespace Bank
             this.cerraricon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cerraricon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cerraricon.Image = global::Bank.Properties.Resources._60994;
-            this.cerraricon.Location = new System.Drawing.Point(1511, 14);
+            this.cerraricon.Location = new System.Drawing.Point(1507, 11);
             this.cerraricon.Name = "cerraricon";
             this.cerraricon.Size = new System.Drawing.Size(20, 20);
             this.cerraricon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -405,13 +434,14 @@ namespace Bank
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.Sidepanel);
+            this.panel2.Controls.Add(this.Editprofilebutton);
+            this.panel2.Controls.Add(this.LogOutbutton);
+            this.panel2.Controls.Add(this.Changebutton);
+            this.panel2.Controls.Add(this.Transferbutton);
+            this.panel2.Controls.Add(this.Depositbutton);
+            this.panel2.Controls.Add(this.AccountReviewbutton);
+            this.panel2.Controls.Add(this.Withdrawbutton);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(75, 50);
@@ -419,166 +449,175 @@ namespace Bank
             this.panel2.Size = new System.Drawing.Size(258, 804);
             this.panel2.TabIndex = 3;
             // 
-            // button1
+            // Sidepanel
             // 
-            this.button1.AllowDrop = true;
-            this.button1.AutoEllipsis = true;
-            this.button1.BackColor = System.Drawing.Color.DarkOrange;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(-75, 641);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(343, 61);
-            this.button1.TabIndex = 59;
-            this.button1.Text = "        Edit Profile";
-            this.button1.UseCompatibleTextRendering = true;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Sidepanel.BackColor = System.Drawing.Color.Black;
+            this.Sidepanel.Location = new System.Drawing.Point(1, 157);
+            this.Sidepanel.Name = "Sidepanel";
+            this.Sidepanel.Size = new System.Drawing.Size(4, 61);
+            this.Sidepanel.TabIndex = 73;
+            this.Sidepanel.Visible = false;
             // 
-            // button2
+            // Editprofilebutton
             // 
-            this.button2.AllowDrop = true;
-            this.button2.AutoEllipsis = true;
-            this.button2.BackColor = System.Drawing.Color.DarkOrange;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(-73, 734);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(343, 61);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "        LogOut";
-            this.button2.UseCompatibleTextRendering = true;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Editprofilebutton.AllowDrop = true;
+            this.Editprofilebutton.AutoEllipsis = true;
+            this.Editprofilebutton.BackColor = System.Drawing.Color.DarkOrange;
+            this.Editprofilebutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Editprofilebutton.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
+            this.Editprofilebutton.FlatAppearance.BorderSize = 0;
+            this.Editprofilebutton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.Editprofilebutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
+            this.Editprofilebutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
+            this.Editprofilebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Editprofilebutton.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Editprofilebutton.ForeColor = System.Drawing.Color.Black;
+            this.Editprofilebutton.Location = new System.Drawing.Point(6, 641);
+            this.Editprofilebutton.Name = "Editprofilebutton";
+            this.Editprofilebutton.Size = new System.Drawing.Size(252, 61);
+            this.Editprofilebutton.TabIndex = 59;
+            this.Editprofilebutton.Text = "Edit Profile";
+            this.Editprofilebutton.UseCompatibleTextRendering = true;
+            this.Editprofilebutton.UseVisualStyleBackColor = false;
+            this.Editprofilebutton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button3
+            // LogOutbutton
             // 
-            this.button3.AllowDrop = true;
-            this.button3.AutoEllipsis = true;
-            this.button3.BackColor = System.Drawing.Color.DarkOrange;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(-73, 543);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(343, 61);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "           Change Password";
-            this.button3.UseCompatibleTextRendering = true;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.LogOutbutton.AllowDrop = true;
+            this.LogOutbutton.AutoEllipsis = true;
+            this.LogOutbutton.BackColor = System.Drawing.Color.DarkOrange;
+            this.LogOutbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LogOutbutton.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
+            this.LogOutbutton.FlatAppearance.BorderSize = 0;
+            this.LogOutbutton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.LogOutbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
+            this.LogOutbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
+            this.LogOutbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogOutbutton.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogOutbutton.ForeColor = System.Drawing.Color.Black;
+            this.LogOutbutton.Location = new System.Drawing.Point(6, 734);
+            this.LogOutbutton.Name = "LogOutbutton";
+            this.LogOutbutton.Size = new System.Drawing.Size(252, 61);
+            this.LogOutbutton.TabIndex = 15;
+            this.LogOutbutton.Text = "LogOut";
+            this.LogOutbutton.UseCompatibleTextRendering = true;
+            this.LogOutbutton.UseVisualStyleBackColor = false;
+            this.LogOutbutton.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button4
+            // Changebutton
             // 
-            this.button4.AllowDrop = true;
-            this.button4.AutoEllipsis = true;
-            this.button4.BackColor = System.Drawing.Color.DarkOrange;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(-73, 448);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(343, 61);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "       Transation";
-            this.button4.UseCompatibleTextRendering = true;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.Changebutton.AllowDrop = true;
+            this.Changebutton.AutoEllipsis = true;
+            this.Changebutton.BackColor = System.Drawing.Color.DarkOrange;
+            this.Changebutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Changebutton.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
+            this.Changebutton.FlatAppearance.BorderSize = 0;
+            this.Changebutton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.Changebutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
+            this.Changebutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
+            this.Changebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Changebutton.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Changebutton.ForeColor = System.Drawing.Color.Black;
+            this.Changebutton.Location = new System.Drawing.Point(6, 543);
+            this.Changebutton.Name = "Changebutton";
+            this.Changebutton.Size = new System.Drawing.Size(252, 61);
+            this.Changebutton.TabIndex = 13;
+            this.Changebutton.Text = "Change Password";
+            this.Changebutton.UseCompatibleTextRendering = true;
+            this.Changebutton.UseVisualStyleBackColor = false;
+            this.Changebutton.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button5
+            // Transferbutton
             // 
-            this.button5.AllowDrop = true;
-            this.button5.AutoEllipsis = true;
-            this.button5.BackColor = System.Drawing.Color.DarkOrange;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(-73, 352);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(343, 61);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "       Deposit";
-            this.button5.UseCompatibleTextRendering = true;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.Transferbutton.AllowDrop = true;
+            this.Transferbutton.AutoEllipsis = true;
+            this.Transferbutton.BackColor = System.Drawing.Color.DarkOrange;
+            this.Transferbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Transferbutton.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
+            this.Transferbutton.FlatAppearance.BorderSize = 0;
+            this.Transferbutton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.Transferbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
+            this.Transferbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
+            this.Transferbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Transferbutton.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Transferbutton.ForeColor = System.Drawing.Color.Black;
+            this.Transferbutton.Location = new System.Drawing.Point(6, 448);
+            this.Transferbutton.Name = "Transferbutton";
+            this.Transferbutton.Size = new System.Drawing.Size(252, 61);
+            this.Transferbutton.TabIndex = 14;
+            this.Transferbutton.Text = "Transfer";
+            this.Transferbutton.UseCompatibleTextRendering = true;
+            this.Transferbutton.UseVisualStyleBackColor = false;
+            this.Transferbutton.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button6
+            // Depositbutton
             // 
-            this.button6.AllowDrop = true;
-            this.button6.AutoEllipsis = true;
-            this.button6.BackColor = System.Drawing.Color.DarkOrange;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Location = new System.Drawing.Point(-75, 157);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(345, 61);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "           Account Review";
-            this.button6.UseCompatibleTextRendering = true;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.Depositbutton.AllowDrop = true;
+            this.Depositbutton.AutoEllipsis = true;
+            this.Depositbutton.BackColor = System.Drawing.Color.DarkOrange;
+            this.Depositbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Depositbutton.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
+            this.Depositbutton.FlatAppearance.BorderSize = 0;
+            this.Depositbutton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.Depositbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
+            this.Depositbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
+            this.Depositbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Depositbutton.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Depositbutton.ForeColor = System.Drawing.Color.Black;
+            this.Depositbutton.Location = new System.Drawing.Point(6, 352);
+            this.Depositbutton.Name = "Depositbutton";
+            this.Depositbutton.Size = new System.Drawing.Size(252, 61);
+            this.Depositbutton.TabIndex = 12;
+            this.Depositbutton.Text = "Deposit";
+            this.Depositbutton.UseCompatibleTextRendering = true;
+            this.Depositbutton.UseVisualStyleBackColor = false;
+            this.Depositbutton.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button7
+            // AccountReviewbutton
             // 
-            this.button7.AllowDrop = true;
-            this.button7.AutoEllipsis = true;
-            this.button7.BackColor = System.Drawing.Color.DarkOrange;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(-73, 255);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(343, 61);
-            this.button7.TabIndex = 11;
-            this.button7.Text = "      Withdraw";
-            this.button7.UseCompatibleTextRendering = true;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.AccountReviewbutton.AllowDrop = true;
+            this.AccountReviewbutton.AutoEllipsis = true;
+            this.AccountReviewbutton.BackColor = System.Drawing.Color.DarkOrange;
+            this.AccountReviewbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AccountReviewbutton.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
+            this.AccountReviewbutton.FlatAppearance.BorderSize = 0;
+            this.AccountReviewbutton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.AccountReviewbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
+            this.AccountReviewbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
+            this.AccountReviewbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AccountReviewbutton.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AccountReviewbutton.ForeColor = System.Drawing.Color.Black;
+            this.AccountReviewbutton.Location = new System.Drawing.Point(6, 157);
+            this.AccountReviewbutton.Name = "AccountReviewbutton";
+            this.AccountReviewbutton.Size = new System.Drawing.Size(252, 61);
+            this.AccountReviewbutton.TabIndex = 10;
+            this.AccountReviewbutton.Text = "Account Review";
+            this.AccountReviewbutton.UseCompatibleTextRendering = true;
+            this.AccountReviewbutton.UseVisualStyleBackColor = false;
+            this.AccountReviewbutton.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // Withdrawbutton
+            // 
+            this.Withdrawbutton.AllowDrop = true;
+            this.Withdrawbutton.AutoEllipsis = true;
+            this.Withdrawbutton.BackColor = System.Drawing.Color.DarkOrange;
+            this.Withdrawbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Withdrawbutton.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
+            this.Withdrawbutton.FlatAppearance.BorderSize = 0;
+            this.Withdrawbutton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.Withdrawbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
+            this.Withdrawbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
+            this.Withdrawbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Withdrawbutton.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Withdrawbutton.ForeColor = System.Drawing.Color.Black;
+            this.Withdrawbutton.Location = new System.Drawing.Point(6, 255);
+            this.Withdrawbutton.Name = "Withdrawbutton";
+            this.Withdrawbutton.Size = new System.Drawing.Size(252, 61);
+            this.Withdrawbutton.TabIndex = 11;
+            this.Withdrawbutton.Text = "Withdraw";
+            this.Withdrawbutton.UseCompatibleTextRendering = true;
+            this.Withdrawbutton.UseVisualStyleBackColor = false;
+            this.Withdrawbutton.Click += new System.EventHandler(this.button7_Click);
             // 
             // timer1
             // 
@@ -789,7 +828,7 @@ namespace Bank
             // pictureBox13
             // 
             this.pictureBox13.Image = global::Bank.Properties.Resources.Screenshot_2021_07_15_235621_removebg_preview1;
-            this.pictureBox13.Location = new System.Drawing.Point(-1, 83);
+            this.pictureBox13.Location = new System.Drawing.Point(-1, 106);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(106, 92);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -803,9 +842,9 @@ namespace Bank
             this.label6.ForeColor = System.Drawing.Color.DarkOrange;
             this.label6.Location = new System.Drawing.Point(24, 19);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(178, 29);
+            this.label6.Size = new System.Drawing.Size(300, 29);
             this.label6.TabIndex = 63;
-            this.label6.Text = "ALL HISTORY";
+            this.label6.Text = "TRANSATION HISTORY";
             // 
             // panel16
             // 
@@ -982,7 +1021,7 @@ namespace Bank
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Bank.Properties.Resources.Screenshot_2021_07_15_231152_removebg_preview;
-            this.pictureBox11.Location = new System.Drawing.Point(7, 83);
+            this.pictureBox11.Location = new System.Drawing.Point(9, 107);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(106, 92);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1152,7 +1191,7 @@ namespace Bank
             // pictureBox12
             // 
             this.pictureBox12.Image = global::Bank.Properties.Resources.Screenshot_2021_07_15_235621_removebg_preview;
-            this.pictureBox12.Location = new System.Drawing.Point(6, 80);
+            this.pictureBox12.Location = new System.Drawing.Point(3, 103);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(106, 92);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1166,9 +1205,9 @@ namespace Bank
             this.label5.ForeColor = System.Drawing.Color.DarkOrange;
             this.label5.Location = new System.Drawing.Point(24, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(300, 29);
+            this.label5.Size = new System.Drawing.Size(272, 29);
             this.label5.TabIndex = 61;
-            this.label5.Text = "TRANSATION HISTORY";
+            this.label5.Text = "TRANSFER HISTORY";
             // 
             // panel15
             // 
@@ -1318,7 +1357,7 @@ namespace Bank
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Bank.Properties.Resources.Screenshot_2021_07_15_231152_removebg_preview;
-            this.pictureBox9.Location = new System.Drawing.Point(7, 82);
+            this.pictureBox9.Location = new System.Drawing.Point(9, 104);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(106, 92);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1394,24 +1433,42 @@ namespace Bank
             this.panel6.Size = new System.Drawing.Size(1207, 5);
             this.panel6.TabIndex = 57;
             // 
-            // panel5
+            // gunaElipse1
             // 
-            this.panel5.BackColor = System.Drawing.Color.SaddleBrown;
-            this.panel5.Location = new System.Drawing.Point(78, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(5, 50);
-            this.panel5.TabIndex = 38;
+            this.gunaElipse1.Radius = 15;
+            this.gunaElipse1.TargetControl = this;
             // 
-            // label16
+            // gunaElipse2
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(89, 15);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(346, 19);
-            this.label16.TabIndex = 37;
-            this.label16.Text = "WELCOME TO BANK MANAGEMENT SYSTEM";
+            this.gunaElipse2.TargetControl = this.AccountReviewbutton;
+            // 
+            // gunaElipse3
+            // 
+            this.gunaElipse3.TargetControl = this.Withdrawbutton;
+            // 
+            // gunaElipse4
+            // 
+            this.gunaElipse4.TargetControl = this.Depositbutton;
+            // 
+            // gunaElipse5
+            // 
+            this.gunaElipse5.TargetControl = this.Transferbutton;
+            // 
+            // gunaElipse6
+            // 
+            this.gunaElipse6.TargetControl = this.Changebutton;
+            // 
+            // gunaElipse7
+            // 
+            this.gunaElipse7.TargetControl = this.Editprofilebutton;
+            // 
+            // gunaElipse8
+            // 
+            this.gunaElipse8.TargetControl = this.LogOutbutton;
+            // 
+            // gunaElipse9
+            // 
+            this.gunaElipse9.TargetControl = this.Sidepanel;
             // 
             // MainForm
             // 
@@ -1514,17 +1571,17 @@ namespace Bank
         private System.Windows.Forms.PictureBox minIcon;
         private System.Windows.Forms.PictureBox cerraricon;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button LogOutbutton;
+        private System.Windows.Forms.Button Changebutton;
+        private System.Windows.Forms.Button Transferbutton;
+        private System.Windows.Forms.Button Depositbutton;
+        private System.Windows.Forms.Button AccountReviewbutton;
+        private System.Windows.Forms.Button Withdrawbutton;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel Menupanel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Editprofilebutton;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label TotalBalancelabel;
         private System.Windows.Forms.Panel TotalBalancepanel;
@@ -1598,6 +1655,16 @@ namespace Bank
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Panel Sidepanel;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse2;
+        private Guna.UI.WinForms.GunaElipse gunaElipse3;
+        private Guna.UI.WinForms.GunaElipse gunaElipse4;
+        private Guna.UI.WinForms.GunaElipse gunaElipse5;
+        private Guna.UI.WinForms.GunaElipse gunaElipse6;
+        private Guna.UI.WinForms.GunaElipse gunaElipse7;
+        private Guna.UI.WinForms.GunaElipse gunaElipse8;
+        private Guna.UI.WinForms.GunaElipse gunaElipse9;
     }
 }
 

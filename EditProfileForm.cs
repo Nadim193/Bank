@@ -372,6 +372,7 @@ namespace Bank
                     }
                     else if(ProfilePictureBox.Image.ToString() != GetProfilePicture1())
                     {
+                        ProfilePictureBox.Image.Dispose();
                         byte[] image1 = null;
                         FileStream stream = new FileStream(imgLocation, FileMode.Open, FileAccess.Read);
                         BinaryReader binary = new BinaryReader(stream);
@@ -406,6 +407,7 @@ namespace Bank
                     }
                     else
                     {
+                        ProfilePictureBox.Image.Dispose();
                         byte[] image = null;
                         FileStream stream = new FileStream(imgLocation, FileMode.Open, FileAccess.Read);
                         BinaryReader binary = new BinaryReader(stream);
@@ -532,7 +534,7 @@ namespace Bank
                             {
                                 smtp.Send(message2);
                                 MessageBox.Show("Please Check Your Email And Enter The Code.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                                ProfilePictureBox.Image.Dispose();
                                 byte[] image3 = null;
                                 FileStream stream = new FileStream(imgLocation, FileMode.Open, FileAccess.Read);
                                 BinaryReader binary = new BinaryReader(stream);
@@ -560,7 +562,7 @@ namespace Bank
                                 if (SqlConnection.State != ConnectionState.Open)
                                     SqlConnection.Open();
                                 SqlCommand command4 = new SqlCommand(mySQL4, SqlConnection);
-                                command4.Parameters.AddWithValue("@image3 WHERE = '" + LoginUserName + "'", image3);
+                                command4.Parameters.AddWithValue("@image3", image3);
                                 command4.ExecuteNonQuery();
 
                                 EmailVerifyForm verifyForm = new EmailVerifyForm();
@@ -599,7 +601,7 @@ namespace Bank
                             {
                                 smtp.Send(message);
                                 MessageBox.Show("Please Check Your Email And Enter The Code.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                                ProfilePictureBox.Image.Dispose();
                                 byte[] image4 = null;
                                 FileStream stream = new FileStream(imgLocation, FileMode.Open, FileAccess.Read);
                                 BinaryReader binary = new BinaryReader(stream);
@@ -627,7 +629,7 @@ namespace Bank
                                 if (SqlConnection.State != ConnectionState.Open)
                                     SqlConnection.Open();
                                 SqlCommand command1 = new SqlCommand(mySQL5, SqlConnection);
-                                command1.Parameters.AddWithValue("@image4 WHERE = '" + LoginUserName + "'", image4);
+                                command1.Parameters.AddWithValue("@image4", image4);
                                 command1.ExecuteNonQuery();
 
                                 EmailVerifyForm verifyForm = new EmailVerifyForm();

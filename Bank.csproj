@@ -68,6 +68,18 @@
       <HintPath>C:\Users\Nadim\OneDrive\Desktop\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.WebForms.10.0.40219.1\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data, Version=8.0.24.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -79,6 +91,7 @@
     <Reference Include="System.Messaging" />
     <Reference Include="System.Security" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -222,6 +235,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BankSystemDataBaseDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankSystemDataBaseDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankSystemDataBaseDataSet15.xsd</DependentUpon>
     </Compile>
     <Compile Include="BankSystemDataBaseDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -371,6 +389,12 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\PrintUsernameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\PrintUsernameForm.Designer.cs">
+      <DependentUpon>PrintUsernameForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -499,6 +523,10 @@
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\PrintUsernameForm.resx">
+      <DependentUpon>PrintUsernameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report1.rdlc" />
     <EmbeddedResource Include="TransationForm.resx">
       <DependentUpon>TransationForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -590,6 +618,17 @@
     </None>
     <None Include="BankSystemDataBaseDataSet14.xss">
       <DependentUpon>BankSystemDataBaseDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet15.xsc">
+      <DependentUpon>BankSystemDataBaseDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="BankSystemDataBaseDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankSystemDataBaseDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankSystemDataBaseDataSet15.xss">
+      <DependentUpon>BankSystemDataBaseDataSet15.xsd</DependentUpon>
     </None>
     <None Include="BankSystemDataBaseDataSet2.xsc">
       <DependentUpon>BankSystemDataBaseDataSet2.xsd</DependentUpon>
@@ -701,6 +740,7 @@
     <None Include="LoginDataBaseDataSet.xss">
       <DependentUpon>LoginDataBaseDataSet.xsd</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -1021,5 +1061,36 @@
   <ItemGroup>
     <None Include="Resources\104-1043692_search-icon-transparent-white-search-icon-apple-png-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-customer-service-icon-design-user-business-blue-service-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\increase-sales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Article-04-HeaderImage-1130x650-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1601021754-5544-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1601021754-5544.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-1432400-1211078.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\207-2079206_correct-icon-x-in-red-circle-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataBase\DataBase.csproj">
+      <Project>{8313e774-de94-4023-9cf4-eacf3082f2a4}</Project>
+      <Name>DataBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

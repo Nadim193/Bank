@@ -35,17 +35,11 @@ namespace Bank
             this.AccountTypeComboBox = new Guna.UI.WinForms.GunaComboBox();
             this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.Submitbutton = new Guna.UI.WinForms.GunaButton();
-            this.FileChooseButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.HidePasswordBox1 = new System.Windows.Forms.PictureBox();
-            this.ShowPasswordBox1 = new System.Windows.Forms.PictureBox();
             this.ConfirmPasswordtextBox = new Guna.UI.WinForms.GunaTextBox();
             this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.HidePasswordBox = new System.Windows.Forms.PictureBox();
-            this.ShowPasswordBox = new System.Windows.Forms.PictureBox();
             this.PasswordtextBox = new Guna.UI.WinForms.GunaTextBox();
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -111,20 +105,22 @@ namespace Bank
             this.CityPanel = new System.Windows.Forms.Panel();
             this.CitytextBox = new Guna.UI.WinForms.GunaTextBox();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.PictureBox = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Submitbutton = new Guna.UI.WinForms.GunaButton();
+            this.FileChooseButton = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.HidePasswordBox1 = new System.Windows.Forms.PictureBox();
+            this.ShowPasswordBox1 = new System.Windows.Forms.PictureBox();
+            this.HidePasswordBox = new System.Windows.Forms.PictureBox();
+            this.ShowPasswordBox = new System.Windows.Forms.PictureBox();
+            this.PictureBox = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox1)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox)).BeginInit();
             this.panel7.SuspendLayout();
             this.LastNamepanel.SuspendLayout();
             this.Countrypanel.SuspendLayout();
@@ -139,8 +135,12 @@ namespace Bank
             this.Maritalpanel.SuspendLayout();
             this.Addresspanel.SuspendLayout();
             this.CityPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -240,63 +240,6 @@ namespace Bank
             this.panel15.Size = new System.Drawing.Size(2, 55);
             this.panel15.TabIndex = 111;
             // 
-            // Submitbutton
-            // 
-            this.Submitbutton.Animated = true;
-            this.Submitbutton.AnimationHoverSpeed = 0.07F;
-            this.Submitbutton.AnimationSpeed = 0.03F;
-            this.Submitbutton.BaseColor = System.Drawing.Color.RoyalBlue;
-            this.Submitbutton.BorderColor = System.Drawing.Color.Black;
-            this.Submitbutton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Submitbutton.FocusedColor = System.Drawing.Color.Empty;
-            this.Submitbutton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Submitbutton.ForeColor = System.Drawing.Color.Black;
-            this.Submitbutton.Image = global::Bank.Properties.Resources._599354;
-            this.Submitbutton.ImageSize = new System.Drawing.Size(20, 20);
-            this.Submitbutton.Location = new System.Drawing.Point(946, 677);
-            this.Submitbutton.Name = "Submitbutton";
-            this.Submitbutton.OnHoverBaseColor = System.Drawing.Color.SlateBlue;
-            this.Submitbutton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Submitbutton.OnHoverForeColor = System.Drawing.Color.White;
-            this.Submitbutton.OnHoverImage = null;
-            this.Submitbutton.OnPressedColor = System.Drawing.Color.Black;
-            this.Submitbutton.Size = new System.Drawing.Size(247, 55);
-            this.Submitbutton.TabIndex = 133;
-            this.Submitbutton.Text = "Created An Account";
-            this.Submitbutton.Click += new System.EventHandler(this.Submitbutton_Click);
-            // 
-            // FileChooseButton
-            // 
-            this.FileChooseButton.Animated = true;
-            this.FileChooseButton.AnimationHoverSpeed = 0.07F;
-            this.FileChooseButton.AnimationSpeed = 0.03F;
-            this.FileChooseButton.BaseColor = System.Drawing.Color.RoyalBlue;
-            this.FileChooseButton.BorderColor = System.Drawing.Color.Black;
-            this.FileChooseButton.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.FileChooseButton.CheckedBorderColor = System.Drawing.Color.Black;
-            this.FileChooseButton.CheckedForeColor = System.Drawing.Color.Black;
-            this.FileChooseButton.CheckedImage = global::Bank.Properties.Resources._62107;
-            this.FileChooseButton.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.FileChooseButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.FileChooseButton.FocusedColor = System.Drawing.Color.Empty;
-            this.FileChooseButton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FileChooseButton.ForeColor = System.Drawing.Color.Black;
-            this.FileChooseButton.Image = global::Bank.Properties.Resources._62107;
-            this.FileChooseButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.FileChooseButton.LineColor = System.Drawing.Color.SlateBlue;
-            this.FileChooseButton.Location = new System.Drawing.Point(784, 183);
-            this.FileChooseButton.Name = "FileChooseButton";
-            this.FileChooseButton.OnHoverBaseColor = System.Drawing.Color.SlateBlue;
-            this.FileChooseButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.FileChooseButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.FileChooseButton.OnHoverImage = null;
-            this.FileChooseButton.OnHoverLineColor = System.Drawing.Color.SlateBlue;
-            this.FileChooseButton.OnPressedColor = System.Drawing.Color.Black;
-            this.FileChooseButton.Size = new System.Drawing.Size(164, 41);
-            this.FileChooseButton.TabIndex = 132;
-            this.FileChooseButton.Text = "Choose File";
-            this.FileChooseButton.Click += new System.EventHandler(this.FileChooseButton_Click);
-            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Wheat;
@@ -310,31 +253,6 @@ namespace Bank
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(571, 55);
             this.panel11.TabIndex = 131;
-            // 
-            // HidePasswordBox1
-            // 
-            this.HidePasswordBox1.BackColor = System.Drawing.Color.Wheat;
-            this.HidePasswordBox1.Image = global::Bank.Properties.Resources._377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview;
-            this.HidePasswordBox1.Location = new System.Drawing.Point(534, 12);
-            this.HidePasswordBox1.Name = "HidePasswordBox1";
-            this.HidePasswordBox1.Size = new System.Drawing.Size(27, 30);
-            this.HidePasswordBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.HidePasswordBox1.TabIndex = 137;
-            this.HidePasswordBox1.TabStop = false;
-            this.HidePasswordBox1.Visible = false;
-            this.HidePasswordBox1.Click += new System.EventHandler(this.HidePasswordBox1_Click);
-            // 
-            // ShowPasswordBox1
-            // 
-            this.ShowPasswordBox1.BackColor = System.Drawing.Color.Wheat;
-            this.ShowPasswordBox1.Image = global::Bank.Properties.Resources._481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview;
-            this.ShowPasswordBox1.Location = new System.Drawing.Point(534, 12);
-            this.ShowPasswordBox1.Name = "ShowPasswordBox1";
-            this.ShowPasswordBox1.Size = new System.Drawing.Size(27, 30);
-            this.ShowPasswordBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ShowPasswordBox1.TabIndex = 136;
-            this.ShowPasswordBox1.TabStop = false;
-            this.ShowPasswordBox1.Click += new System.EventHandler(this.ShowPasswordBox1_Click);
             // 
             // ConfirmPasswordtextBox
             // 
@@ -387,31 +305,6 @@ namespace Bank
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(571, 55);
             this.panel9.TabIndex = 130;
-            // 
-            // HidePasswordBox
-            // 
-            this.HidePasswordBox.BackColor = System.Drawing.Color.Wheat;
-            this.HidePasswordBox.Image = global::Bank.Properties.Resources._377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview;
-            this.HidePasswordBox.Location = new System.Drawing.Point(534, 13);
-            this.HidePasswordBox.Name = "HidePasswordBox";
-            this.HidePasswordBox.Size = new System.Drawing.Size(27, 30);
-            this.HidePasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.HidePasswordBox.TabIndex = 136;
-            this.HidePasswordBox.TabStop = false;
-            this.HidePasswordBox.Visible = false;
-            this.HidePasswordBox.Click += new System.EventHandler(this.HidePasswordBox_Click);
-            // 
-            // ShowPasswordBox
-            // 
-            this.ShowPasswordBox.BackColor = System.Drawing.Color.Wheat;
-            this.ShowPasswordBox.Image = global::Bank.Properties.Resources._481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview;
-            this.ShowPasswordBox.Location = new System.Drawing.Point(534, 13);
-            this.ShowPasswordBox.Name = "ShowPasswordBox";
-            this.ShowPasswordBox.Size = new System.Drawing.Size(27, 30);
-            this.ShowPasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ShowPasswordBox.TabIndex = 135;
-            this.ShowPasswordBox.TabStop = false;
-            this.ShowPasswordBox.Click += new System.EventHandler(this.ShowPasswordBox_Click);
             // 
             // PasswordtextBox
             // 
@@ -1239,16 +1132,6 @@ namespace Bank
             this.bunifuCustomLabel7.TabIndex = 52;
             this.bunifuCustomLabel7.Text = "City";
             // 
-            // PictureBox
-            // 
-            this.PictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PictureBox.Location = new System.Drawing.Point(958, 6);
-            this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Size = new System.Drawing.Size(235, 218);
-            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBox.TabIndex = 114;
-            this.PictureBox.TabStop = false;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
@@ -1269,16 +1152,6 @@ namespace Bank
             this.panel2.Size = new System.Drawing.Size(1207, 49);
             this.panel2.TabIndex = 0;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Bank.Properties.Resources._599354;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 49);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -1289,6 +1162,137 @@ namespace Bank
             this.label1.Size = new System.Drawing.Size(155, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "CREATED NEW";
+            // 
+            // Submitbutton
+            // 
+            this.Submitbutton.Animated = true;
+            this.Submitbutton.AnimationHoverSpeed = 0.07F;
+            this.Submitbutton.AnimationSpeed = 0.03F;
+            this.Submitbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Submitbutton.BaseColor = System.Drawing.Color.RoyalBlue;
+            this.Submitbutton.BorderColor = System.Drawing.Color.Black;
+            this.Submitbutton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Submitbutton.FocusedColor = System.Drawing.Color.Empty;
+            this.Submitbutton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submitbutton.ForeColor = System.Drawing.Color.Black;
+            this.Submitbutton.Image = global::Bank.Properties.Resources._599354;
+            this.Submitbutton.ImageSize = new System.Drawing.Size(20, 20);
+            this.Submitbutton.Location = new System.Drawing.Point(946, 677);
+            this.Submitbutton.Name = "Submitbutton";
+            this.Submitbutton.OnHoverBaseColor = System.Drawing.Color.SlateBlue;
+            this.Submitbutton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Submitbutton.OnHoverForeColor = System.Drawing.Color.White;
+            this.Submitbutton.OnHoverImage = null;
+            this.Submitbutton.OnPressedColor = System.Drawing.Color.Black;
+            this.Submitbutton.Radius = 10;
+            this.Submitbutton.Size = new System.Drawing.Size(247, 55);
+            this.Submitbutton.TabIndex = 133;
+            this.Submitbutton.Text = "Created An Account";
+            this.Submitbutton.Click += new System.EventHandler(this.Submitbutton_Click);
+            // 
+            // FileChooseButton
+            // 
+            this.FileChooseButton.Animated = true;
+            this.FileChooseButton.AnimationHoverSpeed = 0.07F;
+            this.FileChooseButton.AnimationSpeed = 0.03F;
+            this.FileChooseButton.BackColor = System.Drawing.Color.Transparent;
+            this.FileChooseButton.BaseColor = System.Drawing.Color.RoyalBlue;
+            this.FileChooseButton.BorderColor = System.Drawing.Color.Black;
+            this.FileChooseButton.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.FileChooseButton.CheckedBorderColor = System.Drawing.Color.Black;
+            this.FileChooseButton.CheckedForeColor = System.Drawing.Color.Black;
+            this.FileChooseButton.CheckedImage = global::Bank.Properties.Resources._62107;
+            this.FileChooseButton.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.FileChooseButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.FileChooseButton.FocusedColor = System.Drawing.Color.Empty;
+            this.FileChooseButton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FileChooseButton.ForeColor = System.Drawing.Color.Black;
+            this.FileChooseButton.Image = global::Bank.Properties.Resources._62107;
+            this.FileChooseButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.FileChooseButton.LineColor = System.Drawing.Color.SlateBlue;
+            this.FileChooseButton.Location = new System.Drawing.Point(784, 183);
+            this.FileChooseButton.Name = "FileChooseButton";
+            this.FileChooseButton.OnHoverBaseColor = System.Drawing.Color.SlateBlue;
+            this.FileChooseButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.FileChooseButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.FileChooseButton.OnHoverImage = null;
+            this.FileChooseButton.OnHoverLineColor = System.Drawing.Color.SlateBlue;
+            this.FileChooseButton.OnPressedColor = System.Drawing.Color.Black;
+            this.FileChooseButton.Radius = 10;
+            this.FileChooseButton.Size = new System.Drawing.Size(164, 41);
+            this.FileChooseButton.TabIndex = 132;
+            this.FileChooseButton.Text = "Choose File";
+            this.FileChooseButton.Click += new System.EventHandler(this.FileChooseButton_Click);
+            // 
+            // HidePasswordBox1
+            // 
+            this.HidePasswordBox1.BackColor = System.Drawing.Color.Wheat;
+            this.HidePasswordBox1.Image = global::Bank.Properties.Resources._377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview;
+            this.HidePasswordBox1.Location = new System.Drawing.Point(534, 12);
+            this.HidePasswordBox1.Name = "HidePasswordBox1";
+            this.HidePasswordBox1.Size = new System.Drawing.Size(27, 30);
+            this.HidePasswordBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.HidePasswordBox1.TabIndex = 137;
+            this.HidePasswordBox1.TabStop = false;
+            this.HidePasswordBox1.Visible = false;
+            this.HidePasswordBox1.Click += new System.EventHandler(this.HidePasswordBox1_Click);
+            // 
+            // ShowPasswordBox1
+            // 
+            this.ShowPasswordBox1.BackColor = System.Drawing.Color.Wheat;
+            this.ShowPasswordBox1.Image = global::Bank.Properties.Resources._481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview;
+            this.ShowPasswordBox1.Location = new System.Drawing.Point(534, 12);
+            this.ShowPasswordBox1.Name = "ShowPasswordBox1";
+            this.ShowPasswordBox1.Size = new System.Drawing.Size(27, 30);
+            this.ShowPasswordBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ShowPasswordBox1.TabIndex = 136;
+            this.ShowPasswordBox1.TabStop = false;
+            this.ShowPasswordBox1.Click += new System.EventHandler(this.ShowPasswordBox1_Click);
+            // 
+            // HidePasswordBox
+            // 
+            this.HidePasswordBox.BackColor = System.Drawing.Color.Wheat;
+            this.HidePasswordBox.Image = global::Bank.Properties.Resources._377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview;
+            this.HidePasswordBox.Location = new System.Drawing.Point(534, 13);
+            this.HidePasswordBox.Name = "HidePasswordBox";
+            this.HidePasswordBox.Size = new System.Drawing.Size(27, 30);
+            this.HidePasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.HidePasswordBox.TabIndex = 136;
+            this.HidePasswordBox.TabStop = false;
+            this.HidePasswordBox.Visible = false;
+            this.HidePasswordBox.Click += new System.EventHandler(this.HidePasswordBox_Click);
+            // 
+            // ShowPasswordBox
+            // 
+            this.ShowPasswordBox.BackColor = System.Drawing.Color.Wheat;
+            this.ShowPasswordBox.Image = global::Bank.Properties.Resources._481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview;
+            this.ShowPasswordBox.Location = new System.Drawing.Point(534, 13);
+            this.ShowPasswordBox.Name = "ShowPasswordBox";
+            this.ShowPasswordBox.Size = new System.Drawing.Size(27, 30);
+            this.ShowPasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ShowPasswordBox.TabIndex = 135;
+            this.ShowPasswordBox.TabStop = false;
+            this.ShowPasswordBox.Click += new System.EventHandler(this.ShowPasswordBox_Click);
+            // 
+            // PictureBox
+            // 
+            this.PictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PictureBox.Location = new System.Drawing.Point(958, 6);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Size = new System.Drawing.Size(235, 218);
+            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox.TabIndex = 114;
+            this.PictureBox.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Bank.Properties.Resources._599354;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(57, 49);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
             // 
             // AdminCreatedNewForm
             // 
@@ -1305,12 +1309,8 @@ namespace Bank
             this.panel14.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox1)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.LastNamepanel.ResumeLayout(false);
@@ -1339,9 +1339,13 @@ namespace Bank
             this.Addresspanel.PerformLayout();
             this.CityPanel.ResumeLayout(false);
             this.CityPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 

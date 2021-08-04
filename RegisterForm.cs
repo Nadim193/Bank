@@ -78,7 +78,7 @@ namespace Bank
                         Marital = "Unmarried";
                     }
 
-                    String Account = "";
+                    string Account = "";
 
                     if (SavingradioButton.Checked)
                     {
@@ -116,7 +116,7 @@ namespace Bank
                                ,[Occupation]
                                ,[Account_Type]
                                ,[Profile_picture]
-                                ,[Status])
+                               ,[Status])
                          VALUES
                                 ('" + UsernameTextbox.Text +"', '" + PasswordtextBox.Text +"', '" + FirstNametextBox.Text + "', '" + LastNametextBox.Text + "', '" + regEmail + "', '" + Gender + "', '" + DOBDateTimePicker.Value + "'" +
                             ", '" + Marital + "', '" + AddresstextBox.Text + "', '" + CitytextBox.Text + "', '" + CountrytextBox.Text + "', '" + ReligioncomboBox.SelectedItem + "', '" + IncomecomboBox.SelectedItem + "'" +
@@ -133,9 +133,11 @@ namespace Bank
                     double transationmoney = 0.00;
                     string transatioTo = null;
 
-                    DateTime dateTimeVariable = DateTime.Now;
+                    if(Account == "Saving Account")
+                    {
+                        DateTime dateTimeVariable = DateTime.Now;
 
-                    mySQL5 += @"INSERT INTO [dbo].[Customer_Details]
+                        mySQL5 += @"INSERT INTO [dbo].[Customer_Details]
                                ([FUser_Name]
                                ,[Total_Money]
                                ,[Withdraw_Money]
@@ -144,9 +146,29 @@ namespace Bank
                                ,[Transation_To]
                                ,[WDate_Time]
                                ,[DDate_Time]
-                               ,[TDate_Time])
+                               ,[TDate_Time]
+                                ,[Saving_Time])
                          VALUES
-                               ('" + UsernameTextbox.Text + "', '"+Totalmoney +"', '" + Withdraw + "', '" + deposit +"', '" + transationmoney +"', '" + transatioTo +"', '" + dateTimeVariable +"', '" + dateTimeVariable + "', '" + dateTimeVariable  + "')";
+                               ('" + UsernameTextbox.Text + "', '" + Totalmoney + "', '" + Withdraw + "', '" + deposit + "', '" + transationmoney + "', '" + transatioTo + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + SavingAccountDateTimePicker.Value +"')";
+                    }
+                    else
+                    {
+                        DateTime dateTimeVariable = DateTime.Now;
+                        
+                        mySQL5 += @"INSERT INTO [dbo].[Customer_Details]
+                               ([FUser_Name]
+                               ,[Total_Money]
+                               ,[Withdraw_Money]
+                               ,[Deposit_Money]
+                               ,[Transation_Money]
+                               ,[Transation_To]
+                               ,[WDate_Time]
+                               ,[DDate_Time]
+                               ,[TDate_Time]
+                                ,[Saving_Time])
+                         VALUES
+                               ('" + UsernameTextbox.Text + "', '" + Totalmoney + "', '" + Withdraw + "', '" + deposit + "', '" + transationmoney + "', '" + transatioTo + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "')";
+                    }
 
                     double Cdepositbalance = 0.00;
                     double Cwithdrawbalance = 0.00;
@@ -191,6 +213,7 @@ namespace Bank
                         else
                         {
                             PictureBox.Image = null;
+
                             command.ExecuteNonQuery();
                             DataTable userData5 = ServerConnection.executeSQL(mySQL5);
                             DataTable userData6 = ServerConnection.executeSQL(mySQL6);
@@ -323,6 +346,30 @@ namespace Bank
             {
                 ConfirmPasswordtextBox.UseSystemPasswordChar = true;
             }
+        }
+
+        private void SavingDate()
+        {
+            if (SavingradioButton.Checked)
+            {
+                Yearlabel.Visible = true;
+                SavingAccountDateTimePicker.Visible = true;
+            }
+            else
+            {
+                Yearlabel.Visible = false;
+                SavingAccountDateTimePicker.Visible = false;
+            }
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+            SavingDate();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+           
         }
     }
 }

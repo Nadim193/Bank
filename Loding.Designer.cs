@@ -31,7 +31,7 @@ namespace Bank
         {
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Progresspanel = new System.Windows.Forms.Panel();
             this.ProgressBar = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
@@ -46,6 +46,8 @@ namespace Bank
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).BeginInit();
@@ -64,17 +66,17 @@ namespace Bank
             this.label1.TabIndex = 1;
             this.label1.Text = "LOADING.....";
             // 
-            // panel1
+            // Progresspanel
             // 
-            this.panel1.Location = new System.Drawing.Point(0, 442);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(991, 18);
-            this.panel1.TabIndex = 4;
+            this.Progresspanel.Location = new System.Drawing.Point(1, 439);
+            this.Progresspanel.Name = "Progresspanel";
+            this.Progresspanel.Size = new System.Drawing.Size(987, 18);
+            this.Progresspanel.TabIndex = 4;
             // 
             // ProgressBar
             // 
             this.ProgressBar.BackColor = System.Drawing.Color.DarkOrange;
-            this.ProgressBar.Location = new System.Drawing.Point(0, 442);
+            this.ProgressBar.Location = new System.Drawing.Point(4, 439);
             this.ProgressBar.Name = "ProgressBar";
             this.ProgressBar.Size = new System.Drawing.Size(98, 18);
             this.ProgressBar.TabIndex = 5;
@@ -213,12 +215,23 @@ namespace Bank
             this.flowLayoutPanel2.Size = new System.Drawing.Size(2, 159);
             this.flowLayoutPanel2.TabIndex = 44;
             // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.Radius = 10;
+            this.gunaElipse2.TargetControl = this.ProgressBar;
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 10;
+            this.gunaElipse1.TargetControl = this;
+            // 
             // Loding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(991, 460);
+            this.Controls.Add(this.ProgressBar);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -230,8 +243,7 @@ namespace Bank
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.ProgressBar);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Progresspanel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -253,7 +265,7 @@ namespace Bank
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Progresspanel;
         private System.Windows.Forms.Panel ProgressBar;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
@@ -267,5 +279,7 @@ namespace Bank
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private Guna.UI.WinForms.GunaElipse gunaElipse2;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
     }
 }

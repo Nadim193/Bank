@@ -323,9 +323,9 @@ namespace Bank
                     else if (ProfilePictureBox.Image.ToString() != GetProfilePicture1())
                     {
                         byte[] image1 = null;
-                        FileStream stream = new FileStream(imgLocation, FileMode.Open, FileAccess.Read);
-                        BinaryReader binary = new BinaryReader(stream);
-                        image1 = binary.ReadBytes((int)stream.Length);
+                        FileStream stream1 = new FileStream(imgLocation, FileMode.Open, FileAccess.Read);
+                        BinaryReader binary1 = new BinaryReader(stream1);
+                        image1 = binary1.ReadBytes((int)stream1.Length);
 
                         string mySQL1 = string.Empty;
                         mySQL1 += "SELECT * FROM Parsonal ";
@@ -342,14 +342,14 @@ namespace Bank
                                       ",[Religion] = '" + ReligionTextBox.Text + "'" +
                                       ",[Income] = '" + IncomeTextBox.Text + "'" +
                                       ",[Educational_Qualification] = '" + EQTextBox.Text + "'" +
-                                      ",[Profile_picture] = @image1" +
+                                      ",[Profile_picture] = '" + image1 +"'" +
                                       ",[Occupation] = '" + occupationTextBox.Text + "'";
                         mySQL1 += "WHERE User_Name = '" + UserNameTextbox.Text + "'";
 
                         if (SqlConnection.State != ConnectionState.Open)
                             SqlConnection.Open();
                         SqlCommand command1 = new SqlCommand(mySQL1, SqlConnection);
-                        command1.Parameters.AddWithValue("@image1", image1);
+                        //command1.Parameters.AddWithValue("@image1", image1);
                         command1.ExecuteNonQuery();
 
                         MessageBox.Show("Update Successfull", "Message Box", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -376,14 +376,14 @@ namespace Bank
                                       ",[Religion] = '" + ReligionTextBox.Text + "'" +
                                       ",[Income] = '" + IncomeTextBox.Text + "'" +
                                       ",[Educational_Qualification] = '" + EQTextBox.Text + "'" +
-                                      ",[Profile_picture] = @image" +
+                                      ",[Profile_picture] = '" + image + "'" +
                                       ",[Occupation] = '" + occupationTextBox.Text + "'";
                         mySQL += "WHERE User_Name = '" + UserNameTextbox.Text + "'";
 
                         if (SqlConnection.State != ConnectionState.Open)
                             SqlConnection.Open();
                         SqlCommand command = new SqlCommand(mySQL, SqlConnection);
-                        command.Parameters.AddWithValue("@image", image);
+                        //command.Parameters.AddWithValue("@image", image);
                         command.ExecuteNonQuery();
 
                         MessageBox.Show("Update Successfull", "Message Box", MessageBoxButtons.OK, MessageBoxIcon.Information);

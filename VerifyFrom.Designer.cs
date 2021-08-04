@@ -29,6 +29,7 @@ namespace Bank
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -50,6 +51,10 @@ namespace Bank
             this.maxIcon = new System.Windows.Forms.PictureBox();
             this.minIcon = new System.Windows.Forms.PictureBox();
             this.cerraricon = new System.Windows.Forms.PictureBox();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse4 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Verify.SuspendLayout();
@@ -137,6 +142,7 @@ namespace Bank
             // verifyBackbutton
             // 
             this.verifyBackbutton.BackColor = System.Drawing.Color.DarkOrange;
+            this.verifyBackbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.verifyBackbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.verifyBackbutton.ForeColor = System.Drawing.Color.Black;
             this.verifyBackbutton.Location = new System.Drawing.Point(304, 425);
@@ -180,6 +186,7 @@ namespace Bank
             // 
             this.Verifybutton.BackColor = System.Drawing.Color.DarkOrange;
             this.Verifybutton.Enabled = false;
+            this.Verifybutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Verifybutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Verifybutton.ForeColor = System.Drawing.Color.Black;
             this.Verifybutton.Location = new System.Drawing.Point(132, 425);
@@ -193,6 +200,7 @@ namespace Bank
             // SentOTPButton
             // 
             this.SentOTPButton.BackColor = System.Drawing.Color.DarkOrange;
+            this.SentOTPButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SentOTPButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SentOTPButton.ForeColor = System.Drawing.Color.Black;
             this.SentOTPButton.Location = new System.Drawing.Point(252, 296);
@@ -314,6 +322,26 @@ namespace Bank
             this.cerraricon.TabStop = false;
             this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
             // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 15;
+            this.gunaElipse1.TargetControl = this;
+            // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.Radius = 7;
+            this.gunaElipse2.TargetControl = this.Verifybutton;
+            // 
+            // gunaElipse3
+            // 
+            this.gunaElipse3.Radius = 7;
+            this.gunaElipse3.TargetControl = this.verifyBackbutton;
+            // 
+            // gunaElipse4
+            // 
+            this.gunaElipse4.Radius = 7;
+            this.gunaElipse4.TargetControl = this.SentOTPButton;
+            // 
             // VerifyFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -363,5 +391,9 @@ namespace Bank
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse2;
+        private Guna.UI.WinForms.GunaElipse gunaElipse3;
+        private Guna.UI.WinForms.GunaElipse gunaElipse4;
     }
 }

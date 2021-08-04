@@ -29,6 +29,7 @@ namespace Bank
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cerraricon = new System.Windows.Forms.PictureBox();
             this.varifyEmailpanel = new System.Windows.Forms.Panel();
@@ -39,6 +40,7 @@ namespace Bank
             this.EmailVerifybutton = new System.Windows.Forms.Button();
             this.EmailVerifytextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).BeginInit();
             this.varifyEmailpanel.SuspendLayout();
@@ -166,6 +168,11 @@ namespace Bank
             this.label1.TabIndex = 0;
             this.label1.Text = "Enter OTP ";
             // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 15;
+            this.gunaElipse1.TargetControl = this;
+            // 
             // EmailVerifyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -196,5 +203,6 @@ namespace Bank
         private System.Windows.Forms.TextBox EmailVerifytextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox cerraricon;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
     }
 }

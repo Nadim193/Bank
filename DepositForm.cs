@@ -86,7 +86,7 @@ namespace Bank
         {
             if(DepositUserNameTextbox.Text == UserName && PasswordTextbox.Text == Password)
             {
-                string checknull = "Null";
+                string checknull = "";
                 string mySQL6 = string.Empty;
                 mySQL6 += "SELECT Email_address FROM Parsonal ";
                 mySQL6 += "WHERE User_name = '" + UserName + "'";

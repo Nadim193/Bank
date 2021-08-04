@@ -29,6 +29,7 @@ namespace Bank
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CloseForm));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
@@ -42,14 +43,14 @@ namespace Bank
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.cerraricon = new System.Windows.Forms.PictureBox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.Controls.Add(this.bunifuButton2);
             this.panel1.Controls.Add(this.bunifuButton1);
             this.panel1.Controls.Add(this.bunifuCustomLabel2);
@@ -69,7 +70,7 @@ namespace Bank
             this.bunifuButton2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton2.BackColor1 = System.Drawing.Color.DarkOrange;
             this.bunifuButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton2.BackgroundImage")));
-            this.bunifuButton2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
             this.bunifuButton2.ButtonText = "Cancel";
             this.bunifuButton2.ButtonTextMarginLeft = 0;
             this.bunifuButton2.ColorContrastOnClick = 45;
@@ -92,7 +93,7 @@ namespace Bank
             this.bunifuButton2.IconPadding = 10;
             this.bunifuButton2.IconRightCursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuButton2.IdleBorderColor = System.Drawing.Color.DarkOrange;
-            this.bunifuButton2.IdleBorderRadius = 3;
+            this.bunifuButton2.IdleBorderRadius = 5;
             this.bunifuButton2.IdleBorderThickness = 1;
             this.bunifuButton2.IdleFillColor = System.Drawing.Color.DarkOrange;
             this.bunifuButton2.IdleIconLeftImage = null;
@@ -101,7 +102,7 @@ namespace Bank
             this.bunifuButton2.Location = new System.Drawing.Point(156, 142);
             this.bunifuButton2.Name = "bunifuButton2";
             stateProperties1.BorderColor = System.Drawing.Color.DarkOrange;
-            stateProperties1.BorderRadius = 3;
+            stateProperties1.BorderRadius = 5;
             stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             stateProperties1.BorderThickness = 1;
             stateProperties1.FillColor = System.Drawing.Color.DarkOrange;
@@ -110,7 +111,7 @@ namespace Bank
             stateProperties1.IconRightImage = null;
             this.bunifuButton2.onHoverState = stateProperties1;
             stateProperties2.BorderColor = System.Drawing.Color.DarkOrange;
-            stateProperties2.BorderRadius = 3;
+            stateProperties2.BorderRadius = 5;
             stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             stateProperties2.BorderThickness = 1;
             stateProperties2.FillColor = System.Drawing.Color.DarkOrange;
@@ -156,7 +157,7 @@ namespace Bank
             this.bunifuButton1.IconPadding = 10;
             this.bunifuButton1.IconRightCursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuButton1.IdleBorderColor = System.Drawing.Color.Red;
-            this.bunifuButton1.IdleBorderRadius = 3;
+            this.bunifuButton1.IdleBorderRadius = 5;
             this.bunifuButton1.IdleBorderThickness = 1;
             this.bunifuButton1.IdleFillColor = System.Drawing.Color.Red;
             this.bunifuButton1.IdleIconLeftImage = null;
@@ -165,7 +166,7 @@ namespace Bank
             this.bunifuButton1.Location = new System.Drawing.Point(303, 142);
             this.bunifuButton1.Name = "bunifuButton1";
             stateProperties3.BorderColor = System.Drawing.Color.Red;
-            stateProperties3.BorderRadius = 3;
+            stateProperties3.BorderRadius = 5;
             stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             stateProperties3.BorderThickness = 1;
             stateProperties3.FillColor = System.Drawing.Color.Red;
@@ -174,7 +175,7 @@ namespace Bank
             stateProperties3.IconRightImage = null;
             this.bunifuButton1.onHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Red;
-            stateProperties4.BorderRadius = 3;
+            stateProperties4.BorderRadius = 5;
             stateProperties4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             stateProperties4.BorderThickness = 1;
             stateProperties4.FillColor = System.Drawing.Color.Red;
@@ -193,7 +194,7 @@ namespace Bank
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Gray;
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(29, 79);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(339, 29);
@@ -205,7 +206,7 @@ namespace Bank
             this.cerraricon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cerraricon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cerraricon.Image = global::Bank.Properties.Resources._60994;
-            this.cerraricon.Location = new System.Drawing.Point(403, 13);
+            this.cerraricon.Location = new System.Drawing.Point(401, 9);
             this.cerraricon.Name = "cerraricon";
             this.cerraricon.Size = new System.Drawing.Size(22, 29);
             this.cerraricon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -217,12 +218,17 @@ namespace Bank
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Wheat;
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(29, 21);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(146, 29);
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Close Bank";
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 15;
+            this.gunaElipse1.TargetControl = this;
             // 
             // CloseForm
             // 
@@ -251,5 +257,6 @@ namespace Bank
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
     }
 }

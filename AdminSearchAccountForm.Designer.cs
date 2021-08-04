@@ -29,18 +29,24 @@ namespace Bank
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.DepositUserNamepanel = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
-            this.DepositUserNameTextbox = new Bunifu.Framework.BunifuCustomTextbox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.OccupationComboBox = new Guna.UI.WinForms.GunaComboBox();
+            this.GenderComboBox = new Guna.UI.WinForms.GunaComboBox();
+            this.NationalityComboBox = new Guna.UI.WinForms.GunaComboBox();
+            this.DeactiveButton = new Guna.UI.WinForms.GunaButton();
+            this.NameTextbox = new Bunifu.Framework.BunifuCustomTextbox();
+            this.Deletebutton = new Guna.UI.WinForms.GunaButton();
+            this.SearchButton = new System.Windows.Forms.PictureBox();
+            this.SearchComboBox = new Guna.UI.WinForms.GunaComboBox();
+            this.Namelabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -48,15 +54,20 @@ namespace Bank
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.parsonalBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bankSystemDataBaseDataSet15 = new Bank.BankSystemDataBaseDataSet15();
             this.bankSystemDataBaseDataSet7 = new Bank.BankSystemDataBaseDataSet7();
             this.bankSystemDataBaseDataSet8 = new Bank.BankSystemDataBaseDataSet8();
+            this.parsonalTableAdapter = new Bank.BankSystemDataBaseDataSet15TableAdapters.ParsonalTableAdapter();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.DepositUserNamepanel.SuspendLayout();
             this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchButton)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parsonalBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bankSystemDataBaseDataSet15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bankSystemDataBaseDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bankSystemDataBaseDataSet8)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +75,7 @@ namespace Bank
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dataGridView);
             this.panel1.Controls.Add(this.DepositUserNamepanel);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
@@ -73,44 +84,46 @@ namespace Bank
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1207, 804);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // dataGridView1
+            // dataGridView
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Desktop;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView.BackgroundColor = System.Drawing.SystemColors.Desktop;
+            this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.RoyalBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Wheat;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 338);
-            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.RoyalBlue;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView.EnableHeadersVisualStyles = false;
+            this.dataGridView.Location = new System.Drawing.Point(26, 337);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.RowHeadersWidth = 51;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1144, 435);
-            this.dataGridView1.TabIndex = 75;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView.RowTemplate.Height = 24;
+            this.dataGridView.Size = new System.Drawing.Size(1159, 440);
+            this.dataGridView.TabIndex = 136;
             // 
             // DepositUserNamepanel
             // 
@@ -119,46 +132,226 @@ namespace Bank
             this.DepositUserNamepanel.Controls.Add(this.label2);
             this.DepositUserNamepanel.Controls.Add(this.panel11);
             this.DepositUserNamepanel.Controls.Add(this.panel7);
-            this.DepositUserNamepanel.Location = new System.Drawing.Point(35, 92);
+            this.DepositUserNamepanel.Location = new System.Drawing.Point(26, 92);
             this.DepositUserNamepanel.Name = "DepositUserNamepanel";
-            this.DepositUserNamepanel.Size = new System.Drawing.Size(1144, 229);
+            this.DepositUserNamepanel.Size = new System.Drawing.Size(1160, 227);
             this.DepositUserNamepanel.TabIndex = 10;
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.pictureBox1);
-            this.panel15.Controls.Add(this.gunaComboBox1);
-            this.panel15.Controls.Add(this.DepositUserNameTextbox);
-            this.panel15.Controls.Add(this.label7);
+            this.panel15.Controls.Add(this.OccupationComboBox);
+            this.panel15.Controls.Add(this.GenderComboBox);
+            this.panel15.Controls.Add(this.NationalityComboBox);
+            this.panel15.Controls.Add(this.DeactiveButton);
+            this.panel15.Controls.Add(this.NameTextbox);
+            this.panel15.Controls.Add(this.Deletebutton);
+            this.panel15.Controls.Add(this.SearchButton);
+            this.panel15.Controls.Add(this.SearchComboBox);
+            this.panel15.Controls.Add(this.Namelabel);
             this.panel15.Location = new System.Drawing.Point(33, 71);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(1109, 157);
+            this.panel15.Size = new System.Drawing.Size(1126, 155);
             this.panel15.TabIndex = 61;
+            this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel15_Paint);
             // 
-            // pictureBox1
+            // OccupationComboBox
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Bank.Properties.Resources.png_clipart_computer_icons_android_web_search_engine_google_search_search_box_google_search_bar_blue_trademark_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(717, 90);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 62;
-            this.pictureBox1.TabStop = false;
+            this.OccupationComboBox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.OccupationComboBox.BaseColor = System.Drawing.SystemColors.Desktop;
+            this.OccupationComboBox.BorderColor = System.Drawing.Color.Silver;
+            this.OccupationComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.OccupationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.OccupationComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.OccupationComboBox.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OccupationComboBox.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.OccupationComboBox.FormattingEnabled = true;
+            this.OccupationComboBox.Items.AddRange(new object[] {
+            "Salaried",
+            "Self-Employed",
+            "Business",
+            "Student",
+            "Retired",
+            "Other"});
+            this.OccupationComboBox.Location = new System.Drawing.Point(11, 44);
+            this.OccupationComboBox.Name = "OccupationComboBox";
+            this.OccupationComboBox.OnHoverItemBaseColor = System.Drawing.Color.LightSteelBlue;
+            this.OccupationComboBox.OnHoverItemForeColor = System.Drawing.Color.RoyalBlue;
+            this.OccupationComboBox.Size = new System.Drawing.Size(459, 32);
+            this.OccupationComboBox.TabIndex = 138;
+            this.OccupationComboBox.Visible = false;
             // 
-            // gunaComboBox1
+            // GenderComboBox
             // 
-            this.gunaComboBox1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.gunaComboBox1.BaseColor = System.Drawing.SystemColors.Desktop;
-            this.gunaComboBox1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaComboBox1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.gunaComboBox1.FormattingEnabled = true;
-            this.gunaComboBox1.Items.AddRange(new object[] {
-            "-By User Name",
+            this.GenderComboBox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.GenderComboBox.BaseColor = System.Drawing.SystemColors.Desktop;
+            this.GenderComboBox.BorderColor = System.Drawing.Color.Silver;
+            this.GenderComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.GenderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GenderComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.GenderComboBox.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenderComboBox.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.GenderComboBox.FormattingEnabled = true;
+            this.GenderComboBox.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.GenderComboBox.Location = new System.Drawing.Point(11, 44);
+            this.GenderComboBox.Name = "GenderComboBox";
+            this.GenderComboBox.OnHoverItemBaseColor = System.Drawing.Color.LightSteelBlue;
+            this.GenderComboBox.OnHoverItemForeColor = System.Drawing.Color.RoyalBlue;
+            this.GenderComboBox.Size = new System.Drawing.Size(459, 32);
+            this.GenderComboBox.TabIndex = 137;
+            this.GenderComboBox.Visible = false;
+            // 
+            // NationalityComboBox
+            // 
+            this.NationalityComboBox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.NationalityComboBox.BaseColor = System.Drawing.SystemColors.Desktop;
+            this.NationalityComboBox.BorderColor = System.Drawing.Color.Silver;
+            this.NationalityComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.NationalityComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.NationalityComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.NationalityComboBox.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NationalityComboBox.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.NationalityComboBox.FormattingEnabled = true;
+            this.NationalityComboBox.Items.AddRange(new object[] {
+            "Afghanistan",
+            "Albania",
+            "Algeria",
+            "Argentina",
+            "Australia",
+            "Bangladesh",
+            "Belgium",
+            "Bolivia",
+            "Brazil",
+            "Cambodia",
+            "Canada",
+            "Chile",
+            "China",
+            "Costa Rica",
+            "Denmark\tDanish",
+            "Ecuador",
+            "Egypt",
+            "England",
+            "France",
+            "Germany",
+            "Hungary",
+            "India",
+            "Indonesia",
+            "Iran",
+            "Italy",
+            "Malaysia",
+            "Mexico",
+            "Nepal",
+            "Netherlands",
+            "New Zealand",
+            "Pakistan",
+            "Philippines",
+            "Saudi Arabia",
+            "Spain",
+            "Sweden",
+            "Switzerland",
+            "(The) United Kingdom",
+            "(The) United States\tAmerican ",
+            "Zambia",
+            "Zimbabwe"});
+            this.NationalityComboBox.Location = new System.Drawing.Point(11, 44);
+            this.NationalityComboBox.Name = "NationalityComboBox";
+            this.NationalityComboBox.OnHoverItemBaseColor = System.Drawing.Color.LightSteelBlue;
+            this.NationalityComboBox.OnHoverItemForeColor = System.Drawing.Color.RoyalBlue;
+            this.NationalityComboBox.Size = new System.Drawing.Size(459, 32);
+            this.NationalityComboBox.TabIndex = 136;
+            this.NationalityComboBox.Visible = false;
+            this.NationalityComboBox.SelectedIndexChanged += new System.EventHandler(this.NationalityComboBox_SelectedIndexChanged);
+            // 
+            // DeactiveButton
+            // 
+            this.DeactiveButton.Animated = true;
+            this.DeactiveButton.AnimationHoverSpeed = 0.07F;
+            this.DeactiveButton.AnimationSpeed = 0.03F;
+            this.DeactiveButton.BackColor = System.Drawing.Color.Transparent;
+            this.DeactiveButton.BaseColor = System.Drawing.Color.RoyalBlue;
+            this.DeactiveButton.BorderColor = System.Drawing.Color.Black;
+            this.DeactiveButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.DeactiveButton.FocusedColor = System.Drawing.Color.Empty;
+            this.DeactiveButton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeactiveButton.ForeColor = System.Drawing.Color.Black;
+            this.DeactiveButton.Image = global::Bank.Properties.Resources._207_2079206_correct_icon_x_in_red_circle_removebg_preview;
+            this.DeactiveButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.DeactiveButton.Location = new System.Drawing.Point(973, 90);
+            this.DeactiveButton.Name = "DeactiveButton";
+            this.DeactiveButton.OnHoverBaseColor = System.Drawing.Color.SlateBlue;
+            this.DeactiveButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.DeactiveButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.DeactiveButton.OnHoverImage = null;
+            this.DeactiveButton.OnPressedColor = System.Drawing.Color.Black;
+            this.DeactiveButton.Radius = 10;
+            this.DeactiveButton.Size = new System.Drawing.Size(134, 50);
+            this.DeactiveButton.TabIndex = 135;
+            this.DeactiveButton.Text = "Deactive";
+            this.DeactiveButton.Click += new System.EventHandler(this.DeactiveButton_Click);
+            // 
+            // NameTextbox
+            // 
+            this.NameTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.NameTextbox.BorderColor = System.Drawing.Color.SteelBlue;
+            this.NameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameTextbox.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.NameTextbox.Location = new System.Drawing.Point(11, 44);
+            this.NameTextbox.Name = "NameTextbox";
+            this.NameTextbox.Size = new System.Drawing.Size(459, 28);
+            this.NameTextbox.TabIndex = 68;
+            // 
+            // Deletebutton
+            // 
+            this.Deletebutton.Animated = true;
+            this.Deletebutton.AnimationHoverSpeed = 0.07F;
+            this.Deletebutton.AnimationSpeed = 0.03F;
+            this.Deletebutton.BackColor = System.Drawing.Color.Transparent;
+            this.Deletebutton.BaseColor = System.Drawing.Color.RoyalBlue;
+            this.Deletebutton.BorderColor = System.Drawing.Color.Black;
+            this.Deletebutton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Deletebutton.FocusedColor = System.Drawing.Color.Empty;
+            this.Deletebutton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Deletebutton.ForeColor = System.Drawing.Color.Black;
+            this.Deletebutton.Image = global::Bank.Properties.Resources.delete_1432400_1211078;
+            this.Deletebutton.ImageSize = new System.Drawing.Size(20, 20);
+            this.Deletebutton.Location = new System.Drawing.Point(827, 90);
+            this.Deletebutton.Name = "Deletebutton";
+            this.Deletebutton.OnHoverBaseColor = System.Drawing.Color.SlateBlue;
+            this.Deletebutton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Deletebutton.OnHoverForeColor = System.Drawing.Color.White;
+            this.Deletebutton.OnHoverImage = null;
+            this.Deletebutton.OnPressedColor = System.Drawing.Color.Black;
+            this.Deletebutton.Radius = 10;
+            this.Deletebutton.Size = new System.Drawing.Size(127, 50);
+            this.Deletebutton.TabIndex = 134;
+            this.Deletebutton.Text = "Delete";
+            this.Deletebutton.Click += new System.EventHandler(this.Deletebutton_Click);
+            // 
+            // SearchButton
+            // 
+            this.SearchButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SearchButton.Image = global::Bank.Properties.Resources.png_clipart_computer_icons_android_web_search_engine_google_search_search_box_google_search_bar_blue_trademark_removebg_preview;
+            this.SearchButton.Location = new System.Drawing.Point(717, 90);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(85, 50);
+            this.SearchButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SearchButton.TabIndex = 62;
+            this.SearchButton.TabStop = false;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
+            // 
+            // SearchComboBox
+            // 
+            this.SearchComboBox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.SearchComboBox.BaseColor = System.Drawing.SystemColors.Desktop;
+            this.SearchComboBox.BorderColor = System.Drawing.Color.Silver;
+            this.SearchComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.SearchComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SearchComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.SearchComboBox.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchComboBox.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.SearchComboBox.FormattingEnabled = true;
+            this.SearchComboBox.Items.AddRange(new object[] {
             "-By First Name",
             "-By Last Name",
             "-By Nationality",
@@ -168,34 +361,23 @@ namespace Bank
             "-By Gender",
             "-By Account Type",
             "- By All"});
-            this.gunaComboBox1.Location = new System.Drawing.Point(498, 42);
-            this.gunaComboBox1.Name = "gunaComboBox1";
-            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.LightSteelBlue;
-            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.RoyalBlue;
-            this.gunaComboBox1.Size = new System.Drawing.Size(304, 32);
-            this.gunaComboBox1.TabIndex = 69;
+            this.SearchComboBox.Location = new System.Drawing.Point(498, 42);
+            this.SearchComboBox.Name = "SearchComboBox";
+            this.SearchComboBox.OnHoverItemBaseColor = System.Drawing.Color.LightSteelBlue;
+            this.SearchComboBox.OnHoverItemForeColor = System.Drawing.Color.RoyalBlue;
+            this.SearchComboBox.Size = new System.Drawing.Size(304, 32);
+            this.SearchComboBox.TabIndex = 69;
             // 
-            // DepositUserNameTextbox
+            // Namelabel
             // 
-            this.DepositUserNameTextbox.BackColor = System.Drawing.SystemColors.Desktop;
-            this.DepositUserNameTextbox.BorderColor = System.Drawing.Color.SteelBlue;
-            this.DepositUserNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DepositUserNameTextbox.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.DepositUserNameTextbox.Location = new System.Drawing.Point(11, 43);
-            this.DepositUserNameTextbox.Name = "DepositUserNameTextbox";
-            this.DepositUserNameTextbox.Size = new System.Drawing.Size(459, 28);
-            this.DepositUserNameTextbox.TabIndex = 68;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label7.Location = new System.Drawing.Point(7, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 24);
-            this.label7.TabIndex = 62;
-            this.label7.Text = "User Name";
+            this.Namelabel.AutoSize = true;
+            this.Namelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Namelabel.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.Namelabel.Location = new System.Drawing.Point(7, 13);
+            this.Namelabel.Name = "Namelabel";
+            this.Namelabel.Size = new System.Drawing.Size(114, 24);
+            this.Namelabel.TabIndex = 62;
+            this.Namelabel.Text = "User Name";
             // 
             // label2
             // 
@@ -222,7 +404,7 @@ namespace Bank
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1142, 5);
+            this.panel7.Size = new System.Drawing.Size(1158, 5);
             this.panel7.TabIndex = 0;
             // 
             // panel3
@@ -265,6 +447,16 @@ namespace Bank
             this.panel2.Size = new System.Drawing.Size(1207, 5);
             this.panel2.TabIndex = 0;
             // 
+            // parsonalBindingSource
+            // 
+            this.parsonalBindingSource.DataMember = "Parsonal";
+            this.parsonalBindingSource.DataSource = this.bankSystemDataBaseDataSet15;
+            // 
+            // bankSystemDataBaseDataSet15
+            // 
+            this.bankSystemDataBaseDataSet15.DataSetName = "BankSystemDataBaseDataSet15";
+            this.bankSystemDataBaseDataSet15.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // bankSystemDataBaseDataSet7
             // 
             this.bankSystemDataBaseDataSet7.DataSetName = "BankSystemDataBaseDataSet7";
@@ -274,6 +466,10 @@ namespace Bank
             // 
             this.bankSystemDataBaseDataSet8.DataSetName = "BankSystemDataBaseDataSet8";
             this.bankSystemDataBaseDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // parsonalTableAdapter
+            // 
+            this.parsonalTableAdapter.ClearBeforeFill = true;
             // 
             // AdminSearchAccountForm
             // 
@@ -287,15 +483,17 @@ namespace Bank
             this.Text = "AdminSearchAccountForm";
             this.Load += new System.EventHandler(this.AdminSearchAccountForm_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.DepositUserNamepanel.ResumeLayout(false);
             this.DepositUserNamepanel.PerformLayout();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchButton)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parsonalBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bankSystemDataBaseDataSet15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bankSystemDataBaseDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bankSystemDataBaseDataSet8)).EndInit();
             this.ResumeLayout(false);
@@ -311,15 +509,23 @@ namespace Bank
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel DepositUserNamepanel;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
-        private Bunifu.Framework.BunifuCustomTextbox DepositUserNameTextbox;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox SearchButton;
+        private Guna.UI.WinForms.GunaComboBox SearchComboBox;
+        private Bunifu.Framework.BunifuCustomTextbox NameTextbox;
+        private System.Windows.Forms.Label Namelabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private BankSystemDataBaseDataSet7 bankSystemDataBaseDataSet7;
         private BankSystemDataBaseDataSet8 bankSystemDataBaseDataSet8;
+        private Guna.UI.WinForms.GunaButton DeactiveButton;
+        private Guna.UI.WinForms.GunaButton Deletebutton;
+        private Guna.UI.WinForms.GunaComboBox NationalityComboBox;
+        private Guna.UI.WinForms.GunaComboBox OccupationComboBox;
+        private Guna.UI.WinForms.GunaComboBox GenderComboBox;
+        private BankSystemDataBaseDataSet15 bankSystemDataBaseDataSet15;
+        private System.Windows.Forms.BindingSource parsonalBindingSource;
+        private BankSystemDataBaseDataSet15TableAdapters.ParsonalTableAdapter parsonalTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView;
     }
 }
