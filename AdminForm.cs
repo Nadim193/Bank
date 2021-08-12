@@ -326,5 +326,10 @@ namespace Bank
             login.ShowDialog();
             this.Close();
         }
+
+        private void gunaElipsePanel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
     }
 }

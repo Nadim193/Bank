@@ -85,9 +85,16 @@ namespace Bank
 
         private void DepositAmountButton_Click(object sender, EventArgs e)
         {
-            DepositPasswordpanel.Enabled = true;
-            PasswordTextbox.Select();
-            Depositpanel.Enabled = false;
+            if (string.IsNullOrEmpty(DepositAmountTextbox.Text))
+            {
+                DepositPasswordpanel.Enabled = true;
+                PasswordTextbox.Select();
+                Depositpanel.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Please Enter Ammount.");
+            }
         }
 
         private void ShowRememberPasswordcheckBox_CheckedChanged(object sender, EventArgs e)
@@ -232,6 +239,23 @@ namespace Bank
         private void DepositBalancepanel_Paint(object sender, PaintEventArgs e)
         {
             DepositCurrentBalancelabel.Text = "";
+        }
+
+        private void DepositAmountTextbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (ch == 46 && DepositAmountTextbox.Text.IndexOf('.') != -1)
+            {
+                e.Handled = true;
+                return;
+            }
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+                MessageBox.Show("Enter Valide Number.");
+                DepositAmountTextbox.Clear();
+            }
         }
     }
 }

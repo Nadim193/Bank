@@ -31,9 +31,9 @@ namespace Bank
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -90,15 +90,9 @@ namespace Bank
             this.SavingradioButton = new Guna.UI.WinForms.GunaRadioButton();
             this.BackToLoginlinkLabel = new System.Windows.Forms.LinkLabel();
             this.label5 = new System.Windows.Forms.Label();
-            this.PictureBox = new System.Windows.Forms.PictureBox();
-            this.FileChooseButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label4 = new System.Windows.Forms.Label();
             this.Submitbutton = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.RestoreDownIcon = new System.Windows.Forms.PictureBox();
-            this.maxIcon = new System.Windows.Forms.PictureBox();
-            this.minIcon = new System.Windows.Forms.PictureBox();
-            this.cerraricon = new System.Windows.Forms.PictureBox();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
@@ -106,17 +100,23 @@ namespace Bank
             this.gunaElipse5 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse6 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse7 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.RestoreDownIcon = new System.Windows.Forms.PictureBox();
+            this.maxIcon = new System.Windows.Forms.PictureBox();
+            this.minIcon = new System.Windows.Forms.PictureBox();
+            this.cerraricon = new System.Windows.Forms.PictureBox();
+            this.PictureBox = new System.Windows.Forms.PictureBox();
+            this.FileChooseButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -901,80 +901,6 @@ namespace Bank
             this.label5.TabIndex = 62;
             this.label5.Text = "Already have an account?";
             // 
-            // PictureBox
-            // 
-            this.PictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PictureBox.Location = new System.Drawing.Point(487, 9);
-            this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Size = new System.Drawing.Size(235, 218);
-            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBox.TabIndex = 61;
-            this.PictureBox.TabStop = false;
-            // 
-            // FileChooseButton
-            // 
-            this.FileChooseButton.AllowToggling = false;
-            this.FileChooseButton.AnimationSpeed = 200;
-            this.FileChooseButton.AutoGenerateColors = false;
-            this.FileChooseButton.BackColor = System.Drawing.Color.Transparent;
-            this.FileChooseButton.BackColor1 = System.Drawing.Color.DarkOrange;
-            this.FileChooseButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FileChooseButton.BackgroundImage")));
-            this.FileChooseButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dot;
-            this.FileChooseButton.ButtonText = "Choose File";
-            this.FileChooseButton.ButtonTextMarginLeft = 0;
-            this.FileChooseButton.ColorContrastOnClick = 45;
-            this.FileChooseButton.ColorContrastOnHover = 45;
-            this.FileChooseButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.FileChooseButton.CustomizableEdges = borderEdges2;
-            this.FileChooseButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.FileChooseButton.DisabledBorderColor = System.Drawing.Color.Empty;
-            this.FileChooseButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.FileChooseButton.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.FileChooseButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.FileChooseButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FileChooseButton.ForeColor = System.Drawing.Color.Black;
-            this.FileChooseButton.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.FileChooseButton.IconMarginLeft = 11;
-            this.FileChooseButton.IconPadding = 10;
-            this.FileChooseButton.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.FileChooseButton.IdleBorderColor = System.Drawing.Color.White;
-            this.FileChooseButton.IdleBorderRadius = 3;
-            this.FileChooseButton.IdleBorderThickness = 1;
-            this.FileChooseButton.IdleFillColor = System.Drawing.Color.DarkOrange;
-            this.FileChooseButton.IdleIconLeftImage = null;
-            this.FileChooseButton.IdleIconRightImage = null;
-            this.FileChooseButton.IndicateFocus = false;
-            this.FileChooseButton.Location = new System.Drawing.Point(297, 179);
-            this.FileChooseButton.Name = "FileChooseButton";
-            stateProperties3.BorderColor = System.Drawing.Color.Chocolate;
-            stateProperties3.BorderRadius = 3;
-            stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties3.BorderThickness = 1;
-            stateProperties3.FillColor = System.Drawing.Color.Chocolate;
-            stateProperties3.ForeColor = System.Drawing.Color.White;
-            stateProperties3.IconLeftImage = null;
-            stateProperties3.IconRightImage = null;
-            this.FileChooseButton.onHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Chocolate;
-            stateProperties4.BorderRadius = 3;
-            stateProperties4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties4.BorderThickness = 1;
-            stateProperties4.FillColor = System.Drawing.Color.Chocolate;
-            stateProperties4.ForeColor = System.Drawing.Color.White;
-            stateProperties4.IconLeftImage = null;
-            stateProperties4.IconRightImage = null;
-            this.FileChooseButton.OnPressedState = stateProperties4;
-            this.FileChooseButton.Size = new System.Drawing.Size(178, 48);
-            this.FileChooseButton.TabIndex = 60;
-            this.FileChooseButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.FileChooseButton.TextMarginLeft = 0;
-            this.FileChooseButton.UseDefaultRadiusAndThickness = true;
-            this.FileChooseButton.Click += new System.EventHandler(this.FileChooseButton_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -990,7 +916,8 @@ namespace Bank
             // 
             this.Submitbutton.BackColor = System.Drawing.Color.DarkOrange;
             this.Submitbutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Submitbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Submitbutton.FlatAppearance.BorderSize = 0;
+            this.Submitbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Submitbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Submitbutton.ForeColor = System.Drawing.Color.Black;
             this.Submitbutton.Location = new System.Drawing.Point(375, 257);
@@ -1013,6 +940,41 @@ namespace Bank
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1540, 20);
             this.panel7.TabIndex = 21;
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 22;
+            this.gunaElipse1.TargetControl = this;
+            // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.Radius = 10;
+            this.gunaElipse2.TargetControl = this.panel5;
+            // 
+            // gunaElipse3
+            // 
+            this.gunaElipse3.Radius = 10;
+            this.gunaElipse3.TargetControl = this.panel3;
+            // 
+            // gunaElipse4
+            // 
+            this.gunaElipse4.Radius = 10;
+            this.gunaElipse4.TargetControl = this.panel2;
+            // 
+            // gunaElipse5
+            // 
+            this.gunaElipse5.Radius = 10;
+            this.gunaElipse5.TargetControl = this.panel4;
+            // 
+            // gunaElipse6
+            // 
+            this.gunaElipse6.Radius = 10;
+            this.gunaElipse6.TargetControl = this.FileChooseButton;
+            // 
+            // gunaElipse7
+            // 
+            this.gunaElipse7.Radius = 10;
+            this.gunaElipse7.TargetControl = this.Submitbutton;
             // 
             // RestoreDownIcon
             // 
@@ -1067,40 +1029,79 @@ namespace Bank
             this.cerraricon.TabStop = false;
             this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
             // 
-            // gunaElipse1
+            // PictureBox
             // 
-            this.gunaElipse1.Radius = 22;
-            this.gunaElipse1.TargetControl = this;
+            this.PictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PictureBox.Location = new System.Drawing.Point(487, 9);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Size = new System.Drawing.Size(235, 218);
+            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox.TabIndex = 61;
+            this.PictureBox.TabStop = false;
             // 
-            // gunaElipse2
+            // FileChooseButton
             // 
-            this.gunaElipse2.Radius = 10;
-            this.gunaElipse2.TargetControl = this.panel5;
-            // 
-            // gunaElipse3
-            // 
-            this.gunaElipse3.Radius = 10;
-            this.gunaElipse3.TargetControl = this.panel3;
-            // 
-            // gunaElipse4
-            // 
-            this.gunaElipse4.Radius = 10;
-            this.gunaElipse4.TargetControl = this.panel2;
-            // 
-            // gunaElipse5
-            // 
-            this.gunaElipse5.Radius = 10;
-            this.gunaElipse5.TargetControl = this.panel4;
-            // 
-            // gunaElipse6
-            // 
-            this.gunaElipse6.Radius = 10;
-            this.gunaElipse6.TargetControl = this.FileChooseButton;
-            // 
-            // gunaElipse7
-            // 
-            this.gunaElipse7.Radius = 10;
-            this.gunaElipse7.TargetControl = this.Submitbutton;
+            this.FileChooseButton.AllowToggling = false;
+            this.FileChooseButton.AnimationSpeed = 200;
+            this.FileChooseButton.AutoGenerateColors = false;
+            this.FileChooseButton.BackColor = System.Drawing.Color.Transparent;
+            this.FileChooseButton.BackColor1 = System.Drawing.Color.DarkOrange;
+            this.FileChooseButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FileChooseButton.BackgroundImage")));
+            this.FileChooseButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dot;
+            this.FileChooseButton.ButtonText = "Choose File";
+            this.FileChooseButton.ButtonTextMarginLeft = 0;
+            this.FileChooseButton.ColorContrastOnClick = 45;
+            this.FileChooseButton.ColorContrastOnHover = 45;
+            this.FileChooseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.FileChooseButton.CustomizableEdges = borderEdges1;
+            this.FileChooseButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.FileChooseButton.DisabledBorderColor = System.Drawing.Color.Empty;
+            this.FileChooseButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.FileChooseButton.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.FileChooseButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.FileChooseButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FileChooseButton.ForeColor = System.Drawing.Color.Black;
+            this.FileChooseButton.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.FileChooseButton.IconMarginLeft = 11;
+            this.FileChooseButton.IconPadding = 10;
+            this.FileChooseButton.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.FileChooseButton.IdleBorderColor = System.Drawing.Color.White;
+            this.FileChooseButton.IdleBorderRadius = 3;
+            this.FileChooseButton.IdleBorderThickness = 1;
+            this.FileChooseButton.IdleFillColor = System.Drawing.Color.DarkOrange;
+            this.FileChooseButton.IdleIconLeftImage = null;
+            this.FileChooseButton.IdleIconRightImage = null;
+            this.FileChooseButton.IndicateFocus = false;
+            this.FileChooseButton.Location = new System.Drawing.Point(297, 179);
+            this.FileChooseButton.Name = "FileChooseButton";
+            stateProperties1.BorderColor = System.Drawing.Color.Chocolate;
+            stateProperties1.BorderRadius = 3;
+            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.Chocolate;
+            stateProperties1.ForeColor = System.Drawing.Color.White;
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.FileChooseButton.onHoverState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.Chocolate;
+            stateProperties2.BorderRadius = 3;
+            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.Chocolate;
+            stateProperties2.ForeColor = System.Drawing.Color.White;
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.FileChooseButton.OnPressedState = stateProperties2;
+            this.FileChooseButton.Size = new System.Drawing.Size(178, 48);
+            this.FileChooseButton.TabIndex = 60;
+            this.FileChooseButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.FileChooseButton.TextMarginLeft = 0;
+            this.FileChooseButton.UseDefaultRadiusAndThickness = true;
+            this.FileChooseButton.Click += new System.EventHandler(this.FileChooseButton_Click);
             // 
             // RegisterForm
             // 
@@ -1129,12 +1130,12 @@ namespace Bank
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }

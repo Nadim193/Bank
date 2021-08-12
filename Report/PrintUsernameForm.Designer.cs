@@ -38,7 +38,7 @@ namespace Bank.Report
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(748, 672);
+            this.panel1.Size = new System.Drawing.Size(837, 672);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -46,7 +46,7 @@ namespace Bank.Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(748, 672);
+            this.ClientSize = new System.Drawing.Size(837, 672);
             this.Controls.Add(this.panel1);
             this.Name = "PrintUsernameForm";
             this.Text = "PrintUsernameForm";

@@ -31,7 +31,6 @@ namespace Bank
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cerraricon = new System.Windows.Forms.PictureBox();
             this.varifyEmailpanel = new System.Windows.Forms.Panel();
             this.EmalAddresslabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,15 +40,16 @@ namespace Bank
             this.EmailVerifytextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.cerraricon = new System.Windows.Forms.PictureBox();
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).BeginInit();
             this.varifyEmailpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.cerraricon);
             this.panel1.Controls.Add(this.varifyEmailpanel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -57,19 +57,6 @@ namespace Bank
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(624, 524);
             this.panel1.TabIndex = 0;
-            // 
-            // cerraricon
-            // 
-            this.cerraricon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cerraricon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cerraricon.Image = global::Bank.Properties.Resources._60994;
-            this.cerraricon.Location = new System.Drawing.Point(590, 12);
-            this.cerraricon.Name = "cerraricon";
-            this.cerraricon.Size = new System.Drawing.Size(20, 20);
-            this.cerraricon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cerraricon.TabIndex = 38;
-            this.cerraricon.TabStop = false;
-            this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
             // 
             // varifyEmailpanel
             // 
@@ -137,6 +124,8 @@ namespace Bank
             // EmailVerifybutton
             // 
             this.EmailVerifybutton.BackColor = System.Drawing.Color.DarkOrange;
+            this.EmailVerifybutton.FlatAppearance.BorderSize = 0;
+            this.EmailVerifybutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EmailVerifybutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailVerifybutton.Location = new System.Drawing.Point(62, 335);
             this.EmailVerifybutton.Name = "EmailVerifybutton";
@@ -173,6 +162,24 @@ namespace Bank
             this.gunaElipse1.Radius = 15;
             this.gunaElipse1.TargetControl = this;
             // 
+            // cerraricon
+            // 
+            this.cerraricon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cerraricon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cerraricon.Image = global::Bank.Properties.Resources._60994;
+            this.cerraricon.Location = new System.Drawing.Point(592, 12);
+            this.cerraricon.Name = "cerraricon";
+            this.cerraricon.Size = new System.Drawing.Size(20, 20);
+            this.cerraricon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cerraricon.TabIndex = 38;
+            this.cerraricon.TabStop = false;
+            this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
+            // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.Radius = 10;
+            this.gunaElipse2.TargetControl = this.EmailVerifybutton;
+            // 
             // EmailVerifyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -184,9 +191,9 @@ namespace Bank
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmailVerifyForm";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).EndInit();
             this.varifyEmailpanel.ResumeLayout(false);
             this.varifyEmailpanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -204,5 +211,6 @@ namespace Bank
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox cerraricon;
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse2;
     }
 }

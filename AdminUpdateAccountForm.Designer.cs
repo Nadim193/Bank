@@ -31,7 +31,6 @@ namespace Bank
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.DepositUserNamepanel = new System.Windows.Forms.Panel();
-            this.SearchAccountButton = new System.Windows.Forms.PictureBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.UserNameTextbox = new Bunifu.Framework.BunifuCustomTextbox();
             this.label7 = new System.Windows.Forms.Label();
@@ -78,6 +77,7 @@ namespace Bank
             this.panel50 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.DOBpanel = new System.Windows.Forms.Panel();
+            this.DOBDateTimePicker = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Genderpanel = new System.Windows.Forms.Panel();
@@ -96,18 +96,17 @@ namespace Bank
             this.AddresstextBox = new Guna.UI.WinForms.GunaTextBox();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel46 = new System.Windows.Forms.Panel();
-            this.ProfileUpdateButton = new Guna.UI.WinForms.GunaButton();
-            this.FileChooseButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.Picturepanel = new System.Windows.Forms.Panel();
-            this.ProfilePictureBox = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.DOBDateTimePicker = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.SearchAccountButton = new System.Windows.Forms.PictureBox();
+            this.ProfileUpdateButton = new Guna.UI.WinForms.GunaButton();
+            this.FileChooseButton = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.ProfilePictureBox = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.DepositUserNamepanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SearchAccountButton)).BeginInit();
             this.panel15.SuspendLayout();
             this.panel51.SuspendLayout();
             this.Religionpanel.SuspendLayout();
@@ -126,8 +125,9 @@ namespace Bank
             this.Maritalpanel.SuspendLayout();
             this.Addresspanel.SuspendLayout();
             this.Picturepanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchAccountButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -142,6 +142,7 @@ namespace Bank
             this.panel1.Controls.Add(this.Picturepanel);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.flowLayoutPanel1);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -160,18 +161,6 @@ namespace Bank
             this.DepositUserNamepanel.Name = "DepositUserNamepanel";
             this.DepositUserNamepanel.Size = new System.Drawing.Size(604, 230);
             this.DepositUserNamepanel.TabIndex = 138;
-            // 
-            // SearchAccountButton
-            // 
-            this.SearchAccountButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SearchAccountButton.Image = global::Bank.Properties.Resources.png_clipart_computer_icons_android_web_search_engine_google_search_search_box_google_search_bar_blue_trademark_removebg_preview;
-            this.SearchAccountButton.Location = new System.Drawing.Point(499, 167);
-            this.SearchAccountButton.Name = "SearchAccountButton";
-            this.SearchAccountButton.Size = new System.Drawing.Size(85, 50);
-            this.SearchAccountButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SearchAccountButton.TabIndex = 62;
-            this.SearchAccountButton.TabStop = false;
-            this.SearchAccountButton.Click += new System.EventHandler(this.SearchAccountButton_Click);
             // 
             // panel15
             // 
@@ -722,6 +711,28 @@ namespace Bank
             this.DOBpanel.TabIndex = 87;
             this.DOBpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.DOBpanel_Paint);
             // 
+            // DOBDateTimePicker
+            // 
+            this.DOBDateTimePicker.BaseColor = System.Drawing.Color.Wheat;
+            this.DOBDateTimePicker.BorderColor = System.Drawing.Color.Wheat;
+            this.DOBDateTimePicker.CustomFormat = null;
+            this.DOBDateTimePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DOBDateTimePicker.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DOBDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DOBDateTimePicker.ForeColor = System.Drawing.Color.Black;
+            this.DOBDateTimePicker.Location = new System.Drawing.Point(191, 3);
+            this.DOBDateTimePicker.MaxDate = new System.DateTime(2021, 7, 28, 0, 0, 0, 0);
+            this.DOBDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DOBDateTimePicker.Name = "DOBDateTimePicker";
+            this.DOBDateTimePicker.OnHoverBaseColor = System.Drawing.Color.White;
+            this.DOBDateTimePicker.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DOBDateTimePicker.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DOBDateTimePicker.OnPressedColor = System.Drawing.Color.Black;
+            this.DOBDateTimePicker.Size = new System.Drawing.Size(375, 47);
+            this.DOBDateTimePicker.TabIndex = 139;
+            this.DOBDateTimePicker.Text = "Wednesday, July 28, 2021";
+            this.DOBDateTimePicker.Value = new System.DateTime(2021, 7, 28, 0, 0, 0, 0);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Wheat;
@@ -938,63 +949,6 @@ namespace Bank
             this.panel46.Size = new System.Drawing.Size(2, 55);
             this.panel46.TabIndex = 111;
             // 
-            // ProfileUpdateButton
-            // 
-            this.ProfileUpdateButton.Animated = true;
-            this.ProfileUpdateButton.AnimationHoverSpeed = 0.07F;
-            this.ProfileUpdateButton.AnimationSpeed = 0.03F;
-            this.ProfileUpdateButton.BaseColor = System.Drawing.Color.RoyalBlue;
-            this.ProfileUpdateButton.BorderColor = System.Drawing.Color.Black;
-            this.ProfileUpdateButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.ProfileUpdateButton.FocusedColor = System.Drawing.Color.Empty;
-            this.ProfileUpdateButton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProfileUpdateButton.ForeColor = System.Drawing.Color.Black;
-            this.ProfileUpdateButton.Image = global::Bank.Properties.Resources.profile_icon_png_20;
-            this.ProfileUpdateButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.ProfileUpdateButton.Location = new System.Drawing.Point(635, 237);
-            this.ProfileUpdateButton.Name = "ProfileUpdateButton";
-            this.ProfileUpdateButton.OnHoverBaseColor = System.Drawing.Color.SlateBlue;
-            this.ProfileUpdateButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.ProfileUpdateButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.ProfileUpdateButton.OnHoverImage = null;
-            this.ProfileUpdateButton.OnPressedColor = System.Drawing.Color.Black;
-            this.ProfileUpdateButton.Size = new System.Drawing.Size(145, 55);
-            this.ProfileUpdateButton.TabIndex = 135;
-            this.ProfileUpdateButton.Text = "Update";
-            this.ProfileUpdateButton.Click += new System.EventHandler(this.ProfileUpdateButton_Click);
-            // 
-            // FileChooseButton
-            // 
-            this.FileChooseButton.Animated = true;
-            this.FileChooseButton.AnimationHoverSpeed = 0.07F;
-            this.FileChooseButton.AnimationSpeed = 0.03F;
-            this.FileChooseButton.BaseColor = System.Drawing.Color.RoyalBlue;
-            this.FileChooseButton.BorderColor = System.Drawing.Color.Black;
-            this.FileChooseButton.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.FileChooseButton.CheckedBorderColor = System.Drawing.Color.Black;
-            this.FileChooseButton.CheckedForeColor = System.Drawing.Color.Black;
-            this.FileChooseButton.CheckedImage = global::Bank.Properties.Resources._62107;
-            this.FileChooseButton.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.FileChooseButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.FileChooseButton.FocusedColor = System.Drawing.Color.Empty;
-            this.FileChooseButton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FileChooseButton.ForeColor = System.Drawing.Color.Black;
-            this.FileChooseButton.Image = global::Bank.Properties.Resources._62107;
-            this.FileChooseButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.FileChooseButton.LineColor = System.Drawing.Color.SlateBlue;
-            this.FileChooseButton.Location = new System.Drawing.Point(766, 62);
-            this.FileChooseButton.Name = "FileChooseButton";
-            this.FileChooseButton.OnHoverBaseColor = System.Drawing.Color.SlateBlue;
-            this.FileChooseButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.FileChooseButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.FileChooseButton.OnHoverImage = null;
-            this.FileChooseButton.OnHoverLineColor = System.Drawing.Color.SlateBlue;
-            this.FileChooseButton.OnPressedColor = System.Drawing.Color.Black;
-            this.FileChooseButton.Size = new System.Drawing.Size(164, 41);
-            this.FileChooseButton.TabIndex = 134;
-            this.FileChooseButton.Text = "Choose File";
-            this.FileChooseButton.Click += new System.EventHandler(this.FileChooseButton_Click);
-            // 
             // Picturepanel
             // 
             this.Picturepanel.Controls.Add(this.ProfilePictureBox);
@@ -1002,16 +956,6 @@ namespace Bank
             this.Picturepanel.Name = "Picturepanel";
             this.Picturepanel.Size = new System.Drawing.Size(259, 225);
             this.Picturepanel.TabIndex = 126;
-            // 
-            // ProfilePictureBox
-            // 
-            this.ProfilePictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ProfilePictureBox.Location = new System.Drawing.Point(14, 3);
-            this.ProfilePictureBox.Name = "ProfilePictureBox";
-            this.ProfilePictureBox.Size = new System.Drawing.Size(235, 218);
-            this.ProfilePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ProfilePictureBox.TabIndex = 76;
-            this.ProfilePictureBox.TabStop = false;
             // 
             // panel3
             // 
@@ -1023,16 +967,6 @@ namespace Bank
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1207, 49);
             this.panel3.TabIndex = 10;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Bank.Properties.Resources.profile_icon_png_20;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 49);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
             // 
             // label1
             // 
@@ -1054,27 +988,100 @@ namespace Bank
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1207, 5);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // DOBDateTimePicker
+            // SearchAccountButton
             // 
-            this.DOBDateTimePicker.BaseColor = System.Drawing.Color.Wheat;
-            this.DOBDateTimePicker.BorderColor = System.Drawing.Color.Wheat;
-            this.DOBDateTimePicker.CustomFormat = null;
-            this.DOBDateTimePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.DOBDateTimePicker.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.DOBDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DOBDateTimePicker.ForeColor = System.Drawing.Color.Black;
-            this.DOBDateTimePicker.Location = new System.Drawing.Point(191, 3);
-            this.DOBDateTimePicker.MaxDate = new System.DateTime(2021, 7, 28, 0, 0, 0, 0);
-            this.DOBDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.DOBDateTimePicker.Name = "DOBDateTimePicker";
-            this.DOBDateTimePicker.OnHoverBaseColor = System.Drawing.Color.White;
-            this.DOBDateTimePicker.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.DOBDateTimePicker.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.DOBDateTimePicker.OnPressedColor = System.Drawing.Color.Black;
-            this.DOBDateTimePicker.Size = new System.Drawing.Size(375, 47);
-            this.DOBDateTimePicker.TabIndex = 139;
-            this.DOBDateTimePicker.Text = "Wednesday, July 28, 2021";
-            this.DOBDateTimePicker.Value = new System.DateTime(2021, 7, 28, 0, 0, 0, 0);
+            this.SearchAccountButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SearchAccountButton.Image = global::Bank.Properties.Resources.png_clipart_computer_icons_android_web_search_engine_google_search_search_box_google_search_bar_blue_trademark_removebg_preview;
+            this.SearchAccountButton.Location = new System.Drawing.Point(499, 167);
+            this.SearchAccountButton.Name = "SearchAccountButton";
+            this.SearchAccountButton.Size = new System.Drawing.Size(85, 50);
+            this.SearchAccountButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SearchAccountButton.TabIndex = 62;
+            this.SearchAccountButton.TabStop = false;
+            this.SearchAccountButton.Click += new System.EventHandler(this.SearchAccountButton_Click);
+            // 
+            // ProfileUpdateButton
+            // 
+            this.ProfileUpdateButton.Animated = true;
+            this.ProfileUpdateButton.AnimationHoverSpeed = 0.07F;
+            this.ProfileUpdateButton.AnimationSpeed = 0.03F;
+            this.ProfileUpdateButton.BackColor = System.Drawing.Color.Transparent;
+            this.ProfileUpdateButton.BaseColor = System.Drawing.Color.RoyalBlue;
+            this.ProfileUpdateButton.BorderColor = System.Drawing.Color.Black;
+            this.ProfileUpdateButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProfileUpdateButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.ProfileUpdateButton.FocusedColor = System.Drawing.Color.Empty;
+            this.ProfileUpdateButton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProfileUpdateButton.ForeColor = System.Drawing.Color.Black;
+            this.ProfileUpdateButton.Image = global::Bank.Properties.Resources.profile_icon_png_20;
+            this.ProfileUpdateButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.ProfileUpdateButton.Location = new System.Drawing.Point(635, 237);
+            this.ProfileUpdateButton.Name = "ProfileUpdateButton";
+            this.ProfileUpdateButton.OnHoverBaseColor = System.Drawing.Color.SlateBlue;
+            this.ProfileUpdateButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.ProfileUpdateButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.ProfileUpdateButton.OnHoverImage = null;
+            this.ProfileUpdateButton.OnPressedColor = System.Drawing.Color.Black;
+            this.ProfileUpdateButton.Radius = 10;
+            this.ProfileUpdateButton.Size = new System.Drawing.Size(145, 55);
+            this.ProfileUpdateButton.TabIndex = 135;
+            this.ProfileUpdateButton.Text = "Update";
+            this.ProfileUpdateButton.Click += new System.EventHandler(this.ProfileUpdateButton_Click);
+            // 
+            // FileChooseButton
+            // 
+            this.FileChooseButton.Animated = true;
+            this.FileChooseButton.AnimationHoverSpeed = 0.07F;
+            this.FileChooseButton.AnimationSpeed = 0.03F;
+            this.FileChooseButton.BackColor = System.Drawing.Color.Transparent;
+            this.FileChooseButton.BaseColor = System.Drawing.Color.RoyalBlue;
+            this.FileChooseButton.BorderColor = System.Drawing.Color.Black;
+            this.FileChooseButton.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.FileChooseButton.CheckedBorderColor = System.Drawing.Color.Black;
+            this.FileChooseButton.CheckedForeColor = System.Drawing.Color.Black;
+            this.FileChooseButton.CheckedImage = global::Bank.Properties.Resources._62107;
+            this.FileChooseButton.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.FileChooseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FileChooseButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.FileChooseButton.FocusedColor = System.Drawing.Color.Empty;
+            this.FileChooseButton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FileChooseButton.ForeColor = System.Drawing.Color.Black;
+            this.FileChooseButton.Image = global::Bank.Properties.Resources._62107;
+            this.FileChooseButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.FileChooseButton.LineColor = System.Drawing.Color.SlateBlue;
+            this.FileChooseButton.Location = new System.Drawing.Point(766, 62);
+            this.FileChooseButton.Name = "FileChooseButton";
+            this.FileChooseButton.OnHoverBaseColor = System.Drawing.Color.SlateBlue;
+            this.FileChooseButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.FileChooseButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.FileChooseButton.OnHoverImage = null;
+            this.FileChooseButton.OnHoverLineColor = System.Drawing.Color.SlateBlue;
+            this.FileChooseButton.OnPressedColor = System.Drawing.Color.Black;
+            this.FileChooseButton.Radius = 10;
+            this.FileChooseButton.Size = new System.Drawing.Size(164, 41);
+            this.FileChooseButton.TabIndex = 134;
+            this.FileChooseButton.Text = "Choose File";
+            this.FileChooseButton.Click += new System.EventHandler(this.FileChooseButton_Click);
+            // 
+            // ProfilePictureBox
+            // 
+            this.ProfilePictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ProfilePictureBox.Location = new System.Drawing.Point(14, 3);
+            this.ProfilePictureBox.Name = "ProfilePictureBox";
+            this.ProfilePictureBox.Size = new System.Drawing.Size(235, 218);
+            this.ProfilePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ProfilePictureBox.TabIndex = 76;
+            this.ProfilePictureBox.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Bank.Properties.Resources.profile_icon_png_20;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(57, 49);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
             // 
             // AdminUpdateAccountForm
             // 
@@ -1088,7 +1095,6 @@ namespace Bank
             this.panel1.ResumeLayout(false);
             this.DepositUserNamepanel.ResumeLayout(false);
             this.DepositUserNamepanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SearchAccountButton)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.panel51.ResumeLayout(false);
@@ -1122,9 +1128,10 @@ namespace Bank
             this.Addresspanel.ResumeLayout(false);
             this.Addresspanel.PerformLayout();
             this.Picturepanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchAccountButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 

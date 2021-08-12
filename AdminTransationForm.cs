@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bank.Connection;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -67,15 +68,41 @@ namespace Bank
 
         private void Search_Click(object sender, EventArgs e)
         {
-            GetDeposit();
-            GetWithdraw();
-            GetTransfer();
-            DepositTimelabel.Text = GetDepositTime();
-            WithdrawTimelabel.Text = GetWithdrawTime();
-            TransferTimelabel.Text = GetTransferTime();
-            DepositNumberlabel.Text = $"{DepositdataGridView.RowCount - 1}";
-            WithdrawNumberlabel.Text = $"{WithdrawdataGridView.RowCount - 1}";
-            TransferNumberlabel.Text = $"{TransferdataGridView.RowCount - 1}";
+            try
+            {
+                string mySQL = string.Empty;
+                mySQL += "SELECT User_Name FROM Parsonal ";
+                mySQL += "WHERE  User_Name = '" + TransationUserNameTextbox.Text + "'";
+
+                DataTable userData = ServerConnection.executeSQL(mySQL);
+                if(TransationUserNameTextbox.Text.Equals(""))
+                {
+                    MessageBox.Show("Enter User Name");
+                }
+                else
+                {
+                    if (userData.Rows.Count > 0)
+                    {
+                        GetDeposit();
+                        GetWithdraw();
+                        GetTransfer();
+                        DepositTimelabel.Text = GetDepositTime();
+                        WithdrawTimelabel.Text = GetWithdrawTime();
+                        TransferTimelabel.Text = GetTransferTime();
+                        DepositNumberlabel.Text = $"{DepositdataGridView.RowCount - 1}";
+                        WithdrawNumberlabel.Text = $"{WithdrawdataGridView.RowCount - 1}";
+                        TransferNumberlabel.Text = $"{TransferdataGridView.RowCount - 1}";
+                    }
+                    else
+                    {
+                        MessageBox.Show("This user name is not existed");
+                    }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Enter User Name");
+            }
         }
 
         private string GetDepositTime()

@@ -111,5 +111,22 @@ namespace Bank
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void DepositMoneyTextbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (ch == 46 && DepositMoneyTextbox.Text.IndexOf('.') != -1)
+            {
+                e.Handled = true;
+                return;
+            }
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+                MessageBox.Show("Enter Valide Number.");
+                DepositMoneyTextbox.Clear();
+            }
+        }
     }
 }

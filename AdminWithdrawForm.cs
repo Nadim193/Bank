@@ -110,9 +110,16 @@ namespace Bank
 
         private void WitdrawAmountButton_Click(object sender, EventArgs e)
         {
-            WithdrawPasswordpanel.Enabled = true;
-            PasswordTextbox.Select();
-            Withdrawpanel.Enabled = false;
+            if (WithdrawAmountTextbox.Text == null)
+            {
+                MessageBox.Show("Please Enter Ammount.");
+            }
+            else
+            {
+                WithdrawPasswordpanel.Enabled = true;
+                PasswordTextbox.Select();
+                Withdrawpanel.Enabled = false;
+            }
         }
 
         private void ShowRememberPasswordcheckBox_CheckedChanged(object sender, EventArgs e)
@@ -236,6 +243,23 @@ namespace Bank
             else
             {
                 MessageBox.Show("Password Incorrect ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void WithdrawAmountTextbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (ch == 46 && WithdrawAmountTextbox.Text.IndexOf('.') != -1)
+            {
+                e.Handled = true;
+                return;
+            }
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+                MessageBox.Show("Enter Valide Number.");
+                WithdrawAmountTextbox.Clear();
             }
         }
     }

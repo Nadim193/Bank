@@ -30,20 +30,17 @@ namespace Bank
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.DepositUserNamepanel = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.OccupationComboBox = new Guna.UI.WinForms.GunaComboBox();
             this.GenderComboBox = new Guna.UI.WinForms.GunaComboBox();
             this.NationalityComboBox = new Guna.UI.WinForms.GunaComboBox();
-            this.DeactiveButton = new Guna.UI.WinForms.GunaButton();
             this.NameTextbox = new Bunifu.Framework.BunifuCustomTextbox();
-            this.Deletebutton = new Guna.UI.WinForms.GunaButton();
             this.SearchButton = new System.Windows.Forms.PictureBox();
             this.SearchComboBox = new Guna.UI.WinForms.GunaComboBox();
             this.Namelabel = new System.Windows.Forms.Label();
@@ -59,6 +56,7 @@ namespace Bank
             this.bankSystemDataBaseDataSet7 = new Bank.BankSystemDataBaseDataSet7();
             this.bankSystemDataBaseDataSet8 = new Bank.BankSystemDataBaseDataSet8();
             this.parsonalTableAdapter = new Bank.BankSystemDataBaseDataSet15TableAdapters.ParsonalTableAdapter();
+            this.OccupationComboBox = new Guna.UI.WinForms.GunaComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.DepositUserNamepanel.SuspendLayout();
@@ -88,39 +86,39 @@ namespace Bank
             // 
             // dataGridView
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.Desktop;
             this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridView.EnableHeadersVisualStyles = false;
             this.dataGridView.Location = new System.Drawing.Point(26, 337);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView.RowTemplate.Height = 24;
             this.dataGridView.Size = new System.Drawing.Size(1159, 440);
             this.dataGridView.TabIndex = 136;
@@ -142,9 +140,7 @@ namespace Bank
             this.panel15.Controls.Add(this.OccupationComboBox);
             this.panel15.Controls.Add(this.GenderComboBox);
             this.panel15.Controls.Add(this.NationalityComboBox);
-            this.panel15.Controls.Add(this.DeactiveButton);
             this.panel15.Controls.Add(this.NameTextbox);
-            this.panel15.Controls.Add(this.Deletebutton);
             this.panel15.Controls.Add(this.SearchButton);
             this.panel15.Controls.Add(this.SearchComboBox);
             this.panel15.Controls.Add(this.Namelabel);
@@ -153,32 +149,6 @@ namespace Bank
             this.panel15.Size = new System.Drawing.Size(1126, 155);
             this.panel15.TabIndex = 61;
             this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel15_Paint);
-            // 
-            // OccupationComboBox
-            // 
-            this.OccupationComboBox.BackColor = System.Drawing.SystemColors.Desktop;
-            this.OccupationComboBox.BaseColor = System.Drawing.SystemColors.Desktop;
-            this.OccupationComboBox.BorderColor = System.Drawing.Color.Silver;
-            this.OccupationComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.OccupationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.OccupationComboBox.FocusedColor = System.Drawing.Color.Empty;
-            this.OccupationComboBox.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OccupationComboBox.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.OccupationComboBox.FormattingEnabled = true;
-            this.OccupationComboBox.Items.AddRange(new object[] {
-            "Salaried",
-            "Self-Employed",
-            "Business",
-            "Student",
-            "Retired",
-            "Other"});
-            this.OccupationComboBox.Location = new System.Drawing.Point(11, 44);
-            this.OccupationComboBox.Name = "OccupationComboBox";
-            this.OccupationComboBox.OnHoverItemBaseColor = System.Drawing.Color.LightSteelBlue;
-            this.OccupationComboBox.OnHoverItemForeColor = System.Drawing.Color.RoyalBlue;
-            this.OccupationComboBox.Size = new System.Drawing.Size(459, 32);
-            this.OccupationComboBox.TabIndex = 138;
-            this.OccupationComboBox.Visible = false;
             // 
             // GenderComboBox
             // 
@@ -263,33 +233,6 @@ namespace Bank
             this.NationalityComboBox.Visible = false;
             this.NationalityComboBox.SelectedIndexChanged += new System.EventHandler(this.NationalityComboBox_SelectedIndexChanged);
             // 
-            // DeactiveButton
-            // 
-            this.DeactiveButton.Animated = true;
-            this.DeactiveButton.AnimationHoverSpeed = 0.07F;
-            this.DeactiveButton.AnimationSpeed = 0.03F;
-            this.DeactiveButton.BackColor = System.Drawing.Color.Transparent;
-            this.DeactiveButton.BaseColor = System.Drawing.Color.RoyalBlue;
-            this.DeactiveButton.BorderColor = System.Drawing.Color.Black;
-            this.DeactiveButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.DeactiveButton.FocusedColor = System.Drawing.Color.Empty;
-            this.DeactiveButton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeactiveButton.ForeColor = System.Drawing.Color.Black;
-            this.DeactiveButton.Image = global::Bank.Properties.Resources._207_2079206_correct_icon_x_in_red_circle_removebg_preview;
-            this.DeactiveButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.DeactiveButton.Location = new System.Drawing.Point(973, 90);
-            this.DeactiveButton.Name = "DeactiveButton";
-            this.DeactiveButton.OnHoverBaseColor = System.Drawing.Color.SlateBlue;
-            this.DeactiveButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.DeactiveButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.DeactiveButton.OnHoverImage = null;
-            this.DeactiveButton.OnPressedColor = System.Drawing.Color.Black;
-            this.DeactiveButton.Radius = 10;
-            this.DeactiveButton.Size = new System.Drawing.Size(134, 50);
-            this.DeactiveButton.TabIndex = 135;
-            this.DeactiveButton.Text = "Deactive";
-            this.DeactiveButton.Click += new System.EventHandler(this.DeactiveButton_Click);
-            // 
             // NameTextbox
             // 
             this.NameTextbox.BackColor = System.Drawing.SystemColors.Desktop;
@@ -300,33 +243,6 @@ namespace Bank
             this.NameTextbox.Name = "NameTextbox";
             this.NameTextbox.Size = new System.Drawing.Size(459, 28);
             this.NameTextbox.TabIndex = 68;
-            // 
-            // Deletebutton
-            // 
-            this.Deletebutton.Animated = true;
-            this.Deletebutton.AnimationHoverSpeed = 0.07F;
-            this.Deletebutton.AnimationSpeed = 0.03F;
-            this.Deletebutton.BackColor = System.Drawing.Color.Transparent;
-            this.Deletebutton.BaseColor = System.Drawing.Color.RoyalBlue;
-            this.Deletebutton.BorderColor = System.Drawing.Color.Black;
-            this.Deletebutton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Deletebutton.FocusedColor = System.Drawing.Color.Empty;
-            this.Deletebutton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deletebutton.ForeColor = System.Drawing.Color.Black;
-            this.Deletebutton.Image = global::Bank.Properties.Resources.delete_1432400_1211078;
-            this.Deletebutton.ImageSize = new System.Drawing.Size(20, 20);
-            this.Deletebutton.Location = new System.Drawing.Point(827, 90);
-            this.Deletebutton.Name = "Deletebutton";
-            this.Deletebutton.OnHoverBaseColor = System.Drawing.Color.SlateBlue;
-            this.Deletebutton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Deletebutton.OnHoverForeColor = System.Drawing.Color.White;
-            this.Deletebutton.OnHoverImage = null;
-            this.Deletebutton.OnPressedColor = System.Drawing.Color.Black;
-            this.Deletebutton.Radius = 10;
-            this.Deletebutton.Size = new System.Drawing.Size(127, 50);
-            this.Deletebutton.TabIndex = 134;
-            this.Deletebutton.Text = "Delete";
-            this.Deletebutton.Click += new System.EventHandler(this.Deletebutton_Click);
             // 
             // SearchButton
             // 
@@ -471,6 +387,32 @@ namespace Bank
             // 
             this.parsonalTableAdapter.ClearBeforeFill = true;
             // 
+            // OccupationComboBox
+            // 
+            this.OccupationComboBox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.OccupationComboBox.BaseColor = System.Drawing.SystemColors.Desktop;
+            this.OccupationComboBox.BorderColor = System.Drawing.Color.Silver;
+            this.OccupationComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.OccupationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.OccupationComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.OccupationComboBox.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OccupationComboBox.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.OccupationComboBox.FormattingEnabled = true;
+            this.OccupationComboBox.Items.AddRange(new object[] {
+            "Salaried",
+            "Self-Employed",
+            "Business",
+            "Student",
+            "Retired",
+            "Other"});
+            this.OccupationComboBox.Location = new System.Drawing.Point(11, 44);
+            this.OccupationComboBox.Name = "OccupationComboBox";
+            this.OccupationComboBox.OnHoverItemBaseColor = System.Drawing.Color.LightSteelBlue;
+            this.OccupationComboBox.OnHoverItemForeColor = System.Drawing.Color.RoyalBlue;
+            this.OccupationComboBox.Size = new System.Drawing.Size(459, 32);
+            this.OccupationComboBox.TabIndex = 138;
+            this.OccupationComboBox.Visible = false;
+            // 
             // AdminSearchAccountForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -518,14 +460,12 @@ namespace Bank
         private System.Windows.Forms.Panel panel7;
         private BankSystemDataBaseDataSet7 bankSystemDataBaseDataSet7;
         private BankSystemDataBaseDataSet8 bankSystemDataBaseDataSet8;
-        private Guna.UI.WinForms.GunaButton DeactiveButton;
-        private Guna.UI.WinForms.GunaButton Deletebutton;
         private Guna.UI.WinForms.GunaComboBox NationalityComboBox;
-        private Guna.UI.WinForms.GunaComboBox OccupationComboBox;
         private Guna.UI.WinForms.GunaComboBox GenderComboBox;
         private BankSystemDataBaseDataSet15 bankSystemDataBaseDataSet15;
         private System.Windows.Forms.BindingSource parsonalBindingSource;
         private BankSystemDataBaseDataSet15TableAdapters.ParsonalTableAdapter parsonalTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView;
+        private Guna.UI.WinForms.GunaComboBox OccupationComboBox;
     }
 }

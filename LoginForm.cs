@@ -84,114 +84,121 @@ namespace Bank
             {
                 try
                 {
-                    string ComboValue = SelectRoleComboBox.SelectedItem.ToString();
-                    if (ComboValue == "-By User")
+                    if (SelectRoleComboBox.SelectedItem == null)
                     {
-                        if (userData1.Rows.Count > 0)
+                        MessageBox.Show("Select Your Role");
+                    }
+                    else
+                    {
+                        string ComboValue = SelectRoleComboBox.SelectedItem.ToString();
+                        if (ComboValue == "-By User")
                         {
-                            if (userData2.Rows.Count > 0)
+                            if (userData1.Rows.Count > 0)
                             {
-                                user = UsernameTextbox.Text;
-                                Password = PasswordTxtbox.Text;
-
-                                string mySQL = string.Empty;
-                                active = "Active";
-                                mySQL += "SELECT * FROM Parsonal ";
-                                mySQL += "WHERE User_name = '" + user + "' ";
-                                mySQL += "AND Password = '" + Password + "'";
-
-                                DataTable userData = ServerConnection.executeSQL(mySQL);
-
-                                if (userData.Rows.Count > 0)
+                                if (userData2.Rows.Count > 0)
                                 {
-                                    UsernameTextbox.Clear();
-                                    PasswordTxtbox.Clear();
-                                    AlertForm alert = new AlertForm();
-                                    MainForm formMain = new MainForm();
-                                    alert.ShowDialog();
-                                    this.Hide();
-                                    formMain.ShowDialog();
-                                    this.Close();
+                                    user = UsernameTextbox.Text;
+                                    Password = PasswordTxtbox.Text;
 
+                                    string mySQL = string.Empty;
+                                    active = "Active";
+                                    mySQL += "SELECT * FROM Parsonal ";
+                                    mySQL += "WHERE User_name = '" + user + "' ";
+                                    mySQL += "AND Password = '" + Password + "'";
+
+                                    DataTable userData = ServerConnection.executeSQL(mySQL);
+
+                                    if (userData.Rows.Count > 0)
+                                    {
+                                        UsernameTextbox.Clear();
+                                        PasswordTxtbox.Clear();
+                                        AlertForm alert = new AlertForm();
+                                        MainForm formMain = new MainForm();
+                                        alert.ShowDialog();
+                                        this.Hide();
+                                        formMain.ShowDialog();
+                                        this.Close();
+
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("The User name and password is incorrect.Try again", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+                                        UsernameTextbox.Clear();
+                                        PasswordTxtbox.Clear();
+                                    }
                                 }
                                 else
                                 {
-                                    MessageBox.Show("The User name and password is incorrect.Try again", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                                    user = UsernameTextbox.Text;
+                                    Password = PasswordTxtbox.Text;
 
-                                    UsernameTextbox.Clear();
-                                    PasswordTxtbox.Clear();
+                                    string mySQL = string.Empty;
+                                    active = "Active";
+                                    mySQL += "SELECT * FROM Parsonal ";
+                                    mySQL += "WHERE User_name = '" + user + "' ";
+                                    mySQL += "AND Password = '" + Password + "'";
+
+                                    DataTable userData = ServerConnection.executeSQL(mySQL);
+
+                                    if (userData.Rows.Count > 0)
+                                    {
+                                        UsernameTextbox.Clear();
+                                        PasswordTxtbox.Clear();
+                                        this.Hide();
+                                        MainForm formMain = new MainForm();
+                                        formMain.ShowDialog();
+                                        this.Close();
+
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("The User name and password is incorrect.Try again", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+                                        UsernameTextbox.Clear();
+                                        PasswordTxtbox.Clear();
+                                    }
                                 }
                             }
                             else
                             {
-                                user = UsernameTextbox.Text;
-                                Password = PasswordTxtbox.Text;
+                                MessageBox.Show("Your Account Was Disable", "Message Box");
+                                UsernameTextbox.Clear();
+                                PasswordTxtbox.Clear();
+                                UsernameTextbox.Select();
+                            }
+                        }
+                        else if (ComboValue == "-By Admin")
+                        {
+                            adminuser = UsernameTextbox.Text;
+                            adminpassword = PasswordTxtbox.Text;
 
-                                string mySQL = string.Empty;
-                                active = "Active";
-                                mySQL += "SELECT * FROM Parsonal ";
-                                mySQL += "WHERE User_name = '" + user + "' ";
-                                mySQL += "AND Password = '" + Password + "'";
+                            string mySQL5 = string.Empty;
+                            mySQL5 += "SELECT * FROM Admin_Login ";
+                            mySQL5 += "WHERE User_name = '" + adminuser + "' ";
+                            mySQL5 += "AND Password = '" + adminpassword + "'";
 
-                                DataTable userData = ServerConnection.executeSQL(mySQL);
+                            DataTable userData5 = ServerConnection.executeSQL(mySQL5);
+                            if (userData5.Rows.Count > 0)
+                            {
+                                AdminForm admin = new AdminForm();
+                                MessageBox.Show("You Login As An Admin.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                this.Hide();
+                                admin.ShowDialog();
+                                this.Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("The User name and password is incorrect.Try again", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 
-                                if (userData.Rows.Count > 0)
-                                {
-                                    UsernameTextbox.Clear();
-                                    PasswordTxtbox.Clear();
-                                    this.Hide();
-                                    MainForm formMain = new MainForm();
-                                    formMain.ShowDialog();
-                                    this.Close();
-
-                                }
-                                else
-                                {
-                                    MessageBox.Show("The User name and password is incorrect.Try again", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-
-                                    UsernameTextbox.Clear();
-                                    PasswordTxtbox.Clear();
-                                }
+                                UsernameTextbox.Clear();
+                                PasswordTxtbox.Clear();
                             }
                         }
                         else
                         {
-                            MessageBox.Show("Your Account Was Disable", "Message Box");
-                            UsernameTextbox.Clear();
-                            PasswordTxtbox.Clear();
-                            UsernameTextbox.Select();
+                            MessageBox.Show("Please Enter Your Role.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
-                    }
-                    else if (ComboValue == "-By Admin")
-                    {
-                        adminuser = UsernameTextbox.Text;
-                        adminpassword = PasswordTxtbox.Text;
-
-                        string mySQL5 = string.Empty;
-                        mySQL5 += "SELECT * FROM Admin_Login ";
-                        mySQL5 += "WHERE User_name = '" + adminuser + "' ";
-                        mySQL5 += "AND Password = '" + adminpassword + "'";
-
-                        DataTable userData5 = ServerConnection.executeSQL(mySQL5);
-                        if (userData5.Rows.Count > 0)
-                        {
-                            AdminForm admin = new AdminForm();
-                            MessageBox.Show("You Login As An Admin.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            this.Hide();
-                            admin.ShowDialog();
-                            this.Close();
-                        }
-                        else
-                        {
-                            MessageBox.Show("The User name and password is incorrect.Try again", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-
-                            UsernameTextbox.Clear();
-                            PasswordTxtbox.Clear();
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Please Enter Your Role.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                 }
                 catch (Exception ex)

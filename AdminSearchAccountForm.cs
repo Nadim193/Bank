@@ -33,43 +33,6 @@ namespace Bank
 
         }
 
-        private void Deletebutton_Click(object sender, EventArgs e)
-        {
-            string mySQL = string.Empty;
-            mySQL += "DELETE FROM Parsonal WHERE User_Name = '" + NameTextbox.Text + "'";
-
-            DataTable userData = ServerConnection.executeSQL(mySQL);
-
-            if(userData.Rows.Count > 0)
-            {
-                MessageBox.Show("Data delete Failed.....", "Message Box");
-            }
-            else
-            {
-                MessageBox.Show("Data delete successfull...", "Message Box");
-            }
-        }
-
-        private void DeactiveButton_Click(object sender, EventArgs e)
-        {
-            string deactive = "Disable";
-
-            string mySQL = string.Empty;
-            mySQL += "UPDATE [dbo].[Parsonal]";
-            mySQL += "SET [Status] = '" + deactive + "'";
-            mySQL += "WHERE User_Name = '" + NameTextbox.Text + "'";
-            DataTable userData = ServerConnection.executeSQL(mySQL);
-
-            if(userData.Rows.Count > 0)
-            {
-                MessageBox.Show("Failed...", "Message Box");
-            }
-            else
-            {
-                MessageBox.Show("Successfull...", "Message Box");
-            }
-        }
-
         private void NationalityComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -119,40 +82,41 @@ namespace Bank
                     }
                     else if ((SearchComboBox.SelectedItem).ToString() == "-By Gender")
                     {
-                        if (GenderComboBox.SelectedItem.ToString() != null)
+                        if (GenderComboBox.SelectedItem.ToString() == null)
                         {
-                            CE.Gender = GenderComboBox.SelectedItem.ToString();
-                            dataGridView.DataSource = CO.SearchForGender(CE);
+                            MessageBox.Show("Select Search type");
                         }
                         else
                         {
-                            MessageBox.Show("Select Search type");
+                            CE.Gender = GenderComboBox.SelectedItem.ToString();
+                            dataGridView.DataSource = CO.SearchForGender(CE);
                         }
 
                     }
                     else if ((SearchComboBox.SelectedItem).ToString() == "-By Occupation")
                     {
-                        if (OccupationComboBox.SelectedItem.ToString() != null)
+                        if (OccupationComboBox.SelectedItem.ToString() == null)
                         {
-                            CE.Occupation = OccupationComboBox.SelectedItem.ToString();
-                            dataGridView.DataSource = CO.SearchForOccupation(CE);
+                            MessageBox.Show("Select Item");
                         }
                         else
                         {
-                            MessageBox.Show("Select Search type");
+                            CE.Occupation = OccupationComboBox.SelectedItem.ToString();
+                            dataGridView.DataSource = CO.SearchForOccupation(CE);
                         }
 
                     }
                     else if ((SearchComboBox.SelectedItem).ToString() == "-By Nationality")
                     {
-                        if (NationalityComboBox.SelectedItem != null)
+
+                        if (NationalityComboBox.SelectedItem == null)
                         {
-                            CE.Nationality = NationalityComboBox.SelectedItem.ToString();
-                            dataGridView.DataSource = CO.SearchForNationality(CE);
+                            MessageBox.Show("Select Country");
                         }
                         else
                         {
-                            MessageBox.Show("Select Search type");
+                            CE.Nationality = NationalityComboBox.SelectedItem.ToString();
+                            dataGridView.DataSource = CO.SearchForNationality(CE);
                         }
                     }
                     else
@@ -258,6 +222,16 @@ namespace Bank
                     NameTextbox.Visible = true;
                 }
             }
+        }
+
+        private void DeactiveButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Deletebutton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

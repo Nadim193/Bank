@@ -54,39 +54,19 @@ namespace Bank
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.RestoreDownIcon = new System.Windows.Forms.PictureBox();
-            this.maxIcon = new System.Windows.Forms.PictureBox();
-            this.minIcon = new System.Windows.Forms.PictureBox();
-            this.cerraricon = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menupanel = new System.Windows.Forms.Panel();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.TotalCustomer = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
@@ -100,9 +80,37 @@ namespace Bank
             this.gunaElipse11 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse12 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.RestoreDownIcon = new System.Windows.Forms.PictureBox();
+            this.maxIcon = new System.Windows.Forms.PictureBox();
+            this.minIcon = new System.Windows.Forms.PictureBox();
+            this.cerraricon = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.Menupanel.SuspendLayout();
+            this.gunaElipsePanel2.SuspendLayout();
+            this.gunaElipsePanel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -115,19 +123,11 @@ namespace Bank
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).BeginInit();
-            this.Menupanel.SuspendLayout();
-            this.gunaElipsePanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            this.gunaElipsePanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -623,6 +623,248 @@ namespace Bank
             this.panel3.Size = new System.Drawing.Size(75, 804);
             this.panel3.TabIndex = 6;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(90, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(228, 19);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "WELCOME TO ADMIN PANEL";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.RestoreDownIcon);
+            this.panel1.Controls.Add(this.maxIcon);
+            this.panel1.Controls.Add(this.minIcon);
+            this.panel1.Controls.Add(this.cerraricon);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1540, 50);
+            this.panel1.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(759, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(142, 19);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "WELCOME Admin";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel6.Location = new System.Drawing.Point(79, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(4, 50);
+            this.panel6.TabIndex = 5;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 30;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Menupanel
+            // 
+            this.Menupanel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Menupanel.Controls.Add(this.gunaElipsePanel2);
+            this.Menupanel.Controls.Add(this.gunaElipsePanel1);
+            this.Menupanel.Controls.Add(this.panel4);
+            this.Menupanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Menupanel.ForeColor = System.Drawing.Color.Black;
+            this.Menupanel.Location = new System.Drawing.Point(333, 50);
+            this.Menupanel.Name = "Menupanel";
+            this.Menupanel.Size = new System.Drawing.Size(1207, 804);
+            this.Menupanel.TabIndex = 8;
+            // 
+            // gunaElipsePanel2
+            // 
+            this.gunaElipsePanel2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaElipsePanel2.BaseColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaElipsePanel2.Controls.Add(this.gunaLabel3);
+            this.gunaElipsePanel2.Controls.Add(this.gunaLabel4);
+            this.gunaElipsePanel2.Controls.Add(this.pictureBox16);
+            this.gunaElipsePanel2.Location = new System.Drawing.Point(850, 600);
+            this.gunaElipsePanel2.Name = "gunaElipsePanel2";
+            this.gunaElipsePanel2.Radius = 8;
+            this.gunaElipsePanel2.Size = new System.Drawing.Size(226, 107);
+            this.gunaElipsePanel2.TabIndex = 6;
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLabel3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel3.Location = new System.Drawing.Point(15, 10);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(29, 26);
+            this.gunaLabel3.TabIndex = 6;
+            this.gunaLabel3.Text = "N";
+            // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLabel4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel4.Location = new System.Drawing.Point(86, 59);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(83, 26);
+            this.gunaLabel4.TabIndex = 3;
+            this.gunaLabel4.Text = "Money";
+            // 
+            // gunaElipsePanel1
+            // 
+            this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaElipsePanel1.BaseColor = System.Drawing.Color.SeaGreen;
+            this.gunaElipsePanel1.Controls.Add(this.TotalCustomer);
+            this.gunaElipsePanel1.Controls.Add(this.gunaLabel1);
+            this.gunaElipsePanel1.Controls.Add(this.pictureBox15);
+            this.gunaElipsePanel1.Location = new System.Drawing.Point(123, 600);
+            this.gunaElipsePanel1.Name = "gunaElipsePanel1";
+            this.gunaElipsePanel1.Radius = 8;
+            this.gunaElipsePanel1.Size = new System.Drawing.Size(226, 107);
+            this.gunaElipsePanel1.TabIndex = 5;
+            this.gunaElipsePanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaElipsePanel1_Paint);
+            // 
+            // TotalCustomer
+            // 
+            this.TotalCustomer.AutoSize = true;
+            this.TotalCustomer.BackColor = System.Drawing.Color.SeaGreen;
+            this.TotalCustomer.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalCustomer.ForeColor = System.Drawing.Color.Black;
+            this.TotalCustomer.Location = new System.Drawing.Point(15, 10);
+            this.TotalCustomer.Name = "TotalCustomer";
+            this.TotalCustomer.Size = new System.Drawing.Size(29, 26);
+            this.TotalCustomer.TabIndex = 6;
+            this.TotalCustomer.Text = "N";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.BackColor = System.Drawing.Color.SeaGreen;
+            this.gunaLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel1.Location = new System.Drawing.Point(86, 59);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(121, 26);
+            this.gunaLabel1.TabIndex = 3;
+            this.gunaLabel1.Text = "Customers";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel4.Controls.Add(this.pictureBox3);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1207, 49);
+            this.panel4.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(59, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 23);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "HOME";
+            // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.TargetControl = this.CreatedAccountbutton;
+            // 
+            // gunaElipse3
+            // 
+            this.gunaElipse3.TargetControl = this.CheckBalancebutton;
+            // 
+            // gunaElipse4
+            // 
+            this.gunaElipse4.TargetControl = this.CustomersListbutton;
+            // 
+            // gunaElipse5
+            // 
+            this.gunaElipse5.TargetControl = this.SearchAccountbutton;
+            // 
+            // gunaElipse6
+            // 
+            this.gunaElipse6.TargetControl = this.Transationbutton;
+            // 
+            // gunaElipse7
+            // 
+            this.gunaElipse7.TargetControl = this.Withdrawbutton;
+            // 
+            // gunaElipse8
+            // 
+            this.gunaElipse8.TargetControl = this.Depositbutton;
+            // 
+            // gunaElipse9
+            // 
+            this.gunaElipse9.TargetControl = this.Transferbutton;
+            // 
+            // gunaElipse10
+            // 
+            this.gunaElipse10.TargetControl = this.AccountDetailsbutton;
+            // 
+            // gunaElipse11
+            // 
+            this.gunaElipse11.TargetControl = this.UpdateAccountbutton;
+            // 
+            // gunaElipse12
+            // 
+            this.gunaElipse12.TargetControl = this.Logoutbutton;
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 15;
+            this.gunaElipse1.TargetControl = this;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox16.Image = global::Bank.Properties.Resources.increase_sales;
+            this.pictureBox16.Location = new System.Drawing.Point(9, 47);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(64, 50);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 2;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackColor = System.Drawing.Color.SeaGreen;
+            this.pictureBox15.Image = global::Bank.Properties.Resources.unnamed;
+            this.pictureBox15.Location = new System.Drawing.Point(9, 47);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(64, 50);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 2;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Bank.Properties.Resources._25694_removebg_preview;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(57, 49);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            // 
             // pictureBox14
             // 
             this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -766,53 +1008,6 @@ namespace Bank
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_2);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(90, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(228, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "WELCOME TO ADMIN PANEL";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.RestoreDownIcon);
-            this.panel1.Controls.Add(this.maxIcon);
-            this.panel1.Controls.Add(this.minIcon);
-            this.panel1.Controls.Add(this.cerraricon);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1540, 50);
-            this.panel1.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(759, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 19);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "WELCOME Admin";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel6.Location = new System.Drawing.Point(79, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(4, 50);
-            this.panel6.TabIndex = 5;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -878,200 +1073,6 @@ namespace Bank
             this.cerraricon.TabStop = false;
             this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click_1);
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 30;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // Menupanel
-            // 
-            this.Menupanel.BackColor = System.Drawing.SystemColors.Desktop;
-            this.Menupanel.Controls.Add(this.gunaElipsePanel2);
-            this.Menupanel.Controls.Add(this.gunaElipsePanel1);
-            this.Menupanel.Controls.Add(this.panel4);
-            this.Menupanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Menupanel.ForeColor = System.Drawing.Color.Black;
-            this.Menupanel.Location = new System.Drawing.Point(333, 50);
-            this.Menupanel.Name = "Menupanel";
-            this.Menupanel.Size = new System.Drawing.Size(1207, 804);
-            this.Menupanel.TabIndex = 8;
-            // 
-            // gunaElipsePanel2
-            // 
-            this.gunaElipsePanel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel2.BaseColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaElipsePanel2.Controls.Add(this.gunaLabel3);
-            this.gunaElipsePanel2.Controls.Add(this.gunaLabel4);
-            this.gunaElipsePanel2.Controls.Add(this.pictureBox16);
-            this.gunaElipsePanel2.Location = new System.Drawing.Point(850, 600);
-            this.gunaElipsePanel2.Name = "gunaElipsePanel2";
-            this.gunaElipsePanel2.Radius = 8;
-            this.gunaElipsePanel2.Size = new System.Drawing.Size(226, 107);
-            this.gunaElipsePanel2.TabIndex = 6;
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaLabel3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel3.Location = new System.Drawing.Point(15, 10);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(29, 26);
-            this.gunaLabel3.TabIndex = 6;
-            this.gunaLabel3.Text = "N";
-            // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaLabel4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel4.Location = new System.Drawing.Point(86, 59);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(83, 26);
-            this.gunaLabel4.TabIndex = 3;
-            this.gunaLabel4.Text = "Money";
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.pictureBox16.Image = global::Bank.Properties.Resources.increase_sales;
-            this.pictureBox16.Location = new System.Drawing.Point(9, 47);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(64, 50);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 2;
-            this.pictureBox16.TabStop = false;
-            // 
-            // gunaElipsePanel1
-            // 
-            this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel1.BaseColor = System.Drawing.Color.SeaGreen;
-            this.gunaElipsePanel1.Controls.Add(this.gunaLabel2);
-            this.gunaElipsePanel1.Controls.Add(this.gunaLabel1);
-            this.gunaElipsePanel1.Controls.Add(this.pictureBox15);
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(123, 600);
-            this.gunaElipsePanel1.Name = "gunaElipsePanel1";
-            this.gunaElipsePanel1.Radius = 8;
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(226, 107);
-            this.gunaElipsePanel1.TabIndex = 5;
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.BackColor = System.Drawing.Color.SeaGreen;
-            this.gunaLabel2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel2.Location = new System.Drawing.Point(15, 10);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(29, 26);
-            this.gunaLabel2.TabIndex = 6;
-            this.gunaLabel2.Text = "N";
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.BackColor = System.Drawing.Color.SeaGreen;
-            this.gunaLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel1.Location = new System.Drawing.Point(86, 59);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(121, 26);
-            this.gunaLabel1.TabIndex = 3;
-            this.gunaLabel1.Text = "Customers";
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackColor = System.Drawing.Color.SeaGreen;
-            this.pictureBox15.Image = global::Bank.Properties.Resources.unnamed;
-            this.pictureBox15.Location = new System.Drawing.Point(9, 47);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(64, 50);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 2;
-            this.pictureBox15.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1207, 49);
-            this.panel4.TabIndex = 4;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Bank.Properties.Resources._25694_removebg_preview;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 49);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(59, 15);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 23);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "HOME";
-            // 
-            // gunaElipse2
-            // 
-            this.gunaElipse2.TargetControl = this.CreatedAccountbutton;
-            // 
-            // gunaElipse3
-            // 
-            this.gunaElipse3.TargetControl = this.CheckBalancebutton;
-            // 
-            // gunaElipse4
-            // 
-            this.gunaElipse4.TargetControl = this.CustomersListbutton;
-            // 
-            // gunaElipse5
-            // 
-            this.gunaElipse5.TargetControl = this.SearchAccountbutton;
-            // 
-            // gunaElipse6
-            // 
-            this.gunaElipse6.TargetControl = this.Transationbutton;
-            // 
-            // gunaElipse7
-            // 
-            this.gunaElipse7.TargetControl = this.Withdrawbutton;
-            // 
-            // gunaElipse8
-            // 
-            this.gunaElipse8.TargetControl = this.Depositbutton;
-            // 
-            // gunaElipse9
-            // 
-            this.gunaElipse9.TargetControl = this.Transferbutton;
-            // 
-            // gunaElipse10
-            // 
-            this.gunaElipse10.TargetControl = this.AccountDetailsbutton;
-            // 
-            // gunaElipse11
-            // 
-            this.gunaElipse11.TargetControl = this.UpdateAccountbutton;
-            // 
-            // gunaElipse12
-            // 
-            this.gunaElipse12.TargetControl = this.Logoutbutton;
-            // 
-            // gunaElipse1
-            // 
-            this.gunaElipse1.Radius = 15;
-            this.gunaElipse1.TargetControl = this;
-            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1091,6 +1092,18 @@ namespace Bank
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.Menupanel.ResumeLayout(false);
+            this.gunaElipsePanel2.ResumeLayout(false);
+            this.gunaElipsePanel2.PerformLayout();
+            this.gunaElipsePanel1.ResumeLayout(false);
+            this.gunaElipsePanel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
@@ -1103,23 +1116,11 @@ namespace Bank
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).EndInit();
-            this.Menupanel.ResumeLayout(false);
-            this.gunaElipsePanel2.ResumeLayout(false);
-            this.gunaElipsePanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            this.gunaElipsePanel1.ResumeLayout(false);
-            this.gunaElipsePanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1188,7 +1189,7 @@ namespace Bank
         private Guna.UI.WinForms.GunaElipse gunaElipse12;
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel TotalCustomer;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private System.Windows.Forms.PictureBox pictureBox15;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel2;

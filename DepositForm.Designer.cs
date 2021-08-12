@@ -29,13 +29,14 @@ namespace Bank
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.DepositPasswordpanel = new System.Windows.Forms.Panel();
             this.Depositbutton = new System.Windows.Forms.Button();
+            this.ShowRememberPasswordcheckBox = new System.Windows.Forms.CheckBox();
             this.panel17 = new System.Windows.Forms.Panel();
             this.PasswordTextbox = new Bunifu.Framework.BunifuCustomTextbox();
-            this.ShowRememberPasswordcheckBox = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
@@ -73,8 +74,11 @@ namespace Bank
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1.SuspendLayout();
             this.DepositPasswordpanel.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -148,6 +152,21 @@ namespace Bank
             this.Depositbutton.UseVisualStyleBackColor = false;
             this.Depositbutton.Click += new System.EventHandler(this.Depositbutton_Click);
             // 
+            // ShowRememberPasswordcheckBox
+            // 
+            this.ShowRememberPasswordcheckBox.AutoSize = true;
+            this.ShowRememberPasswordcheckBox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ShowRememberPasswordcheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ShowRememberPasswordcheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowRememberPasswordcheckBox.ForeColor = System.Drawing.Color.DarkOrange;
+            this.ShowRememberPasswordcheckBox.Location = new System.Drawing.Point(44, 158);
+            this.ShowRememberPasswordcheckBox.Name = "ShowRememberPasswordcheckBox";
+            this.ShowRememberPasswordcheckBox.Size = new System.Drawing.Size(152, 22);
+            this.ShowRememberPasswordcheckBox.TabIndex = 66;
+            this.ShowRememberPasswordcheckBox.Text = "Show Password";
+            this.ShowRememberPasswordcheckBox.UseVisualStyleBackColor = false;
+            this.ShowRememberPasswordcheckBox.CheckedChanged += new System.EventHandler(this.ShowRememberPasswordcheckBox_CheckedChanged);
+            // 
             // panel17
             // 
             this.panel17.Controls.Add(this.PasswordTextbox);
@@ -169,21 +188,6 @@ namespace Bank
             this.PasswordTextbox.TabIndex = 67;
             this.PasswordTextbox.UseSystemPasswordChar = true;
             // 
-            // ShowRememberPasswordcheckBox
-            // 
-            this.ShowRememberPasswordcheckBox.AutoSize = true;
-            this.ShowRememberPasswordcheckBox.BackColor = System.Drawing.SystemColors.Desktop;
-            this.ShowRememberPasswordcheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ShowRememberPasswordcheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowRememberPasswordcheckBox.ForeColor = System.Drawing.Color.DarkOrange;
-            this.ShowRememberPasswordcheckBox.Location = new System.Drawing.Point(44, 158);
-            this.ShowRememberPasswordcheckBox.Name = "ShowRememberPasswordcheckBox";
-            this.ShowRememberPasswordcheckBox.Size = new System.Drawing.Size(152, 22);
-            this.ShowRememberPasswordcheckBox.TabIndex = 66;
-            this.ShowRememberPasswordcheckBox.Text = "Show Password";
-            this.ShowRememberPasswordcheckBox.UseVisualStyleBackColor = false;
-            this.ShowRememberPasswordcheckBox.CheckedChanged += new System.EventHandler(this.ShowRememberPasswordcheckBox_CheckedChanged);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -191,7 +195,7 @@ namespace Bank
             this.label8.ForeColor = System.Drawing.Color.DarkOrange;
             this.label8.Location = new System.Drawing.Point(7, 12);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 22);
+            this.label8.Size = new System.Drawing.Size(100, 24);
             this.label8.TabIndex = 62;
             this.label8.Text = "Password";
             // 
@@ -263,7 +267,7 @@ namespace Bank
             this.DepositCurrentBalancelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.DepositCurrentBalancelabel.Location = new System.Drawing.Point(175, 6);
             this.DepositCurrentBalancelabel.Name = "DepositCurrentBalancelabel";
-            this.DepositCurrentBalancelabel.Size = new System.Drawing.Size(82, 22);
+            this.DepositCurrentBalancelabel.Size = new System.Drawing.Size(85, 24);
             this.DepositCurrentBalancelabel.TabIndex = 64;
             this.DepositCurrentBalancelabel.Text = "Balance";
             // 
@@ -274,7 +278,7 @@ namespace Bank
             this.label11.ForeColor = System.Drawing.Color.DarkOrange;
             this.label11.Location = new System.Drawing.Point(6, 6);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 22);
+            this.label11.Size = new System.Drawing.Size(85, 24);
             this.label11.TabIndex = 63;
             this.label11.Text = "Balance";
             // 
@@ -304,7 +308,7 @@ namespace Bank
             this.DepositLastNamelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.DepositLastNamelabel.Location = new System.Drawing.Point(175, 6);
             this.DepositLastNamelabel.Name = "DepositLastNamelabel";
-            this.DepositLastNamelabel.Size = new System.Drawing.Size(105, 22);
+            this.DepositLastNamelabel.Size = new System.Drawing.Size(108, 24);
             this.DepositLastNamelabel.TabIndex = 64;
             this.DepositLastNamelabel.Text = "Last Name";
             // 
@@ -315,7 +319,7 @@ namespace Bank
             this.label10.ForeColor = System.Drawing.Color.DarkOrange;
             this.label10.Location = new System.Drawing.Point(6, 6);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(105, 22);
+            this.label10.Size = new System.Drawing.Size(108, 24);
             this.label10.TabIndex = 63;
             this.label10.Text = "Last Name";
             // 
@@ -345,7 +349,7 @@ namespace Bank
             this.DepositFirstNamelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.DepositFirstNamelabel.Location = new System.Drawing.Point(175, 6);
             this.DepositFirstNamelabel.Name = "DepositFirstNamelabel";
-            this.DepositFirstNamelabel.Size = new System.Drawing.Size(107, 22);
+            this.DepositFirstNamelabel.Size = new System.Drawing.Size(111, 24);
             this.DepositFirstNamelabel.TabIndex = 64;
             this.DepositFirstNamelabel.Text = "First Name";
             // 
@@ -356,7 +360,7 @@ namespace Bank
             this.label9.ForeColor = System.Drawing.Color.DarkOrange;
             this.label9.Location = new System.Drawing.Point(6, 6);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(107, 22);
+            this.label9.Size = new System.Drawing.Size(111, 24);
             this.label9.TabIndex = 63;
             this.label9.Text = "First Name";
             // 
@@ -439,6 +443,7 @@ namespace Bank
             this.DepositAmountTextbox.Name = "DepositAmountTextbox";
             this.DepositAmountTextbox.Size = new System.Drawing.Size(459, 28);
             this.DepositAmountTextbox.TabIndex = 68;
+            this.DepositAmountTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DepositAmountTextbox_KeyPress);
             // 
             // label6
             // 
@@ -447,7 +452,7 @@ namespace Bank
             this.label6.ForeColor = System.Drawing.Color.DarkOrange;
             this.label6.Location = new System.Drawing.Point(5, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 22);
+            this.label6.Size = new System.Drawing.Size(158, 24);
             this.label6.TabIndex = 62;
             this.label6.Text = "Deposit Amount";
             // 
@@ -537,7 +542,7 @@ namespace Bank
             this.label7.ForeColor = System.Drawing.Color.DarkOrange;
             this.label7.Location = new System.Drawing.Point(7, 13);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 22);
+            this.label7.Size = new System.Drawing.Size(114, 24);
             this.label7.TabIndex = 62;
             this.label7.Text = "User Name";
             // 
@@ -580,16 +585,6 @@ namespace Bank
             this.panel4.Size = new System.Drawing.Size(1207, 45);
             this.panel4.TabIndex = 4;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Bank.Properties.Resources.deposit_icon_7_1_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 73;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -600,6 +595,31 @@ namespace Bank
             this.label1.Size = new System.Drawing.Size(107, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "DEPOSIT";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Bank.Properties.Resources.deposit_icon_7_1_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 73;
+            this.pictureBox1.TabStop = false;
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 10;
+            this.gunaElipse1.TargetControl = this.DepositAmountbutton;
+            // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.Radius = 10;
+            this.gunaElipse2.TargetControl = this.Usenamebutton;
+            // 
+            // gunaElipse3
+            // 
+            this.gunaElipse3.Radius = 10;
+            this.gunaElipse3.TargetControl = this.Depositbutton;
             // 
             // DepositForm
             // 
@@ -687,5 +707,8 @@ namespace Bank
         private System.Windows.Forms.Button DepositAmountbutton;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse2;
+        private Guna.UI.WinForms.GunaElipse gunaElipse3;
     }
 }

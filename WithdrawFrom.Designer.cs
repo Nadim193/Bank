@@ -29,7 +29,7 @@ namespace Bank
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WithdrawFrom));
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.WithdrawPasswordpanel = new System.Windows.Forms.Panel();
@@ -74,10 +74,11 @@ namespace Bank
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1.SuspendLayout();
             this.WithdrawPasswordpanel.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -139,7 +140,7 @@ namespace Bank
             this.Withdrawtbutton.FlatAppearance.BorderSize = 0;
             this.Withdrawtbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Wheat;
             this.Withdrawtbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.Withdrawtbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Withdrawtbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Withdrawtbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Withdrawtbutton.ForeColor = System.Drawing.Color.White;
             this.Withdrawtbutton.Location = new System.Drawing.Point(367, 168);
@@ -247,7 +248,7 @@ namespace Bank
             this.WithdrawAmountbutton.FlatAppearance.BorderSize = 0;
             this.WithdrawAmountbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Wheat;
             this.WithdrawAmountbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.WithdrawAmountbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.WithdrawAmountbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.WithdrawAmountbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WithdrawAmountbutton.ForeColor = System.Drawing.Color.White;
             this.WithdrawAmountbutton.Location = new System.Drawing.Point(357, 168);
@@ -277,6 +278,7 @@ namespace Bank
             this.WithdrawAmountTextbox.Name = "WithdrawAmountTextbox";
             this.WithdrawAmountTextbox.Size = new System.Drawing.Size(460, 28);
             this.WithdrawAmountTextbox.TabIndex = 68;
+            this.WithdrawAmountTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.WithdrawAmountTextbox_KeyPress);
             // 
             // label6
             // 
@@ -337,7 +339,7 @@ namespace Bank
             this.Usenamebutton.FlatAppearance.BorderSize = 0;
             this.Usenamebutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Wheat;
             this.Usenamebutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.Usenamebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Usenamebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Usenamebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Usenamebutton.ForeColor = System.Drawing.Color.White;
             this.Usenamebutton.Location = new System.Drawing.Point(356, 171);
@@ -583,16 +585,6 @@ namespace Bank
             this.panel4.Size = new System.Drawing.Size(1207, 45);
             this.panel4.TabIndex = 5;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Bank.Properties.Resources._176_1766289_atm_withdrawal_svg_png_icon_free_download_atm_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 72;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -604,19 +596,30 @@ namespace Bank
             this.label1.TabIndex = 0;
             this.label1.Text = "WITHDRAE";
             // 
-            // printDocument1
+            // pictureBox1
             // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            this.pictureBox1.Image = global::Bank.Properties.Resources._176_1766289_atm_withdrawal_svg_png_icon_free_download_atm_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 72;
+            this.pictureBox1.TabStop = false;
             // 
-            // printPreviewDialog1
+            // gunaElipse1
             // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
+            this.gunaElipse1.Radius = 10;
+            this.gunaElipse1.TargetControl = this.Usenamebutton;
+            // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.Radius = 10;
+            this.gunaElipse2.TargetControl = this.WithdrawAmountbutton;
+            // 
+            // gunaElipse3
+            // 
+            this.gunaElipse3.Radius = 10;
+            this.gunaElipse3.TargetControl = this.Withdrawtbutton;
             // 
             // WithdrawFrom
             // 
@@ -704,7 +707,8 @@ namespace Bank
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Drawing.Printing.PrintDocument printDocument1;
-        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse2;
+        private Guna.UI.WinForms.GunaElipse gunaElipse3;
     }
 }

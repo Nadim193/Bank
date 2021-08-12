@@ -29,15 +29,10 @@ namespace Bank
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ChangePasswordbutton = new System.Windows.Forms.Button();
-            this.ConfirmHidePasswordBox = new System.Windows.Forms.PictureBox();
-            this.ConfirmShowPasswordBox = new System.Windows.Forms.PictureBox();
-            this.NewPasswordHideBox = new System.Windows.Forms.PictureBox();
-            this.NewPasswordShowBox = new System.Windows.Forms.PictureBox();
-            this.HidePasswordBox = new System.Windows.Forms.PictureBox();
-            this.ShowPasswordBox = new System.Windows.Forms.PictureBox();
             this.ConfirmPasswordTextbox = new Bunifu.Framework.BunifuCustomTextbox();
             this.label7 = new System.Windows.Forms.Label();
             this.NewPasswordTextbox = new Bunifu.Framework.BunifuCustomTextbox();
@@ -49,17 +44,24 @@ namespace Bank
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ConfirmHidePasswordBox = new System.Windows.Forms.PictureBox();
+            this.ConfirmShowPasswordBox = new System.Windows.Forms.PictureBox();
+            this.NewPasswordHideBox = new System.Windows.Forms.PictureBox();
+            this.NewPasswordShowBox = new System.Windows.Forms.PictureBox();
+            this.HidePasswordBox = new System.Windows.Forms.PictureBox();
+            this.ShowPasswordBox = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfirmHidePasswordBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfirmShowPasswordBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NewPasswordHideBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NewPasswordShowBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox)).BeginInit();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,75 +118,6 @@ namespace Bank
             this.ChangePasswordbutton.Text = "Save";
             this.ChangePasswordbutton.UseVisualStyleBackColor = false;
             this.ChangePasswordbutton.Click += new System.EventHandler(this.ChangePasswordbutton_Click);
-            // 
-            // ConfirmHidePasswordBox
-            // 
-            this.ConfirmHidePasswordBox.Image = global::Bank.Properties.Resources._377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview;
-            this.ConfirmHidePasswordBox.Location = new System.Drawing.Point(487, 385);
-            this.ConfirmHidePasswordBox.Name = "ConfirmHidePasswordBox";
-            this.ConfirmHidePasswordBox.Size = new System.Drawing.Size(27, 30);
-            this.ConfirmHidePasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ConfirmHidePasswordBox.TabIndex = 76;
-            this.ConfirmHidePasswordBox.TabStop = false;
-            this.ConfirmHidePasswordBox.Visible = false;
-            this.ConfirmHidePasswordBox.Click += new System.EventHandler(this.ConfirmHidePasswordBox_Click);
-            // 
-            // ConfirmShowPasswordBox
-            // 
-            this.ConfirmShowPasswordBox.Image = global::Bank.Properties.Resources._481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview;
-            this.ConfirmShowPasswordBox.Location = new System.Drawing.Point(488, 385);
-            this.ConfirmShowPasswordBox.Name = "ConfirmShowPasswordBox";
-            this.ConfirmShowPasswordBox.Size = new System.Drawing.Size(27, 30);
-            this.ConfirmShowPasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ConfirmShowPasswordBox.TabIndex = 74;
-            this.ConfirmShowPasswordBox.TabStop = false;
-            this.ConfirmShowPasswordBox.Click += new System.EventHandler(this.ConfirmShowPasswordBox_Click);
-            // 
-            // NewPasswordHideBox
-            // 
-            this.NewPasswordHideBox.Image = global::Bank.Properties.Resources._377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview;
-            this.NewPasswordHideBox.Location = new System.Drawing.Point(487, 297);
-            this.NewPasswordHideBox.Name = "NewPasswordHideBox";
-            this.NewPasswordHideBox.Size = new System.Drawing.Size(27, 30);
-            this.NewPasswordHideBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.NewPasswordHideBox.TabIndex = 75;
-            this.NewPasswordHideBox.TabStop = false;
-            this.NewPasswordHideBox.Visible = false;
-            this.NewPasswordHideBox.Click += new System.EventHandler(this.NewPasswordHideBox_Click);
-            // 
-            // NewPasswordShowBox
-            // 
-            this.NewPasswordShowBox.Image = global::Bank.Properties.Resources._481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview;
-            this.NewPasswordShowBox.Location = new System.Drawing.Point(488, 297);
-            this.NewPasswordShowBox.Name = "NewPasswordShowBox";
-            this.NewPasswordShowBox.Size = new System.Drawing.Size(27, 30);
-            this.NewPasswordShowBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.NewPasswordShowBox.TabIndex = 127;
-            this.NewPasswordShowBox.TabStop = false;
-            this.NewPasswordShowBox.Click += new System.EventHandler(this.NewPasswordShowBox_Click);
-            // 
-            // HidePasswordBox
-            // 
-            this.HidePasswordBox.Image = global::Bank.Properties.Resources._377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview;
-            this.HidePasswordBox.Location = new System.Drawing.Point(488, 207);
-            this.HidePasswordBox.Name = "HidePasswordBox";
-            this.HidePasswordBox.Size = new System.Drawing.Size(27, 30);
-            this.HidePasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.HidePasswordBox.TabIndex = 74;
-            this.HidePasswordBox.TabStop = false;
-            this.HidePasswordBox.Visible = false;
-            this.HidePasswordBox.Click += new System.EventHandler(this.HidePasswordBox_Click);
-            // 
-            // ShowPasswordBox
-            // 
-            this.ShowPasswordBox.Image = global::Bank.Properties.Resources._481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview;
-            this.ShowPasswordBox.Location = new System.Drawing.Point(488, 207);
-            this.ShowPasswordBox.Name = "ShowPasswordBox";
-            this.ShowPasswordBox.Size = new System.Drawing.Size(27, 30);
-            this.ShowPasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ShowPasswordBox.TabIndex = 73;
-            this.ShowPasswordBox.TabStop = false;
-            this.ShowPasswordBox.Click += new System.EventHandler(this.ShowPasswordBox_Click);
             // 
             // ConfirmPasswordTextbox
             // 
@@ -308,16 +241,6 @@ namespace Bank
             this.panel4.Size = new System.Drawing.Size(1207, 45);
             this.panel4.TabIndex = 6;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Bank.Properties.Resources.source_change_password_icon_115632113989lfjrixlx8_removebg_preview1;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 73;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -328,6 +251,90 @@ namespace Bank
             this.label1.Size = new System.Drawing.Size(235, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "CHANGE PASSWORD";
+            // 
+            // ConfirmHidePasswordBox
+            // 
+            this.ConfirmHidePasswordBox.Image = global::Bank.Properties.Resources._377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview;
+            this.ConfirmHidePasswordBox.Location = new System.Drawing.Point(487, 385);
+            this.ConfirmHidePasswordBox.Name = "ConfirmHidePasswordBox";
+            this.ConfirmHidePasswordBox.Size = new System.Drawing.Size(27, 30);
+            this.ConfirmHidePasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ConfirmHidePasswordBox.TabIndex = 76;
+            this.ConfirmHidePasswordBox.TabStop = false;
+            this.ConfirmHidePasswordBox.Visible = false;
+            this.ConfirmHidePasswordBox.Click += new System.EventHandler(this.ConfirmHidePasswordBox_Click);
+            // 
+            // ConfirmShowPasswordBox
+            // 
+            this.ConfirmShowPasswordBox.Image = global::Bank.Properties.Resources._481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview;
+            this.ConfirmShowPasswordBox.Location = new System.Drawing.Point(488, 385);
+            this.ConfirmShowPasswordBox.Name = "ConfirmShowPasswordBox";
+            this.ConfirmShowPasswordBox.Size = new System.Drawing.Size(27, 30);
+            this.ConfirmShowPasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ConfirmShowPasswordBox.TabIndex = 74;
+            this.ConfirmShowPasswordBox.TabStop = false;
+            this.ConfirmShowPasswordBox.Click += new System.EventHandler(this.ConfirmShowPasswordBox_Click);
+            // 
+            // NewPasswordHideBox
+            // 
+            this.NewPasswordHideBox.Image = global::Bank.Properties.Resources._377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview;
+            this.NewPasswordHideBox.Location = new System.Drawing.Point(487, 297);
+            this.NewPasswordHideBox.Name = "NewPasswordHideBox";
+            this.NewPasswordHideBox.Size = new System.Drawing.Size(27, 30);
+            this.NewPasswordHideBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.NewPasswordHideBox.TabIndex = 75;
+            this.NewPasswordHideBox.TabStop = false;
+            this.NewPasswordHideBox.Visible = false;
+            this.NewPasswordHideBox.Click += new System.EventHandler(this.NewPasswordHideBox_Click);
+            // 
+            // NewPasswordShowBox
+            // 
+            this.NewPasswordShowBox.Image = global::Bank.Properties.Resources._481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview;
+            this.NewPasswordShowBox.Location = new System.Drawing.Point(488, 297);
+            this.NewPasswordShowBox.Name = "NewPasswordShowBox";
+            this.NewPasswordShowBox.Size = new System.Drawing.Size(27, 30);
+            this.NewPasswordShowBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.NewPasswordShowBox.TabIndex = 127;
+            this.NewPasswordShowBox.TabStop = false;
+            this.NewPasswordShowBox.Click += new System.EventHandler(this.NewPasswordShowBox_Click);
+            // 
+            // HidePasswordBox
+            // 
+            this.HidePasswordBox.Image = global::Bank.Properties.Resources._377_3773045_hide_and_show_password_icon_hd_png_download_removebg_preview;
+            this.HidePasswordBox.Location = new System.Drawing.Point(488, 207);
+            this.HidePasswordBox.Name = "HidePasswordBox";
+            this.HidePasswordBox.Size = new System.Drawing.Size(27, 30);
+            this.HidePasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.HidePasswordBox.TabIndex = 74;
+            this.HidePasswordBox.TabStop = false;
+            this.HidePasswordBox.Visible = false;
+            this.HidePasswordBox.Click += new System.EventHandler(this.HidePasswordBox_Click);
+            // 
+            // ShowPasswordBox
+            // 
+            this.ShowPasswordBox.Image = global::Bank.Properties.Resources._481_4810872_hide_password_hide_show_password_icon_png_transparent_removebg_preview;
+            this.ShowPasswordBox.Location = new System.Drawing.Point(488, 207);
+            this.ShowPasswordBox.Name = "ShowPasswordBox";
+            this.ShowPasswordBox.Size = new System.Drawing.Size(27, 30);
+            this.ShowPasswordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ShowPasswordBox.TabIndex = 73;
+            this.ShowPasswordBox.TabStop = false;
+            this.ShowPasswordBox.Click += new System.EventHandler(this.ShowPasswordBox_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Bank.Properties.Resources.source_change_password_icon_115632113989lfjrixlx8_removebg_preview1;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 73;
+            this.pictureBox1.TabStop = false;
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 10;
+            this.gunaElipse1.TargetControl = this.ChangePasswordbutton;
             // 
             // ChangePasswordForm
             // 
@@ -342,14 +349,14 @@ namespace Bank
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfirmHidePasswordBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfirmShowPasswordBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NewPasswordHideBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NewPasswordShowBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HidePasswordBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShowPasswordBox)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -379,5 +386,6 @@ namespace Bank
         private System.Windows.Forms.PictureBox NewPasswordShowBox;
         private System.Windows.Forms.Button ChangePasswordbutton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
     }
 }

@@ -127,6 +127,7 @@ namespace Bank
             this.WithdrawButton.Animated = true;
             this.WithdrawButton.AnimationHoverSpeed = 0.07F;
             this.WithdrawButton.AnimationSpeed = 0.03F;
+            this.WithdrawButton.BackColor = System.Drawing.Color.Transparent;
             this.WithdrawButton.BaseColor = System.Drawing.Color.RoyalBlue;
             this.WithdrawButton.BorderColor = System.Drawing.Color.Black;
             this.WithdrawButton.CheckedBaseColor = System.Drawing.Color.Gray;
@@ -150,6 +151,7 @@ namespace Bank
             this.WithdrawButton.OnHoverImage = null;
             this.WithdrawButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.WithdrawButton.OnPressedColor = System.Drawing.Color.Black;
+            this.WithdrawButton.Radius = 10;
             this.WithdrawButton.Size = new System.Drawing.Size(130, 48);
             this.WithdrawButton.TabIndex = 71;
             this.WithdrawButton.Text = "Withdraw";
@@ -249,6 +251,7 @@ namespace Bank
             this.WitdrawAmountButton.Animated = true;
             this.WitdrawAmountButton.AnimationHoverSpeed = 0.07F;
             this.WitdrawAmountButton.AnimationSpeed = 0.03F;
+            this.WitdrawAmountButton.BackColor = System.Drawing.Color.Transparent;
             this.WitdrawAmountButton.BaseColor = System.Drawing.Color.RoyalBlue;
             this.WitdrawAmountButton.BorderColor = System.Drawing.Color.Black;
             this.WitdrawAmountButton.CheckedBaseColor = System.Drawing.Color.Gray;
@@ -272,6 +275,7 @@ namespace Bank
             this.WitdrawAmountButton.OnHoverImage = null;
             this.WitdrawAmountButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.WitdrawAmountButton.OnPressedColor = System.Drawing.Color.Black;
+            this.WitdrawAmountButton.Radius = 10;
             this.WitdrawAmountButton.Size = new System.Drawing.Size(120, 48);
             this.WitdrawAmountButton.TabIndex = 70;
             this.WitdrawAmountButton.Text = "Done";
@@ -296,6 +300,7 @@ namespace Bank
             this.WithdrawAmountTextbox.Name = "WithdrawAmountTextbox";
             this.WithdrawAmountTextbox.Size = new System.Drawing.Size(460, 28);
             this.WithdrawAmountTextbox.TabIndex = 68;
+            this.WithdrawAmountTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.WithdrawAmountTextbox_KeyPress);
             // 
             // label6
             // 

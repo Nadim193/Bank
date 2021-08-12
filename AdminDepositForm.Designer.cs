@@ -32,7 +32,6 @@ namespace Bank
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDepositForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.DepositPasswordpanel = new System.Windows.Forms.Panel();
-            this.DepositButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.ShowRememberPasswordcheckBox = new System.Windows.Forms.CheckBox();
             this.panel17 = new System.Windows.Forms.Panel();
             this.PasswordTextbox = new Bunifu.Framework.BunifuCustomTextbox();
@@ -57,7 +56,6 @@ namespace Bank
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.Depositpanel = new System.Windows.Forms.Panel();
-            this.DepositAmountButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.DepositAmountpanel = new System.Windows.Forms.Panel();
             this.DepositAmountTextbox = new Bunifu.Framework.BunifuCustomTextbox();
             this.label6 = new System.Windows.Forms.Label();
@@ -65,7 +63,6 @@ namespace Bank
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.DepositUserNamepanel = new System.Windows.Forms.Panel();
-            this.SearchDepositButton = new System.Windows.Forms.PictureBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.DepositUserNameTextbox = new Bunifu.Framework.BunifuCustomTextbox();
             this.label7 = new System.Windows.Forms.Label();
@@ -73,9 +70,12 @@ namespace Bank
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.DepositButton = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.DepositAmountButton = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.SearchDepositButton = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.DepositPasswordpanel.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -86,9 +86,9 @@ namespace Bank
             this.Depositpanel.SuspendLayout();
             this.DepositAmountpanel.SuspendLayout();
             this.DepositUserNamepanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SearchDepositButton)).BeginInit();
             this.panel15.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchDepositButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,43 +117,11 @@ namespace Bank
             this.DepositPasswordpanel.Controls.Add(this.label5);
             this.DepositPasswordpanel.Controls.Add(this.panel14);
             this.DepositPasswordpanel.Controls.Add(this.panel10);
+            this.DepositPasswordpanel.Enabled = false;
             this.DepositPasswordpanel.Location = new System.Drawing.Point(684, 474);
             this.DepositPasswordpanel.Name = "DepositPasswordpanel";
             this.DepositPasswordpanel.Size = new System.Drawing.Size(503, 230);
             this.DepositPasswordpanel.TabIndex = 12;
-            // 
-            // DepositButton
-            // 
-            this.DepositButton.Animated = true;
-            this.DepositButton.AnimationHoverSpeed = 0.07F;
-            this.DepositButton.AnimationSpeed = 0.03F;
-            this.DepositButton.BaseColor = System.Drawing.Color.RoyalBlue;
-            this.DepositButton.BorderColor = System.Drawing.Color.Black;
-            this.DepositButton.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.DepositButton.CheckedBorderColor = System.Drawing.Color.Black;
-            this.DepositButton.CheckedForeColor = System.Drawing.Color.White;
-            this.DepositButton.CheckedImage = ((System.Drawing.Image)(resources.GetObject("DepositButton.CheckedImage")));
-            this.DepositButton.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.DepositButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DepositButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.DepositButton.FocusedColor = System.Drawing.Color.Empty;
-            this.DepositButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DepositButton.ForeColor = System.Drawing.Color.Black;
-            this.DepositButton.Image = global::Bank.Properties.Resources.deposit_icon_7_1_removebg_preview;
-            this.DepositButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.DepositButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.DepositButton.Location = new System.Drawing.Point(360, 172);
-            this.DepositButton.Name = "DepositButton";
-            this.DepositButton.OnHoverBaseColor = System.Drawing.Color.SteelBlue;
-            this.DepositButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.DepositButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.DepositButton.OnHoverImage = null;
-            this.DepositButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.DepositButton.OnPressedColor = System.Drawing.Color.Black;
-            this.DepositButton.Size = new System.Drawing.Size(120, 48);
-            this.DepositButton.TabIndex = 67;
-            this.DepositButton.Text = "Deposit";
-            this.DepositButton.Click += new System.EventHandler(this.DepositButton_Click);
             // 
             // ShowRememberPasswordcheckBox
             // 
@@ -403,43 +371,11 @@ namespace Bank
             this.Depositpanel.Controls.Add(this.label3);
             this.Depositpanel.Controls.Add(this.panel12);
             this.Depositpanel.Controls.Add(this.panel8);
+            this.Depositpanel.Enabled = false;
             this.Depositpanel.Location = new System.Drawing.Point(19, 474);
             this.Depositpanel.Name = "Depositpanel";
             this.Depositpanel.Size = new System.Drawing.Size(503, 230);
             this.Depositpanel.TabIndex = 10;
-            // 
-            // DepositAmountButton
-            // 
-            this.DepositAmountButton.Animated = true;
-            this.DepositAmountButton.AnimationHoverSpeed = 0.07F;
-            this.DepositAmountButton.AnimationSpeed = 0.03F;
-            this.DepositAmountButton.BaseColor = System.Drawing.Color.RoyalBlue;
-            this.DepositAmountButton.BorderColor = System.Drawing.Color.Black;
-            this.DepositAmountButton.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.DepositAmountButton.CheckedBorderColor = System.Drawing.Color.Black;
-            this.DepositAmountButton.CheckedForeColor = System.Drawing.Color.White;
-            this.DepositAmountButton.CheckedImage = ((System.Drawing.Image)(resources.GetObject("DepositAmountButton.CheckedImage")));
-            this.DepositAmountButton.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.DepositAmountButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DepositAmountButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.DepositAmountButton.FocusedColor = System.Drawing.Color.Empty;
-            this.DepositAmountButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DepositAmountButton.ForeColor = System.Drawing.Color.Black;
-            this.DepositAmountButton.Image = global::Bank.Properties.Resources.active_1;
-            this.DepositAmountButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.DepositAmountButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.DepositAmountButton.Location = new System.Drawing.Point(363, 172);
-            this.DepositAmountButton.Name = "DepositAmountButton";
-            this.DepositAmountButton.OnHoverBaseColor = System.Drawing.Color.SteelBlue;
-            this.DepositAmountButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.DepositAmountButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.DepositAmountButton.OnHoverImage = null;
-            this.DepositAmountButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.DepositAmountButton.OnPressedColor = System.Drawing.Color.Black;
-            this.DepositAmountButton.Size = new System.Drawing.Size(120, 48);
-            this.DepositAmountButton.TabIndex = 62;
-            this.DepositAmountButton.Text = "Done";
-            this.DepositAmountButton.Click += new System.EventHandler(this.DepositAmountButton_Click);
             // 
             // DepositAmountpanel
             // 
@@ -460,6 +396,7 @@ namespace Bank
             this.DepositAmountTextbox.Name = "DepositAmountTextbox";
             this.DepositAmountTextbox.Size = new System.Drawing.Size(459, 28);
             this.DepositAmountTextbox.TabIndex = 68;
+            this.DepositAmountTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DepositAmountTextbox_KeyPress);
             // 
             // label6
             // 
@@ -512,18 +449,6 @@ namespace Bank
             this.DepositUserNamepanel.Name = "DepositUserNamepanel";
             this.DepositUserNamepanel.Size = new System.Drawing.Size(503, 230);
             this.DepositUserNamepanel.TabIndex = 9;
-            // 
-            // SearchDepositButton
-            // 
-            this.SearchDepositButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SearchDepositButton.Image = global::Bank.Properties.Resources.png_clipart_computer_icons_android_web_search_engine_google_search_search_box_google_search_bar_blue_trademark_removebg_preview;
-            this.SearchDepositButton.Location = new System.Drawing.Point(400, 167);
-            this.SearchDepositButton.Name = "SearchDepositButton";
-            this.SearchDepositButton.Size = new System.Drawing.Size(85, 50);
-            this.SearchDepositButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SearchDepositButton.TabIndex = 62;
-            this.SearchDepositButton.TabStop = false;
-            this.SearchDepositButton.Click += new System.EventHandler(this.SearchDepositButton_Click);
             // 
             // panel15
             // 
@@ -595,16 +520,6 @@ namespace Bank
             this.panel3.Size = new System.Drawing.Size(1207, 49);
             this.panel3.TabIndex = 7;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Bank.Properties.Resources.deposit_icon_7_1_removebg_preview;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 49);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -624,6 +539,98 @@ namespace Bank
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1207, 5);
             this.panel2.TabIndex = 0;
+            // 
+            // DepositButton
+            // 
+            this.DepositButton.Animated = true;
+            this.DepositButton.AnimationHoverSpeed = 0.07F;
+            this.DepositButton.AnimationSpeed = 0.03F;
+            this.DepositButton.BackColor = System.Drawing.Color.Transparent;
+            this.DepositButton.BaseColor = System.Drawing.Color.RoyalBlue;
+            this.DepositButton.BorderColor = System.Drawing.Color.Black;
+            this.DepositButton.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.DepositButton.CheckedBorderColor = System.Drawing.Color.Black;
+            this.DepositButton.CheckedForeColor = System.Drawing.Color.White;
+            this.DepositButton.CheckedImage = ((System.Drawing.Image)(resources.GetObject("DepositButton.CheckedImage")));
+            this.DepositButton.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.DepositButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DepositButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.DepositButton.FocusedColor = System.Drawing.Color.Empty;
+            this.DepositButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DepositButton.ForeColor = System.Drawing.Color.Black;
+            this.DepositButton.Image = global::Bank.Properties.Resources.deposit_icon_7_1_removebg_preview;
+            this.DepositButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.DepositButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.DepositButton.Location = new System.Drawing.Point(360, 172);
+            this.DepositButton.Name = "DepositButton";
+            this.DepositButton.OnHoverBaseColor = System.Drawing.Color.SteelBlue;
+            this.DepositButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.DepositButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.DepositButton.OnHoverImage = null;
+            this.DepositButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.DepositButton.OnPressedColor = System.Drawing.Color.Black;
+            this.DepositButton.Radius = 10;
+            this.DepositButton.Size = new System.Drawing.Size(120, 48);
+            this.DepositButton.TabIndex = 67;
+            this.DepositButton.Text = "Deposit";
+            this.DepositButton.Click += new System.EventHandler(this.DepositButton_Click);
+            // 
+            // DepositAmountButton
+            // 
+            this.DepositAmountButton.Animated = true;
+            this.DepositAmountButton.AnimationHoverSpeed = 0.07F;
+            this.DepositAmountButton.AnimationSpeed = 0.03F;
+            this.DepositAmountButton.BackColor = System.Drawing.Color.Transparent;
+            this.DepositAmountButton.BaseColor = System.Drawing.Color.RoyalBlue;
+            this.DepositAmountButton.BorderColor = System.Drawing.Color.Black;
+            this.DepositAmountButton.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.DepositAmountButton.CheckedBorderColor = System.Drawing.Color.Black;
+            this.DepositAmountButton.CheckedForeColor = System.Drawing.Color.White;
+            this.DepositAmountButton.CheckedImage = ((System.Drawing.Image)(resources.GetObject("DepositAmountButton.CheckedImage")));
+            this.DepositAmountButton.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.DepositAmountButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DepositAmountButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.DepositAmountButton.FocusedColor = System.Drawing.Color.Empty;
+            this.DepositAmountButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DepositAmountButton.ForeColor = System.Drawing.Color.Black;
+            this.DepositAmountButton.Image = global::Bank.Properties.Resources.active_1;
+            this.DepositAmountButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.DepositAmountButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.DepositAmountButton.Location = new System.Drawing.Point(363, 172);
+            this.DepositAmountButton.Name = "DepositAmountButton";
+            this.DepositAmountButton.OnHoverBaseColor = System.Drawing.Color.SteelBlue;
+            this.DepositAmountButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.DepositAmountButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.DepositAmountButton.OnHoverImage = null;
+            this.DepositAmountButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.DepositAmountButton.OnPressedColor = System.Drawing.Color.Black;
+            this.DepositAmountButton.Radius = 10;
+            this.DepositAmountButton.Size = new System.Drawing.Size(120, 48);
+            this.DepositAmountButton.TabIndex = 62;
+            this.DepositAmountButton.Text = "Done";
+            this.DepositAmountButton.Click += new System.EventHandler(this.DepositAmountButton_Click);
+            // 
+            // SearchDepositButton
+            // 
+            this.SearchDepositButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SearchDepositButton.Image = global::Bank.Properties.Resources.png_clipart_computer_icons_android_web_search_engine_google_search_search_box_google_search_bar_blue_trademark_removebg_preview;
+            this.SearchDepositButton.Location = new System.Drawing.Point(400, 167);
+            this.SearchDepositButton.Name = "SearchDepositButton";
+            this.SearchDepositButton.Size = new System.Drawing.Size(85, 50);
+            this.SearchDepositButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SearchDepositButton.TabIndex = 62;
+            this.SearchDepositButton.TabStop = false;
+            this.SearchDepositButton.Click += new System.EventHandler(this.SearchDepositButton_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Bank.Properties.Resources.deposit_icon_7_1_removebg_preview;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(57, 49);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
             // 
             // AdminDepositForm
             // 
@@ -653,11 +660,11 @@ namespace Bank
             this.DepositAmountpanel.PerformLayout();
             this.DepositUserNamepanel.ResumeLayout(false);
             this.DepositUserNamepanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SearchDepositButton)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchDepositButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 

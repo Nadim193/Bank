@@ -32,7 +32,6 @@ namespace Bank
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Verify = new System.Windows.Forms.Panel();
             this.forgetBackbutton = new System.Windows.Forms.Button();
             this.showconfirmpassword = new System.Windows.Forms.CheckBox();
@@ -44,21 +43,22 @@ namespace Bank
             this.confirmpasswordtextBox = new System.Windows.Forms.TextBox();
             this.newpasswordTextBox = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.RestoreDownIcon = new System.Windows.Forms.PictureBox();
             this.maxIcon = new System.Windows.Forms.PictureBox();
             this.minIcon = new System.Windows.Forms.PictureBox();
             this.cerraricon = new System.Windows.Forms.PictureBox();
-            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Verify.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -81,16 +81,6 @@ namespace Bank
             this.panel6.Size = new System.Drawing.Size(1542, 5);
             this.panel6.TabIndex = 10;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Bank.Properties.Resources.bank_account_banking_building_1_31235;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 227);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // Verify
             // 
             this.Verify.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -112,6 +102,7 @@ namespace Bank
             // 
             this.forgetBackbutton.BackColor = System.Drawing.Color.DarkOrange;
             this.forgetBackbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.forgetBackbutton.FlatAppearance.BorderSize = 0;
             this.forgetBackbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.forgetBackbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forgetBackbutton.ForeColor = System.Drawing.Color.Black;
@@ -163,6 +154,7 @@ namespace Bank
             // 
             this.SavePassword.BackColor = System.Drawing.Color.DarkOrange;
             this.SavePassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SavePassword.FlatAppearance.BorderSize = 0;
             this.SavePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SavePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SavePassword.ForeColor = System.Drawing.Color.Black;
@@ -230,6 +222,21 @@ namespace Bank
             this.panel3.Size = new System.Drawing.Size(1540, 20);
             this.panel3.TabIndex = 10;
             // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 15;
+            this.gunaElipse1.TargetControl = this;
+            // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.Radius = 10;
+            this.gunaElipse2.TargetControl = this.SavePassword;
+            // 
+            // gunaElipse3
+            // 
+            this.gunaElipse3.Radius = 10;
+            this.gunaElipse3.TargetControl = this.forgetBackbutton;
+            // 
             // RestoreDownIcon
             // 
             this.RestoreDownIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -283,20 +290,15 @@ namespace Bank
             this.cerraricon.TabStop = false;
             this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
             // 
-            // gunaElipse1
+            // pictureBox1
             // 
-            this.gunaElipse1.Radius = 15;
-            this.gunaElipse1.TargetControl = this;
-            // 
-            // gunaElipse2
-            // 
-            this.gunaElipse2.Radius = 7;
-            this.gunaElipse2.TargetControl = this.SavePassword;
-            // 
-            // gunaElipse3
-            // 
-            this.gunaElipse3.Radius = 7;
-            this.gunaElipse3.TargetControl = this.forgetBackbutton;
+            this.pictureBox1.Image = global::Bank.Properties.Resources.bank_account_banking_building_1_31235;
+            this.pictureBox1.Location = new System.Drawing.Point(1, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(257, 227);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // ForgetPassword
             // 
@@ -311,7 +313,6 @@ namespace Bank
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgetPassword";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Verify.ResumeLayout(false);
             this.Verify.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -319,6 +320,7 @@ namespace Bank
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

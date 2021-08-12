@@ -29,10 +29,10 @@ namespace Bank
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.AlertOkButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
@@ -41,13 +41,14 @@ namespace Bank
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.AlertOkButton = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaLinePanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaLinePanel1
             // 
-            this.gunaLinePanel1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.gunaLinePanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.gunaLinePanel1.BackColor = System.Drawing.Color.DimGray;
             this.gunaLinePanel1.Controls.Add(this.gunaLabel6);
             this.gunaLinePanel1.Controls.Add(this.gunaLabel5);
             this.gunaLinePanel1.Controls.Add(this.AlertOkButton);
@@ -89,38 +90,6 @@ namespace Bank
             this.gunaLabel5.TabIndex = 9;
             this.gunaLabel5.Text = "To add email address click \" Edit Profile -->";
             // 
-            // AlertOkButton
-            // 
-            this.AlertOkButton.Animated = true;
-            this.AlertOkButton.AnimationHoverSpeed = 0.07F;
-            this.AlertOkButton.AnimationSpeed = 0.03F;
-            this.AlertOkButton.BaseColor = System.Drawing.Color.DarkOrange;
-            this.AlertOkButton.BorderColor = System.Drawing.Color.Chocolate;
-            this.AlertOkButton.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.AlertOkButton.CheckedBorderColor = System.Drawing.Color.Black;
-            this.AlertOkButton.CheckedForeColor = System.Drawing.Color.White;
-            this.AlertOkButton.CheckedImage = global::Bank.Properties.Resources.active_1;
-            this.AlertOkButton.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.AlertOkButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AlertOkButton.FocusedColor = System.Drawing.Color.Empty;
-            this.AlertOkButton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AlertOkButton.ForeColor = System.Drawing.Color.Black;
-            this.AlertOkButton.Image = global::Bank.Properties.Resources.active_1;
-            this.AlertOkButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.AlertOkButton.LineColor = System.Drawing.Color.DarkOrange;
-            this.AlertOkButton.Location = new System.Drawing.Point(389, 443);
-            this.AlertOkButton.Name = "AlertOkButton";
-            this.AlertOkButton.OnHoverBaseColor = System.Drawing.Color.Chocolate;
-            this.AlertOkButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.AlertOkButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.AlertOkButton.OnHoverImage = null;
-            this.AlertOkButton.OnHoverLineColor = System.Drawing.Color.Chocolate;
-            this.AlertOkButton.OnPressedColor = System.Drawing.Color.Black;
-            this.AlertOkButton.Size = new System.Drawing.Size(122, 46);
-            this.AlertOkButton.TabIndex = 8;
-            this.AlertOkButton.Text = "Okay";
-            this.AlertOkButton.Click += new System.EventHandler(this.AlertOkButton_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -159,11 +128,11 @@ namespace Bank
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.DarkOrange;
-            this.gunaLabel3.Location = new System.Drawing.Point(79, 148);
+            this.gunaLabel3.Location = new System.Drawing.Point(25, 150);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(355, 26);
+            this.gunaLabel3.Size = new System.Drawing.Size(484, 26);
             this.gunaLabel3.TabIndex = 4;
-            this.gunaLabel3.Text = " But have no email eddress. If you";
+            this.gunaLabel3.Text = " But this account have no email eddress. If you";
             // 
             // gunaLabel2
             // 
@@ -210,6 +179,45 @@ namespace Bank
             this.label1.TabIndex = 0;
             this.label1.Text = "!! ALERT !!";
             // 
+            // AlertOkButton
+            // 
+            this.AlertOkButton.Animated = true;
+            this.AlertOkButton.AnimationHoverSpeed = 0.07F;
+            this.AlertOkButton.AnimationSpeed = 0.03F;
+            this.AlertOkButton.BackColor = System.Drawing.Color.Transparent;
+            this.AlertOkButton.BaseColor = System.Drawing.Color.DarkOrange;
+            this.AlertOkButton.BorderColor = System.Drawing.Color.Chocolate;
+            this.AlertOkButton.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.AlertOkButton.CheckedBorderColor = System.Drawing.Color.Black;
+            this.AlertOkButton.CheckedForeColor = System.Drawing.Color.White;
+            this.AlertOkButton.CheckedImage = global::Bank.Properties.Resources.active_1;
+            this.AlertOkButton.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.AlertOkButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.AlertOkButton.FocusedColor = System.Drawing.Color.Empty;
+            this.AlertOkButton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertOkButton.ForeColor = System.Drawing.Color.Black;
+            this.AlertOkButton.Image = global::Bank.Properties.Resources.active_1;
+            this.AlertOkButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.AlertOkButton.LineColor = System.Drawing.Color.DarkOrange;
+            this.AlertOkButton.Location = new System.Drawing.Point(389, 443);
+            this.AlertOkButton.Name = "AlertOkButton";
+            this.AlertOkButton.OnHoverBaseColor = System.Drawing.Color.Chocolate;
+            this.AlertOkButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.AlertOkButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.AlertOkButton.OnHoverImage = null;
+            this.AlertOkButton.OnHoverLineColor = System.Drawing.Color.Chocolate;
+            this.AlertOkButton.OnPressedColor = System.Drawing.Color.Black;
+            this.AlertOkButton.Radius = 10;
+            this.AlertOkButton.Size = new System.Drawing.Size(122, 46);
+            this.AlertOkButton.TabIndex = 8;
+            this.AlertOkButton.Text = "Okay";
+            this.AlertOkButton.Click += new System.EventHandler(this.AlertOkButton_Click);
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 10;
+            this.gunaElipse1.TargetControl = this;
+            // 
             // AlertForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -240,5 +248,6 @@ namespace Bank
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
     }
 }

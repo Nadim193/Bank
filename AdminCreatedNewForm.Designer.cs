@@ -1171,6 +1171,7 @@ namespace Bank
             this.Submitbutton.BackColor = System.Drawing.Color.Transparent;
             this.Submitbutton.BaseColor = System.Drawing.Color.RoyalBlue;
             this.Submitbutton.BorderColor = System.Drawing.Color.Black;
+            this.Submitbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Submitbutton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Submitbutton.FocusedColor = System.Drawing.Color.Empty;
             this.Submitbutton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1203,6 +1204,7 @@ namespace Bank
             this.FileChooseButton.CheckedForeColor = System.Drawing.Color.Black;
             this.FileChooseButton.CheckedImage = global::Bank.Properties.Resources._62107;
             this.FileChooseButton.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.FileChooseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FileChooseButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.FileChooseButton.FocusedColor = System.Drawing.Color.Empty;
             this.FileChooseButton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

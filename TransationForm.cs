@@ -34,9 +34,16 @@ namespace Bank
 
         private void FromTransationUsenamebutton_Click(object sender, EventArgs e)
         {
-            ToTransationUserNamepanel.Enabled = true;
-            ToTransationUserNameTextbox.Select();
-            FramTransationUserNamepanel.Enabled = false;
+            if(FromTransationUserNameTextbox.Text == UserName)
+            {
+                ToTransationUserNamepanel.Enabled = true;
+                ToTransationUserNameTextbox.Select();
+                FramTransationUserNamepanel.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Enter Correct User Name,");
+            }
         }
 
         private string GetFirstTOName()
@@ -117,9 +124,16 @@ namespace Bank
 
         private void TransationAmountbutton_Click(object sender, EventArgs e)
         {
-            TransationPasswordpanel.Enabled = true;
-            PasswordTextbox.Select();
-            Transationpanel.Enabled = false;
+            if (TransationAmountTextbox.Equals(""))
+            {
+                MessageBox.Show("Please Enter Ammount.");
+            }
+            else
+            {
+                TransationPasswordpanel.Enabled = true;
+                PasswordTextbox.Select();
+                Transationpanel.Enabled = false;
+            }
         }
 
         private void ShowRememberPasswordcheckBox_CheckedChanged(object sender, EventArgs e)
@@ -482,6 +496,23 @@ namespace Bank
         private void FromParsonalBalancepanel_Paint(object sender, PaintEventArgs e)
         {
             GetTotalBalance();
+        }
+
+        private void TransationAmountTextbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (ch == 46 && TransationAmountTextbox.Text.IndexOf('.') != -1)
+            {
+                e.Handled = true;
+                return;
+            }
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+                MessageBox.Show("Enter Valide Number.");
+                TransationAmountTextbox.Clear();
+            }
         }
     }
 }

@@ -41,16 +41,30 @@ namespace Bank
 
         private void Usenamebutton_Click(object sender, EventArgs e)
         {
-            Withdrawpanel.Enabled = true;
-            WithdrawAmountTextbox.Select();
-            WithdrawUserNamepanel.Enabled = false;
+            if(WithdrawUseNameTextbox.Text == UserName)
+            {
+                Withdrawpanel.Enabled = true;
+                WithdrawAmountTextbox.Select();
+                WithdrawUserNamepanel.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Enter Correct User Name");
+            }
         }
 
         private void WithdrawAmountbutton_Click(object sender, EventArgs e)
         {
-            WithdrawPasswordpanel.Enabled = true;
-            PasswordTextbox.Select();
-            Withdrawpanel.Enabled = false;
+            if (WithdrawAmountTextbox.Equals(""))
+            {
+                MessageBox.Show("Please Enter Ammount.");
+            }
+            else
+            {
+                WithdrawPasswordpanel.Enabled = true;
+                PasswordTextbox.Select();
+                Withdrawpanel.Enabled = false;
+            }
         }
 
         private double TotalBalance()
@@ -356,6 +370,23 @@ namespace Bank
         private void panel17_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void WithdrawAmountTextbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (ch == 46 && WithdrawAmountTextbox.Text.IndexOf('.') != -1)
+            {
+                e.Handled = true;
+                return;
+            }
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+                MessageBox.Show("Enter Valide Number.");
+                WithdrawAmountTextbox.Clear();
+            }
         }
     }
 }

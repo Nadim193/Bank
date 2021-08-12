@@ -29,6 +29,7 @@ namespace Bank
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel35 = new System.Windows.Forms.Panel();
             this.ToParsonalpanel = new System.Windows.Forms.Panel();
@@ -57,9 +58,9 @@ namespace Bank
             this.panel24 = new System.Windows.Forms.Panel();
             this.TransationPasswordpanel = new System.Windows.Forms.Panel();
             this.Transationbutton = new System.Windows.Forms.Button();
+            this.ShowRememberPasswordcheckBox = new System.Windows.Forms.CheckBox();
             this.panel17 = new System.Windows.Forms.Panel();
             this.PasswordTextbox = new Bunifu.Framework.BunifuCustomTextbox();
-            this.ShowRememberPasswordcheckBox = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
@@ -97,8 +98,12 @@ namespace Bank
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse4 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1.SuspendLayout();
             this.ToParsonalpanel.SuspendLayout();
             this.TOParsonalAddresspanel.SuspendLayout();
@@ -185,7 +190,7 @@ namespace Bank
             this.TOParsonalAddresslabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.TOParsonalAddresslabel.Location = new System.Drawing.Point(175, 6);
             this.TOParsonalAddresslabel.Name = "TOParsonalAddresslabel";
-            this.TOParsonalAddresslabel.Size = new System.Drawing.Size(0, 22);
+            this.TOParsonalAddresslabel.Size = new System.Drawing.Size(0, 24);
             this.TOParsonalAddresslabel.TabIndex = 64;
             // 
             // label
@@ -195,7 +200,7 @@ namespace Bank
             this.label.ForeColor = System.Drawing.Color.DarkOrange;
             this.label.Location = new System.Drawing.Point(6, 6);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(83, 22);
+            this.label.Size = new System.Drawing.Size(87, 24);
             this.label.TabIndex = 63;
             this.label.Text = "Address";
             // 
@@ -224,7 +229,7 @@ namespace Bank
             this.TOParsonalLastNamelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.TOParsonalLastNamelabel.Location = new System.Drawing.Point(175, 6);
             this.TOParsonalLastNamelabel.Name = "TOParsonalLastNamelabel";
-            this.TOParsonalLastNamelabel.Size = new System.Drawing.Size(0, 22);
+            this.TOParsonalLastNamelabel.Size = new System.Drawing.Size(0, 24);
             this.TOParsonalLastNamelabel.TabIndex = 64;
             // 
             // label17
@@ -234,7 +239,7 @@ namespace Bank
             this.label17.ForeColor = System.Drawing.Color.DarkOrange;
             this.label17.Location = new System.Drawing.Point(6, 6);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(105, 22);
+            this.label17.Size = new System.Drawing.Size(108, 24);
             this.label17.TabIndex = 63;
             this.label17.Text = "Last Name";
             // 
@@ -263,7 +268,7 @@ namespace Bank
             this.TOParsonalFirstNamelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.TOParsonalFirstNamelabel.Location = new System.Drawing.Point(175, 6);
             this.TOParsonalFirstNamelabel.Name = "TOParsonalFirstNamelabel";
-            this.TOParsonalFirstNamelabel.Size = new System.Drawing.Size(0, 22);
+            this.TOParsonalFirstNamelabel.Size = new System.Drawing.Size(0, 24);
             this.TOParsonalFirstNamelabel.TabIndex = 64;
             // 
             // label19
@@ -273,7 +278,7 @@ namespace Bank
             this.label19.ForeColor = System.Drawing.Color.DarkOrange;
             this.label19.Location = new System.Drawing.Point(6, 6);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(107, 22);
+            this.label19.Size = new System.Drawing.Size(111, 24);
             this.label19.TabIndex = 63;
             this.label19.Text = "First Name";
             // 
@@ -326,7 +331,7 @@ namespace Bank
             this.ToTransationUserNamebutton.FlatAppearance.BorderSize = 0;
             this.ToTransationUserNamebutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Wheat;
             this.ToTransationUserNamebutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.ToTransationUserNamebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ToTransationUserNamebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ToTransationUserNamebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ToTransationUserNamebutton.ForeColor = System.Drawing.Color.White;
             this.ToTransationUserNamebutton.Location = new System.Drawing.Point(357, 169);
@@ -364,7 +369,7 @@ namespace Bank
             this.label12.ForeColor = System.Drawing.Color.DarkOrange;
             this.label12.Location = new System.Drawing.Point(5, 10);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(109, 22);
+            this.label12.Size = new System.Drawing.Size(114, 24);
             this.label12.TabIndex = 62;
             this.label12.Text = "User Name";
             // 
@@ -418,7 +423,7 @@ namespace Bank
             this.Transationbutton.FlatAppearance.BorderSize = 0;
             this.Transationbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Wheat;
             this.Transationbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.Transationbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Transationbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Transationbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Transationbutton.ForeColor = System.Drawing.Color.White;
             this.Transationbutton.Location = new System.Drawing.Point(360, 167);
@@ -428,6 +433,21 @@ namespace Bank
             this.Transationbutton.Text = "Transation";
             this.Transationbutton.UseVisualStyleBackColor = false;
             this.Transationbutton.Click += new System.EventHandler(this.Transationbutton_Click);
+            // 
+            // ShowRememberPasswordcheckBox
+            // 
+            this.ShowRememberPasswordcheckBox.AutoSize = true;
+            this.ShowRememberPasswordcheckBox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ShowRememberPasswordcheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ShowRememberPasswordcheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowRememberPasswordcheckBox.ForeColor = System.Drawing.Color.DarkOrange;
+            this.ShowRememberPasswordcheckBox.Location = new System.Drawing.Point(44, 158);
+            this.ShowRememberPasswordcheckBox.Name = "ShowRememberPasswordcheckBox";
+            this.ShowRememberPasswordcheckBox.Size = new System.Drawing.Size(152, 22);
+            this.ShowRememberPasswordcheckBox.TabIndex = 66;
+            this.ShowRememberPasswordcheckBox.Text = "Show Password";
+            this.ShowRememberPasswordcheckBox.UseVisualStyleBackColor = false;
+            this.ShowRememberPasswordcheckBox.CheckedChanged += new System.EventHandler(this.ShowRememberPasswordcheckBox_CheckedChanged);
             // 
             // panel17
             // 
@@ -450,21 +470,6 @@ namespace Bank
             this.PasswordTextbox.TabIndex = 67;
             this.PasswordTextbox.UseSystemPasswordChar = true;
             // 
-            // ShowRememberPasswordcheckBox
-            // 
-            this.ShowRememberPasswordcheckBox.AutoSize = true;
-            this.ShowRememberPasswordcheckBox.BackColor = System.Drawing.SystemColors.Desktop;
-            this.ShowRememberPasswordcheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ShowRememberPasswordcheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowRememberPasswordcheckBox.ForeColor = System.Drawing.Color.DarkOrange;
-            this.ShowRememberPasswordcheckBox.Location = new System.Drawing.Point(44, 158);
-            this.ShowRememberPasswordcheckBox.Name = "ShowRememberPasswordcheckBox";
-            this.ShowRememberPasswordcheckBox.Size = new System.Drawing.Size(152, 22);
-            this.ShowRememberPasswordcheckBox.TabIndex = 66;
-            this.ShowRememberPasswordcheckBox.Text = "Show Password";
-            this.ShowRememberPasswordcheckBox.UseVisualStyleBackColor = false;
-            this.ShowRememberPasswordcheckBox.CheckedChanged += new System.EventHandler(this.ShowRememberPasswordcheckBox_CheckedChanged);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -472,7 +477,7 @@ namespace Bank
             this.label8.ForeColor = System.Drawing.Color.DarkOrange;
             this.label8.Location = new System.Drawing.Point(7, 13);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 22);
+            this.label8.Size = new System.Drawing.Size(100, 24);
             this.label8.TabIndex = 62;
             this.label8.Text = "Password";
             // 
@@ -544,7 +549,7 @@ namespace Bank
             this.FromParsonalBalancelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.FromParsonalBalancelabel.Location = new System.Drawing.Point(175, 6);
             this.FromParsonalBalancelabel.Name = "FromParsonalBalancelabel";
-            this.FromParsonalBalancelabel.Size = new System.Drawing.Size(82, 22);
+            this.FromParsonalBalancelabel.Size = new System.Drawing.Size(85, 24);
             this.FromParsonalBalancelabel.TabIndex = 64;
             this.FromParsonalBalancelabel.Text = "Balance";
             // 
@@ -555,7 +560,7 @@ namespace Bank
             this.label11.ForeColor = System.Drawing.Color.DarkOrange;
             this.label11.Location = new System.Drawing.Point(6, 6);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 22);
+            this.label11.Size = new System.Drawing.Size(85, 24);
             this.label11.TabIndex = 63;
             this.label11.Text = "Balance";
             // 
@@ -585,7 +590,7 @@ namespace Bank
             this.FromParsonalLastNamlabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.FromParsonalLastNamlabel.Location = new System.Drawing.Point(175, 6);
             this.FromParsonalLastNamlabel.Name = "FromParsonalLastNamlabel";
-            this.FromParsonalLastNamlabel.Size = new System.Drawing.Size(105, 22);
+            this.FromParsonalLastNamlabel.Size = new System.Drawing.Size(108, 24);
             this.FromParsonalLastNamlabel.TabIndex = 64;
             this.FromParsonalLastNamlabel.Text = "Last Name";
             // 
@@ -596,7 +601,7 @@ namespace Bank
             this.label10.ForeColor = System.Drawing.Color.DarkOrange;
             this.label10.Location = new System.Drawing.Point(6, 6);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(105, 22);
+            this.label10.Size = new System.Drawing.Size(108, 24);
             this.label10.TabIndex = 63;
             this.label10.Text = "Last Name";
             // 
@@ -626,7 +631,7 @@ namespace Bank
             this.FromParsonalFirstNamlabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.FromParsonalFirstNamlabel.Location = new System.Drawing.Point(175, 6);
             this.FromParsonalFirstNamlabel.Name = "FromParsonalFirstNamlabel";
-            this.FromParsonalFirstNamlabel.Size = new System.Drawing.Size(107, 22);
+            this.FromParsonalFirstNamlabel.Size = new System.Drawing.Size(111, 24);
             this.FromParsonalFirstNamlabel.TabIndex = 64;
             this.FromParsonalFirstNamlabel.Text = "First Name";
             // 
@@ -637,7 +642,7 @@ namespace Bank
             this.label9.ForeColor = System.Drawing.Color.DarkOrange;
             this.label9.Location = new System.Drawing.Point(6, 6);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(107, 22);
+            this.label9.Size = new System.Drawing.Size(111, 24);
             this.label9.TabIndex = 63;
             this.label9.Text = "First Name";
             // 
@@ -690,7 +695,7 @@ namespace Bank
             this.TransationAmountbutton.FlatAppearance.BorderSize = 0;
             this.TransationAmountbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Wheat;
             this.TransationAmountbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.TransationAmountbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.TransationAmountbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TransationAmountbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TransationAmountbutton.ForeColor = System.Drawing.Color.White;
             this.TransationAmountbutton.Location = new System.Drawing.Point(357, 168);
@@ -720,6 +725,7 @@ namespace Bank
             this.TransationAmountTextbox.Name = "TransationAmountTextbox";
             this.TransationAmountTextbox.Size = new System.Drawing.Size(460, 28);
             this.TransationAmountTextbox.TabIndex = 68;
+            this.TransationAmountTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TransationAmountTextbox_KeyPress);
             // 
             // label6
             // 
@@ -728,7 +734,7 @@ namespace Bank
             this.label6.ForeColor = System.Drawing.Color.DarkOrange;
             this.label6.Location = new System.Drawing.Point(5, 11);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 22);
+            this.label6.Size = new System.Drawing.Size(82, 24);
             this.label6.TabIndex = 62;
             this.label6.Text = "Amount";
             // 
@@ -780,7 +786,7 @@ namespace Bank
             this.FromTransationUsenamebutton.FlatAppearance.BorderSize = 0;
             this.FromTransationUsenamebutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Wheat;
             this.FromTransationUsenamebutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.FromTransationUsenamebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.FromTransationUsenamebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FromTransationUsenamebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FromTransationUsenamebutton.ForeColor = System.Drawing.Color.White;
             this.FromTransationUsenamebutton.Location = new System.Drawing.Point(357, 165);
@@ -818,7 +824,7 @@ namespace Bank
             this.label7.ForeColor = System.Drawing.Color.DarkOrange;
             this.label7.Location = new System.Drawing.Point(5, 10);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 22);
+            this.label7.Size = new System.Drawing.Size(114, 24);
             this.label7.TabIndex = 62;
             this.label7.Text = "User Name";
             // 
@@ -861,16 +867,6 @@ namespace Bank
             this.panel4.Size = new System.Drawing.Size(1207, 45);
             this.panel4.TabIndex = 5;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Bank.Properties.Resources.transaction_A_512;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 99;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -881,6 +877,36 @@ namespace Bank
             this.label1.Size = new System.Drawing.Size(152, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "TRANSATION";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Bank.Properties.Resources.transaction_A_512;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 99;
+            this.pictureBox1.TabStop = false;
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 10;
+            this.gunaElipse1.TargetControl = this.Transationbutton;
+            // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.Radius = 10;
+            this.gunaElipse2.TargetControl = this.FromTransationUsenamebutton;
+            // 
+            // gunaElipse3
+            // 
+            this.gunaElipse3.Radius = 10;
+            this.gunaElipse3.TargetControl = this.ToTransationUserNamebutton;
+            // 
+            // gunaElipse4
+            // 
+            this.gunaElipse4.Radius = 10;
+            this.gunaElipse4.TargetControl = this.TransationAmountbutton;
             // 
             // TransationForm
             // 
@@ -1005,5 +1031,9 @@ namespace Bank
         private System.Windows.Forms.Panel panel35;
         private System.Windows.Forms.Button Transationbutton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse2;
+        private Guna.UI.WinForms.GunaElipse gunaElipse3;
+        private Guna.UI.WinForms.GunaElipse gunaElipse4;
     }
 }

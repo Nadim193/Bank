@@ -29,10 +29,11 @@ namespace Bank
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.EmalAddresslabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,15 +45,16 @@ namespace Bank
             this.maxIcon = new System.Windows.Forms.PictureBox();
             this.minIcon = new System.Windows.Forms.PictureBox();
             this.cerraricon = new System.Windows.Forms.PictureBox();
-            this.EmalAddresslabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,16 +77,6 @@ namespace Bank
             this.panel6.Size = new System.Drawing.Size(1542, 5);
             this.panel6.TabIndex = 11;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Bank.Properties.Resources.bank_account_banking_building_1_31235;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 227);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -100,6 +92,18 @@ namespace Bank
             this.panel2.Size = new System.Drawing.Size(526, 451);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // EmalAddresslabel
+            // 
+            this.EmalAddresslabel.AutoSize = true;
+            this.EmalAddresslabel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.EmalAddresslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmalAddresslabel.ForeColor = System.Drawing.Color.DarkOrange;
+            this.EmalAddresslabel.Location = new System.Drawing.Point(55, 182);
+            this.EmalAddresslabel.Name = "EmalAddresslabel";
+            this.EmalAddresslabel.Size = new System.Drawing.Size(151, 25);
+            this.EmalAddresslabel.TabIndex = 6;
+            this.EmalAddresslabel.Text = "Email Address";
             // 
             // label4
             // 
@@ -140,6 +144,9 @@ namespace Bank
             // RegistrationVerifybutton
             // 
             this.RegistrationVerifybutton.BackColor = System.Drawing.Color.DarkOrange;
+            this.RegistrationVerifybutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RegistrationVerifybutton.FlatAppearance.BorderSize = 0;
+            this.RegistrationVerifybutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RegistrationVerifybutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RegistrationVerifybutton.Location = new System.Drawing.Point(62, 335);
             this.RegistrationVerifybutton.Name = "RegistrationVerifybutton";
@@ -237,17 +244,20 @@ namespace Bank
             this.cerraricon.TabStop = false;
             this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
             // 
-            // EmalAddresslabel
+            // pictureBox1
             // 
-            this.EmalAddresslabel.AutoSize = true;
-            this.EmalAddresslabel.BackColor = System.Drawing.SystemColors.Desktop;
-            this.EmalAddresslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmalAddresslabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.EmalAddresslabel.Location = new System.Drawing.Point(55, 182);
-            this.EmalAddresslabel.Name = "EmalAddresslabel";
-            this.EmalAddresslabel.Size = new System.Drawing.Size(151, 25);
-            this.EmalAddresslabel.TabIndex = 6;
-            this.EmalAddresslabel.Text = "Email Address";
+            this.pictureBox1.Image = global::Bank.Properties.Resources.bank_account_banking_building_1_31235;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(257, 227);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 6;
+            this.gunaElipse1.TargetControl = this.RegistrationVerifybutton;
             // 
             // AccountVerifyForm
             // 
@@ -263,7 +273,6 @@ namespace Bank
             this.Text = "AccountVerifyForm";
             this.Load += new System.EventHandler(this.AccountVerifyForm_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -271,6 +280,7 @@ namespace Bank
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -293,5 +303,6 @@ namespace Bank
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label EmalAddresslabel;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
     }
 }

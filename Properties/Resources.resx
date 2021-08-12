@@ -172,8 +172,8 @@
   <data name="profile-icon-png-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile-icon-png-20.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rsz_screenshot_2021-05-25_140759-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rsz_screenshot_2021-05-25_140759-removebg-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Screenshot 2021-05-20 115509" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot 2021-05-20 115509.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rsz_1804429-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_1804429-removebg-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,8 +181,11 @@
   <data name="377-3773045_hide-and-show-password-icon-hd-png-download-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\377-3773045_hide-and-show-password-icon-hd-png-download-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="transaction_A-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\transaction_A-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rsz_screenshot_2021-05-25_140759-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_screenshot_2021-05-25_140759-removebg-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="207-2079206_correct-icon-x-in-red-circle-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\207-2079206_correct-icon-x-in-red-circle-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="176-1766289_atm-withdrawal-svg-png-icon-free-download-atm-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\176-1766289_atm-withdrawal-svg-png-icon-free-download-atm-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,11 +208,14 @@
   <data name="rsz_1727561" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_1727561.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1601021754-5544-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1601021754-5544-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rsz_239678" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_239678.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rsz_1rsz_images-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rsz_1rsz_images-removebg-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Screenshot 2021-05-25 223802-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot 2021-05-25 223802-removebg-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rsz_screenshot_2021-05-20_115509 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_screenshot_2021-05-20_115509 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rsz_430-4307046_forgot-password-icon-png-icon-for-username-and" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_430-4307046_forgot-password-icon-png-icon-for-username-and.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -225,9 +231,6 @@
   </data>
   <data name="os-x-exit-minimize-full-wallpaper1-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\os-x-exit-minimize-full-wallpaper1-removebg-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rsz_screenshot_2021-05-20_115509 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rsz_screenshot_2021-05-20_115509 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="deposit-icon-7-1-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deposit-icon-7-1-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,8 +250,8 @@
   <data name="purchase-history-icon-transaction-history-icon-11553476408pgondxxib0-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\purchase-history-icon-transaction-history-icon-11553476408pgondxxib0-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delete-1432400-1211078" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete-1432400-1211078.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rsz_1rsz_images-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_1rsz_images-removebg-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="609941" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\609941.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,8 +277,8 @@
   <data name="1601021754-5544" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1601021754-5544.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rsz_share-icon-lunch-user-interface-hamburger-button-restaurant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rsz_share-icon-lunch-user-interface-hamburger-button-restaurant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="delete-1432400-1211078" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete-1432400-1211078.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rsz_150256-200 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_150256-200 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,6 +301,9 @@
   <data name="rsz_unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_unnamed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="transaction_A-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\transaction_A-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="rsz_107194-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_107194-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -309,6 +315,9 @@
   </data>
   <data name="rsz_1024px-oojs_ui_icon_logout-ltrsvg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_1024px-oojs_ui_icon_logout-ltrsvg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rsz_rrefresh-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_rrefresh-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="599350" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\599350.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -322,14 +331,11 @@
   <data name="Menu_icon_icon-icons.com_71858-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu_icon_icon-icons.com_71858-removebg-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rsz_refund-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rsz_refund-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="customer-customer-icon-146530250-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\customer-customer-icon-146530250-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Screenshot 2021-05-25 223802-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot 2021-05-25 223802-removebg-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1601021754-5544-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1601021754-5544-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Screenshot 2021-05-25 215202-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Screenshot 2021-05-25 215202-removebg-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -351,6 +357,9 @@
   </data>
   <data name="339-3396821_png-file-svg-download-icon-logout-transparent-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\339-3396821_png-file-svg-download-icon-logout-transparent-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rsz_1640161-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_1640161-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rsz_1images-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_1images-removebg-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -382,17 +391,14 @@
   <data name="General_-_Office_30-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\General_-_Office_30-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="increase-sales" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\increase-sales.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="userIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\userIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="png-clipart-computer-icons-customer-service-icon-design-user-business-blue-service-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-clipart-computer-icons-customer-service-icon-design-user-business-blue-service-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rsz_rrefresh-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rsz_rrefresh-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rsz_refund-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_refund-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="62107" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\62107.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -409,11 +415,8 @@
   <data name="rsz_150256-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_150256-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rsz_1804429" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rsz_1804429.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rsz_239678" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rsz_239678.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rsz_share-icon-lunch-user-interface-hamburger-button-restaurant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_share-icon-lunch-user-interface-hamburger-button-restaurant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="225-2250632_svg-png-icon-android-notification-icon-png-transparent-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\225-2250632_svg-png-icon-android-notification-icon-png-transparent-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -421,8 +424,8 @@
   <data name="rsz_full-icon-name-icon-round-icon-png-favpng-apcdd9afcsz9j53rzd6lhgcwg_t" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_full-icon-name-icon-round-icon-png-favpng-apcdd9afcsz9j53rzd6lhgcwg_t.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rsz_1640161-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rsz_1640161-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="increase-sales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\increase-sales.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1024px-OOjs_UI_icon_logOut-ltr.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1024px-OOjs_UI_icon_logOut-ltr.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -436,8 +439,8 @@
   <data name="personal-profile-icon-151" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\personal-profile-icon-151.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Screenshot 2021-05-20 115509" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot 2021-05-20 115509.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rsz_1804429" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_1804429.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon-menu-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-menu-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -445,7 +448,7 @@
   <data name="rsz_1menu-icon-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_1menu-icon-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="207-2079206_correct-icon-x-in-red-circle-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\207-2079206_correct-icon-x-in-red-circle-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
