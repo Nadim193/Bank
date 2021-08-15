@@ -32,6 +32,7 @@ namespace Bank
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Verify = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,28 +47,27 @@ namespace Bank
             this.VerifyUserNameLable = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaElipse4 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.RestoreDownIcon = new System.Windows.Forms.PictureBox();
             this.maxIcon = new System.Windows.Forms.PictureBox();
             this.minIcon = new System.Windows.Forms.PictureBox();
             this.cerraricon = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse4 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Verify.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.Verify);
@@ -85,8 +85,19 @@ namespace Bank
             this.panel6.Size = new System.Drawing.Size(1542, 5);
             this.panel6.TabIndex = 10;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Bank.Properties.Resources.bank_account_banking_building_1_31235;
+            this.pictureBox1.Location = new System.Drawing.Point(1, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(254, 228);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // Verify
             // 
+            this.Verify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.Verify.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Verify.Controls.Add(this.label4);
             this.Verify.Controls.Add(this.label1);
@@ -262,26 +273,6 @@ namespace Bank
             this.panel3.Size = new System.Drawing.Size(1540, 20);
             this.panel3.TabIndex = 10;
             // 
-            // gunaElipse1
-            // 
-            this.gunaElipse1.Radius = 15;
-            this.gunaElipse1.TargetControl = this;
-            // 
-            // gunaElipse2
-            // 
-            this.gunaElipse2.Radius = 10;
-            this.gunaElipse2.TargetControl = this.Verifybutton;
-            // 
-            // gunaElipse3
-            // 
-            this.gunaElipse3.Radius = 10;
-            this.gunaElipse3.TargetControl = this.verifyBackbutton;
-            // 
-            // gunaElipse4
-            // 
-            this.gunaElipse4.Radius = 10;
-            this.gunaElipse4.TargetControl = this.SentOTPButton;
-            // 
             // RestoreDownIcon
             // 
             this.RestoreDownIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -335,15 +326,25 @@ namespace Bank
             this.cerraricon.TabStop = false;
             this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
             // 
-            // pictureBox1
+            // gunaElipse1
             // 
-            this.pictureBox1.Image = global::Bank.Properties.Resources.bank_account_banking_building_1_31235;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(254, 228);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.gunaElipse1.Radius = 15;
+            this.gunaElipse1.TargetControl = this;
+            // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.Radius = 10;
+            this.gunaElipse2.TargetControl = this.Verifybutton;
+            // 
+            // gunaElipse3
+            // 
+            this.gunaElipse3.Radius = 10;
+            this.gunaElipse3.TargetControl = this.verifyBackbutton;
+            // 
+            // gunaElipse4
+            // 
+            this.gunaElipse4.Radius = 10;
+            this.gunaElipse4.TargetControl = this.SentOTPButton;
             // 
             // VerifyFrom
             // 
@@ -359,6 +360,7 @@ namespace Bank
             this.Text = "VerifyFrom";
             this.Load += new System.EventHandler(this.VerifyFrom_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Verify.ResumeLayout(false);
             this.Verify.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -366,7 +368,6 @@ namespace Bank
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

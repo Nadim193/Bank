@@ -63,7 +63,8 @@ namespace Bank
                     }
                     else
                     {
-                        MessageBox.Show("Data delete successfull...", "Message Box");
+                        PasswordForm password = new PasswordForm();
+                        password.ShowDialog();
                     }
                 }
                 else
@@ -113,7 +114,8 @@ namespace Bank
                         }
                         else
                         {
-                            MessageBox.Show("Successfull...", "Message Box");
+                            PasswordForm password = new PasswordForm();
+                            password.ShowDialog();
                         }
                     }
                 }
@@ -164,7 +166,8 @@ namespace Bank
                         }
                         else
                         {
-                            MessageBox.Show("Successfull...", "Message Box");
+                            PasswordForm password = new PasswordForm();
+                            password.ShowDialog();
                         }
                     }
                 }

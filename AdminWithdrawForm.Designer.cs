@@ -94,7 +94,7 @@ namespace Bank
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.WithdrawPasswordpanel);
             this.panel1.Controls.Add(this.Withdrawpanel);
             this.panel1.Controls.Add(this.WithdrawUserNamepanel);
@@ -102,6 +102,7 @@ namespace Bank
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1207, 804);

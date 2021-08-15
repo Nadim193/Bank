@@ -131,7 +131,7 @@ namespace Bank
             // 
             // Homepanel
             // 
-            this.Homepanel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Homepanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.Homepanel.Controls.Add(this.panel2);
             this.Homepanel.Controls.Add(this.pictureBox14);
             this.Homepanel.Controls.Add(this.label8);

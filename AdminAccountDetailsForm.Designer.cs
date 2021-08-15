@@ -131,7 +131,7 @@ namespace Bank
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.DepositUserNamepanel);
             this.panel1.Controls.Add(this.Picturepanel);
             this.panel1.Controls.Add(this.panel51);

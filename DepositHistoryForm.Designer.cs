@@ -98,7 +98,7 @@ namespace Bank
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.FromParsonalpanel);
             this.panel1.Controls.Add(this.TotalBalance);
@@ -146,7 +146,7 @@ namespace Bank
             this.HDepositTimelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.HDepositTimelabel.Location = new System.Drawing.Point(225, 5);
             this.HDepositTimelabel.Name = "HDepositTimelabel";
-            this.HDepositTimelabel.Size = new System.Drawing.Size(54, 22);
+            this.HDepositTimelabel.Size = new System.Drawing.Size(57, 24);
             this.HDepositTimelabel.TabIndex = 68;
             this.HDepositTimelabel.Text = "Time";
             // 
@@ -157,7 +157,7 @@ namespace Bank
             this.label12.ForeColor = System.Drawing.Color.DarkOrange;
             this.label12.Location = new System.Drawing.Point(3, 5);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(146, 22);
+            this.label12.Size = new System.Drawing.Size(151, 24);
             this.label12.TabIndex = 67;
             this.label12.Text = "> Deposit Time";
             // 
@@ -189,7 +189,7 @@ namespace Bank
             this.label13.ForeColor = System.Drawing.Color.DarkOrange;
             this.label13.Location = new System.Drawing.Point(4, 5);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(160, 22);
+            this.label13.Size = new System.Drawing.Size(167, 24);
             this.label13.TabIndex = 63;
             this.label13.Text = "> Deposit Money";
             // 
@@ -200,7 +200,7 @@ namespace Bank
             this.HDepositMoneylabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.HDepositMoneylabel.Location = new System.Drawing.Point(225, 5);
             this.HDepositMoneylabel.Name = "HDepositMoneylabel";
-            this.HDepositMoneylabel.Size = new System.Drawing.Size(68, 22);
+            this.HDepositMoneylabel.Size = new System.Drawing.Size(73, 24);
             this.HDepositMoneylabel.TabIndex = 64;
             this.HDepositMoneylabel.Text = "Money";
             // 
@@ -229,7 +229,7 @@ namespace Bank
             this.label15.ForeColor = System.Drawing.Color.DarkOrange;
             this.label15.Location = new System.Drawing.Point(4, 5);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(100, 22);
+            this.label15.Size = new System.Drawing.Size(103, 24);
             this.label15.TabIndex = 61;
             this.label15.Text = "> Balance";
             // 
@@ -240,7 +240,7 @@ namespace Bank
             this.HDepositBalancelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.HDepositBalancelabel.Location = new System.Drawing.Point(226, 5);
             this.HDepositBalancelabel.Name = "HDepositBalancelabel";
-            this.HDepositBalancelabel.Size = new System.Drawing.Size(82, 22);
+            this.HDepositBalancelabel.Size = new System.Drawing.Size(85, 24);
             this.HDepositBalancelabel.TabIndex = 62;
             this.HDepositBalancelabel.Text = "Balance";
             // 
@@ -303,7 +303,7 @@ namespace Bank
             this.FromParsonalBalancelabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.FromParsonalBalancelabel.Location = new System.Drawing.Point(328, 7);
             this.FromParsonalBalancelabel.Name = "FromParsonalBalancelabel";
-            this.FromParsonalBalancelabel.Size = new System.Drawing.Size(82, 22);
+            this.FromParsonalBalancelabel.Size = new System.Drawing.Size(85, 24);
             this.FromParsonalBalancelabel.TabIndex = 64;
             this.FromParsonalBalancelabel.Text = "Balance";
             // 
@@ -314,7 +314,7 @@ namespace Bank
             this.label5.ForeColor = System.Drawing.Color.DarkOrange;
             this.label5.Location = new System.Drawing.Point(6, 6);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 22);
+            this.label5.Size = new System.Drawing.Size(85, 24);
             this.label5.TabIndex = 63;
             this.label5.Text = "Balance";
             // 
@@ -344,7 +344,7 @@ namespace Bank
             this.FromParsonalLastNamlabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.FromParsonalLastNamlabel.Location = new System.Drawing.Point(329, 7);
             this.FromParsonalLastNamlabel.Name = "FromParsonalLastNamlabel";
-            this.FromParsonalLastNamlabel.Size = new System.Drawing.Size(105, 22);
+            this.FromParsonalLastNamlabel.Size = new System.Drawing.Size(108, 24);
             this.FromParsonalLastNamlabel.TabIndex = 64;
             this.FromParsonalLastNamlabel.Text = "Last Name";
             // 
@@ -355,7 +355,7 @@ namespace Bank
             this.label10.ForeColor = System.Drawing.Color.DarkOrange;
             this.label10.Location = new System.Drawing.Point(6, 6);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(105, 22);
+            this.label10.Size = new System.Drawing.Size(108, 24);
             this.label10.TabIndex = 63;
             this.label10.Text = "Last Name";
             // 
@@ -385,7 +385,7 @@ namespace Bank
             this.FromParsonalFirstNamlabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.FromParsonalFirstNamlabel.Location = new System.Drawing.Point(329, 6);
             this.FromParsonalFirstNamlabel.Name = "FromParsonalFirstNamlabel";
-            this.FromParsonalFirstNamlabel.Size = new System.Drawing.Size(107, 22);
+            this.FromParsonalFirstNamlabel.Size = new System.Drawing.Size(111, 24);
             this.FromParsonalFirstNamlabel.TabIndex = 64;
             this.FromParsonalFirstNamlabel.Text = "First Name";
             // 
@@ -396,7 +396,7 @@ namespace Bank
             this.label6.ForeColor = System.Drawing.Color.DarkOrange;
             this.label6.Location = new System.Drawing.Point(6, 6);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 22);
+            this.label6.Size = new System.Drawing.Size(111, 24);
             this.label6.TabIndex = 63;
             this.label6.Text = "First Name";
             // 
@@ -481,7 +481,7 @@ namespace Bank
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DepositdataGridView.AutoGenerateColumns = false;
-            this.DepositdataGridView.BackgroundColor = System.Drawing.SystemColors.Desktop;
+            this.DepositdataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.DepositdataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DepositdataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;

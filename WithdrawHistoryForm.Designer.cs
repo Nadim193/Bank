@@ -63,6 +63,7 @@ namespace Bank
             this.WithdrawTimeBalancepanel = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.HWithdrawBanlacelabel = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -75,10 +76,9 @@ namespace Bank
             this.withdrawHistoryViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bankSystemDataBaseDataSet2 = new Bank.BankSystemDataBaseDataSet2();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.withdraw_History_ViewTableAdapter = new Bank.BankSystemDataBaseDataSet2TableAdapters.Withdraw_History_ViewTableAdapter();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.FromParsonalpanel.SuspendLayout();
             this.FromParsonalBalancepanel.SuspendLayout();
@@ -88,17 +88,17 @@ namespace Bank
             this.WithdrawTimepanel.SuspendLayout();
             this.WithdrawMoneypanel.SuspendLayout();
             this.WithdrawTimeBalancepanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WithdrawdataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.withdrawHistoryViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bankSystemDataBaseDataSet2)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.FromParsonalpanel);
             this.panel1.Controls.Add(this.TotalBalance);
             this.panel1.Controls.Add(this.label4);
@@ -412,6 +412,16 @@ namespace Bank
             this.HWithdrawBanlacelabel.TabIndex = 62;
             this.HWithdrawBanlacelabel.Text = "Balance";
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Bank.Properties.Resources.Screenshot_2021_07_15_231152_removebg_preview;
+            this.pictureBox9.Location = new System.Drawing.Point(7, 82);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(106, 92);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 60;
+            this.pictureBox9.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -471,7 +481,7 @@ namespace Bank
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.WithdrawdataGridView.AutoGenerateColumns = false;
-            this.WithdrawdataGridView.BackgroundColor = System.Drawing.SystemColors.Desktop;
+            this.WithdrawdataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.WithdrawdataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.WithdrawdataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -555,6 +565,16 @@ namespace Bank
             this.panel2.Size = new System.Drawing.Size(1207, 45);
             this.panel2.TabIndex = 72;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Bank.Properties.Resources._176_1766289_atm_withdrawal_svg_png_icon_free_download_atm_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 45);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 72;
+            this.pictureBox1.TabStop = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -569,26 +589,6 @@ namespace Bank
             // withdraw_History_ViewTableAdapter
             // 
             this.withdraw_History_ViewTableAdapter.ClearBeforeFill = true;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Bank.Properties.Resources.Screenshot_2021_07_15_231152_removebg_preview;
-            this.pictureBox9.Location = new System.Drawing.Point(7, 82);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(106, 92);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 60;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Bank.Properties.Resources._176_1766289_atm_withdrawal_svg_png_icon_free_download_atm_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 45);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 72;
-            this.pictureBox1.TabStop = false;
             // 
             // WithdrawHistoryForm
             // 
@@ -619,12 +619,12 @@ namespace Bank
             this.WithdrawMoneypanel.PerformLayout();
             this.WithdrawTimeBalancepanel.ResumeLayout(false);
             this.WithdrawTimeBalancepanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WithdrawdataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.withdrawHistoryViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bankSystemDataBaseDataSet2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -626,7 +626,7 @@ namespace Bank
             // 
             // Menupanel
             // 
-            this.Menupanel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Menupanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.Menupanel.Controls.Add(this.panel1);
             this.Menupanel.Controls.Add(this.pictureBox14);
             this.Menupanel.Controls.Add(this.label8);

@@ -38,6 +38,7 @@ namespace Bank
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.DepositUserNamepanel = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.OccupationComboBox = new Guna.UI.WinForms.GunaComboBox();
             this.GenderComboBox = new Guna.UI.WinForms.GunaComboBox();
             this.NationalityComboBox = new Guna.UI.WinForms.GunaComboBox();
             this.NameTextbox = new Bunifu.Framework.BunifuCustomTextbox();
@@ -56,7 +57,10 @@ namespace Bank
             this.bankSystemDataBaseDataSet7 = new Bank.BankSystemDataBaseDataSet7();
             this.bankSystemDataBaseDataSet8 = new Bank.BankSystemDataBaseDataSet8();
             this.parsonalTableAdapter = new Bank.BankSystemDataBaseDataSet15TableAdapters.ParsonalTableAdapter();
-            this.OccupationComboBox = new Guna.UI.WinForms.GunaComboBox();
+            this.LastNamelabel = new System.Windows.Forms.Label();
+            this.Statuslabel = new System.Windows.Forms.Label();
+            this.Emaillabel = new System.Windows.Forms.Label();
+            this.AccountTypelabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.DepositUserNamepanel.SuspendLayout();
@@ -72,7 +76,7 @@ namespace Bank
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.dataGridView);
             this.panel1.Controls.Add(this.DepositUserNamepanel);
             this.panel1.Controls.Add(this.panel3);
@@ -90,7 +94,7 @@ namespace Bank
             dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SteelBlue;
             this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridView.BackgroundColor = System.Drawing.SystemColors.Desktop;
+            this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle10.BackColor = System.Drawing.Color.RoyalBlue;
@@ -110,6 +114,7 @@ namespace Bank
             dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridView.EnableHeadersVisualStyles = false;
+            this.dataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.dataGridView.Location = new System.Drawing.Point(26, 337);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 51;
@@ -137,6 +142,10 @@ namespace Bank
             // 
             // panel15
             // 
+            this.panel15.Controls.Add(this.AccountTypelabel);
+            this.panel15.Controls.Add(this.Emaillabel);
+            this.panel15.Controls.Add(this.Statuslabel);
+            this.panel15.Controls.Add(this.LastNamelabel);
             this.panel15.Controls.Add(this.OccupationComboBox);
             this.panel15.Controls.Add(this.GenderComboBox);
             this.panel15.Controls.Add(this.NationalityComboBox);
@@ -149,6 +158,32 @@ namespace Bank
             this.panel15.Size = new System.Drawing.Size(1126, 155);
             this.panel15.TabIndex = 61;
             this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel15_Paint);
+            // 
+            // OccupationComboBox
+            // 
+            this.OccupationComboBox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.OccupationComboBox.BaseColor = System.Drawing.SystemColors.Desktop;
+            this.OccupationComboBox.BorderColor = System.Drawing.Color.Silver;
+            this.OccupationComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.OccupationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.OccupationComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.OccupationComboBox.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OccupationComboBox.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.OccupationComboBox.FormattingEnabled = true;
+            this.OccupationComboBox.Items.AddRange(new object[] {
+            "Salaried",
+            "Self-Employed",
+            "Business",
+            "Student",
+            "Retired",
+            "Other"});
+            this.OccupationComboBox.Location = new System.Drawing.Point(11, 42);
+            this.OccupationComboBox.Name = "OccupationComboBox";
+            this.OccupationComboBox.OnHoverItemBaseColor = System.Drawing.Color.LightSteelBlue;
+            this.OccupationComboBox.OnHoverItemForeColor = System.Drawing.Color.RoyalBlue;
+            this.OccupationComboBox.Size = new System.Drawing.Size(459, 32);
+            this.OccupationComboBox.TabIndex = 138;
+            this.OccupationComboBox.Visible = false;
             // 
             // GenderComboBox
             // 
@@ -164,7 +199,7 @@ namespace Bank
             this.GenderComboBox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.GenderComboBox.Location = new System.Drawing.Point(11, 44);
+            this.GenderComboBox.Location = new System.Drawing.Point(11, 42);
             this.GenderComboBox.Name = "GenderComboBox";
             this.GenderComboBox.OnHoverItemBaseColor = System.Drawing.Color.LightSteelBlue;
             this.GenderComboBox.OnHoverItemForeColor = System.Drawing.Color.RoyalBlue;
@@ -224,7 +259,7 @@ namespace Bank
             "(The) United States\tAmerican ",
             "Zambia",
             "Zimbabwe"});
-            this.NationalityComboBox.Location = new System.Drawing.Point(11, 44);
+            this.NationalityComboBox.Location = new System.Drawing.Point(11, 42);
             this.NationalityComboBox.Name = "NationalityComboBox";
             this.NationalityComboBox.OnHoverItemBaseColor = System.Drawing.Color.LightSteelBlue;
             this.NationalityComboBox.OnHoverItemForeColor = System.Drawing.Color.RoyalBlue;
@@ -243,6 +278,7 @@ namespace Bank
             this.NameTextbox.Name = "NameTextbox";
             this.NameTextbox.Size = new System.Drawing.Size(459, 28);
             this.NameTextbox.TabIndex = 68;
+            this.NameTextbox.Visible = false;
             // 
             // SearchButton
             // 
@@ -283,17 +319,19 @@ namespace Bank
             this.SearchComboBox.OnHoverItemForeColor = System.Drawing.Color.RoyalBlue;
             this.SearchComboBox.Size = new System.Drawing.Size(304, 32);
             this.SearchComboBox.TabIndex = 69;
+            this.SearchComboBox.SelectedIndexChanged += new System.EventHandler(this.SearchComboBox_SelectedIndexChanged);
             // 
             // Namelabel
             // 
             this.Namelabel.AutoSize = true;
             this.Namelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Namelabel.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.Namelabel.Location = new System.Drawing.Point(7, 13);
+            this.Namelabel.Location = new System.Drawing.Point(7, 6);
             this.Namelabel.Name = "Namelabel";
-            this.Namelabel.Size = new System.Drawing.Size(114, 24);
+            this.Namelabel.Size = new System.Drawing.Size(111, 24);
             this.Namelabel.TabIndex = 62;
-            this.Namelabel.Text = "User Name";
+            this.Namelabel.Text = "First Name";
+            this.Namelabel.Visible = false;
             // 
             // label2
             // 
@@ -387,31 +425,54 @@ namespace Bank
             // 
             this.parsonalTableAdapter.ClearBeforeFill = true;
             // 
-            // OccupationComboBox
+            // LastNamelabel
             // 
-            this.OccupationComboBox.BackColor = System.Drawing.SystemColors.Desktop;
-            this.OccupationComboBox.BaseColor = System.Drawing.SystemColors.Desktop;
-            this.OccupationComboBox.BorderColor = System.Drawing.Color.Silver;
-            this.OccupationComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.OccupationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.OccupationComboBox.FocusedColor = System.Drawing.Color.Empty;
-            this.OccupationComboBox.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OccupationComboBox.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.OccupationComboBox.FormattingEnabled = true;
-            this.OccupationComboBox.Items.AddRange(new object[] {
-            "Salaried",
-            "Self-Employed",
-            "Business",
-            "Student",
-            "Retired",
-            "Other"});
-            this.OccupationComboBox.Location = new System.Drawing.Point(11, 44);
-            this.OccupationComboBox.Name = "OccupationComboBox";
-            this.OccupationComboBox.OnHoverItemBaseColor = System.Drawing.Color.LightSteelBlue;
-            this.OccupationComboBox.OnHoverItemForeColor = System.Drawing.Color.RoyalBlue;
-            this.OccupationComboBox.Size = new System.Drawing.Size(459, 32);
-            this.OccupationComboBox.TabIndex = 138;
-            this.OccupationComboBox.Visible = false;
+            this.LastNamelabel.AutoSize = true;
+            this.LastNamelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastNamelabel.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.LastNamelabel.Location = new System.Drawing.Point(10, 6);
+            this.LastNamelabel.Name = "LastNamelabel";
+            this.LastNamelabel.Size = new System.Drawing.Size(108, 24);
+            this.LastNamelabel.TabIndex = 139;
+            this.LastNamelabel.Text = "Last Name";
+            this.LastNamelabel.Visible = false;
+            // 
+            // Statuslabel
+            // 
+            this.Statuslabel.AutoSize = true;
+            this.Statuslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Statuslabel.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.Statuslabel.Location = new System.Drawing.Point(10, 6);
+            this.Statuslabel.Name = "Statuslabel";
+            this.Statuslabel.Size = new System.Drawing.Size(66, 24);
+            this.Statuslabel.TabIndex = 140;
+            this.Statuslabel.Text = "Status";
+            this.Statuslabel.Visible = false;
+            // 
+            // Emaillabel
+            // 
+            this.Emaillabel.AutoSize = true;
+            this.Emaillabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Emaillabel.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.Emaillabel.Location = new System.Drawing.Point(14, 10);
+            this.Emaillabel.Name = "Emaillabel";
+            this.Emaillabel.Size = new System.Drawing.Size(62, 24);
+            this.Emaillabel.TabIndex = 63;
+            this.Emaillabel.Text = "Email";
+            this.Emaillabel.Visible = false;
+            this.Emaillabel.Click += new System.EventHandler(this.Emaillabel_Click);
+            // 
+            // AccountTypelabel
+            // 
+            this.AccountTypelabel.AutoSize = true;
+            this.AccountTypelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AccountTypelabel.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.AccountTypelabel.Location = new System.Drawing.Point(14, 10);
+            this.AccountTypelabel.Name = "AccountTypelabel";
+            this.AccountTypelabel.Size = new System.Drawing.Size(140, 24);
+            this.AccountTypelabel.TabIndex = 141;
+            this.AccountTypelabel.Text = "Account Type";
+            this.AccountTypelabel.Visible = false;
             // 
             // AdminSearchAccountForm
             // 
@@ -467,5 +528,9 @@ namespace Bank
         private BankSystemDataBaseDataSet15TableAdapters.ParsonalTableAdapter parsonalTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView;
         private Guna.UI.WinForms.GunaComboBox OccupationComboBox;
+        private System.Windows.Forms.Label AccountTypelabel;
+        private System.Windows.Forms.Label Emaillabel;
+        private System.Windows.Forms.Label Statuslabel;
+        private System.Windows.Forms.Label LastNamelabel;
     }
 }

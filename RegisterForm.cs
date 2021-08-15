@@ -147,7 +147,7 @@ namespace Bank
                                ,[WDate_Time]
                                ,[DDate_Time]
                                ,[TDate_Time]
-                                ,[Saving_Time])
+                               ,[Saving_Time])
                          VALUES
                                ('" + UsernameTextbox.Text + "', '" + Totalmoney + "', '" + Withdraw + "', '" + deposit + "', '" + transationmoney + "', '" + transatioTo + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + SavingAccountDateTimePicker.Value +"')";
                     }
@@ -155,6 +155,8 @@ namespace Bank
                     {
                         DateTime dateTimeVariable = DateTime.Now;
                         
+                        string nullvalue = null;
+
                         mySQL5 += @"INSERT INTO [dbo].[Customer_Details]
                                ([FUser_Name]
                                ,[Total_Money]
@@ -165,9 +167,9 @@ namespace Bank
                                ,[WDate_Time]
                                ,[DDate_Time]
                                ,[TDate_Time]
-                                ,[Saving_Time])
+                               ,[Saving_Time])
                          VALUES
-                               ('" + UsernameTextbox.Text + "', '" + Totalmoney + "', '" + Withdraw + "', '" + deposit + "', '" + transationmoney + "', '" + transatioTo + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "')";
+                               ('" + UsernameTextbox.Text + "', '" + Totalmoney + "', '" + Withdraw + "', '" + deposit + "', '" + transationmoney + "', '" + transatioTo + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + nullvalue + "')";
                     }
 
                     double Cdepositbalance = 0.00;
@@ -225,7 +227,15 @@ namespace Bank
                                 Random rand = new Random();
                                 randomCode = (rand.Next(99999)).ToString();
                                 MailMessage message = new MailMessage();
-                                to = (EmailAdressTxtbox.Text).ToString();
+                                if (EmailAdressTxtbox.Text.Contains("@gmail.com") || EmailAdressTxtbox.Text.Contains("@yahoo.com"))
+                                {
+                                    to = (EmailAdressTxtbox.Text).ToString();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Invalide Email Address. Enter Valide Email address.",
+                                         "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
                                 from = "nadim.hossain193@gmail.com";
                                 pass = "nadim1155";
                                 messageBody = "Your Verification Code Is " + randomCode;
@@ -238,8 +248,10 @@ namespace Bank
                                     smtp.Credentials = new NetworkCredential(from, pass);
                                     smtp.EnableSsl = true;
 
-                                    if (EmailAdressTxtbox != null)
+                                    if (EmailAdressTxtbox.Text != null)
                                     {
+                                        if(EmailAdressTxtbox.Text.Contains("@gmail.com") || EmailAdressTxtbox.Text.Contains("@yahoo.com"))
+                                        {
                                             smtp.Send(message);
                                             MessageBox.Show("Please Check Your Email And Enter The Code.", "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -256,6 +268,12 @@ namespace Bank
                                             accountVerify.ShowDialog();
                                             this.Close();
                                             conn.Close();
+                                        }
+                                        else
+                                        {
+                                            MessageBox.Show("Invalide Email Address. Enter Valide Email address.",
+                                         "MessageBox", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                        }
                                     }
                                     else
                                     {
@@ -348,7 +366,7 @@ namespace Bank
             }
         }
 
-        private void SavingDate()
+        /*private void SavingDate()
         {
             if (SavingradioButton.Checked)
             {
@@ -360,16 +378,30 @@ namespace Bank
                 Yearlabel.Visible = false;
                 SavingAccountDateTimePicker.Visible = false;
             }
-        }
+        }*/
 
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
-            SavingDate();
+            //SavingDate();
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
            
+        }
+
+        private void SavingradioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (SavingradioButton.Checked)
+            {
+                Yearlabel.Visible = true;
+                SavingAccountDateTimePicker.Visible = true;
+            }
+            else
+            {
+                Yearlabel.Visible = false;
+                SavingAccountDateTimePicker.Visible = false;
+            }
         }
     }
 }

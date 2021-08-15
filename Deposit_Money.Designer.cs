@@ -31,7 +31,12 @@ namespace Bank
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.RestoreDownIcon = new System.Windows.Forms.PictureBox();
+            this.maxIcon = new System.Windows.Forms.PictureBox();
+            this.minIcon = new System.Windows.Forms.PictureBox();
+            this.cerraricon = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,26 +45,21 @@ namespace Bank
             this.DepositMoneyTextbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.RestoreDownIcon = new System.Windows.Forms.PictureBox();
-            this.maxIcon = new System.Windows.Forms.PictureBox();
-            this.minIcon = new System.Windows.Forms.PictureBox();
-            this.cerraricon = new System.Windows.Forms.PictureBox();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label1);
@@ -68,6 +68,16 @@ namespace Bank
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1050, 230);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Bank.Properties.Resources.bank_account_banking_building_1_31235;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(256, 206);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 49;
+            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -81,6 +91,59 @@ namespace Bank
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1050, 20);
             this.panel2.TabIndex = 48;
+            // 
+            // RestoreDownIcon
+            // 
+            this.RestoreDownIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.RestoreDownIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RestoreDownIcon.Image = global::Bank.Properties.Resources.restore_down;
+            this.RestoreDownIcon.Location = new System.Drawing.Point(977, 0);
+            this.RestoreDownIcon.Name = "RestoreDownIcon";
+            this.RestoreDownIcon.Size = new System.Drawing.Size(20, 20);
+            this.RestoreDownIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.RestoreDownIcon.TabIndex = 39;
+            this.RestoreDownIcon.TabStop = false;
+            this.RestoreDownIcon.Visible = false;
+            this.RestoreDownIcon.Click += new System.EventHandler(this.RestoreDownIcon_Click);
+            // 
+            // maxIcon
+            // 
+            this.maxIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.maxIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.maxIcon.Image = global::Bank.Properties.Resources._32763;
+            this.maxIcon.Location = new System.Drawing.Point(977, 0);
+            this.maxIcon.Name = "maxIcon";
+            this.maxIcon.Size = new System.Drawing.Size(20, 20);
+            this.maxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.maxIcon.TabIndex = 40;
+            this.maxIcon.TabStop = false;
+            this.maxIcon.Click += new System.EventHandler(this.maxIcon_Click);
+            // 
+            // minIcon
+            // 
+            this.minIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.minIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minIcon.Image = global::Bank.Properties.Resources.minimize_window;
+            this.minIcon.Location = new System.Drawing.Point(937, 0);
+            this.minIcon.Name = "minIcon";
+            this.minIcon.Size = new System.Drawing.Size(20, 20);
+            this.minIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.minIcon.TabIndex = 38;
+            this.minIcon.TabStop = false;
+            this.minIcon.Click += new System.EventHandler(this.minIcon_Click);
+            // 
+            // cerraricon
+            // 
+            this.cerraricon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cerraricon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cerraricon.Image = global::Bank.Properties.Resources._60994;
+            this.cerraricon.Location = new System.Drawing.Point(1015, 0);
+            this.cerraricon.Name = "cerraricon";
+            this.cerraricon.Size = new System.Drawing.Size(20, 20);
+            this.cerraricon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cerraricon.TabIndex = 37;
+            this.cerraricon.TabStop = false;
+            this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
             // 
             // label1
             // 
@@ -99,7 +162,7 @@ namespace Bank
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.DepositMoneybutton);
@@ -187,69 +250,6 @@ namespace Bank
             this.label2.Text = "ENTER AMOUNT YOU WANT";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Bank.Properties.Resources.bank_account_banking_building_1_31235;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(256, 206);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 49;
-            this.pictureBox1.TabStop = false;
-            // 
-            // RestoreDownIcon
-            // 
-            this.RestoreDownIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.RestoreDownIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RestoreDownIcon.Image = global::Bank.Properties.Resources.restore_down;
-            this.RestoreDownIcon.Location = new System.Drawing.Point(977, 0);
-            this.RestoreDownIcon.Name = "RestoreDownIcon";
-            this.RestoreDownIcon.Size = new System.Drawing.Size(20, 20);
-            this.RestoreDownIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.RestoreDownIcon.TabIndex = 39;
-            this.RestoreDownIcon.TabStop = false;
-            this.RestoreDownIcon.Visible = false;
-            this.RestoreDownIcon.Click += new System.EventHandler(this.RestoreDownIcon_Click);
-            // 
-            // maxIcon
-            // 
-            this.maxIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.maxIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.maxIcon.Image = global::Bank.Properties.Resources._32763;
-            this.maxIcon.Location = new System.Drawing.Point(977, 0);
-            this.maxIcon.Name = "maxIcon";
-            this.maxIcon.Size = new System.Drawing.Size(20, 20);
-            this.maxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.maxIcon.TabIndex = 40;
-            this.maxIcon.TabStop = false;
-            this.maxIcon.Click += new System.EventHandler(this.maxIcon_Click);
-            // 
-            // minIcon
-            // 
-            this.minIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.minIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.minIcon.Image = global::Bank.Properties.Resources.minimize_window;
-            this.minIcon.Location = new System.Drawing.Point(937, 0);
-            this.minIcon.Name = "minIcon";
-            this.minIcon.Size = new System.Drawing.Size(20, 20);
-            this.minIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.minIcon.TabIndex = 38;
-            this.minIcon.TabStop = false;
-            this.minIcon.Click += new System.EventHandler(this.minIcon_Click);
-            // 
-            // cerraricon
-            // 
-            this.cerraricon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cerraricon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cerraricon.Image = global::Bank.Properties.Resources._60994;
-            this.cerraricon.Location = new System.Drawing.Point(1015, 0);
-            this.cerraricon.Name = "cerraricon";
-            this.cerraricon.Size = new System.Drawing.Size(20, 20);
-            this.cerraricon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cerraricon.TabIndex = 37;
-            this.cerraricon.TabStop = false;
-            this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
-            // 
             // gunaElipse1
             // 
             this.gunaElipse1.Radius = 15;
@@ -275,14 +275,14 @@ namespace Bank
             this.Load += new System.EventHandler(this.Deposit_Money_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }

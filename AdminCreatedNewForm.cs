@@ -194,6 +194,42 @@ namespace Bank
                          VALUES
                                ('" + UsernameTextbox.Text + "', '" + Cdepositbalance + "', '" + Cwithdrawbalance + "', '" + Ctransferbalance + "')";
 
+
+                    if (AccountTypeComboBox.SelectedItem.ToString() == "Saving Account")
+                    {
+
+                        mySQL5 += @"INSERT INTO [dbo].[Customer_Details]
+                               ([FUser_Name]
+                               ,[Total_Money]
+                               ,[Withdraw_Money]
+                               ,[Deposit_Money]
+                               ,[Transation_Money]
+                               ,[Transation_To]
+                               ,[WDate_Time]
+                               ,[DDate_Time]
+                               ,[TDate_Time]
+                                ,[Saving_Time])
+                         VALUES
+                               ('" + UsernameTextbox.Text + "', '" + Totalmoney + "', '" + Withdraw + "', '" + deposit + "', '" + transationmoney + "', '" + transatioTo + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + SavingAccountDateTimePicker.Value + "')";
+                    }
+                    else
+                    {
+
+                        mySQL5 += @"INSERT INTO [dbo].[Customer_Details]
+                               ([FUser_Name]
+                               ,[Total_Money]
+                               ,[Withdraw_Money]
+                               ,[Deposit_Money]
+                               ,[Transation_Money]
+                               ,[Transation_To]
+                               ,[WDate_Time]
+                               ,[DDate_Time]
+                               ,[TDate_Time]
+                                ,[Saving_Time])
+                         VALUES
+                               ('" + UsernameTextbox.Text + "', '" + Totalmoney + "', '" + Withdraw + "', '" + deposit + "', '" + transationmoney + "', '" + transatioTo + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "')";
+                    }
+
                     if (PasswordtextBox.Text == RegPassword)
                     {
                         string mySQL1 = string.Empty;
@@ -232,6 +268,20 @@ namespace Bank
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void AccountTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(AccountTypeComboBox.SelectedItem.ToString() == "Saving Account")
+            {
+                Yearlabel.Visible = true;
+                SavingAccountDateTimePicker.Visible = true;
+            }
+            else
+            {
+                Yearlabel.Visible = false;
+                SavingAccountDateTimePicker.Visible = false;
             }
         }
     }

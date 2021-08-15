@@ -164,6 +164,16 @@ namespace Bank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _233157669_358852552502014_3675774675727501710_n {
+            get {
+                object obj = ResourceManager.GetObject("233157669_358852552502014_3675774675727501710_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _239678 {
             get {
                 object obj = ResourceManager.GetObject("239678", resourceCulture);

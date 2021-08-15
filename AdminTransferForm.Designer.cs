@@ -48,6 +48,7 @@ namespace Bank
             this.panel32 = new System.Windows.Forms.Panel();
             this.panel33 = new System.Windows.Forms.Panel();
             this.ToTransationUserNamepanel = new System.Windows.Forms.Panel();
+            this.ToTransferUserNameButton = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ToTransationUserNameTextbox = new Bunifu.Framework.BunifuCustomTextbox();
             this.label12 = new System.Windows.Forms.Label();
@@ -55,6 +56,7 @@ namespace Bank
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel24 = new System.Windows.Forms.Panel();
             this.TransationPasswordpanel = new System.Windows.Forms.Panel();
+            this.TransferButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.ShowRememberPasswordcheckBox = new System.Windows.Forms.CheckBox();
             this.panel17 = new System.Windows.Forms.Panel();
             this.PasswordTextbox = new Bunifu.Framework.BunifuCustomTextbox();
@@ -79,6 +81,7 @@ namespace Bank
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.Transationpanel = new System.Windows.Forms.Panel();
+            this.TransferAmountButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panel16 = new System.Windows.Forms.Panel();
             this.TransationAmountTextbox = new Bunifu.Framework.BunifuCustomTextbox();
             this.label6 = new System.Windows.Forms.Label();
@@ -86,6 +89,7 @@ namespace Bank
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.FramTransationUserNamepanel = new System.Windows.Forms.Panel();
+            this.FromTransferUserNameButton = new System.Windows.Forms.PictureBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.FromTransationUserNameTextbox = new Bunifu.Framework.BunifuCustomTextbox();
             this.label7 = new System.Windows.Forms.Label();
@@ -93,19 +97,16 @@ namespace Bank
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.ToTransferUserNameButton = new System.Windows.Forms.PictureBox();
-            this.TransferButton = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.TransferAmountButton = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.FromTransferUserNameButton = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.ToParsonalpanel.SuspendLayout();
             this.TOParsonalAddresspanel.SuspendLayout();
             this.TOParsonalLastNamepanel.SuspendLayout();
             this.TOParsonalFirstNamepanel.SuspendLayout();
             this.ToTransationUserNamepanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ToTransferUserNameButton)).BeginInit();
             this.panel2.SuspendLayout();
             this.TransationPasswordpanel.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -116,16 +117,15 @@ namespace Bank
             this.Transationpanel.SuspendLayout();
             this.panel16.SuspendLayout();
             this.FramTransationUserNamepanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FromTransferUserNameButton)).BeginInit();
             this.panel15.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ToTransferUserNameButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FromTransferUserNameButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.ToParsonalpanel);
             this.panel1.Controls.Add(this.ToTransationUserNamepanel);
             this.panel1.Controls.Add(this.TransationPasswordpanel);
@@ -135,6 +135,7 @@ namespace Bank
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1207, 804);
@@ -319,6 +320,18 @@ namespace Bank
             this.ToTransationUserNamepanel.Size = new System.Drawing.Size(503, 230);
             this.ToTransationUserNamepanel.TabIndex = 19;
             // 
+            // ToTransferUserNameButton
+            // 
+            this.ToTransferUserNameButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ToTransferUserNameButton.Image = global::Bank.Properties.Resources.png_clipart_computer_icons_android_web_search_engine_google_search_search_box_google_search_bar_blue_trademark_removebg_preview;
+            this.ToTransferUserNameButton.Location = new System.Drawing.Point(398, 170);
+            this.ToTransferUserNameButton.Name = "ToTransferUserNameButton";
+            this.ToTransferUserNameButton.Size = new System.Drawing.Size(85, 50);
+            this.ToTransferUserNameButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ToTransferUserNameButton.TabIndex = 63;
+            this.ToTransferUserNameButton.TabStop = false;
+            this.ToTransferUserNameButton.Click += new System.EventHandler(this.ToTransferUserNameButton_Click);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.ToTransationUserNameTextbox);
@@ -392,6 +405,41 @@ namespace Bank
             this.TransationPasswordpanel.Name = "TransationPasswordpanel";
             this.TransationPasswordpanel.Size = new System.Drawing.Size(503, 230);
             this.TransationPasswordpanel.TabIndex = 18;
+            // 
+            // TransferButton
+            // 
+            this.TransferButton.Animated = true;
+            this.TransferButton.AnimationHoverSpeed = 0.07F;
+            this.TransferButton.AnimationSpeed = 0.03F;
+            this.TransferButton.BackColor = System.Drawing.Color.Transparent;
+            this.TransferButton.BaseColor = System.Drawing.Color.RoyalBlue;
+            this.TransferButton.BorderColor = System.Drawing.Color.Black;
+            this.TransferButton.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.TransferButton.CheckedBorderColor = System.Drawing.Color.Black;
+            this.TransferButton.CheckedForeColor = System.Drawing.Color.White;
+            this.TransferButton.CheckedImage = ((System.Drawing.Image)(resources.GetObject("TransferButton.CheckedImage")));
+            this.TransferButton.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.TransferButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TransferButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.TransferButton.FocusedColor = System.Drawing.Color.Empty;
+            this.TransferButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TransferButton.ForeColor = System.Drawing.Color.Black;
+            this.TransferButton.Image = global::Bank.Properties.Resources.icon_a_day_balance_transfer_removebg_preview;
+            this.TransferButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.TransferButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.TransferButton.Location = new System.Drawing.Point(356, 170);
+            this.TransferButton.Name = "TransferButton";
+            this.TransferButton.OnHoverBaseColor = System.Drawing.Color.SteelBlue;
+            this.TransferButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.TransferButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.TransferButton.OnHoverImage = null;
+            this.TransferButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.TransferButton.OnPressedColor = System.Drawing.Color.Black;
+            this.TransferButton.Radius = 10;
+            this.TransferButton.Size = new System.Drawing.Size(127, 48);
+            this.TransferButton.TabIndex = 69;
+            this.TransferButton.Text = "Transfer";
+            this.TransferButton.Click += new System.EventHandler(this.TransferButton_Click);
             // 
             // ShowRememberPasswordcheckBox
             // 
@@ -647,6 +695,41 @@ namespace Bank
             this.Transationpanel.Size = new System.Drawing.Size(503, 230);
             this.Transationpanel.TabIndex = 16;
             // 
+            // TransferAmountButton
+            // 
+            this.TransferAmountButton.Animated = true;
+            this.TransferAmountButton.AnimationHoverSpeed = 0.07F;
+            this.TransferAmountButton.AnimationSpeed = 0.03F;
+            this.TransferAmountButton.BackColor = System.Drawing.Color.Transparent;
+            this.TransferAmountButton.BaseColor = System.Drawing.Color.RoyalBlue;
+            this.TransferAmountButton.BorderColor = System.Drawing.Color.Black;
+            this.TransferAmountButton.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.TransferAmountButton.CheckedBorderColor = System.Drawing.Color.Black;
+            this.TransferAmountButton.CheckedForeColor = System.Drawing.Color.White;
+            this.TransferAmountButton.CheckedImage = ((System.Drawing.Image)(resources.GetObject("TransferAmountButton.CheckedImage")));
+            this.TransferAmountButton.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.TransferAmountButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TransferAmountButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.TransferAmountButton.FocusedColor = System.Drawing.Color.Empty;
+            this.TransferAmountButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TransferAmountButton.ForeColor = System.Drawing.Color.Black;
+            this.TransferAmountButton.Image = global::Bank.Properties.Resources.active_1;
+            this.TransferAmountButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.TransferAmountButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.TransferAmountButton.Location = new System.Drawing.Point(362, 171);
+            this.TransferAmountButton.Name = "TransferAmountButton";
+            this.TransferAmountButton.OnHoverBaseColor = System.Drawing.Color.SteelBlue;
+            this.TransferAmountButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.TransferAmountButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.TransferAmountButton.OnHoverImage = null;
+            this.TransferAmountButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.TransferAmountButton.OnPressedColor = System.Drawing.Color.Black;
+            this.TransferAmountButton.Radius = 10;
+            this.TransferAmountButton.Size = new System.Drawing.Size(120, 48);
+            this.TransferAmountButton.TabIndex = 68;
+            this.TransferAmountButton.Text = "Done";
+            this.TransferAmountButton.Click += new System.EventHandler(this.TransferAmountButton_Click);
+            // 
             // panel16
             // 
             this.panel16.Controls.Add(this.TransationAmountTextbox);
@@ -720,6 +803,18 @@ namespace Bank
             this.FramTransationUserNamepanel.Size = new System.Drawing.Size(503, 230);
             this.FramTransationUserNamepanel.TabIndex = 15;
             // 
+            // FromTransferUserNameButton
+            // 
+            this.FromTransferUserNameButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FromTransferUserNameButton.Image = global::Bank.Properties.Resources.png_clipart_computer_icons_android_web_search_engine_google_search_search_box_google_search_bar_blue_trademark_removebg_preview;
+            this.FromTransferUserNameButton.Location = new System.Drawing.Point(399, 168);
+            this.FromTransferUserNameButton.Name = "FromTransferUserNameButton";
+            this.FromTransferUserNameButton.Size = new System.Drawing.Size(85, 50);
+            this.FromTransferUserNameButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.FromTransferUserNameButton.TabIndex = 63;
+            this.FromTransferUserNameButton.TabStop = false;
+            this.FromTransferUserNameButton.Click += new System.EventHandler(this.FromTransferUserNameButton_Click);
+            // 
             // panel15
             // 
             this.panel15.Controls.Add(this.FromTransationUserNameTextbox);
@@ -790,6 +885,16 @@ namespace Bank
             this.panel3.Size = new System.Drawing.Size(1207, 49);
             this.panel3.TabIndex = 8;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Bank.Properties.Resources.icon_a_day_balance_transfer_removebg_preview1;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(57, 49);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -809,110 +914,6 @@ namespace Bank
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1207, 5);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // ToTransferUserNameButton
-            // 
-            this.ToTransferUserNameButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ToTransferUserNameButton.Image = global::Bank.Properties.Resources.png_clipart_computer_icons_android_web_search_engine_google_search_search_box_google_search_bar_blue_trademark_removebg_preview;
-            this.ToTransferUserNameButton.Location = new System.Drawing.Point(398, 170);
-            this.ToTransferUserNameButton.Name = "ToTransferUserNameButton";
-            this.ToTransferUserNameButton.Size = new System.Drawing.Size(85, 50);
-            this.ToTransferUserNameButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ToTransferUserNameButton.TabIndex = 63;
-            this.ToTransferUserNameButton.TabStop = false;
-            this.ToTransferUserNameButton.Click += new System.EventHandler(this.ToTransferUserNameButton_Click);
-            // 
-            // TransferButton
-            // 
-            this.TransferButton.Animated = true;
-            this.TransferButton.AnimationHoverSpeed = 0.07F;
-            this.TransferButton.AnimationSpeed = 0.03F;
-            this.TransferButton.BackColor = System.Drawing.Color.Transparent;
-            this.TransferButton.BaseColor = System.Drawing.Color.RoyalBlue;
-            this.TransferButton.BorderColor = System.Drawing.Color.Black;
-            this.TransferButton.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.TransferButton.CheckedBorderColor = System.Drawing.Color.Black;
-            this.TransferButton.CheckedForeColor = System.Drawing.Color.White;
-            this.TransferButton.CheckedImage = ((System.Drawing.Image)(resources.GetObject("TransferButton.CheckedImage")));
-            this.TransferButton.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.TransferButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TransferButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.TransferButton.FocusedColor = System.Drawing.Color.Empty;
-            this.TransferButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TransferButton.ForeColor = System.Drawing.Color.Black;
-            this.TransferButton.Image = global::Bank.Properties.Resources.icon_a_day_balance_transfer_removebg_preview;
-            this.TransferButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.TransferButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.TransferButton.Location = new System.Drawing.Point(356, 170);
-            this.TransferButton.Name = "TransferButton";
-            this.TransferButton.OnHoverBaseColor = System.Drawing.Color.SteelBlue;
-            this.TransferButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.TransferButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.TransferButton.OnHoverImage = null;
-            this.TransferButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.TransferButton.OnPressedColor = System.Drawing.Color.Black;
-            this.TransferButton.Radius = 10;
-            this.TransferButton.Size = new System.Drawing.Size(127, 48);
-            this.TransferButton.TabIndex = 69;
-            this.TransferButton.Text = "Transfer";
-            this.TransferButton.Click += new System.EventHandler(this.TransferButton_Click);
-            // 
-            // TransferAmountButton
-            // 
-            this.TransferAmountButton.Animated = true;
-            this.TransferAmountButton.AnimationHoverSpeed = 0.07F;
-            this.TransferAmountButton.AnimationSpeed = 0.03F;
-            this.TransferAmountButton.BackColor = System.Drawing.Color.Transparent;
-            this.TransferAmountButton.BaseColor = System.Drawing.Color.RoyalBlue;
-            this.TransferAmountButton.BorderColor = System.Drawing.Color.Black;
-            this.TransferAmountButton.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.TransferAmountButton.CheckedBorderColor = System.Drawing.Color.Black;
-            this.TransferAmountButton.CheckedForeColor = System.Drawing.Color.White;
-            this.TransferAmountButton.CheckedImage = ((System.Drawing.Image)(resources.GetObject("TransferAmountButton.CheckedImage")));
-            this.TransferAmountButton.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.TransferAmountButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TransferAmountButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.TransferAmountButton.FocusedColor = System.Drawing.Color.Empty;
-            this.TransferAmountButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TransferAmountButton.ForeColor = System.Drawing.Color.Black;
-            this.TransferAmountButton.Image = global::Bank.Properties.Resources.active_1;
-            this.TransferAmountButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.TransferAmountButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.TransferAmountButton.Location = new System.Drawing.Point(362, 171);
-            this.TransferAmountButton.Name = "TransferAmountButton";
-            this.TransferAmountButton.OnHoverBaseColor = System.Drawing.Color.SteelBlue;
-            this.TransferAmountButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.TransferAmountButton.OnHoverForeColor = System.Drawing.Color.White;
-            this.TransferAmountButton.OnHoverImage = null;
-            this.TransferAmountButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.TransferAmountButton.OnPressedColor = System.Drawing.Color.Black;
-            this.TransferAmountButton.Radius = 10;
-            this.TransferAmountButton.Size = new System.Drawing.Size(120, 48);
-            this.TransferAmountButton.TabIndex = 68;
-            this.TransferAmountButton.Text = "Done";
-            this.TransferAmountButton.Click += new System.EventHandler(this.TransferAmountButton_Click);
-            // 
-            // FromTransferUserNameButton
-            // 
-            this.FromTransferUserNameButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FromTransferUserNameButton.Image = global::Bank.Properties.Resources.png_clipart_computer_icons_android_web_search_engine_google_search_search_box_google_search_bar_blue_trademark_removebg_preview;
-            this.FromTransferUserNameButton.Location = new System.Drawing.Point(399, 168);
-            this.FromTransferUserNameButton.Name = "FromTransferUserNameButton";
-            this.FromTransferUserNameButton.Size = new System.Drawing.Size(85, 50);
-            this.FromTransferUserNameButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.FromTransferUserNameButton.TabIndex = 63;
-            this.FromTransferUserNameButton.TabStop = false;
-            this.FromTransferUserNameButton.Click += new System.EventHandler(this.FromTransferUserNameButton_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Bank.Properties.Resources.icon_a_day_balance_transfer_removebg_preview1;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 49);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
             // 
             // AdminTransferForm
             // 
@@ -934,6 +935,7 @@ namespace Bank
             this.TOParsonalFirstNamepanel.PerformLayout();
             this.ToTransationUserNamepanel.ResumeLayout(false);
             this.ToTransationUserNamepanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ToTransferUserNameButton)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.TransationPasswordpanel.ResumeLayout(false);
@@ -954,12 +956,11 @@ namespace Bank
             this.panel16.PerformLayout();
             this.FramTransationUserNamepanel.ResumeLayout(false);
             this.FramTransationUserNamepanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FromTransferUserNameButton)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ToTransferUserNameButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FromTransferUserNameButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 

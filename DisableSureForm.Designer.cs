@@ -38,10 +38,10 @@ namespace Bank
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AccountDisableButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.cerraricon = new System.Windows.Forms.PictureBox();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
@@ -52,7 +52,7 @@ namespace Bank
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.BackColor = System.Drawing.Color.DarkGray;
             this.panel1.Controls.Add(this.bunifuButton2);
             this.panel1.Controls.Add(this.AccountDisableButton);
             this.panel1.Controls.Add(this.bunifuCustomLabel2);
@@ -61,31 +61,9 @@ namespace Bank
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(510, 269);
+            this.panel1.Size = new System.Drawing.Size(525, 269);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Gray;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(8, 112);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(473, 29);
-            this.bunifuCustomLabel2.TabIndex = 40;
-            this.bunifuCustomLabel2.Text = "Would you like to disable yout Account?";
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Red;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(23, 26);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(201, 29);
-            this.bunifuCustomLabel1.TabIndex = 35;
-            this.bunifuCustomLabel1.Text = "Disable Account";
             // 
             // bunifuButton2
             // 
@@ -124,7 +102,7 @@ namespace Bank
             this.bunifuButton2.IdleIconLeftImage = null;
             this.bunifuButton2.IdleIconRightImage = null;
             this.bunifuButton2.IndicateFocus = false;
-            this.bunifuButton2.Location = new System.Drawing.Point(203, 194);
+            this.bunifuButton2.Location = new System.Drawing.Point(221, 194);
             this.bunifuButton2.Name = "bunifuButton2";
             stateProperties1.BorderColor = System.Drawing.Color.DarkOrange;
             stateProperties1.BorderRadius = 3;
@@ -188,7 +166,7 @@ namespace Bank
             this.AccountDisableButton.IdleIconLeftImage = null;
             this.AccountDisableButton.IdleIconRightImage = null;
             this.AccountDisableButton.IndicateFocus = false;
-            this.AccountDisableButton.Location = new System.Drawing.Point(350, 194);
+            this.AccountDisableButton.Location = new System.Drawing.Point(368, 194);
             this.AccountDisableButton.Name = "AccountDisableButton";
             stateProperties3.BorderColor = System.Drawing.Color.Red;
             stateProperties3.BorderRadius = 3;
@@ -215,12 +193,34 @@ namespace Bank
             this.AccountDisableButton.UseDefaultRadiusAndThickness = true;
             this.AccountDisableButton.Click += new System.EventHandler(this.AccountDisableButton_Click);
             // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Red;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(16, 115);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(473, 29);
+            this.bunifuCustomLabel2.TabIndex = 40;
+            this.bunifuCustomLabel2.Text = "Would you like to disable yout Account?";
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Red;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(23, 26);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(201, 29);
+            this.bunifuCustomLabel1.TabIndex = 35;
+            this.bunifuCustomLabel1.Text = "Disable Account";
+            // 
             // cerraricon
             // 
             this.cerraricon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cerraricon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cerraricon.Image = global::Bank.Properties.Resources._60994;
-            this.cerraricon.Location = new System.Drawing.Point(467, 14);
+            this.cerraricon.Location = new System.Drawing.Point(482, 14);
             this.cerraricon.Name = "cerraricon";
             this.cerraricon.Size = new System.Drawing.Size(24, 26);
             this.cerraricon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -247,7 +247,7 @@ namespace Bank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(510, 269);
+            this.ClientSize = new System.Drawing.Size(525, 269);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DisableSureForm";

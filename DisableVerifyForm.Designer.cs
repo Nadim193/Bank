@@ -61,7 +61,7 @@ namespace Bank
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.Verify);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -72,6 +72,7 @@ namespace Bank
             // 
             // Verify
             // 
+            this.Verify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.Verify.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Verify.Controls.Add(this.VerifyMailLable);
             this.Verify.Controls.Add(this.label4);

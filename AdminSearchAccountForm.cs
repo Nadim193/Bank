@@ -82,7 +82,7 @@ namespace Bank
                     }
                     else if ((SearchComboBox.SelectedItem).ToString() == "-By Gender")
                     {
-                        if (GenderComboBox.SelectedItem.ToString() == null)
+                        if (GenderComboBox.SelectedValue == null)
                         {
                             MessageBox.Show("Select Search type");
                         }
@@ -95,7 +95,7 @@ namespace Bank
                     }
                     else if ((SearchComboBox.SelectedItem).ToString() == "-By Occupation")
                     {
-                        if (OccupationComboBox.SelectedItem.ToString() == null)
+                        if (OccupationComboBox.SelectedValue == null)
                         {
                             MessageBox.Show("Select Item");
                         }
@@ -109,7 +109,7 @@ namespace Bank
                     else if ((SearchComboBox.SelectedItem).ToString() == "-By Nationality")
                     {
 
-                        if (NationalityComboBox.SelectedItem == null)
+                        if (NationalityComboBox.SelectedValue == null)
                         {
                             MessageBox.Show("Select Country");
                         }
@@ -139,11 +139,20 @@ namespace Bank
 
         private void panel15_Paint(object sender, PaintEventArgs e)
         {
+            
+        }
+
+        private void SearchComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
             if (SearchComboBox.SelectedItem != null)
             {
                 if (SearchComboBox.SelectedItem.ToString() == "-By Nationality")
                 {
                     Namelabel.Visible = false;
+                    LastNamelabel.Visible = false;
+                    Emaillabel.Visible = false;
+                    Statuslabel.Visible = false;
+                    AccountTypelabel.Visible = false;
                     NameTextbox.Visible = false;
                     GenderComboBox.Visible = false;
                     OccupationComboBox.Visible = false;
@@ -152,6 +161,10 @@ namespace Bank
                 else if (SearchComboBox.SelectedItem.ToString() == "-By Occupation")
                 {
                     Namelabel.Visible = false;
+                    LastNamelabel.Visible = false;
+                    Emaillabel.Visible = false;
+                    Statuslabel.Visible = false;
+                    AccountTypelabel.Visible = false;
                     NameTextbox.Visible = false;
                     NationalityComboBox.Visible = false;
                     GenderComboBox.Visible = false;
@@ -160,6 +173,10 @@ namespace Bank
                 else if (SearchComboBox.SelectedItem.ToString() == "-By Gender")
                 {
                     Namelabel.Visible = false;
+                    LastNamelabel.Visible = false;
+                    Emaillabel.Visible = false;
+                    Statuslabel.Visible = false;
+                    AccountTypelabel.Visible = false;
                     NameTextbox.Visible = false;
                     NationalityComboBox.Visible = false;
                     OccupationComboBox.Visible = false;
@@ -168,6 +185,10 @@ namespace Bank
                 else if (SearchComboBox.SelectedItem.ToString() == "-By All")
                 {
                     Namelabel.Visible = false;
+                    LastNamelabel.Visible = false;
+                    Emaillabel.Visible = false;
+                    Statuslabel.Visible = false;
+                    AccountTypelabel.Visible = false;
                     NameTextbox.Visible = false;
                     OccupationComboBox.Visible = false;
                     GenderComboBox.Visible = false;
@@ -178,7 +199,11 @@ namespace Bank
                     OccupationComboBox.Visible = false;
                     GenderComboBox.Visible = false;
                     NationalityComboBox.Visible = false;
-                    Namelabel.Visible = true;
+                    Namelabel.Visible = false;
+                    LastNamelabel.Visible = false;
+                    Emaillabel.Visible = false;
+                    Statuslabel.Visible = false;
+                    AccountTypelabel.Visible = true;
                     NameTextbox.Visible = true;
                 }
                 else if (SearchComboBox.SelectedItem.ToString() == "-By Status")
@@ -186,7 +211,11 @@ namespace Bank
                     OccupationComboBox.Visible = false;
                     GenderComboBox.Visible = false;
                     NationalityComboBox.Visible = false;
-                    Namelabel.Visible = true;
+                    Namelabel.Visible = false;
+                    LastNamelabel.Visible = false;
+                    Emaillabel.Visible = false;
+                    Statuslabel.Visible = true;
+                    AccountTypelabel.Visible = false;
                     NameTextbox.Visible = true;
                 }
                 else if (SearchComboBox.SelectedItem.ToString() == "-By Email")
@@ -194,7 +223,11 @@ namespace Bank
                     OccupationComboBox.Visible = false;
                     GenderComboBox.Visible = false;
                     NationalityComboBox.Visible = false;
-                    Namelabel.Visible = true;
+                    Namelabel.Visible = false;
+                    LastNamelabel.Visible = false;
+                    Emaillabel.Visible = true;
+                    Statuslabel.Visible = false;
+                    AccountTypelabel.Visible = false;
                     NameTextbox.Visible = true;
                 }
                 else if (SearchComboBox.SelectedItem.ToString() == "-By Last Name")
@@ -202,7 +235,11 @@ namespace Bank
                     OccupationComboBox.Visible = false;
                     GenderComboBox.Visible = false;
                     NationalityComboBox.Visible = false;
-                    Namelabel.Visible = true;
+                    Namelabel.Visible = false;
+                    LastNamelabel.Visible = true;
+                    Emaillabel.Visible = false;
+                    Statuslabel.Visible = false;
+                    AccountTypelabel.Visible = false;
                     NameTextbox.Visible = true;
                 }
                 else if (SearchComboBox.SelectedItem.ToString() == "-By First Name")
@@ -211,25 +248,28 @@ namespace Bank
                     GenderComboBox.Visible = false;
                     NationalityComboBox.Visible = false;
                     Namelabel.Visible = true;
+                    LastNamelabel.Visible = false;
+                    Emaillabel.Visible = false;
+                    Statuslabel.Visible = false;
+                    AccountTypelabel.Visible = false;
                     NameTextbox.Visible = true;
                 }
                 else
                 {
+                    LastNamelabel.Visible = false;
+                    Emaillabel.Visible = false;
+                    Statuslabel.Visible = false;
+                    AccountTypelabel.Visible = false;
                     OccupationComboBox.Visible = false;
                     GenderComboBox.Visible = false;
                     NationalityComboBox.Visible = false;
-                    Namelabel.Visible = true;
-                    NameTextbox.Visible = true;
+                    Namelabel.Visible = false;
+                    NameTextbox.Visible = false;
                 }
             }
         }
 
-        private void DeactiveButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Deletebutton_Click(object sender, EventArgs e)
+        private void Emaillabel_Click(object sender, EventArgs e)
         {
 
         }

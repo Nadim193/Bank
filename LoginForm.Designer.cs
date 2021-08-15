@@ -44,42 +44,42 @@ namespace Bank
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.PasswordTxtbox = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.SelectRoleComboBox = new Guna.UI.WinForms.GunaComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.UsernameTextbox = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LoginButton = new System.Windows.Forms.Button();
             this.OpenRegistationlinkLabel = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.RestoreDownIcon = new System.Windows.Forms.PictureBox();
             this.maxIcon = new System.Windows.Forms.PictureBox();
             this.minIcon = new System.Windows.Forms.PictureBox();
             this.cerraricon = new System.Windows.Forms.PictureBox();
-            this.PasswordTxtbox = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.UsernameTextbox = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.panel2);
             this.panel4.Controls.Add(this.label2);
@@ -120,7 +120,7 @@ namespace Bank
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.InfoText;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.PasswordTxtbox);
             this.panel5.Controls.Add(this.SelectRoleComboBox);
@@ -137,233 +137,6 @@ namespace Bank
             this.panel5.Size = new System.Drawing.Size(499, 537);
             this.panel5.TabIndex = 7;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
-            // 
-            // SelectRoleComboBox
-            // 
-            this.SelectRoleComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.SelectRoleComboBox.BaseColor = System.Drawing.Color.Wheat;
-            this.SelectRoleComboBox.BorderColor = System.Drawing.Color.Silver;
-            this.SelectRoleComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.SelectRoleComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.SelectRoleComboBox.FocusedColor = System.Drawing.Color.Empty;
-            this.SelectRoleComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectRoleComboBox.ForeColor = System.Drawing.Color.Black;
-            this.SelectRoleComboBox.FormattingEnabled = true;
-            this.SelectRoleComboBox.Items.AddRange(new object[] {
-            "-By User",
-            "-By Admin"});
-            this.SelectRoleComboBox.Location = new System.Drawing.Point(148, 371);
-            this.SelectRoleComboBox.Name = "SelectRoleComboBox";
-            this.SelectRoleComboBox.OnHoverItemBaseColor = System.Drawing.Color.DarkOrange;
-            this.SelectRoleComboBox.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.SelectRoleComboBox.Radius = 10;
-            this.SelectRoleComboBox.Size = new System.Drawing.Size(152, 28);
-            this.SelectRoleComboBox.TabIndex = 24;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label5.Location = new System.Drawing.Point(24, 374);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 20);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Select Role :";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Gray;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.linkLabel1.LinkColor = System.Drawing.Color.DarkOrange;
-            this.linkLabel1.Location = new System.Drawing.Point(316, 356);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(146, 18);
-            this.linkLabel1.TabIndex = 14;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Forget Password?";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // LoginButton
-            // 
-            this.LoginButton.BackColor = System.Drawing.Color.DarkOrange;
-            this.LoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LoginButton.FlatAppearance.BorderColor = System.Drawing.Color.DarkOrange;
-            this.LoginButton.FlatAppearance.BorderSize = 0;
-            this.LoginButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chocolate;
-            this.LoginButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange;
-            this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.ForeColor = System.Drawing.Color.Black;
-            this.LoginButton.Location = new System.Drawing.Point(181, 428);
-            this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(137, 48);
-            this.LoginButton.TabIndex = 14;
-            this.LoginButton.Text = "Login";
-            this.LoginButton.UseVisualStyleBackColor = false;
-            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click_1);
-            // 
-            // OpenRegistationlinkLabel
-            // 
-            this.OpenRegistationlinkLabel.ActiveLinkColor = System.Drawing.Color.Gray;
-            this.OpenRegistationlinkLabel.AutoSize = true;
-            this.OpenRegistationlinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OpenRegistationlinkLabel.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.OpenRegistationlinkLabel.LinkColor = System.Drawing.Color.DarkOrange;
-            this.OpenRegistationlinkLabel.Location = new System.Drawing.Point(51, 499);
-            this.OpenRegistationlinkLabel.Name = "OpenRegistationlinkLabel";
-            this.OpenRegistationlinkLabel.Size = new System.Drawing.Size(360, 18);
-            this.OpenRegistationlinkLabel.TabIndex = 11;
-            this.OpenRegistationlinkLabel.TabStop = true;
-            this.OpenRegistationlinkLabel.Text = "Don\'t have an account yet? Create an account.";
-            this.OpenRegistationlinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OpenRegistationlinkLabel_LinkClicked);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(132, 191);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 31);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "MEMBER LOGIN";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 20);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1540, 243);
-            this.panel1.TabIndex = 5;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Elephant", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label6.Location = new System.Drawing.Point(649, 97);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 42);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "BANK";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Elephant", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label4.Location = new System.Drawing.Point(649, 145);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(435, 38);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "MANAGEMENT SYSTEM";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Elephant", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label3.Location = new System.Drawing.Point(649, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(358, 38);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "WELCOME TO THE";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel3.Controls.Add(this.RestoreDownIcon);
-            this.panel3.Controls.Add(this.maxIcon);
-            this.panel3.Controls.Add(this.minIcon);
-            this.panel3.Controls.Add(this.cerraricon);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1540, 20);
-            this.panel3.TabIndex = 9;
-            // 
-            // gunaElipse1
-            // 
-            this.gunaElipse1.Radius = 15;
-            this.gunaElipse1.TargetControl = this;
-            // 
-            // gunaElipse2
-            // 
-            this.gunaElipse2.Radius = 10;
-            this.gunaElipse2.TargetControl = this.LoginButton;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Bank.Properties.Resources.bank_account_banking_building_1_31235;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(300, 243);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // RestoreDownIcon
-            // 
-            this.RestoreDownIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.RestoreDownIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RestoreDownIcon.Image = global::Bank.Properties.Resources.restore_down;
-            this.RestoreDownIcon.Location = new System.Drawing.Point(1463, 0);
-            this.RestoreDownIcon.Name = "RestoreDownIcon";
-            this.RestoreDownIcon.Size = new System.Drawing.Size(20, 20);
-            this.RestoreDownIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.RestoreDownIcon.TabIndex = 39;
-            this.RestoreDownIcon.TabStop = false;
-            this.RestoreDownIcon.Visible = false;
-            this.RestoreDownIcon.Click += new System.EventHandler(this.RestoreDownIcon_Click);
-            // 
-            // maxIcon
-            // 
-            this.maxIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.maxIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.maxIcon.Image = global::Bank.Properties.Resources._32763;
-            this.maxIcon.Location = new System.Drawing.Point(1463, 0);
-            this.maxIcon.Name = "maxIcon";
-            this.maxIcon.Size = new System.Drawing.Size(20, 20);
-            this.maxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.maxIcon.TabIndex = 40;
-            this.maxIcon.TabStop = false;
-            this.maxIcon.Click += new System.EventHandler(this.maxIcon_Click);
-            // 
-            // minIcon
-            // 
-            this.minIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.minIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.minIcon.Image = global::Bank.Properties.Resources.minimize_window;
-            this.minIcon.Location = new System.Drawing.Point(1425, 0);
-            this.minIcon.Name = "minIcon";
-            this.minIcon.Size = new System.Drawing.Size(20, 20);
-            this.minIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.minIcon.TabIndex = 38;
-            this.minIcon.TabStop = false;
-            this.minIcon.Click += new System.EventHandler(this.minIcon_Click);
-            // 
-            // cerraricon
-            // 
-            this.cerraricon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cerraricon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cerraricon.Image = global::Bank.Properties.Resources._60994;
-            this.cerraricon.Location = new System.Drawing.Point(1501, 0);
-            this.cerraricon.Name = "cerraricon";
-            this.cerraricon.Size = new System.Drawing.Size(20, 20);
-            this.cerraricon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cerraricon.TabIndex = 37;
-            this.cerraricon.TabStop = false;
-            this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
             // 
             // PasswordTxtbox
             // 
@@ -437,6 +210,39 @@ namespace Bank
             this.PasswordTxtbox.TextPlaceholder = "Password";
             this.PasswordTxtbox.UseSystemPasswordChar = true;
             this.PasswordTxtbox.WordWrap = true;
+            // 
+            // SelectRoleComboBox
+            // 
+            this.SelectRoleComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.SelectRoleComboBox.BaseColor = System.Drawing.Color.Wheat;
+            this.SelectRoleComboBox.BorderColor = System.Drawing.Color.Silver;
+            this.SelectRoleComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.SelectRoleComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SelectRoleComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.SelectRoleComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectRoleComboBox.ForeColor = System.Drawing.Color.Black;
+            this.SelectRoleComboBox.FormattingEnabled = true;
+            this.SelectRoleComboBox.Items.AddRange(new object[] {
+            "-By User",
+            "-By Admin"});
+            this.SelectRoleComboBox.Location = new System.Drawing.Point(148, 371);
+            this.SelectRoleComboBox.Name = "SelectRoleComboBox";
+            this.SelectRoleComboBox.OnHoverItemBaseColor = System.Drawing.Color.DarkOrange;
+            this.SelectRoleComboBox.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.SelectRoleComboBox.Radius = 10;
+            this.SelectRoleComboBox.Size = new System.Drawing.Size(152, 28);
+            this.SelectRoleComboBox.TabIndex = 24;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label5.Location = new System.Drawing.Point(24, 374);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(118, 20);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Select Role :";
             // 
             // UsernameTextbox
             // 
@@ -513,6 +319,22 @@ namespace Bank
             this.UsernameTextbox.MouseLeave += new System.EventHandler(this.UsernameTextbox_MouseLeave);
             this.UsernameTextbox.MouseHover += new System.EventHandler(this.UsernameTextbox_MouseHover);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Gray;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.linkLabel1.LinkColor = System.Drawing.Color.DarkOrange;
+            this.linkLabel1.Location = new System.Drawing.Point(316, 356);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(146, 18);
+            this.linkLabel1.TabIndex = 14;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Forget Password?";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bank.Properties.Resources.MemberLoginIcon;
@@ -522,6 +344,184 @@ namespace Bank
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
+            // 
+            // LoginButton
+            // 
+            this.LoginButton.BackColor = System.Drawing.Color.DarkOrange;
+            this.LoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LoginButton.FlatAppearance.BorderColor = System.Drawing.Color.DarkOrange;
+            this.LoginButton.FlatAppearance.BorderSize = 0;
+            this.LoginButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chocolate;
+            this.LoginButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange;
+            this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginButton.ForeColor = System.Drawing.Color.Black;
+            this.LoginButton.Location = new System.Drawing.Point(181, 428);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(137, 48);
+            this.LoginButton.TabIndex = 14;
+            this.LoginButton.Text = "Login";
+            this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click_1);
+            // 
+            // OpenRegistationlinkLabel
+            // 
+            this.OpenRegistationlinkLabel.ActiveLinkColor = System.Drawing.Color.Gray;
+            this.OpenRegistationlinkLabel.AutoSize = true;
+            this.OpenRegistationlinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OpenRegistationlinkLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.OpenRegistationlinkLabel.LinkColor = System.Drawing.Color.DarkOrange;
+            this.OpenRegistationlinkLabel.Location = new System.Drawing.Point(51, 499);
+            this.OpenRegistationlinkLabel.Name = "OpenRegistationlinkLabel";
+            this.OpenRegistationlinkLabel.Size = new System.Drawing.Size(360, 18);
+            this.OpenRegistationlinkLabel.TabIndex = 11;
+            this.OpenRegistationlinkLabel.TabStop = true;
+            this.OpenRegistationlinkLabel.Text = "Don\'t have an account yet? Create an account.";
+            this.OpenRegistationlinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OpenRegistationlinkLabel_LinkClicked);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label1.Location = new System.Drawing.Point(132, 191);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(256, 31);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "MEMBER LOGIN";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 20);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1540, 243);
+            this.panel1.TabIndex = 5;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Bank.Properties.Resources.bank_account_banking_building_1_31235;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(300, 243);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Elephant", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label6.Location = new System.Drawing.Point(649, 97);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(137, 42);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "BANK";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Elephant", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label4.Location = new System.Drawing.Point(649, 145);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(435, 38);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "MANAGEMENT SYSTEM";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Elephant", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label3.Location = new System.Drawing.Point(649, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(358, 38);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "WELCOME TO THE";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel3.Controls.Add(this.RestoreDownIcon);
+            this.panel3.Controls.Add(this.maxIcon);
+            this.panel3.Controls.Add(this.minIcon);
+            this.panel3.Controls.Add(this.cerraricon);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1540, 20);
+            this.panel3.TabIndex = 9;
+            // 
+            // RestoreDownIcon
+            // 
+            this.RestoreDownIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.RestoreDownIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RestoreDownIcon.Image = global::Bank.Properties.Resources.restore_down;
+            this.RestoreDownIcon.Location = new System.Drawing.Point(1463, 0);
+            this.RestoreDownIcon.Name = "RestoreDownIcon";
+            this.RestoreDownIcon.Size = new System.Drawing.Size(20, 20);
+            this.RestoreDownIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.RestoreDownIcon.TabIndex = 39;
+            this.RestoreDownIcon.TabStop = false;
+            this.RestoreDownIcon.Visible = false;
+            this.RestoreDownIcon.Click += new System.EventHandler(this.RestoreDownIcon_Click);
+            // 
+            // maxIcon
+            // 
+            this.maxIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.maxIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.maxIcon.Image = global::Bank.Properties.Resources._32763;
+            this.maxIcon.Location = new System.Drawing.Point(1463, 0);
+            this.maxIcon.Name = "maxIcon";
+            this.maxIcon.Size = new System.Drawing.Size(20, 20);
+            this.maxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.maxIcon.TabIndex = 40;
+            this.maxIcon.TabStop = false;
+            this.maxIcon.Click += new System.EventHandler(this.maxIcon_Click);
+            // 
+            // minIcon
+            // 
+            this.minIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.minIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minIcon.Image = global::Bank.Properties.Resources.minimize_window;
+            this.minIcon.Location = new System.Drawing.Point(1425, 0);
+            this.minIcon.Name = "minIcon";
+            this.minIcon.Size = new System.Drawing.Size(20, 20);
+            this.minIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.minIcon.TabIndex = 38;
+            this.minIcon.TabStop = false;
+            this.minIcon.Click += new System.EventHandler(this.minIcon_Click);
+            // 
+            // cerraricon
+            // 
+            this.cerraricon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cerraricon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cerraricon.Image = global::Bank.Properties.Resources._60994;
+            this.cerraricon.Location = new System.Drawing.Point(1501, 0);
+            this.cerraricon.Name = "cerraricon";
+            this.cerraricon.Size = new System.Drawing.Size(20, 20);
+            this.cerraricon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cerraricon.TabIndex = 37;
+            this.cerraricon.TabStop = false;
+            this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 15;
+            this.gunaElipse1.TargetControl = this;
+            // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.Radius = 10;
+            this.gunaElipse2.TargetControl = this.LoginButton;
             // 
             // LoginForm
             // 
@@ -542,15 +542,15 @@ namespace Bank
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.RestoreDownIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

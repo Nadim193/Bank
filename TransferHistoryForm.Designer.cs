@@ -108,7 +108,7 @@ namespace Bank
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.TransationHistorypanel);
             this.panel1.Controls.Add(this.FromParsonalpanel);
             this.panel1.Controls.Add(this.TotalBalance);
@@ -534,7 +534,7 @@ namespace Bank
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TransferdataGridView.AutoGenerateColumns = false;
-            this.TransferdataGridView.BackgroundColor = System.Drawing.SystemColors.Desktop;
+            this.TransferdataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.TransferdataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TransferdataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;

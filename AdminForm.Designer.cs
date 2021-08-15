@@ -60,12 +60,6 @@ namespace Bank
             this.panel6 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menupanel = new System.Windows.Forms.Panel();
-            this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.TotalCustomer = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
@@ -80,8 +74,7 @@ namespace Bank
             this.gunaElipse11 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse12 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -105,11 +98,8 @@ namespace Bank
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.Menupanel.SuspendLayout();
-            this.gunaElipsePanel2.SuspendLayout();
-            this.gunaElipsePanel1.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -677,9 +667,8 @@ namespace Bank
             // 
             // Menupanel
             // 
-            this.Menupanel.BackColor = System.Drawing.SystemColors.Desktop;
-            this.Menupanel.Controls.Add(this.gunaElipsePanel2);
-            this.Menupanel.Controls.Add(this.gunaElipsePanel1);
+            this.Menupanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.Menupanel.Controls.Add(this.gunaPictureBox1);
             this.Menupanel.Controls.Add(this.panel4);
             this.Menupanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menupanel.ForeColor = System.Drawing.Color.Black;
@@ -687,81 +676,6 @@ namespace Bank
             this.Menupanel.Name = "Menupanel";
             this.Menupanel.Size = new System.Drawing.Size(1207, 804);
             this.Menupanel.TabIndex = 8;
-            // 
-            // gunaElipsePanel2
-            // 
-            this.gunaElipsePanel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel2.BaseColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaElipsePanel2.Controls.Add(this.gunaLabel3);
-            this.gunaElipsePanel2.Controls.Add(this.gunaLabel4);
-            this.gunaElipsePanel2.Controls.Add(this.pictureBox16);
-            this.gunaElipsePanel2.Location = new System.Drawing.Point(850, 600);
-            this.gunaElipsePanel2.Name = "gunaElipsePanel2";
-            this.gunaElipsePanel2.Radius = 8;
-            this.gunaElipsePanel2.Size = new System.Drawing.Size(226, 107);
-            this.gunaElipsePanel2.TabIndex = 6;
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaLabel3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel3.Location = new System.Drawing.Point(15, 10);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(29, 26);
-            this.gunaLabel3.TabIndex = 6;
-            this.gunaLabel3.Text = "N";
-            // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaLabel4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel4.Location = new System.Drawing.Point(86, 59);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(83, 26);
-            this.gunaLabel4.TabIndex = 3;
-            this.gunaLabel4.Text = "Money";
-            // 
-            // gunaElipsePanel1
-            // 
-            this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel1.BaseColor = System.Drawing.Color.SeaGreen;
-            this.gunaElipsePanel1.Controls.Add(this.TotalCustomer);
-            this.gunaElipsePanel1.Controls.Add(this.gunaLabel1);
-            this.gunaElipsePanel1.Controls.Add(this.pictureBox15);
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(123, 600);
-            this.gunaElipsePanel1.Name = "gunaElipsePanel1";
-            this.gunaElipsePanel1.Radius = 8;
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(226, 107);
-            this.gunaElipsePanel1.TabIndex = 5;
-            this.gunaElipsePanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaElipsePanel1_Paint);
-            // 
-            // TotalCustomer
-            // 
-            this.TotalCustomer.AutoSize = true;
-            this.TotalCustomer.BackColor = System.Drawing.Color.SeaGreen;
-            this.TotalCustomer.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalCustomer.ForeColor = System.Drawing.Color.Black;
-            this.TotalCustomer.Location = new System.Drawing.Point(15, 10);
-            this.TotalCustomer.Name = "TotalCustomer";
-            this.TotalCustomer.Size = new System.Drawing.Size(29, 26);
-            this.TotalCustomer.TabIndex = 6;
-            this.TotalCustomer.Text = "N";
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.BackColor = System.Drawing.Color.SeaGreen;
-            this.gunaLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel1.Location = new System.Drawing.Point(86, 59);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(121, 26);
-            this.gunaLabel1.TabIndex = 3;
-            this.gunaLabel1.Text = "Customers";
             // 
             // panel4
             // 
@@ -833,27 +747,16 @@ namespace Bank
             this.gunaElipse1.Radius = 15;
             this.gunaElipse1.TargetControl = this;
             // 
-            // pictureBox16
+            // gunaPictureBox1
             // 
-            this.pictureBox16.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.pictureBox16.Image = global::Bank.Properties.Resources.increase_sales;
-            this.pictureBox16.Location = new System.Drawing.Point(9, 47);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(64, 50);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 2;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackColor = System.Drawing.Color.SeaGreen;
-            this.pictureBox15.Image = global::Bank.Properties.Resources.unnamed;
-            this.pictureBox15.Location = new System.Drawing.Point(9, 47);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(64, 50);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 2;
-            this.pictureBox15.TabStop = false;
+            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.Image = global::Bank.Properties.Resources._233157669_358852552502014_3675774675727501710_n;
+            this.gunaPictureBox1.Location = new System.Drawing.Point(63, 308);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(1069, 219);
+            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaPictureBox1.TabIndex = 5;
+            this.gunaPictureBox1.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -1095,14 +998,9 @@ namespace Bank
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.Menupanel.ResumeLayout(false);
-            this.gunaElipsePanel2.ResumeLayout(false);
-            this.gunaElipsePanel2.PerformLayout();
-            this.gunaElipsePanel1.ResumeLayout(false);
-            this.gunaElipsePanel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
@@ -1188,13 +1086,6 @@ namespace Bank
         private Guna.UI.WinForms.GunaElipse gunaElipse11;
         private Guna.UI.WinForms.GunaElipse gunaElipse12;
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
-        private Guna.UI.WinForms.GunaLabel TotalCustomer;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel2;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private System.Windows.Forms.PictureBox pictureBox16;
+        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
     }
 }

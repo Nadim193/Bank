@@ -31,6 +31,7 @@ namespace Bank
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cerraricon = new System.Windows.Forms.PictureBox();
             this.varifyEmailpanel = new System.Windows.Forms.Panel();
             this.EmalAddresslabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,16 +41,15 @@ namespace Bank
             this.EmailVerifytextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.cerraricon = new System.Windows.Forms.PictureBox();
             this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1.SuspendLayout();
-            this.varifyEmailpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).BeginInit();
+            this.varifyEmailpanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.cerraricon);
             this.panel1.Controls.Add(this.varifyEmailpanel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -58,8 +58,22 @@ namespace Bank
             this.panel1.Size = new System.Drawing.Size(624, 524);
             this.panel1.TabIndex = 0;
             // 
+            // cerraricon
+            // 
+            this.cerraricon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cerraricon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cerraricon.Image = global::Bank.Properties.Resources._60994;
+            this.cerraricon.Location = new System.Drawing.Point(592, 12);
+            this.cerraricon.Name = "cerraricon";
+            this.cerraricon.Size = new System.Drawing.Size(20, 20);
+            this.cerraricon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cerraricon.TabIndex = 38;
+            this.cerraricon.TabStop = false;
+            this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
+            // 
             // varifyEmailpanel
             // 
+            this.varifyEmailpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.varifyEmailpanel.Controls.Add(this.EmalAddresslabel);
             this.varifyEmailpanel.Controls.Add(this.label4);
             this.varifyEmailpanel.Controls.Add(this.label3);
@@ -162,19 +176,6 @@ namespace Bank
             this.gunaElipse1.Radius = 15;
             this.gunaElipse1.TargetControl = this;
             // 
-            // cerraricon
-            // 
-            this.cerraricon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cerraricon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cerraricon.Image = global::Bank.Properties.Resources._60994;
-            this.cerraricon.Location = new System.Drawing.Point(592, 12);
-            this.cerraricon.Name = "cerraricon";
-            this.cerraricon.Size = new System.Drawing.Size(20, 20);
-            this.cerraricon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cerraricon.TabIndex = 38;
-            this.cerraricon.TabStop = false;
-            this.cerraricon.Click += new System.EventHandler(this.cerraricon_Click);
-            // 
             // gunaElipse2
             // 
             this.gunaElipse2.Radius = 10;
@@ -191,9 +192,9 @@ namespace Bank
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmailVerifyForm";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).EndInit();
             this.varifyEmailpanel.ResumeLayout(false);
             this.varifyEmailpanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cerraricon)).EndInit();
             this.ResumeLayout(false);
 
         }
