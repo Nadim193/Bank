@@ -159,9 +159,9 @@ namespace Bank
             this.label23.ForeColor = System.Drawing.Color.DarkOrange;
             this.label23.Location = new System.Drawing.Point(3, 5);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(195, 24);
+            this.label23.Size = new System.Drawing.Size(174, 24);
             this.label23.TabIndex = 67;
-            this.label23.Text = "> Transation Money";
+            this.label23.Text = "> Transfer Money";
             // 
             // AllHWithdrawMoneypanel
             // 

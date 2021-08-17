@@ -226,7 +226,7 @@ namespace Bank
             // 
             // TransferTimelabel
             // 
-            this.TransferTimelabel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.TransferTimelabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.TransferTimelabel.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TransferTimelabel.ForeColor = System.Drawing.Color.RoyalBlue;
             this.TransferTimelabel.Location = new System.Drawing.Point(419, 569);
@@ -236,7 +236,7 @@ namespace Bank
             // 
             // WithdrawTimelabel
             // 
-            this.WithdrawTimelabel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.WithdrawTimelabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.WithdrawTimelabel.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WithdrawTimelabel.ForeColor = System.Drawing.Color.RoyalBlue;
             this.WithdrawTimelabel.Location = new System.Drawing.Point(278, 569);
@@ -246,7 +246,7 @@ namespace Bank
             // 
             // DepositTimelabel
             // 
-            this.DepositTimelabel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.DepositTimelabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.DepositTimelabel.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DepositTimelabel.ForeColor = System.Drawing.Color.RoyalBlue;
             this.DepositTimelabel.Location = new System.Drawing.Point(153, 569);
@@ -710,7 +710,7 @@ namespace Bank
             // 
             // TransationUserNameTextbox
             // 
-            this.TransationUserNameTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.TransationUserNameTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.TransationUserNameTextbox.BorderColor = System.Drawing.Color.SteelBlue;
             this.TransationUserNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TransationUserNameTextbox.ForeColor = System.Drawing.Color.RoyalBlue;

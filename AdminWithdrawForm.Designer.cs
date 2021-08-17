@@ -118,9 +118,9 @@ namespace Bank
             this.WithdrawPasswordpanel.Controls.Add(this.panel14);
             this.WithdrawPasswordpanel.Controls.Add(this.panel10);
             this.WithdrawPasswordpanel.Enabled = false;
-            this.WithdrawPasswordpanel.Location = new System.Drawing.Point(682, 484);
+            this.WithdrawPasswordpanel.Location = new System.Drawing.Point(631, 484);
             this.WithdrawPasswordpanel.Name = "WithdrawPasswordpanel";
-            this.WithdrawPasswordpanel.Size = new System.Drawing.Size(503, 230);
+            this.WithdrawPasswordpanel.Size = new System.Drawing.Size(554, 230);
             this.WithdrawPasswordpanel.TabIndex = 72;
             // 
             // WithdrawButton
@@ -144,7 +144,7 @@ namespace Bank
             this.WithdrawButton.Image = global::Bank.Properties.Resources._176_1766289_atm_withdrawal_svg_png_icon_free_download_atm_removebg_preview;
             this.WithdrawButton.ImageSize = new System.Drawing.Size(20, 20);
             this.WithdrawButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.WithdrawButton.Location = new System.Drawing.Point(350, 167);
+            this.WithdrawButton.Location = new System.Drawing.Point(403, 167);
             this.WithdrawButton.Name = "WithdrawButton";
             this.WithdrawButton.OnHoverBaseColor = System.Drawing.Color.SteelBlue;
             this.WithdrawButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -161,7 +161,7 @@ namespace Bank
             // ShowRememberPasswordcheckBox
             // 
             this.ShowRememberPasswordcheckBox.AutoSize = true;
-            this.ShowRememberPasswordcheckBox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ShowRememberPasswordcheckBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.ShowRememberPasswordcheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ShowRememberPasswordcheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowRememberPasswordcheckBox.ForeColor = System.Drawing.Color.RoyalBlue;
@@ -179,18 +179,18 @@ namespace Bank
             this.panel17.Controls.Add(this.label8);
             this.panel17.Location = new System.Drawing.Point(33, 71);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(469, 69);
+            this.panel17.Size = new System.Drawing.Size(521, 69);
             this.panel17.TabIndex = 65;
             // 
             // PasswordTextbox
             // 
-            this.PasswordTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.PasswordTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.PasswordTextbox.BorderColor = System.Drawing.Color.RoyalBlue;
             this.PasswordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextbox.ForeColor = System.Drawing.Color.RoyalBlue;
             this.PasswordTextbox.Location = new System.Drawing.Point(11, 38);
             this.PasswordTextbox.Name = "PasswordTextbox";
-            this.PasswordTextbox.Size = new System.Drawing.Size(459, 28);
+            this.PasswordTextbox.Size = new System.Drawing.Size(511, 28);
             this.PasswordTextbox.TabIndex = 67;
             this.PasswordTextbox.UseSystemPasswordChar = true;
             // 
@@ -230,7 +230,7 @@ namespace Bank
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(501, 5);
+            this.panel10.Size = new System.Drawing.Size(552, 5);
             this.panel10.TabIndex = 2;
             // 
             // Withdrawpanel
@@ -244,7 +244,7 @@ namespace Bank
             this.Withdrawpanel.Enabled = false;
             this.Withdrawpanel.Location = new System.Drawing.Point(21, 484);
             this.Withdrawpanel.Name = "Withdrawpanel";
-            this.Withdrawpanel.Size = new System.Drawing.Size(503, 230);
+            this.Withdrawpanel.Size = new System.Drawing.Size(556, 230);
             this.Withdrawpanel.TabIndex = 71;
             // 
             // WitdrawAmountButton
@@ -268,7 +268,7 @@ namespace Bank
             this.WitdrawAmountButton.Image = global::Bank.Properties.Resources.active_1;
             this.WitdrawAmountButton.ImageSize = new System.Drawing.Size(20, 20);
             this.WitdrawAmountButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.WitdrawAmountButton.Location = new System.Drawing.Point(364, 167);
+            this.WitdrawAmountButton.Location = new System.Drawing.Point(416, 167);
             this.WitdrawAmountButton.Name = "WitdrawAmountButton";
             this.WitdrawAmountButton.OnHoverBaseColor = System.Drawing.Color.SteelBlue;
             this.WitdrawAmountButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -288,18 +288,18 @@ namespace Bank
             this.panel16.Controls.Add(this.label6);
             this.panel16.Location = new System.Drawing.Point(33, 71);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(469, 86);
+            this.panel16.Size = new System.Drawing.Size(521, 86);
             this.panel16.TabIndex = 63;
             // 
             // WithdrawAmountTextbox
             // 
-            this.WithdrawAmountTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.WithdrawAmountTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.WithdrawAmountTextbox.BorderColor = System.Drawing.Color.RoyalBlue;
             this.WithdrawAmountTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WithdrawAmountTextbox.ForeColor = System.Drawing.Color.RoyalBlue;
             this.WithdrawAmountTextbox.Location = new System.Drawing.Point(10, 41);
             this.WithdrawAmountTextbox.Name = "WithdrawAmountTextbox";
-            this.WithdrawAmountTextbox.Size = new System.Drawing.Size(460, 28);
+            this.WithdrawAmountTextbox.Size = new System.Drawing.Size(512, 28);
             this.WithdrawAmountTextbox.TabIndex = 68;
             this.WithdrawAmountTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.WithdrawAmountTextbox_KeyPress);
             // 
@@ -339,7 +339,7 @@ namespace Bank
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(501, 5);
+            this.panel8.Size = new System.Drawing.Size(554, 5);
             this.panel8.TabIndex = 1;
             // 
             // WithdrawUserNamepanel
@@ -352,7 +352,7 @@ namespace Bank
             this.WithdrawUserNamepanel.Controls.Add(this.panel7);
             this.WithdrawUserNamepanel.Location = new System.Drawing.Point(22, 148);
             this.WithdrawUserNamepanel.Name = "WithdrawUserNamepanel";
-            this.WithdrawUserNamepanel.Size = new System.Drawing.Size(503, 230);
+            this.WithdrawUserNamepanel.Size = new System.Drawing.Size(556, 230);
             this.WithdrawUserNamepanel.TabIndex = 70;
             // 
             // label2
@@ -370,7 +370,7 @@ namespace Bank
             // 
             this.SearchWithdrawButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SearchWithdrawButton.Image = global::Bank.Properties.Resources.png_clipart_computer_icons_android_web_search_engine_google_search_search_box_google_search_bar_blue_trademark_removebg_preview;
-            this.SearchWithdrawButton.Location = new System.Drawing.Point(398, 171);
+            this.SearchWithdrawButton.Location = new System.Drawing.Point(450, 169);
             this.SearchWithdrawButton.Name = "SearchWithdrawButton";
             this.SearchWithdrawButton.Size = new System.Drawing.Size(85, 50);
             this.SearchWithdrawButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -384,18 +384,18 @@ namespace Bank
             this.panel15.Controls.Add(this.label7);
             this.panel15.Location = new System.Drawing.Point(33, 77);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(469, 86);
+            this.panel15.Size = new System.Drawing.Size(521, 86);
             this.panel15.TabIndex = 61;
             // 
             // WithdrawUseNameTextbox
             // 
-            this.WithdrawUseNameTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.WithdrawUseNameTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.WithdrawUseNameTextbox.BorderColor = System.Drawing.Color.RoyalBlue;
             this.WithdrawUseNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WithdrawUseNameTextbox.ForeColor = System.Drawing.Color.RoyalBlue;
             this.WithdrawUseNameTextbox.Location = new System.Drawing.Point(9, 41);
             this.WithdrawUseNameTextbox.Name = "WithdrawUseNameTextbox";
-            this.WithdrawUseNameTextbox.Size = new System.Drawing.Size(460, 28);
+            this.WithdrawUseNameTextbox.Size = new System.Drawing.Size(512, 28);
             this.WithdrawUseNameTextbox.TabIndex = 68;
             // 
             // label7
@@ -423,7 +423,7 @@ namespace Bank
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(501, 5);
+            this.panel7.Size = new System.Drawing.Size(554, 5);
             this.panel7.TabIndex = 0;
             // 
             // panel5
@@ -435,9 +435,9 @@ namespace Bank
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.panel13);
             this.panel5.Controls.Add(this.panel9);
-            this.panel5.Location = new System.Drawing.Point(683, 148);
+            this.panel5.Location = new System.Drawing.Point(630, 148);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(503, 230);
+            this.panel5.Size = new System.Drawing.Size(556, 230);
             this.panel5.TabIndex = 69;
             // 
             // WithdrawCurrentAmmountpanel
@@ -447,7 +447,7 @@ namespace Bank
             this.WithdrawCurrentAmmountpanel.Controls.Add(this.label11);
             this.WithdrawCurrentAmmountpanel.Location = new System.Drawing.Point(28, 178);
             this.WithdrawCurrentAmmountpanel.Name = "WithdrawCurrentAmmountpanel";
-            this.WithdrawCurrentAmmountpanel.Size = new System.Drawing.Size(474, 36);
+            this.WithdrawCurrentAmmountpanel.Size = new System.Drawing.Size(526, 36);
             this.WithdrawCurrentAmmountpanel.TabIndex = 66;
             this.WithdrawCurrentAmmountpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.WithdrawCurrentAmmountpanel_Paint);
             // 
@@ -488,7 +488,7 @@ namespace Bank
             this.WithdrawLastNamepanel.Controls.Add(this.label10);
             this.WithdrawLastNamepanel.Location = new System.Drawing.Point(28, 122);
             this.WithdrawLastNamepanel.Name = "WithdrawLastNamepanel";
-            this.WithdrawLastNamepanel.Size = new System.Drawing.Size(474, 36);
+            this.WithdrawLastNamepanel.Size = new System.Drawing.Size(526, 36);
             this.WithdrawLastNamepanel.TabIndex = 65;
             this.WithdrawLastNamepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.WithdrawLastNamepanel_Paint);
             // 
@@ -530,7 +530,7 @@ namespace Bank
             this.WithdrawFirstNamepanel.Controls.Add(this.label9);
             this.WithdrawFirstNamepanel.Location = new System.Drawing.Point(28, 66);
             this.WithdrawFirstNamepanel.Name = "WithdrawFirstNamepanel";
-            this.WithdrawFirstNamepanel.Size = new System.Drawing.Size(474, 36);
+            this.WithdrawFirstNamepanel.Size = new System.Drawing.Size(526, 36);
             this.WithdrawFirstNamepanel.TabIndex = 64;
             this.WithdrawFirstNamepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.WithdrawFirstNamepanel_Paint);
             // 
@@ -590,7 +590,7 @@ namespace Bank
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(501, 5);
+            this.panel9.Size = new System.Drawing.Size(554, 5);
             this.panel9.TabIndex = 1;
             // 
             // panel3

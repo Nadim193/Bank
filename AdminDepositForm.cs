@@ -85,15 +85,15 @@ namespace Bank
 
         private void DepositAmountButton_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(DepositAmountTextbox.Text))
+            if (DepositAmountTextbox.Text == null)
+            {
+                MessageBox.Show("Please Enter Ammount.");
+            }
+            else
             {
                 DepositPasswordpanel.Enabled = true;
                 PasswordTextbox.Select();
                 Depositpanel.Enabled = false;
-            }
-            else
-            {
-                MessageBox.Show("Please Enter Ammount.");
             }
         }
 

@@ -186,7 +186,7 @@ namespace Bank
             // 
             // UserNameTextbox
             // 
-            this.UserNameTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.UserNameTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.UserNameTextbox.BorderColor = System.Drawing.Color.SteelBlue;
             this.UserNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameTextbox.ForeColor = System.Drawing.Color.RoyalBlue;

@@ -82,7 +82,7 @@ namespace Bank
                     }
                     else if ((SearchComboBox.SelectedItem).ToString() == "-By Gender")
                     {
-                        if (GenderComboBox.SelectedValue == null)
+                        if (GenderComboBox.SelectedItem == null)
                         {
                             MessageBox.Show("Select Search type");
                         }
@@ -95,7 +95,7 @@ namespace Bank
                     }
                     else if ((SearchComboBox.SelectedItem).ToString() == "-By Occupation")
                     {
-                        if (OccupationComboBox.SelectedValue == null)
+                        if (OccupationComboBox.SelectedItem == null)
                         {
                             MessageBox.Show("Select Item");
                         }
@@ -109,7 +109,7 @@ namespace Bank
                     else if ((SearchComboBox.SelectedItem).ToString() == "-By Nationality")
                     {
 
-                        if (NationalityComboBox.SelectedValue == null)
+                        if (NationalityComboBox.SelectedItem == null)
                         {
                             MessageBox.Show("Select Country");
                         }

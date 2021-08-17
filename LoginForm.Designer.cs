@@ -216,6 +216,7 @@ namespace Bank
             this.SelectRoleComboBox.BackColor = System.Drawing.Color.Transparent;
             this.SelectRoleComboBox.BaseColor = System.Drawing.Color.Wheat;
             this.SelectRoleComboBox.BorderColor = System.Drawing.Color.Silver;
+            this.SelectRoleComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SelectRoleComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.SelectRoleComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SelectRoleComboBox.FocusedColor = System.Drawing.Color.Empty;
@@ -323,7 +324,7 @@ namespace Bank
             // 
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Gray;
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.linkLabel1.LinkColor = System.Drawing.Color.DarkOrange;

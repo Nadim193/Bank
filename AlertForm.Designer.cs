@@ -33,6 +33,7 @@ namespace Bank
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.AlertOkButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
@@ -41,7 +42,6 @@ namespace Bank
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.AlertOkButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaLinePanel1.SuspendLayout();
             this.SuspendLayout();
@@ -72,7 +72,7 @@ namespace Bank
             // 
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel6.ForeColor = System.Drawing.Color.DarkOrange;
+            this.gunaLabel6.ForeColor = System.Drawing.Color.White;
             this.gunaLabel6.Location = new System.Drawing.Point(118, 330);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(296, 26);
@@ -83,101 +83,12 @@ namespace Bank
             // 
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.ForeColor = System.Drawing.Color.DarkOrange;
+            this.gunaLabel5.ForeColor = System.Drawing.Color.White;
             this.gunaLabel5.Location = new System.Drawing.Point(49, 286);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(463, 26);
             this.gunaLabel5.TabIndex = 9;
             this.gunaLabel5.Text = "To add email address click \" Edit Profile -->";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(304, 389);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(166, 35);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "!! ALERT !!";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(94, 389);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(166, 35);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "!! ALERT !!";
-            // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.gunaLabel4.Location = new System.Drawing.Point(49, 234);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(434, 26);
-            this.gunaLabel4.TabIndex = 5;
-            this.gunaLabel4.Text = "you have to add your valid email address.";
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.ForeColor = System.Drawing.Color.DarkOrange;
-            this.gunaLabel3.Location = new System.Drawing.Point(25, 150);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(484, 26);
-            this.gunaLabel3.TabIndex = 4;
-            this.gunaLabel3.Text = " But this account have no email eddress. If you";
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.gunaLabel2.Location = new System.Drawing.Point(85, 193);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(341, 26);
-            this.gunaLabel2.TabIndex = 3;
-            this.gunaLabel2.Text = " want to do some transation first";
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.gunaLabel1.Location = new System.Drawing.Point(59, 106);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(394, 26);
-            this.gunaLabel1.TabIndex = 2;
-            this.gunaLabel1.Text = "Your account was created successfull.";
-            this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(304, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 35);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "!! ALERT !!";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(94, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 35);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "!! ALERT !!";
             // 
             // AlertOkButton
             // 
@@ -212,6 +123,95 @@ namespace Bank
             this.AlertOkButton.TabIndex = 8;
             this.AlertOkButton.Text = "Okay";
             this.AlertOkButton.Click += new System.EventHandler(this.AlertOkButton_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(304, 389);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(166, 35);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "!! ALERT !!";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(94, 389);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(166, 35);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "!! ALERT !!";
+            // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel4.Location = new System.Drawing.Point(49, 234);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(434, 26);
+            this.gunaLabel4.TabIndex = 5;
+            this.gunaLabel4.Text = "you have to add your valid email address.";
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel3.Location = new System.Drawing.Point(25, 150);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(484, 26);
+            this.gunaLabel3.TabIndex = 4;
+            this.gunaLabel3.Text = " But this account have no email eddress. If you";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel2.Location = new System.Drawing.Point(85, 193);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(341, 26);
+            this.gunaLabel2.TabIndex = 3;
+            this.gunaLabel2.Text = " want to do some transation first";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel1.Location = new System.Drawing.Point(59, 106);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(394, 26);
+            this.gunaLabel1.TabIndex = 2;
+            this.gunaLabel1.Text = "Your account was created successfull.";
+            this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(304, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(166, 35);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "!! ALERT !!";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(94, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(166, 35);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "!! ALERT !!";
             // 
             // gunaElipse1
             // 

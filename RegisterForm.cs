@@ -11,6 +11,9 @@ namespace Bank
 {
     public partial class RegisterForm : Form
     {
+        SqlConnection conn = new SqlConnection("Data Source = LAPTOP-V4386OSC;" +
+                    "Initial Catalog = BankSystemDataBase; Integrated Security = True");
+
         public static String RegPassword;
         public static String regUserName;
         public static String regEmail;
@@ -45,10 +48,6 @@ namespace Bank
                 }
                 else
                 {
-                    SqlConnection conn = new SqlConnection("Data Source = LAPTOP-V4386OSC;" +
-                    "Initial Catalog = BankSystemDataBase; Integrated Security = True");
-                    
-
                     string mySQL = string.Empty;
                     string mySQL5 = string.Empty;
                     string mySQL6 = string.Empty;

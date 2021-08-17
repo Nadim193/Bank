@@ -15,7 +15,12 @@ namespace Bank
 {
     public partial class AdminCreatedNewForm : Form
     {
+        SqlConnection conn = new SqlConnection("Data Source = LAPTOP-V4386OSC;" +
+                    "Initial Catalog = BankSystemDataBase; Integrated Security = True");
+
         string imgLocation = "";
+        string regEmail;
+        string Active;
 
         public AdminCreatedNewForm()
         {
@@ -80,11 +85,10 @@ namespace Bank
         {
             try
             {
-                string Active = "Active";
+                Active = "Active";
                 string regUserName = UsernameTextbox.Text;
                 string RegPassword = ConfirmPasswordtextBox.Text;
-                string regEmail = EmailAdressTxtbox.Text;
-                regEmail = "";
+                regEmail = EmailAdressTxtbox.Text;
 
                 if (regUserName.Equals("") || FirstNametextBox1.Text.Equals("") || LastNametextBox.Text.Equals("") || DateTimePicker.Value.Equals("")
                     || AddresstextBox.Text.Equals("") || CitytextBox.Text.Equals("") || CountrytextBox.Text.Equals("") || PasswordtextBox.Text.Equals("") || RegPassword.Equals("") || ReligionTextBox.Equals("") || IncomecomboBox.SelectedItem.Equals("") || QualificationcomboBox.SelectedItem.Equals("") || OccupationcomboBox.SelectedItem.Equals(""))
@@ -94,8 +98,6 @@ namespace Bank
                 }
                 else
                 {
-                    SqlConnection conn = new SqlConnection("Data Source = LAPTOP-V4386OSC;" +
-                    "Initial Catalog = BankSystemDataBase; Integrated Security = True");
 
 
                     string mySQL = string.Empty;
@@ -150,7 +152,7 @@ namespace Bank
                                ,[Occupation]
                                ,[Account_Type]
                                ,[Profile_picture]
-                                ,[Status])
+                               ,[Status])
                          VALUES
                                 ('" + UsernameTextbox.Text + "', '" + PasswordtextBox.Text + "', '" + FirstNametextBox1.Text + "', '" + LastNametextBox.Text + "', '" + regEmail + "', '" + Gender + "', '" + DateTimePicker.Value + "'" +
                             ", '" + Marital + "', '" + AddresstextBox.Text + "', '" + CitytextBox.Text + "', '" + CountrytextBox.Text + "', '" + ReligionTextBox.Text + "', '" + IncomecomboBox.SelectedItem + "'" +
@@ -168,19 +170,6 @@ namespace Bank
                     string transatioTo = null;
 
                     DateTime dateTimeVariable = DateTime.Now;
-
-                    mySQL5 += @"INSERT INTO [dbo].[Customer_Details]
-                               ([FUser_Name]
-                               ,[Total_Money]
-                               ,[Withdraw_Money]
-                               ,[Deposit_Money]
-                               ,[Transation_Money]
-                               ,[Transation_To]
-                               ,[WDate_Time]
-                               ,[DDate_Time]
-                               ,[TDate_Time])
-                         VALUES
-                               ('" + UsernameTextbox.Text + "', '" + Totalmoney + "', '" + Withdraw + "', '" + deposit + "', '" + transationmoney + "', '" + transatioTo + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "')";
 
                     double Cdepositbalance = 0.00;
                     double Cwithdrawbalance = 0.00;
@@ -208,12 +197,13 @@ namespace Bank
                                ,[WDate_Time]
                                ,[DDate_Time]
                                ,[TDate_Time]
-                                ,[Saving_Time])
+                               ,[Saving_Time])
                          VALUES
                                ('" + UsernameTextbox.Text + "', '" + Totalmoney + "', '" + Withdraw + "', '" + deposit + "', '" + transationmoney + "', '" + transatioTo + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + SavingAccountDateTimePicker.Value + "')";
                     }
                     else
                     {
+                        string nullvalue = null;
 
                         mySQL5 += @"INSERT INTO [dbo].[Customer_Details]
                                ([FUser_Name]
@@ -227,7 +217,7 @@ namespace Bank
                                ,[TDate_Time]
                                 ,[Saving_Time])
                          VALUES
-                               ('" + UsernameTextbox.Text + "', '" + Totalmoney + "', '" + Withdraw + "', '" + deposit + "', '" + transationmoney + "', '" + transatioTo + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "')";
+                               ('" + UsernameTextbox.Text + "', '" + Totalmoney + "', '" + Withdraw + "', '" + deposit + "', '" + transationmoney + "', '" + transatioTo + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + dateTimeVariable + "', '" + nullvalue + "')";
                     }
 
                     if (PasswordtextBox.Text == RegPassword)

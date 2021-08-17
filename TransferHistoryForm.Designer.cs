@@ -168,9 +168,9 @@ namespace Bank
             this.label2.ForeColor = System.Drawing.Color.DarkOrange;
             this.label2.Location = new System.Drawing.Point(3, 5);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 24);
+            this.label2.Size = new System.Drawing.Size(136, 24);
             this.label2.TabIndex = 67;
-            this.label2.Text = "> Transation To";
+            this.label2.Text = "> Transfer To";
             // 
             // TransationTimepanel
             // 
@@ -200,9 +200,9 @@ namespace Bank
             this.label17.ForeColor = System.Drawing.Color.DarkOrange;
             this.label17.Location = new System.Drawing.Point(3, 5);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(179, 24);
+            this.label17.Size = new System.Drawing.Size(158, 24);
             this.label17.TabIndex = 67;
-            this.label17.Text = "> Transation Time";
+            this.label17.Text = "> Transfer Time";
             // 
             // TransationMoneypanel
             // 
@@ -221,9 +221,9 @@ namespace Bank
             this.label18.ForeColor = System.Drawing.Color.DarkOrange;
             this.label18.Location = new System.Drawing.Point(4, 5);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(195, 24);
+            this.label18.Size = new System.Drawing.Size(174, 24);
             this.label18.TabIndex = 63;
-            this.label18.Text = "> Transation Money";
+            this.label18.Text = "> Transfer Money";
             // 
             // HTransationMoneylabel
             // 

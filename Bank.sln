@@ -7,20 +7,25 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank", "Bank.csproj", "{12D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "..\DataBase\DataBase.csproj", "{8313E774-DE94-4023-9CF4-EACF3082F2A4}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Bank System", "..\Bank System\Bank System.vdproj", "{79F15691-3F2F-4B75-869F-34967ECD9E3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{12D50F6B-A62F-4203-9B76-2A9E43F52EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{12D50F6B-A62F-4203-9B76-2A9E43F52EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12D50F6B-A62F-4203-9B76-2A9E43F52EE7}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{12D50F6B-A62F-4203-9B76-2A9E43F52EE7}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{12D50F6B-A62F-4203-9B76-2A9E43F52EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12D50F6B-A62F-4203-9B76-2A9E43F52EE7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8313E774-DE94-4023-9CF4-EACF3082F2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8313E774-DE94-4023-9CF4-EACF3082F2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8313E774-DE94-4023-9CF4-EACF3082F2A4}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{8313E774-DE94-4023-9CF4-EACF3082F2A4}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{8313E774-DE94-4023-9CF4-EACF3082F2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8313E774-DE94-4023-9CF4-EACF3082F2A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F15691-3F2F-4B75-869F-34967ECD9E3E}.Debug|Any CPU.ActiveCfg = Debug
+		{79F15691-3F2F-4B75-869F-34967ECD9E3E}.Release|Any CPU.ActiveCfg = Release
+		{79F15691-3F2F-4B75-869F-34967ECD9E3E}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -38,5 +38,17 @@ namespace Bank
                 }
             }
         }
+
+        private void ShowRememberPasswordcheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ShowRememberPasswordcheckBox.Checked == true)
+            {
+                PasswordTextbox.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                PasswordTextbox.UseSystemPasswordChar = true;
+            }
+        }
     }
 }

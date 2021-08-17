@@ -190,7 +190,7 @@ namespace Bank
             // 
             // ConfirmPasswordTextbox
             // 
-            this.ConfirmPasswordTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ConfirmPasswordTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.ConfirmPasswordTextbox.BorderColor = System.Drawing.Color.SeaGreen;
             this.ConfirmPasswordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmPasswordTextbox.ForeColor = System.Drawing.Color.DarkOrange;
@@ -213,7 +213,7 @@ namespace Bank
             // 
             // NewPasswordTextbox
             // 
-            this.NewPasswordTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.NewPasswordTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.NewPasswordTextbox.BorderColor = System.Drawing.Color.SeaGreen;
             this.NewPasswordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewPasswordTextbox.ForeColor = System.Drawing.Color.DarkOrange;
@@ -236,7 +236,7 @@ namespace Bank
             // 
             // OldPasswordTextbox
             // 
-            this.OldPasswordTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.OldPasswordTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.OldPasswordTextbox.BorderColor = System.Drawing.Color.SeaGreen;
             this.OldPasswordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OldPasswordTextbox.ForeColor = System.Drawing.Color.DarkOrange;

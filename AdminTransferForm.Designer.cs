@@ -150,9 +150,9 @@ namespace Bank
             this.ToParsonalpanel.Controls.Add(this.label20);
             this.ToParsonalpanel.Controls.Add(this.panel32);
             this.ToParsonalpanel.Controls.Add(this.panel33);
-            this.ToParsonalpanel.Location = new System.Drawing.Point(687, 306);
+            this.ToParsonalpanel.Location = new System.Drawing.Point(634, 306);
             this.ToParsonalpanel.Name = "ToParsonalpanel";
-            this.ToParsonalpanel.Size = new System.Drawing.Size(503, 230);
+            this.ToParsonalpanel.Size = new System.Drawing.Size(556, 230);
             this.ToParsonalpanel.TabIndex = 20;
             // 
             // TOParsonalAddresspanel
@@ -162,7 +162,7 @@ namespace Bank
             this.TOParsonalAddresspanel.Controls.Add(this.label);
             this.TOParsonalAddresspanel.Location = new System.Drawing.Point(28, 178);
             this.TOParsonalAddresspanel.Name = "TOParsonalAddresspanel";
-            this.TOParsonalAddresspanel.Size = new System.Drawing.Size(474, 36);
+            this.TOParsonalAddresspanel.Size = new System.Drawing.Size(526, 36);
             this.TOParsonalAddresspanel.TabIndex = 66;
             this.TOParsonalAddresspanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TOParsonalAddresspanel_Paint);
             // 
@@ -203,7 +203,7 @@ namespace Bank
             this.TOParsonalLastNamepanel.Controls.Add(this.label17);
             this.TOParsonalLastNamepanel.Location = new System.Drawing.Point(28, 122);
             this.TOParsonalLastNamepanel.Name = "TOParsonalLastNamepanel";
-            this.TOParsonalLastNamepanel.Size = new System.Drawing.Size(474, 36);
+            this.TOParsonalLastNamepanel.Size = new System.Drawing.Size(526, 36);
             this.TOParsonalLastNamepanel.TabIndex = 65;
             this.TOParsonalLastNamepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TOParsonalLastNamepanel_Paint);
             // 
@@ -244,7 +244,7 @@ namespace Bank
             this.TOParsonalFirstNamepanel.Controls.Add(this.label19);
             this.TOParsonalFirstNamepanel.Location = new System.Drawing.Point(28, 66);
             this.TOParsonalFirstNamepanel.Name = "TOParsonalFirstNamepanel";
-            this.TOParsonalFirstNamepanel.Size = new System.Drawing.Size(474, 36);
+            this.TOParsonalFirstNamepanel.Size = new System.Drawing.Size(526, 36);
             this.TOParsonalFirstNamepanel.TabIndex = 64;
             this.TOParsonalFirstNamepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TOParsonalFirstNamepanel_Paint);
             // 
@@ -303,7 +303,7 @@ namespace Bank
             this.panel33.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel33.Location = new System.Drawing.Point(0, 0);
             this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(501, 5);
+            this.panel33.Size = new System.Drawing.Size(554, 5);
             this.panel33.TabIndex = 1;
             // 
             // ToTransationUserNamepanel
@@ -317,14 +317,14 @@ namespace Bank
             this.ToTransationUserNamepanel.Enabled = false;
             this.ToTransationUserNamepanel.Location = new System.Drawing.Point(22, 306);
             this.ToTransationUserNamepanel.Name = "ToTransationUserNamepanel";
-            this.ToTransationUserNamepanel.Size = new System.Drawing.Size(503, 230);
+            this.ToTransationUserNamepanel.Size = new System.Drawing.Size(554, 230);
             this.ToTransationUserNamepanel.TabIndex = 19;
             // 
             // ToTransferUserNameButton
             // 
             this.ToTransferUserNameButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ToTransferUserNameButton.Image = global::Bank.Properties.Resources.png_clipart_computer_icons_android_web_search_engine_google_search_search_box_google_search_bar_blue_trademark_removebg_preview;
-            this.ToTransferUserNameButton.Location = new System.Drawing.Point(398, 170);
+            this.ToTransferUserNameButton.Location = new System.Drawing.Point(449, 175);
             this.ToTransferUserNameButton.Name = "ToTransferUserNameButton";
             this.ToTransferUserNameButton.Size = new System.Drawing.Size(85, 50);
             this.ToTransferUserNameButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -338,18 +338,18 @@ namespace Bank
             this.panel2.Controls.Add(this.label12);
             this.panel2.Location = new System.Drawing.Point(33, 72);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(469, 86);
+            this.panel2.Size = new System.Drawing.Size(519, 86);
             this.panel2.TabIndex = 61;
             // 
             // ToTransationUserNameTextbox
             // 
-            this.ToTransationUserNameTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ToTransationUserNameTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.ToTransationUserNameTextbox.BorderColor = System.Drawing.Color.SteelBlue;
             this.ToTransationUserNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ToTransationUserNameTextbox.ForeColor = System.Drawing.Color.RoyalBlue;
             this.ToTransationUserNameTextbox.Location = new System.Drawing.Point(8, 41);
             this.ToTransationUserNameTextbox.Name = "ToTransationUserNameTextbox";
-            this.ToTransationUserNameTextbox.Size = new System.Drawing.Size(462, 28);
+            this.ToTransationUserNameTextbox.Size = new System.Drawing.Size(512, 28);
             this.ToTransationUserNameTextbox.TabIndex = 68;
             // 
             // label12
@@ -388,7 +388,7 @@ namespace Bank
             this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel24.Location = new System.Drawing.Point(0, 0);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(501, 5);
+            this.panel24.Size = new System.Drawing.Size(552, 5);
             this.panel24.TabIndex = 0;
             // 
             // TransationPasswordpanel
@@ -401,9 +401,9 @@ namespace Bank
             this.TransationPasswordpanel.Controls.Add(this.panel14);
             this.TransationPasswordpanel.Controls.Add(this.panel10);
             this.TransationPasswordpanel.Enabled = false;
-            this.TransationPasswordpanel.Location = new System.Drawing.Point(687, 553);
+            this.TransationPasswordpanel.Location = new System.Drawing.Point(634, 553);
             this.TransationPasswordpanel.Name = "TransationPasswordpanel";
-            this.TransationPasswordpanel.Size = new System.Drawing.Size(503, 230);
+            this.TransationPasswordpanel.Size = new System.Drawing.Size(556, 230);
             this.TransationPasswordpanel.TabIndex = 18;
             // 
             // TransferButton
@@ -427,7 +427,7 @@ namespace Bank
             this.TransferButton.Image = global::Bank.Properties.Resources.icon_a_day_balance_transfer_removebg_preview;
             this.TransferButton.ImageSize = new System.Drawing.Size(20, 20);
             this.TransferButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.TransferButton.Location = new System.Drawing.Point(356, 170);
+            this.TransferButton.Location = new System.Drawing.Point(406, 168);
             this.TransferButton.Name = "TransferButton";
             this.TransferButton.OnHoverBaseColor = System.Drawing.Color.SteelBlue;
             this.TransferButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -444,7 +444,7 @@ namespace Bank
             // ShowRememberPasswordcheckBox
             // 
             this.ShowRememberPasswordcheckBox.AutoSize = true;
-            this.ShowRememberPasswordcheckBox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ShowRememberPasswordcheckBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.ShowRememberPasswordcheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ShowRememberPasswordcheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowRememberPasswordcheckBox.ForeColor = System.Drawing.Color.RoyalBlue;
@@ -462,18 +462,18 @@ namespace Bank
             this.panel17.Controls.Add(this.label8);
             this.panel17.Location = new System.Drawing.Point(33, 74);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(469, 77);
+            this.panel17.Size = new System.Drawing.Size(522, 77);
             this.panel17.TabIndex = 65;
             // 
             // PasswordTextbox
             // 
-            this.PasswordTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.PasswordTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.PasswordTextbox.BorderColor = System.Drawing.Color.SteelBlue;
             this.PasswordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextbox.ForeColor = System.Drawing.Color.RoyalBlue;
             this.PasswordTextbox.Location = new System.Drawing.Point(11, 42);
             this.PasswordTextbox.Name = "PasswordTextbox";
-            this.PasswordTextbox.Size = new System.Drawing.Size(457, 28);
+            this.PasswordTextbox.Size = new System.Drawing.Size(511, 28);
             this.PasswordTextbox.TabIndex = 67;
             this.PasswordTextbox.UseSystemPasswordChar = true;
             // 
@@ -513,7 +513,7 @@ namespace Bank
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(501, 5);
+            this.panel10.Size = new System.Drawing.Size(554, 5);
             this.panel10.TabIndex = 2;
             // 
             // FromParsonalpanel
@@ -525,9 +525,9 @@ namespace Bank
             this.FromParsonalpanel.Controls.Add(this.label4);
             this.FromParsonalpanel.Controls.Add(this.panel13);
             this.FromParsonalpanel.Controls.Add(this.panel9);
-            this.FromParsonalpanel.Location = new System.Drawing.Point(688, 61);
+            this.FromParsonalpanel.Location = new System.Drawing.Point(634, 62);
             this.FromParsonalpanel.Name = "FromParsonalpanel";
-            this.FromParsonalpanel.Size = new System.Drawing.Size(503, 230);
+            this.FromParsonalpanel.Size = new System.Drawing.Size(556, 230);
             this.FromParsonalpanel.TabIndex = 17;
             // 
             // FromParsonalBalancepanel
@@ -537,7 +537,7 @@ namespace Bank
             this.FromParsonalBalancepanel.Controls.Add(this.label11);
             this.FromParsonalBalancepanel.Location = new System.Drawing.Point(28, 178);
             this.FromParsonalBalancepanel.Name = "FromParsonalBalancepanel";
-            this.FromParsonalBalancepanel.Size = new System.Drawing.Size(474, 36);
+            this.FromParsonalBalancepanel.Size = new System.Drawing.Size(526, 36);
             this.FromParsonalBalancepanel.TabIndex = 66;
             this.FromParsonalBalancepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.FromParsonalBalancepanel_Paint);
             // 
@@ -578,7 +578,7 @@ namespace Bank
             this.FromParsonalLastNamepanel.Controls.Add(this.label10);
             this.FromParsonalLastNamepanel.Location = new System.Drawing.Point(28, 122);
             this.FromParsonalLastNamepanel.Name = "FromParsonalLastNamepanel";
-            this.FromParsonalLastNamepanel.Size = new System.Drawing.Size(474, 36);
+            this.FromParsonalLastNamepanel.Size = new System.Drawing.Size(526, 36);
             this.FromParsonalLastNamepanel.TabIndex = 65;
             this.FromParsonalLastNamepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.FromParsonalLastNamepanel_Paint);
             // 
@@ -619,7 +619,7 @@ namespace Bank
             this.FromParsonalFirstNamepanel.Controls.Add(this.label9);
             this.FromParsonalFirstNamepanel.Location = new System.Drawing.Point(28, 66);
             this.FromParsonalFirstNamepanel.Name = "FromParsonalFirstNamepanel";
-            this.FromParsonalFirstNamepanel.Size = new System.Drawing.Size(474, 36);
+            this.FromParsonalFirstNamepanel.Size = new System.Drawing.Size(526, 36);
             this.FromParsonalFirstNamepanel.TabIndex = 64;
             this.FromParsonalFirstNamepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.FromParsonalFirstNamepanel_Paint);
             // 
@@ -678,7 +678,7 @@ namespace Bank
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(501, 5);
+            this.panel9.Size = new System.Drawing.Size(554, 5);
             this.panel9.TabIndex = 1;
             // 
             // Transationpanel
@@ -692,7 +692,7 @@ namespace Bank
             this.Transationpanel.Enabled = false;
             this.Transationpanel.Location = new System.Drawing.Point(23, 552);
             this.Transationpanel.Name = "Transationpanel";
-            this.Transationpanel.Size = new System.Drawing.Size(503, 230);
+            this.Transationpanel.Size = new System.Drawing.Size(554, 230);
             this.Transationpanel.TabIndex = 16;
             // 
             // TransferAmountButton
@@ -716,7 +716,7 @@ namespace Bank
             this.TransferAmountButton.Image = global::Bank.Properties.Resources.active_1;
             this.TransferAmountButton.ImageSize = new System.Drawing.Size(20, 20);
             this.TransferAmountButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.TransferAmountButton.Location = new System.Drawing.Point(362, 171);
+            this.TransferAmountButton.Location = new System.Drawing.Point(413, 169);
             this.TransferAmountButton.Name = "TransferAmountButton";
             this.TransferAmountButton.OnHoverBaseColor = System.Drawing.Color.SteelBlue;
             this.TransferAmountButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -736,18 +736,18 @@ namespace Bank
             this.panel16.Controls.Add(this.label6);
             this.panel16.Location = new System.Drawing.Point(33, 77);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(469, 86);
+            this.panel16.Size = new System.Drawing.Size(519, 86);
             this.panel16.TabIndex = 63;
             // 
             // TransationAmountTextbox
             // 
-            this.TransationAmountTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.TransationAmountTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.TransationAmountTextbox.BorderColor = System.Drawing.Color.SteelBlue;
             this.TransationAmountTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TransationAmountTextbox.ForeColor = System.Drawing.Color.RoyalBlue;
             this.TransationAmountTextbox.Location = new System.Drawing.Point(9, 43);
             this.TransationAmountTextbox.Name = "TransationAmountTextbox";
-            this.TransationAmountTextbox.Size = new System.Drawing.Size(460, 28);
+            this.TransationAmountTextbox.Size = new System.Drawing.Size(511, 28);
             this.TransationAmountTextbox.TabIndex = 68;
             this.TransationAmountTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TransationAmountTextbox_KeyPress);
             // 
@@ -787,7 +787,7 @@ namespace Bank
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(501, 5);
+            this.panel8.Size = new System.Drawing.Size(552, 5);
             this.panel8.TabIndex = 1;
             // 
             // FramTransationUserNamepanel
@@ -800,14 +800,14 @@ namespace Bank
             this.FramTransationUserNamepanel.Controls.Add(this.panel7);
             this.FramTransationUserNamepanel.Location = new System.Drawing.Point(21, 62);
             this.FramTransationUserNamepanel.Name = "FramTransationUserNamepanel";
-            this.FramTransationUserNamepanel.Size = new System.Drawing.Size(503, 230);
+            this.FramTransationUserNamepanel.Size = new System.Drawing.Size(556, 230);
             this.FramTransationUserNamepanel.TabIndex = 15;
             // 
             // FromTransferUserNameButton
             // 
             this.FromTransferUserNameButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FromTransferUserNameButton.Image = global::Bank.Properties.Resources.png_clipart_computer_icons_android_web_search_engine_google_search_search_box_google_search_bar_blue_trademark_removebg_preview;
-            this.FromTransferUserNameButton.Location = new System.Drawing.Point(399, 168);
+            this.FromTransferUserNameButton.Location = new System.Drawing.Point(450, 164);
             this.FromTransferUserNameButton.Name = "FromTransferUserNameButton";
             this.FromTransferUserNameButton.Size = new System.Drawing.Size(85, 50);
             this.FromTransferUserNameButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -821,18 +821,18 @@ namespace Bank
             this.panel15.Controls.Add(this.label7);
             this.panel15.Location = new System.Drawing.Point(33, 70);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(469, 86);
+            this.panel15.Size = new System.Drawing.Size(520, 86);
             this.panel15.TabIndex = 61;
             // 
             // FromTransationUserNameTextbox
             // 
-            this.FromTransationUserNameTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.FromTransationUserNameTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.FromTransationUserNameTextbox.BorderColor = System.Drawing.Color.SteelBlue;
             this.FromTransationUserNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FromTransationUserNameTextbox.ForeColor = System.Drawing.Color.RoyalBlue;
             this.FromTransationUserNameTextbox.Location = new System.Drawing.Point(9, 41);
             this.FromTransationUserNameTextbox.Name = "FromTransationUserNameTextbox";
-            this.FromTransationUserNameTextbox.Size = new System.Drawing.Size(461, 28);
+            this.FromTransationUserNameTextbox.Size = new System.Drawing.Size(512, 28);
             this.FromTransationUserNameTextbox.TabIndex = 68;
             // 
             // label7
@@ -871,7 +871,7 @@ namespace Bank
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(501, 5);
+            this.panel7.Size = new System.Drawing.Size(554, 5);
             this.panel7.TabIndex = 0;
             // 
             // panel3

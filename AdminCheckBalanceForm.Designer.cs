@@ -393,7 +393,7 @@ namespace Bank
             // 
             // UseNameTextbox
             // 
-            this.UseNameTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.UseNameTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.UseNameTextbox.BorderColor = System.Drawing.Color.RoyalBlue;
             this.UseNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UseNameTextbox.ForeColor = System.Drawing.Color.RoyalBlue;

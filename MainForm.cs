@@ -520,5 +520,10 @@ namespace Bank
             Menupanel.Controls.Add(allTransation);
             allTransation.Show();
         }
+
+        private void Welcomelabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

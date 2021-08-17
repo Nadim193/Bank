@@ -502,7 +502,7 @@ namespace Bank
             // 
             this.panel33.BackColor = System.Drawing.Color.Wheat;
             this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel33.Location = new System.Drawing.Point(946, 249);
+            this.panel33.Location = new System.Drawing.Point(946, 235);
             this.panel33.Name = "panel33";
             this.panel33.Size = new System.Drawing.Size(2, 55);
             this.panel33.TabIndex = 105;

@@ -129,9 +129,9 @@ namespace Bank
             this.DepositPasswordpanel.Controls.Add(this.panel14);
             this.DepositPasswordpanel.Controls.Add(this.panel10);
             this.DepositPasswordpanel.Enabled = false;
-            this.DepositPasswordpanel.Location = new System.Drawing.Point(689, 466);
+            this.DepositPasswordpanel.Location = new System.Drawing.Point(635, 466);
             this.DepositPasswordpanel.Name = "DepositPasswordpanel";
-            this.DepositPasswordpanel.Size = new System.Drawing.Size(503, 230);
+            this.DepositPasswordpanel.Size = new System.Drawing.Size(557, 230);
             this.DepositPasswordpanel.TabIndex = 8;
             // 
             // Depositbutton
@@ -144,7 +144,7 @@ namespace Bank
             this.Depositbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Depositbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Depositbutton.ForeColor = System.Drawing.Color.White;
-            this.Depositbutton.Location = new System.Drawing.Point(359, 168);
+            this.Depositbutton.Location = new System.Drawing.Point(419, 168);
             this.Depositbutton.Name = "Depositbutton";
             this.Depositbutton.Size = new System.Drawing.Size(118, 49);
             this.Depositbutton.TabIndex = 65;
@@ -155,7 +155,7 @@ namespace Bank
             // ShowRememberPasswordcheckBox
             // 
             this.ShowRememberPasswordcheckBox.AutoSize = true;
-            this.ShowRememberPasswordcheckBox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ShowRememberPasswordcheckBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.ShowRememberPasswordcheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ShowRememberPasswordcheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowRememberPasswordcheckBox.ForeColor = System.Drawing.Color.DarkOrange;
@@ -173,18 +173,18 @@ namespace Bank
             this.panel17.Controls.Add(this.label8);
             this.panel17.Location = new System.Drawing.Point(33, 74);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(469, 78);
+            this.panel17.Size = new System.Drawing.Size(522, 78);
             this.panel17.TabIndex = 65;
             // 
             // PasswordTextbox
             // 
-            this.PasswordTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.PasswordTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.PasswordTextbox.BorderColor = System.Drawing.Color.SeaGreen;
             this.PasswordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextbox.ForeColor = System.Drawing.Color.DarkOrange;
             this.PasswordTextbox.Location = new System.Drawing.Point(11, 44);
             this.PasswordTextbox.Name = "PasswordTextbox";
-            this.PasswordTextbox.Size = new System.Drawing.Size(458, 28);
+            this.PasswordTextbox.Size = new System.Drawing.Size(512, 28);
             this.PasswordTextbox.TabIndex = 67;
             this.PasswordTextbox.UseSystemPasswordChar = true;
             // 
@@ -224,7 +224,7 @@ namespace Bank
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(501, 5);
+            this.panel10.Size = new System.Drawing.Size(555, 5);
             this.panel10.TabIndex = 2;
             // 
             // panel5
@@ -236,9 +236,9 @@ namespace Bank
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.panel13);
             this.panel5.Controls.Add(this.panel9);
-            this.panel5.Location = new System.Drawing.Point(690, 132);
+            this.panel5.Location = new System.Drawing.Point(635, 133);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(503, 230);
+            this.panel5.Size = new System.Drawing.Size(556, 230);
             this.panel5.TabIndex = 7;
             // 
             // DepositBalancepanel
@@ -248,7 +248,7 @@ namespace Bank
             this.DepositBalancepanel.Controls.Add(this.label11);
             this.DepositBalancepanel.Location = new System.Drawing.Point(28, 178);
             this.DepositBalancepanel.Name = "DepositBalancepanel";
-            this.DepositBalancepanel.Size = new System.Drawing.Size(474, 36);
+            this.DepositBalancepanel.Size = new System.Drawing.Size(527, 36);
             this.DepositBalancepanel.TabIndex = 66;
             this.DepositBalancepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.DepositBalancepanel_Paint);
             // 
@@ -289,7 +289,7 @@ namespace Bank
             this.DepositLastNamepanel.Controls.Add(this.label10);
             this.DepositLastNamepanel.Location = new System.Drawing.Point(28, 122);
             this.DepositLastNamepanel.Name = "DepositLastNamepanel";
-            this.DepositLastNamepanel.Size = new System.Drawing.Size(474, 36);
+            this.DepositLastNamepanel.Size = new System.Drawing.Size(528, 36);
             this.DepositLastNamepanel.TabIndex = 65;
             this.DepositLastNamepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.DepositLastNamepanel_Paint);
             // 
@@ -330,7 +330,7 @@ namespace Bank
             this.DepositFirstNamepanel.Controls.Add(this.label9);
             this.DepositFirstNamepanel.Location = new System.Drawing.Point(28, 66);
             this.DepositFirstNamepanel.Name = "DepositFirstNamepanel";
-            this.DepositFirstNamepanel.Size = new System.Drawing.Size(474, 36);
+            this.DepositFirstNamepanel.Size = new System.Drawing.Size(527, 36);
             this.DepositFirstNamepanel.TabIndex = 64;
             this.DepositFirstNamepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.DepositFirstNamepanel_Paint);
             // 
@@ -389,7 +389,7 @@ namespace Bank
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(501, 5);
+            this.panel9.Size = new System.Drawing.Size(554, 5);
             this.panel9.TabIndex = 1;
             // 
             // Depositpanel
@@ -403,7 +403,7 @@ namespace Bank
             this.Depositpanel.Enabled = false;
             this.Depositpanel.Location = new System.Drawing.Point(24, 466);
             this.Depositpanel.Name = "Depositpanel";
-            this.Depositpanel.Size = new System.Drawing.Size(503, 230);
+            this.Depositpanel.Size = new System.Drawing.Size(554, 230);
             this.Depositpanel.TabIndex = 6;
             // 
             // DepositAmountbutton
@@ -416,7 +416,7 @@ namespace Bank
             this.DepositAmountbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.DepositAmountbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DepositAmountbutton.ForeColor = System.Drawing.Color.White;
-            this.DepositAmountbutton.Location = new System.Drawing.Point(357, 168);
+            this.DepositAmountbutton.Location = new System.Drawing.Point(413, 168);
             this.DepositAmountbutton.Name = "DepositAmountbutton";
             this.DepositAmountbutton.Size = new System.Drawing.Size(118, 49);
             this.DepositAmountbutton.TabIndex = 64;
@@ -430,18 +430,18 @@ namespace Bank
             this.DepositAmountpanel.Controls.Add(this.label6);
             this.DepositAmountpanel.Location = new System.Drawing.Point(33, 76);
             this.DepositAmountpanel.Name = "DepositAmountpanel";
-            this.DepositAmountpanel.Size = new System.Drawing.Size(469, 86);
+            this.DepositAmountpanel.Size = new System.Drawing.Size(521, 86);
             this.DepositAmountpanel.TabIndex = 63;
             // 
             // DepositAmountTextbox
             // 
-            this.DepositAmountTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.DepositAmountTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.DepositAmountTextbox.BorderColor = System.Drawing.Color.SeaGreen;
             this.DepositAmountTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DepositAmountTextbox.ForeColor = System.Drawing.Color.DarkOrange;
             this.DepositAmountTextbox.Location = new System.Drawing.Point(10, 42);
             this.DepositAmountTextbox.Name = "DepositAmountTextbox";
-            this.DepositAmountTextbox.Size = new System.Drawing.Size(459, 28);
+            this.DepositAmountTextbox.Size = new System.Drawing.Size(510, 28);
             this.DepositAmountTextbox.TabIndex = 68;
             this.DepositAmountTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DepositAmountTextbox_KeyPress);
             // 
@@ -481,7 +481,7 @@ namespace Bank
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(501, 5);
+            this.panel8.Size = new System.Drawing.Size(552, 5);
             this.panel8.TabIndex = 1;
             // 
             // DepositUserNamepanel
@@ -494,7 +494,7 @@ namespace Bank
             this.DepositUserNamepanel.Controls.Add(this.panel7);
             this.DepositUserNamepanel.Location = new System.Drawing.Point(23, 133);
             this.DepositUserNamepanel.Name = "DepositUserNamepanel";
-            this.DepositUserNamepanel.Size = new System.Drawing.Size(503, 230);
+            this.DepositUserNamepanel.Size = new System.Drawing.Size(556, 230);
             this.DepositUserNamepanel.TabIndex = 5;
             // 
             // Usenamebutton
@@ -507,7 +507,7 @@ namespace Bank
             this.Usenamebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Usenamebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Usenamebutton.ForeColor = System.Drawing.Color.White;
-            this.Usenamebutton.Location = new System.Drawing.Point(358, 167);
+            this.Usenamebutton.Location = new System.Drawing.Point(414, 165);
             this.Usenamebutton.Name = "Usenamebutton";
             this.Usenamebutton.Size = new System.Drawing.Size(118, 49);
             this.Usenamebutton.TabIndex = 62;
@@ -521,18 +521,18 @@ namespace Bank
             this.panel15.Controls.Add(this.label7);
             this.panel15.Location = new System.Drawing.Point(33, 71);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(469, 86);
+            this.panel15.Size = new System.Drawing.Size(522, 86);
             this.panel15.TabIndex = 61;
             // 
             // DepositUserNameTextbox
             // 
-            this.DepositUserNameTextbox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.DepositUserNameTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.DepositUserNameTextbox.BorderColor = System.Drawing.Color.SeaGreen;
             this.DepositUserNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DepositUserNameTextbox.ForeColor = System.Drawing.Color.DarkOrange;
             this.DepositUserNameTextbox.Location = new System.Drawing.Point(11, 43);
             this.DepositUserNameTextbox.Name = "DepositUserNameTextbox";
-            this.DepositUserNameTextbox.Size = new System.Drawing.Size(459, 28);
+            this.DepositUserNameTextbox.Size = new System.Drawing.Size(511, 28);
             this.DepositUserNameTextbox.TabIndex = 68;
             // 
             // label7
@@ -571,7 +571,7 @@ namespace Bank
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(501, 5);
+            this.panel7.Size = new System.Drawing.Size(554, 5);
             this.panel7.TabIndex = 0;
             // 
             // panel4
